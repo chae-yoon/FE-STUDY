@@ -8,6 +8,19 @@ body {
 /*  */
 
 /* Nav Bar */
+
+.nav__style {
+  height: 56px;
+  min-width: 360px;
+}
+
+@media (min-width: 768px) {
+  .nav__style {
+    height: 64px;
+  }
+  
+}
+
 .navbar-brand {
   margin-right: 40px;
 }
@@ -102,12 +115,12 @@ body {
 }
 
 .offcanvas.offcanvas-top {
-  top: 65px;
+  top: 57px;
   width: 100%;
 }
 
 .offcanvas-backdrop {
-  top: 65px;
+  top: 57px;
 }
 
 /* Section 2 */
@@ -234,3 +247,168 @@ body {
   background-color: #f2f3f6;
 }
 
+/*  */
+/* Nearby Stores Page */
+/*  */
+
+.nbs-nav__style {
+  margin-bottom: 12px;
+  gap: 8px;
+}
+
+.nav-pill__style {
+  padding: 8px 16px;
+}
+
+.nav-pill__style .nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #eaebee;
+  color: #212124;
+  background-color: transparent;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border: 1px solid #4d5159;
+  background-color: #4d5159;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tab-content>.active {
+  display: flex;
+}
+
+.nbs__style {
+  justify-content: space-between;
+}
+
+.nbs-card__style {
+  border-bottom: 1px solid #eaebee;
+  padding: 24px 16px;
+  flex-grow: 1;
+  max-width: 352px;
+}
+
+.thumbnail-wrapper__style {
+  border: 1px solid #eaebee;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.thumbnail-wrapper__style img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+
+.nbs-title__style {
+  gap: 4px;
+}
+
+.nbs-title-name__style {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.nbs-title-region__style {
+  font-size: .875rem;
+  color: #868b94;
+}
+
+.nbs-content__style {
+  font-size: 1rem;
+  line-height: 1.36;
+  margin: .125rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.nbs-info__style {
+  font-size: .813rem;
+  margin: .25rem 0 0;
+  color: #868b94;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+
+  .nbs-nav-scroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 16px;
+  }
+
+  .nbs-nav-scroll::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .nbs-nav__style {
+    margin: 0 auto;
+    gap: 6px;
+    flex: 0 0 auto; /* basis 를 90%로 조절함*/
+    scroll-snap-align: start;
+  }
+
+  .nbs-nav__style li button {
+    padding: 6px 12px;
+  }
+
+  .nav-pill__style {
+    padding: 12px 0 4px;
+  }
+
+
+  .nav-pill__style .nav-link {
+    font-size: .813rem;
+    font-weight: 400;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    font-size: .813rem;
+    font-weight: 400;
+  }
+
+  .nbs-card__style {
+    padding: 24px 0;
+    max-width: 100%;
+  }
+
+  .thumbnail-wrapper__style {
+    width: 64px;
+    height: 64px;
+  }
+
+  .thumbnail-wrapper__style img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .nbs-title-name__style {
+    font-size: 1rem;
+  }
+
+  .nbs-title-region__style {
+    font-size: .813rem;
+  }
+
+  .nbs-content__style {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+
+  .nbs-info__style {
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nbs__style>* {
+    width: 47%;
+  }
+}
