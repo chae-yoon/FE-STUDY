@@ -310,11 +310,16 @@ body {
 .nbs-title-name__style {
   font-size: 1.125rem;
   font-weight: 700;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 
 .nbs-title-region__style {
   font-size: .875rem;
   color: #868b94;
+  white-space: nowrap;
 }
 
 .nbs-content__style {
@@ -410,5 +415,140 @@ body {
 @media (min-width: 768px) {
   .nbs__style>* {
     width: 47%;
+  }
+}
+
+.review-card__style {
+  padding: 20px 16px;
+  border: 1px solid #eaebee;
+  border-radius: 4px;
+}
+
+.review-name__style {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.review-badge__style {
+  padding: 2px 4px;
+  background-color: #ff6f0f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-profile-info__style {
+  color: #868b94;
+  font-size: 13px;
+}
+
+.review-content__style {
+  font-size: 16px;
+  margin-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.review-store-card__style {
+  border: 1px solid #eaebee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review-store-card__style img {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #eaebee;
+}
+
+.review-store-name__style {
+  font-size: 16px;
+}
+
+.review-store-info__style {
+  font-size: 13px;
+  color: #868b94;
+}
+
+@media (max-width: 767px) {
+  .review-name__style {
+    font-size: 14px;
+  }
+
+  .review-badge__style {
+    font-size: 10px;
+  }
+
+  .review-profile-info__style {
+    font-size: 12px;
+  }
+
+  .review-content__style {
+    font-size: 14px;
+  }
+
+  .review-store-name__style {
+    font-size: 14px;
+  }
+  
+  .review-store-info__style {
+    font-size: 12px;
+  }
+}
+
+.bizprofile__style {
+  margin: 72px auto;
+  background-color: #f7be6824;
+  padding: 24px 22px 24px 32px;
+  color: #212124;
+  border-radius: 4px;
+}
+
+.bizprofile-title__style {
+  font-size: 20px;
+  margin: 0;
+}
+
+.bizprofile-content__style {
+  font-size: 16px;
+}
+
+.btn-bizprofile {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 16px;
+  background-color: #ff6f0f;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .bizprofile__style {
+    margin: 40px auto;
+  }
+
+  .bizprofile-title__style {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .bizprofile-content__style {
+    font-weight: 600;
+  }
+
+  .btn-bizprofile {
+    font-size: 11px;
+    padding: 8px 10px;
+    font-weight: 400;
+    margin-top: 12px;
   }
 }
