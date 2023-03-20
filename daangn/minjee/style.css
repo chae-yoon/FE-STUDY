@@ -1,0 +1,52 @@
+/* nav 설정 */
+.search-input {
+    padding: 8px 30px 8px 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: #F1F3F6;
+}
+/* main 설정 */
+.dsc-03__icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.hot-items__img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #C2E8C2;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 25px;
+}
+.nearby-store__img {
+    width: 70px;
+    height: 70px;
+}
+.nearby-customer__img {
+    width: 30px;
+    height: 30%;
+}
+/* footer 설정 */
+
+/* background-color 설정 */
+.bg-pale-peach {
+    background-color: #FBF7F3;
+}
+.bg-pale-green {
+    background-color: #E6F3E6;
+}
+.bg-dark-pale-peach {
+    background-color: #F7F1EB;
+}
+.small-gray {
+    font-size: small;
+    color: #939BA2;
+}
+.bg-orange {
+    background-color: orange;
+}
