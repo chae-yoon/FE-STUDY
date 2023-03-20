@@ -9,4 +9,4 @@
 
 # secondpage
 ![secondpage_img](../YongJin/screenshot/secondpage_img.png)
-> secondpage 내용들을 아직 다 못넣었습니다.
+> secondpage 내용들을 아직 다 못넣었습니다. 최대한 수정해 보겠습니다!
