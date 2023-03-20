@@ -3,11 +3,11 @@
 <div markdown="1">
 
 ### PC화면
-![PC_page](/readme/main_pc.png)
+![PC_page](/daangn/minjee/readme/main_pc.png)
 ### 태블릿 화면
-![PC_page](/readme/main_tab.png)
+![tab_page](/daangn/minjee/readme/main_tab.png)
 ### 핸드폰 화면
-![PC_page](/readme/main_phone.png)
+![Phone_page](/daangn/minjee/readme/main_phone.png)
 
 </div>
 </details>
@@ -17,11 +17,11 @@
 <div markdown="1">
 
 ### PC화면
-![PC_page](/readme/nearby_pc.png)
+![PC_page](/daangn/minjee/readme/nearby_pc.png)
 ### 태블릿화면
-![PC_page](/readme/nearby_tab.png)
+![tab_page](/daangn/minjee/readme/nearby_tab.png)
 ### 핸드폰화면
-![PC_page](/readme/nearby_phone.png)
+![Phone_page](/daangn/minjee/readme/nearby_phone.png)
 
 </div>
 </details>
