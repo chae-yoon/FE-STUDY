@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>동네 이웃들이 자주 가는 동네 가게</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="navdiv">
+      <nav class="navbar navbar-expand-md">
+        <div class="nav-con">
+          <a class="brand" href="#">
+            <svg width="100" height="28" viewBox="0 0 100 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6241 5.1897C4.76013 5.1897 0 9.94831 0 15.8104C0 18.2759 0.845096 20.5345 2.24209 22.3276C2.34557 22.4655 2.4663 22.6035 2.56978 22.7414C2.74225 22.9311 2.89747 23.1207 3.08719 23.3104L3.10443 23.3276C5.13956 25.4828 7.70934 27.1207 10.6068 28C13.5043 27.1207 16.0741 25.4828 18.1092 23.3276L18.1264 23.3104C18.2989 23.1207 18.4714 22.9311 18.6439 22.7414C18.7646 22.6035 18.8681 22.4655 18.9715 22.3276C20.3685 20.5345 21.2136 18.2759 21.2136 15.8104C21.2309 9.93107 16.488 5.1897 10.6241 5.1897ZM10.6241 19.8621C8.38197 19.8621 6.57105 18.0518 6.57105 15.8104C6.57105 13.569 8.38197 11.7587 10.6241 11.7587C12.8662 11.7587 14.6771 13.569 14.6771 15.8104C14.6771 18.0518 12.8662 19.8621 10.6241 19.8621Z" fill="#FF7E36"></path><path d="M14.0743 4.96552C14.7814 4.81035 15.2988 4.18965 15.2988 3.44827C15.2988 2.58621 14.5917 1.87931 13.7293 1.87931C13.4879 1.87931 13.2637 1.93104 13.0567 2.03449C12.8325 0.879318 11.8322 0 10.6076 0C9.38312 0 8.3828 0.879318 8.1586 2.03449C7.95163 1.93104 7.72742 1.87931 7.48597 1.87931C6.62363 1.87931 5.9165 2.58621 5.9165 3.44827C5.9165 4.18965 6.45116 4.81035 7.14103 4.96552C8.22758 4.58621 9.38312 4.37931 10.5904 4.37931C11.7977 4.37931 12.9877 4.58621 14.0743 4.96552Z" fill="#00B493"></path><path d="M28.8191 15.9481H35.3211C36.1317 15.9481 36.7699 15.4654 36.7699 14.4654C36.7699 13.4654 36.1317 12.9826 35.3211 12.9826H29.6642C29.371 12.9826 29.1985 12.8102 29.1985 12.5344V9.98264C29.1985 9.70678 29.371 9.53437 29.6642 9.53437H35.3211C36.1317 9.53437 36.7699 9.0516 36.7699 8.0516C36.7699 7.0516 36.1317 6.56885 35.3211 6.56885H28.8191C26.6115 6.56885 25.5767 7.5516 25.5767 9.39643V13.1378C25.5767 14.9826 26.6115 15.9481 28.8191 15.9481Z" fill="#FF7E36"></path><path d="M36.9594 17.1379H30.5608C27.6806 17.1379 25.7834 18.7241 25.7834 21.0517C25.7834 23.3276 27.6806 24.9138 30.5608 24.9138H36.9594C39.8396 24.9138 41.754 23.3276 41.754 21.0517C41.754 18.7414 39.8396 17.1379 36.9594 17.1379ZM36.9594 21.9138H30.5608C29.8537 21.9138 29.4743 21.5345 29.4743 21.0517C29.4743 20.5345 29.8537 20.1379 30.5608 20.1379H36.9594C37.6665 20.1379 38.0632 20.5345 38.0632 21.0517C38.0632 21.5345 37.6493 21.9138 36.9594 21.9138Z" fill="#FF7E36"></path><path d="M42.3754 9.60339H41.3578V7.65512C41.3578 6.81029 40.6162 6.17236 39.5469 6.17236C38.4776 6.17236 37.7188 6.81029 37.7188 7.65512V15.2068C37.7188 16.0517 38.4776 16.6896 39.5469 16.6896C40.6162 16.6896 41.3578 16.0517 41.3578 15.2068V13.1551H42.3754C43.2032 13.1551 43.8586 12.431 43.8586 11.3965C43.8586 10.3965 43.2032 9.60339 42.3754 9.60339Z" fill="#FF7E36"></path><path d="M60.5189 17.6206H45.6693C44.807 17.6206 44.0999 17.0516 44.0999 15.9999C44.0999 15.0171 44.807 14.4137 45.6693 14.4137H60.5189C61.3812 14.4137 62.0883 15.0344 62.0883 15.9999C62.0883 17.0344 61.3812 17.6206 60.5189 17.6206ZM57.4662 12.3964V10.4654C57.4662 10.1206 57.2764 9.93092 56.9833 9.93092H46.6869C45.79 9.93092 45.0312 9.36194 45.0312 8.27574C45.0312 7.24125 45.79 6.56885 46.6869 6.56885H57.7766C59.9842 6.56885 61.1052 7.70678 61.1052 9.72402V12.3964C61.1052 13.2413 60.3636 13.8792 59.2943 13.8792C58.225 13.8792 57.4662 13.2413 57.4662 12.3964ZM48.7565 19.7068V20.9826C48.7565 21.2413 48.9462 21.4137 49.2394 21.4137H59.829C60.7258 21.4137 61.4847 21.9999 61.4847 23.0688C61.4847 24.1033 60.7258 24.724 59.829 24.724H48.4633C46.273 24.724 45.1002 23.793 45.1002 21.8102V19.7068C45.1002 18.8619 45.8418 18.224 46.9111 18.224C47.9804 18.224 48.7565 18.8619 48.7565 19.7068Z" fill="#FF7E36"></path><path d="M63.9343 21.362V9.12063C63.9343 7.44822 64.7794 6.56891 66.5214 6.56891H71.2642C73.0062 6.56891 73.8513 7.43098 73.8513 9.12063V21.362C73.8513 23.0344 73.0062 23.9137 71.2642 23.9137H66.5214C64.7967 23.9137 63.9343 23.0517 63.9343 21.362ZM70.4364 20.2068V10.293C70.4364 10.0517 70.3157 9.91373 70.0914 9.91373H67.7114C67.5044 9.91373 67.3664 10.0689 67.3664 10.293V20.2068C67.3664 20.4482 67.4872 20.5861 67.7114 20.5861H70.0914C70.3157 20.5861 70.4364 20.431 70.4364 20.2068ZM76.0934 23.3448V7.75856C76.0934 6.86201 76.8522 6.17236 77.9215 6.17236C78.9908 6.17236 79.7324 6.87925 79.7324 7.75856V12.862H80.75C81.5779 12.862 82.2332 13.6551 82.2332 14.6379C82.2332 15.7068 81.5779 16.4482 80.75 16.4482H79.7324V23.3448C79.7324 24.2413 78.9908 24.931 77.9215 24.931C76.8522 24.931 76.0934 24.2413 76.0934 23.3448Z" fill="#FF7E36"></path><path d="M91.5291 10.4136H92.2707V7.60331C92.2707 6.79296 92.9261 6.24124 93.9264 6.24124C94.9267 6.24124 95.5476 6.79296 95.5476 7.60331V15.9826C95.5476 16.793 94.9267 17.3447 93.9264 17.3447C92.9261 17.3447 92.2707 16.793 92.2707 15.9826V13.5171H91.5291C91.1324 13.5171 90.7702 13.3274 90.5288 12.9654C89.5285 15.1723 87.7693 16.9481 85.3202 18.0343C84.5269 18.3792 83.6818 18.155 83.2333 17.4136C82.7849 16.6723 83.0781 15.7067 83.768 15.4136C84.8718 14.9309 85.7859 14.2757 86.493 13.4309H84.7166C84.0439 13.4309 83.4403 13.0343 83.4403 12.1378C83.4403 11.3102 84.0267 10.8447 84.7166 10.8447H87.8383C87.9245 10.5343 88.0107 10.1895 88.0452 9.82744C88.0797 9.55158 87.9417 9.36193 87.683 9.36193H84.8201C84.0095 9.36193 83.4403 8.89641 83.4403 7.96537C83.4403 7.06882 84.0095 6.53434 84.8201 6.53434H88.3039C90.615 6.53434 91.6843 7.63779 91.3394 10.1205C91.3221 10.2068 91.3221 10.3102 91.3049 10.3964C91.3739 10.4137 91.4428 10.4136 91.5291 10.4136ZM98.0311 24.6033C95.8236 24.1378 93.1848 22.9309 91.4773 21.5516C89.8906 23.1205 87.7693 24.2757 85.5272 24.7067C84.7683 24.8619 83.8715 24.4998 83.5955 23.5688C83.3368 22.6723 83.7852 21.8619 84.5958 21.655C87.0449 21.0171 89.08 19.6033 90.0976 17.7067C90.408 17.1378 91.2704 16.7585 92.2362 17.0516C93.2538 17.3619 93.6677 18.3274 93.3572 18.9998L93.34 19.0343C94.7542 20.2067 96.8584 21.1205 98.928 21.5688C99.7213 21.7412 100.187 22.5516 99.9283 23.4654C99.6696 24.3792 98.8073 24.7585 98.0311 24.6033ZM96.3409 16.5688V7.5171C96.3409 6.70676 97.0136 6.15503 98.0484 6.15503C99.066 6.15503 99.7213 6.70676 99.7213 7.5171V16.5688C99.7213 17.3792 99.066 17.9309 98.0484 17.9309C97.0308 17.9309 96.3409 17.3792 96.3409 16.5688Z" fill="#FF7E36"></path></svg>
+          </a>
+          <div class="d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearchContent" aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="navbar-toggler navbar-menu-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <sp class="navbar-toggler-icon"></sp  an>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">중고거래</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">동네가게</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">알바</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">부동산 직거래</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">중고차 직거래</a>
+              </li>
+            </ul>
+          </div>
+          <button class="navbar-toggler navbar-search-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearchContent" aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-search"></i>
+          </button>
+          <form class="collapse navbar-collapse" id="navbarSearchContent"  role="search">
+            <input class="navbar-search" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
+          </form>
+          <button class="btn chat d-none d-md-block" type="submit">채팅하기</button>
+        </div>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="ns-first bg-dark-beige px-3">
+        <div class="ns-content">
+          <h1 class="ns-title">동네 이웃들이<br>
+          자주 가는 동네 가게</h1>
+          <p class="ns-text">우리 동네 사람들이<br>
+          이용하는 가게를 찾아보세요.</p>
+          <div class="ns-first-img">
+            <img class="ns-img" alt="배너 이미지" src="https://www.daangn.com/_next/static/media/nearby_stores_hero_image_3x.47c43e04.png" style="width: 453px; height: 260px;">
+          </div>
+        </div>
+      </section>
+
+      <div class="ns-content">
+        <section class="ns-mid">
+          <h2 class="ns-title">다양한 동네가게를 볼 수 있어요</h2>
+          <div>
+            <ul class="ns-mid-group">
+              <li>
+                <button class="ns-mid-button active font-small">전체</button>
+              </li>
+              <li>
+                <button class="ns-mid-button font-small">식당</button>
+              </li>
+              <li>
+                <button class="ns-mid-button font-small">카페</button>
+              </li>
+              <li>
+                <button class="ns-mid-button font-small">용달/이사</button>
+              </li>
+              <li>
+                <button class="ns-mid-button font-small">뷰티/미용</button>
+              </li>
+              <li>
+                <button class="ns-mid-button font-small">헬스/필라테스/요가</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ns-store">
+            <div class="ns-store-item me-md-5">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">임은하푸드 인천창고</span>
+                    <span class="font-small color-gray">천곡동</span>
+                  </div>
+                  <span class="ns-store-info">임은하푸드는 전국에 수산물 창고를 둔 곳입니다.
+                    매일 아침 창고 소식을 전해요.
+                    단골맺기를 하시면 소식 알람이 간답니다.
+                    
+                    꼭 저희에게 구매하지 않더라도,
+                    시장가시기 전에 그 날 시세 보시면 좋을 거에요.
+                    
+                    간혹, 물건 위탁으로 보내는 유통회사 아니냐 하시는데.
+                    절대 아니고요.
+                    동해, 부산, 인천, 군산, 포항 등.
+                    바다가가 있는 곳에 왠만하면 창고가 있는 큰 회사 입니다.
+                    매일 새벽 어판장에서 위판을 받고, 배떼기를 한답니다.
+                    당연 매일 가격이 다르고요.
+                    
+                    사람이 하는 일이라 클레임이 나올 수 있어요.
+                    포장하는 누가 실수 할 수도 있고,
+                    선별하는 누가 실수 할 수도 있고,
+                    발주받는 누가 실수 할 수도 있고,
+                    택배기사님이 실수 할 수도 있고,
+                    누군가의 자식, 누군가의 동생, 누군가의 아버지들입니다.
+                    
+                    좋게 이야기 해 주시면 대부분 해결이 돼요.
+                    물건에 문제가 있을 경우 연락 주세요.
+                    문제가 생길 수 있다는 점을 인지하고 더 노력 하겠습니다.
+                    문제가 생기지 않게 더 노력 하겠습니다.
+                    
+                    오늘도 힘찬 뱃고동 소리와 함께 시작 하겠습니다.
+                    감사합니다. - 임은하푸드 일동
+                  </span>
+                  <span class="font-xs color-gray">후기 1,716 · 단골 26,503 · 수산물</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item flex-md-grow-1">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/17969333/1648446564196/4eb8d7c682d7d31440333a7a5f4f1895721eee1b32e06993d625d9f669800d86.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">갑을농수산</span>
+                    <span class="font-small color-gray">천곡동</span>
+                  </div>
+                  <span class="ns-store-info">안녕하세요!
+
+                    새벽에 수산물을 받아와 도매가로 드리는 갑을농수산입니다.
+                    
+                    전국 7개 지점에 창고를 두고 있고 이는 산지의 신선함을 그대로 배송하기 위함입니다.
+                    
+                    새로운 고객, 아니! 새로운 가족분들을 위함에 돈을 아끼지 않습니다.
+                    마구 마구 저렴하게 드릴 테니 필요한 상품 있으시면 언제든 문의주세요!
+                  </span>
+                  <span class="font-xs color-gray">후기 1,580 · 단골 22,310 · 식자재판매</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt me-md-5">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/21709505/1653454688660/ZjZmYTViYWMzMWRkMjhlNjg0NGIxOGRhM2UzOGNiMDBlNTY1ZThmOWRkYTYyMTFiZDA0MzhjMGY2NzI3N2M1NC5qcGc=.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">찐신선 정육점</span>
+                    <span class="font-small color-gray">팔탄면</span>
+                  </div>
+                  <span class="ns-store-info">세계적인 육류 선두 기업들로부터 직수입하여 
+                    유통마진없이 최종소비자에게 배송해드리는 
+                    찐신선 온라인정육점 입니다.😄
+                    
+                    매주 다양한 고기부위 할인소식받으시고
+                    "좋은고기" "좋은가격"에 드세요🥰
+                    
+                    "찐신선" 을 검색해보세요.
+                    www.jjinsinsun.com
+                    
+                    평일 낮12시 이전 주문 시 다음날 받아요.😊
+                    서울 및 수도권 대부분 지역 새벽배송돼요.😄
+                    4만원 이상 주문시 무료배송 이에요😊
+                    
+                    카카오채널
+                    https://pf.kakao.com/_XAKDxb
+                    
+                    찐신선 어플도 있습니다!
+                    
+                    많은관심 바랍니다♡
+                  </span>
+                  <span class="font-xs color-gray">후기 675 · 단골 21,856 · 정육점</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt flex-md-grow-1">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_3568585/1669188796548/f0640532c68de863ea734e2349ff0379a759e345ffd71b1fe68ba22108914459.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">식품명가 파란거북</span>
+                    <span class="font-small color-gray">만촌동</span>
+                  </div>
+                  <span class="ns-store-info">[지역회사가 아닌 산지직발송 원청업체입니다.]
+
+                    식품 명가 파란거북.
+                    거북은 예로부터 신뢰와 신의를 상징한다 했습니다.
+                    신뢰, 신의. 품질. 돈보다 중요한 가치들이 명가를 만듭니다.
+                    
+                    좋은 상품으로 말하겠습니다.
+                  </span>
+                  <span class="font-xs color-gray">후기 1,178 · 단골 21,315 · 수산물</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt me-md-5">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50095049/1638929787569/978227fd2caa69a520f7169a35af8a740319cfa5896a8173b08f12044632c757.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">거저주는 거저몰</span>
+                    <span class="font-small color-gray">등촌동</span>
+                  </div>
+                  <span class="ns-store-info">최저가 농•축•수산물 쇼핑몰입니다.
+                    제조사와 소비자 사이의 유통단계를 축소시켜 건강한 식품을 합리적인 가격으로 소개합니다.
+                    ※경매 소식 받는 건 공짜에요!!※
+                    ⠀
+                    ▼ 1:1 카카오톡 주문/문의 ▼
+                  </span>
+                  <span class="font-xs color-gray">후기 1,365 · 단골 20,276 · 식육판매업</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt flex-md-grow-1">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/59321401/1654655330999/ZTI4NGI3NjdmZTU5YzJiNDVlY2YxMmE2ZTdhN2Y3ZWQ1ZDU5ODMzMDgzZDdmY2Q1ZTUzOTA0NmMyZWNiY2VmNy5qcGc=.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">팔팔키친</span>
+                    <span class="font-small color-gray">통진읍</span>
+                  </div>
+                  <span class="ns-store-info">주말 및 공휴일은 답변이 조금 늦어도 양해해주시고 채팅으로 남겨주세요!!
+
+                    또한 매장이 아닌 창고라 말씀 안주시고 찾아오시는 건 삼가주시면 감사하겠습니다!
+                    
+                    저희는 김포에 축산 및 수입륙 창고, 하남 가공식품 창고, 부산 식품 및 oem 창고, 대구에 축산지점 운영하고 있는 팔팔키친입니다^^
+                    
+                    당근마켓에 싸고 저렴하지만 만족감 높은 고기 드리고싶어서 출사표 던져봅니다
+                    
+                    항상 상품에 문제가 있다면 사진만 상세히 찍어 문의주세요.
+                    
+                    구매문의는 전화보단 톡으로 남겨주세요!
+                    
+                    감사합니다!!
+                  </span>
+                  <span class="font-xs color-gray">후기 1,466 · 단골 17,758 · 식육판매업</span>
+                </div>
+              </a>  
+            </div>
+            <div class="ns-store-item bt me-md-5">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/26101884/1667193649988/Yzg0M2MyOTMxZDkwNWRjYTM1YzQ1MjMzODM3ZWU2MTVmNjhmMzc4Y2MzNTc5MzdlZDIxODM1OTA0MzI0MWM3Mi5qcGc=.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">렌탈24</span>
+                    <span class="font-small color-gray">장기동</span>
+                  </div>
+                  <span class="ns-store-info">후기만 600개 성지 [렌탈24] 입니다❤️
+
+                    정수기/공청기/비데 등 렌탈 온라인 공식 접수처입니다!
+                    혜택 설치 당일 지급/업계 최고 혜택 약속드립니다!
+                    렌탈료는 최저로, 혜택은 최대로!
+                    전국 가장 빠른 다음날 설치약속드립니다!
+                    언제든지 문의주세요!!
+                    
+                    1800-8938
+                  </span>
+                  <span class="font-xs color-gray">후기 629 · 단골 17,461 · 정수기판매</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt flex-md-grow-1">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_3297562/1667283386776/b926e1715c9b26523a4c17b940ad5f29d96838acfa61f6621bbccb5829514ae0.png?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">제주농협</span>
+                    <span class="font-small color-gray">삼도1동</span>
+                  </div>
+                  <span class="ns-store-info">부득이 채팅 답변이 어렵습니다. 문의사항은 서비스 센터로 부탁드립니다! 
+                    ☎️ 070-4471-0231 
+                    
+                    제주도내 19개 지역농협의 농산물을 판매하는 통합마케팅 조직입니다. 
+                  </span>
+                  <span class="font-xs color-gray">후기 2,069 · 단골 15,508 · 유기농식품판매</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt me-md-5">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/59615634/1655340335580/ODllOTRlNDZkOWZlMTJhY2ZiM2E3NzBmMGQyNGMwZjBjODgzMGNmZTY0MGFmZDRlOWY2ZGM1YmYzYjEzY2EyOS5qcGc=.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">물고기와 육고기</span>
+                    <span class="font-small color-gray">소룡동</span>
+                  </div>
+                  <span class="ns-store-info">좋은데 저렴한 상품은 없습니다.
+                    가격의 합당함.
+                    거품 없는 합당한 가격에 드릴게요!
+                  </span>
+                  <span class="font-xs color-gray">후기 1,233 · 단골 15,083 · 식자재판매</span>
+                </div>
+              </a>
+            </div>
+            <div class="ns-store-item bt flex-md-grow-1">
+              <a class="ns-store-group" href="">
+                <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/31657420/1678103289195/NzBhN2U2NGZhN2RlOTlmYjM2YmYxODcxZjBhYjQ5ZGMzNzU3MWNhNmMzM2FlOTA0NTE3YjM0N2FjNjY1NDhiNC5qcGc=.jpeg?q=82&amp;s=640x640&amp;t=crop" class="thumbnail-image">
+                <div>
+                  <div>
+                    <span class="ns-store-name">임은하푸드 인천창고</span>
+                    <span class="font-small color-gray">오천읍</span>
+                  </div>
+                  <span class="ns-store-info">
+                    안녕하세요 ~~^^ 
+                    저는 전국 8곳 창고를 운영중입니다 .
+                    매일 새벽 위판경매를 보고 직접수매 및 택배작업을 합니다
+
+                    상품이 별로거나 기대이하였다면,
+                    속상해 마시고 꼭 말씀주세요.
+
+                    제가 부재면 사진 여러장 꼭 찍어주세요.
+
+                    마지막까지 책임지겠습니다.
+                  </span>
+                  <span class="font-xs color-gray">후기 1,343 · 단골 14,884 · 수산물</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="ns-mid-bottom">
+          <h2 class="ns-title">동네 이웃이 남긴 후기를 찾아보세요</h2>
+          <ul class="ns-store">
+            <li class="ns-review-item">
+              <div>
+                <div class="d-flex">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/profile/202206/7b7f15cdc5834f68aeea58ab97d3a2a52166d8c6d274c537b4d331cd8888ddb7.webp?q=82&amp;s=640x640&amp;t=crop" alt="소현사랑 프로필 이미지" class="thumbnail-image">
+                  <div>
+                    <div class="d-flex">
+                      <span>소현사랑</span>
+                      <span>단골</span>
+                    </div>
+                    <span>태화동 인증 3회</span>
+                  </div>
+                </div>
+                  <p>태화동 맛집이에요~ 어른, 아이들 입맛에 잘맞아요~ 우리딸이 또 먹으러 가자고 졸라요ㅜㅜ 
+                    이모님 밑반찬 떨어지기도 전에 부족한건 채워주시는 친절함에 온가족 만족하고 맛있게 먹고 왔습니다^^
+                  </p>
+                  <div>
+                    <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/7561971/1652343504992/NTVmNTZiZWIxMTA5OGRhOTQ0ZDU1OTgwNjYxYjRlOTdmYzMwMzcyYTNjMmU5MTZhYjI1ZTU5YmJmZTZhZmYyZS5qcGc=.jpeg?q=82&amp;s=640x640&amp;t=crop" decoding="async" data-nimg="fill" class="_19qbbiq0 _19qbbiq1" style="padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover">
+                    <div>
+                      <p>새마을 갈비 태화점</p>
+                      <span>후기 26 ∙ 단골 433 ∙ 일반음식</span>
+                    </div>
+                  </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
