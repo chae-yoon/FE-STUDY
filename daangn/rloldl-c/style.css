@@ -1,4 +1,4 @@
-@media (max-width: 768.02px){
+@media (max-width: 767.9px){
   .nav-con {
     justify-content: space-between;
     width: 100%;
@@ -17,6 +17,10 @@
   .navbar-search-toggler {
     display: none;
   }
+
+  .main {
+    padding-top: 3.5rem;
+  }
   
   .home-image-top {
     max-width: 328px;
@@ -27,10 +31,6 @@
     padding-top: 2rem;
     text-align: center;
   }
-
-  /* .home-first, .home-first-content {
-    min-height: 586px;
-  } */
 
   .home-first-content, .home-mid-content {
     width: 100%;
@@ -63,11 +63,9 @@
   .home-mid {
     width: 100%;
     padding: 3.8rem 0 2rem;
-    min-height: 844px;
   }
 
   .home-mid-content {
-    min-height: 751px;
     text-align: center;
   }
 
@@ -75,12 +73,8 @@
     margin: 0;
   }
 
-  .home-main-image-02 {
-    width: 328px;
-  }
-  
-  .home-main-image-03 {
-    width: 328px;
+  .home-main-image-02, .home-main-image-03 {
+    max-width: 328px;
   }
 
   .home-popular-title {
@@ -112,7 +106,7 @@
     justify-content: center;
   }
 
-  .card-title, .card-price {
+  .card-title, .card-price, .ns-review-store-name {
     font-size: 0.9rem;
   }
 
@@ -124,7 +118,7 @@
     padding: 0 1rem;
   }
 
-  .footer-top {
+  .footer-top, .ns-footer-top {
     padding: 2.5rem 0;
     flex-direction: column-reverse;
   }
@@ -134,9 +128,13 @@
     margin-top: 2rem;
   }
 
+  .footer-list {
+    width: 30%;
+  }
+
   .footer-app {
     text-decoration: none;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
 
   .footer-info {
@@ -146,9 +144,121 @@
   .footer-info span {
     line-height: 1;
   }
+  
+  .ns-first {
+    height: 18.5rem;
+  }
+
+  .ns-first .ns-content {
+    padding: 1.5rem 0.5rem 1rem;
+  }
+
+  .ns-content {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .ns-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .ns-first-image {
+    width: 293px; 
+    height: 168px;
+    left: 50%;
+    transform: translate(-42%);
+  }
+
+  .ns-mid-button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .ns-store-name {
+    font-size: 1rem;
+  }
+
+  .ns-store-info {
+    font-size: 0.9rem;
+  }
+  
+  .thumbnail-image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .ns-store-item, .ns-review-group {
+    width: 100%;
+  }
+
+  .md-bb {
+    border-bottom: 1px solid #eaebee;
+  }
+
+  .ns-mid-bottom {
+    margin-top: 4.6rem;
+  }
+
+  .ns-mid-bottom .ns-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .ns-user-id {
+    font-size: 0.86rem;
+  }
+
+  .ns-badge {
+    font-size: 0.6rem;
+  }
+
+  .ns-text-info {
+    font-size: 0.75rem;
+  }
+
+  .ns-review-detail {
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+  }
+
+  .ns-business {
+    margin-top: 2rem;
+    margin-bottom: 1.8rem;
+    padding: 1.8rem 1.5rem;
+  }
+
+  .ns-business-text {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .ns-business-text, .ns-business-text h5 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .ns-business .ns-badge {
+    margin: 0;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.7rem;
+  }
+
+  .ns-footer-list-group {
+    margin-top: 0.5rem;
+  }
+
+  .ns-footer-list {
+    width: 26%;
+  }
+
+  .ns-footer-list .home-topic-link {
+    font-size: 0.8rem;
+  }
+
 }
 
-@media (min-width: 767px) and (max-width: 992px) {
+
+@media (min-width: 768px) and (max-width: 992px) {
   .navbar-search-toggler {
     display: inline-block !important;
     border: 0;
@@ -163,9 +273,13 @@
   .navbar-expand-md {
     flex-wrap: wrap;
   }
+
+  .main {
+    padding-top: 4rem;
+  }
   
   .home-image-top {
-    height: 685px;
+    width: 813px;
   }
   
   .home-text {
@@ -208,12 +322,12 @@
 
 
   .home-main-image-01 {
+    width: 532px;
     height: 684px;
   }
 
   .home-main-image-02 {
-    width: 546px;
-    height: 740px;
+    max-width: 546px;
   }
 
   .home-main-image-03 {
@@ -242,11 +356,11 @@
   }
 
   .home-topic {
-    margin: 2.5rem 2.5rem;
+    margin: 2.5rem auto;
   }
 
   .home-topic-list {
-    margin-left: 2rem;
+    margin-left: 4rem;
     justify-content: space-between;
   }
 
@@ -258,15 +372,96 @@
   .footer-top {
     padding: 2.6rem 0;
   }
+  
+  .footer-list {
+    margin-right: 1rem;
+  }
+
+  .ns-first {
+    height: 20rem;
+  }
+
+  .ns-first .ns-content {
+    padding: 3.2rem 0rem 4.2rem;
+  }
+
+  .ns-content {
+    padding: 3.2rem 1rem 4.2rem;
+  }
+
+  .ns-title {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .ns-first-image {
+    right: 0;
+    width: 453px; 
+    height: 260px;
+  }
+
+  .ns-mid-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 
   .ns-store-item {
     width: calc(50% - 32px);
   }
 
-  .ns-review-item {
-    width: calc(50% - 16px);
+  .ns-store-name {
+    font-size: 1.1rem;
+  }
+
+  .thumbnail-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .ns-review-group {
+    width: calc(50% - 8px);
+  }
+
+  .ns-mid-bottom {
+    margin-top: 6rem;
+  }
+
+  .ns-mid-bottom .ns-title {
+    margin-bottom: 2rem;
   }
   
+  .ns-badge {
+    font-size: 0.75rem;
+  }
+
+  .ns-text-info {
+    font-size: 0.8rem;
+  }
+
+  .ns-review-detail {
+    padding-top: 0.2rem;
+  }
+
+  .ns-business {
+    margin-top: 3.8rem;
+    padding: 1.5rem 1.8rem;
+  }
+  
+  .ns-business-text {
+    justify-content: center;
+    padding-left: 2rem;
+  }
+  
+  .ns-business .ns-badge {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .ns-footer-top{
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
 }
 
 * {
@@ -277,7 +472,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-p {
+p, .ns-review-group {
   margin: 0;
 }
 
@@ -365,7 +560,7 @@ ul {
   margin: 0 0.8rem;
 }
 
-#navbarSupportedContent {
+#navbarSupportedContent, .ns-business-text {
   flex-grow: 1;
 }
 
@@ -422,10 +617,6 @@ input:focus {
   background-color: #f2f3f6;
 }
 
-.main {
-  padding-top: 4rem;
-}
-
 .home-first-content {
   justify-content: center;
   flex-shrink: 1;
@@ -439,9 +630,8 @@ input:focus {
 }
 
 .home-image-top img, .home-main-image-01 img, .home-main-image-02 img, .home-main-image-03 img {
-  width: auto;
-  height: 100%;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .home-mid-content {
@@ -488,12 +678,12 @@ input:focus {
   color: #868e96;
 }
 
-.home-topic-list {
+.home-topic-list, .ns-store, .ns-review {
   display: flex;
   flex-wrap: wrap;
 }
 
-.home-topic-link, .footer-link, .ns-store a {
+.home-topic-link, .footer-link, .ns-store a, .ns-review a {
   text-decoration: none;
 }
 
@@ -506,7 +696,7 @@ input:focus {
 }
 
 .footer-content {
-  width: 48rem;
+  max-width: 48rem;
   margin: 0 auto;
 }
 
@@ -515,19 +705,22 @@ input:focus {
   justify-content: space-between;
 }
 
-.footer-list {
+.footer-list, .ns-business-text {
   display: flex;
   flex-direction: column;
 }
 
-.footer-item {
-  margin: 1rem 1.3rem;
+.footer-button-group, .ns-business-content {
+  display: flex;
 }
 
 .footer-button {
   width: 147px;
   height: 44px;
   margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-button:hover {
@@ -561,7 +754,7 @@ input:focus {
   border: 0;
 }
 
-.footer-info {
+.footer-info, .ns-review-group {
   margin-bottom: 0.8rem;
 }
 
@@ -569,41 +762,30 @@ input:focus {
   margin-right: 0.8rem;
 }
 
-/* local_store */
-
-.ns-first {
-  height: 20rem;
-}
+/* nearby_store */
 
 .ns-content {
   max-width: 48rem;
   height: 100%;
   margin: 0 auto;
-  padding-top: 3.2rem;
 }
 
 .ns-first .ns-content {
   position: relative;
 }
 
-.ls-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.ns-first-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 453px; 
-  height: 260px;
-}
-
 .ns-title {
-  font-size: 2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
-  line-height: 1.5;
+}
+
+.ns-image {
+  width: 100%;
+}
+
+.ns-first-image {
+  position: absolute;
+  bottom: 0;
 }
 
 .ns-text {
@@ -620,10 +802,19 @@ input:focus {
   margin-bottom: 1rem;
 }
 
+.scroll-x {
+  overflow-x: scroll;
+}
+
+.scroll-x::-webkit-scrollbar {
+  /* 스크롤바 숨기기 */
+  display: none;
+}
+
 .ns-mid-group, .ns-store-group {
+  padding: 1rem;
   display: flex;
   justify-content: center;
-  padding: 1rem;
   margin: 0;
 }
 
@@ -635,7 +826,6 @@ input:focus {
   border: 1px solid #eaebee;
   border-radius: 25px;
   background-color: transparent;
-  padding: 0.5rem 1rem;
 }
 
 .ns-mid-button.active {
@@ -652,36 +842,106 @@ input:focus {
   background-color: #f2f3f6;
 }
 
-.ns-store {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.ns-store-info {
+.ns-store-info, .ns-review-detail {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+.ns-store-info-group {
+  width: 100%;
 }
 
 .ns-store-group {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0rem;
   line-height: 1.3;
 }
 
 .thumbnail-image {
-  width: 5rem;
-  height: 5rem;
   border: 1px solid #0000000d;
   border-radius: 50%;
 }
 
 .ns-store-name {
   font-weight: bold;
-  font-size: 1.1rem;
 }
 
-.ns-mid-bottom {
-  margin-top: 6rem;
+.ns-text-info {
+  color: #868B94;
+}
+
+.ns-user, .ns-review-store-info {
+  padding-left: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ns-user-id {
+  font-weight: bold;
+}
+
+.ns-badge {
+  background-color: #ff6f0f;
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 0.1rem 0.28rem;
+  margin-left: 0.3rem;
+  line-height: 1.5;
+}
+
+.ns-review-item, .ns-review-store {
+  border: 1px solid #eaebee;
+  border-radius: 7px;
+}
+
+.ns-review-item {
+  padding: 1rem;
+}
+
+.ns-review-thumbnail {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ns-review-store {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.ns-review-store-image {
+  width: 4rem;
+  height: 4rem;
+}
+
+.ns-review-store-info {
+  justify-content: center;
+}
+
+.ns-business {
+  background-color: #f7be6824;
+  border-radius: 7px;
+}
+
+.ns-business .ns-badge {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ns-footer-top{
+  display: flex;
+}
+
+.ns-footer-list {
+  margin-bottom: 0;
+  margin-right: 1.2rem;
+}
+
+.ns-footer-item {
+  margin: 0.9rem 1.5rem 0.9rem 0;
 }
