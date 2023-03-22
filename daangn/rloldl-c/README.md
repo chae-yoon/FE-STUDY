@@ -1,11 +1,23 @@
-# Week01
-### 중고거래
-- PC<br>
-![main_pc](./img/main_PC.png)
-- tablet
-
-![main_tablet](./img/main_tablet.png)
-
-### 동네가게
-- PC
-![nearby_store_PC](./img/ns_PC.png)
+# 당근마켓
+<details>
+<summary>중고거래</summary>
+<div>
+<h3>PC</h3>
+<img src="./img/main_pc.png">
+<h3>tablet</h3>
+<img src="./img/main_tablet.png">
+<h3>mobile</h3>
+<img src="./img/main_mobile.png">
+</div>
+</details>
+<details>
+<summary>동네가게</summary>
+<div>
+<h3>PC</h3>
+<img src="./img/ns_pc.png">
+<h3>tablet</h3>
+<img src="./img/ns_tablet.png">
+<h3>mobile</h3>
+<img src="./img/ns_mobile.png">
+</div>
+</details>
