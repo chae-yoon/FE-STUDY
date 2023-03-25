@@ -29,8 +29,8 @@
 <h3>PC</h3>
 <img src="./img/jobs_pc.png">
 <h3>tablet</h3>
-
+<img src="./img/jobs_tablet.png">
 <h3>mobile</h3>
-
+<img src="./img/jobs_mobile.png">
 </div>
 </details>
