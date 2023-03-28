@@ -58,11 +58,13 @@
         </section>
         <section class="main__dsc pt-4 pb-4">
             <div class="row w-75 d-flex flex-row-reverse mx-auto">
-                <div class="col-12 col-lg-6 my-auto mx-auto justify-content-center align-items-center">
+                <div class="col-12 col-lg-6 m-auto">
+                    <!-- mx-auto, my-auto 둘다 적용해야 한다면  m-auto로 설정. justify-content와 align-items는 flexbox 설정한 부모코드에서만 사용 가능 by 용진님-->
                     <h2 class="fw-bold mt-3">우리 동네<br>중고 직거래 마켓</h2>
                     <p>동네 주민들과 가깝고 따뜻한 거래를<br> 지금 경험해보세요.</p>
                     <div class="d-flex flex-wrap d-grid gap-2">
                         <button type="button" class="btn col-8 col-lg-4 bg-body-secondary btn-lg mb-3">
+                            <!-- 텍스트 줄바꿈 문제 해결 방법 - min-width 활용할 것 by 은비님 -->
                             <a class="text-decoration-none text-black fw-bold" href="">인기매물 보기</a>
                         </button>
                         <button type="button" class="btn col-8 col-lg-5 bg-body-secondary btn-lg mb-3">
@@ -137,7 +139,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="mb-2">
-                            <img class="rounded" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/d533be8be038162650c7d8954974976a6053370b5fb663aabfdb7319a52b5a19.webp?q=82&s=300x300&t=crop" alt="">
+                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/d533be8be038162650c7d8954974976a6053370b5fb663aabfdb7319a52b5a19.webp?q=82&s=300x300&t=crop" alt="">
                         </div>
                         <div class="text-start">
                             <h5>시골집 팝니다</h5>
