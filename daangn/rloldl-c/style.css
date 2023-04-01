@@ -234,6 +234,12 @@ ul {
   padding-right: 2.5rem;
 }
 
+@media (max-width: 768px) {
+  #offcanvasMenu {
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 767.9px) and (max-width: 992px) {
   #offcanvas-search-toggler {
     display: inline-block !important;
