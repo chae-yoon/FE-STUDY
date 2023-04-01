@@ -53,7 +53,7 @@
               </ul>
             </div>
           </div>
-          <button class="offcanvas-toggler offcanvas-search-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="offcanvas-toggler" id="offcanvas-search-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-search"></i>
           </button>
           <div class="offcanvas offcanvas-top d-md-none" id="offcanvasSearch" role="search">
@@ -455,8 +455,7 @@
     
     <footer class="home-footer">
       <div class="footer-content">
-        <!-- PC -->
-        <section class="d-none d-md-flex footer-top">
+        <section class="footer-top">
           <div class="footer-list-group d-flex">
             <ul class="footer-list">
               <li class="footer-item font-small"><a class="home-topic-link" href="">중고거래</a></li>
@@ -466,7 +465,7 @@
               <li class="footer-item font-small"><a class="home-topic-link" href="">중고차 직거래</a></li>
             </ul>
             <ul class="footer-list">
-              <li class="footer-item font-small"><a class="home-topic-link" href="">당근비즈니스</a></li>
+              <li class="footer-item font-small"><a class="home-topic-link" href="">당근비지니스</a></li>
               <li class="footer-item font-small"><a class="home-topic-link" href="">채팅하기</a></li>
             </ul>
             <ul class="footer-list me-5 me-md-0">
@@ -475,46 +474,28 @@
               <li class="footer-item font-small"><a class="home-topic-link" href="">인재 채용</a></li>
             </ul>
           </div>
-          <div class="footer-download">
+          <!-- PC -->
+          <div class="footer-download d-none d-md-block">
             <p class="fw-bold font-small">당근 마켓 앱 다운로드</p>
             <div class="footer-button-group">
               <button type="button" class="btn footer-button"><i class="bi bi-apple me-1 fs-5"></i><span class="font-small">App Store</span></button>
               <button type="button" class="btn footer-button ms-2"><i class="bi bi-google-play me-1 fs-5"></i><span class="font-small">Google Play</span></button>
             </div>
           </div>
-        </section>
-        <!-- tablet -->
-        <section class="d-md-none footer-top">
-          <div class="footer-list-group d-flex">
-            <ul class="footer-list">
-              <li class="footer-item font-small"><a class="home-topic-link" href="">중고거래</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">동네가게</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">당근알바</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">부동산 직거래</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">중고차 직거래</a></li>
-            </ul>
-            <ul class="footer-list">
-              <li class="footer-item font-small"><a class="home-topic-link" href="">당근비즈니스</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">채팅하기</a></li>
-            </ul>
-            <ul class="footer-list me-5 me-md-0">
-              <li class="footer-item font-small"><a class="home-topic-link" href="">자주 묻는 질문</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">회사 소개</a></li>
-              <li class="footer-item font-small"><a class="home-topic-link" href="">인재 채용</a></li>
-            </ul>
-          </div>
-          <div class="d-flex">
-            <span class="fw-bold font-xs">당근마켓 앱 다운로드</span>
-            <span class="fw-bold font-xs"><a class="footer-app" href="">iOS<i class="ms-2 bi bi-arrow-up-right"></i></a></span>
-            <span class="fw-bold font-xs"><a class="footer-app" href="">Android<i class="ms-2 bi bi-arrow-up-right"></i></a></span>
+          <!-- tablet -->
+          <div class="footer-download d-flex d-md-none">
+            <span class="fw-bold font-small">당근 마켓 앱 다운로드</span>
+            <span class="fw-bold font-small"><a class="footer-app" href="">iOS<i class="ms-2 bi bi-arrow-up-right"></i></a></span>
+            <span class="fw-bold font-small"><a class="footer-app" href="">Android<i class="ms-2 bi bi-arrow-up-right"></i></a></span>
+            
           </div>
         </section>
-
         <section class="footer-bottom flex-column flex-md-row">
           <div class="color-gray">
             <div class="footer-info">
               <div>
                 <span class="font-xs"><span class="fw-bold">대표</span> 김용현, 황도연</span>
+                <span></span>
                 <span class="font-xs"><span class="fw-bold">사업자번호</span> 375-87-00088</span>
               </div>
               <div>
@@ -525,6 +506,7 @@
               </div>
               <div>
                 <span class="font-xs"><span class="fw-bold">전화</span> 1544-9796</span>
+                <span></span>
                 <span class="font-xs"><span class="fw-bold">고객문의</span> cs@daangnservice.com</span>
               </div>
             </div>
@@ -534,7 +516,7 @@
               <a class="footer-link font-xs color-gray" href="">PR 문의</a>
               <a class="footer-link font-xs color-gray" href="">IR 문의</a>
             </div>
-            <div class="footer-terms fw-bold">
+            <div class="fw-bold">
               <a class="footer-link font-xs color-gray" href="">이용약관</a>
               <a class="footer-link font-xs" style="color: #4d5159;" href="">개인정보처리방침</a>
               <a class="footer-link font-xs color-gray" href="">위치기반서비스 이용약관</a>
