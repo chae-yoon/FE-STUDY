@@ -34,3 +34,15 @@
 <img src="./img/jobs_mobile.png">
 </div>
 </details>
+
+<details>
+<summary>부동산 직거래</summary>
+<div>
+<h3>PC</h3>
+<img src="./img/realty_pc.png">
+<h3>tablet</h3>
+<img src="./img/realty_tablet.png">
+<h3>mobile</h3>
+<img src="./img/realty_mobile.png">
+</div>
+</details>
