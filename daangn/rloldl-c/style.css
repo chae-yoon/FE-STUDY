@@ -230,6 +230,10 @@ ul {
   flex-grow: 1;
 }
 
+#offcanvasMenu {
+  padding-right: 2.5rem;
+}
+
 @media (min-width: 767.9px) and (max-width: 992px) {
   #offcanvas-search-toggler {
     display: inline-block !important;
@@ -710,6 +714,10 @@ input:focus {
   line-height: 1;
 }
 
+.footer-download-toggle {
+  padding: 0;
+}
+
 .dropdown-toggle::after {
   border: 0;
 }
@@ -796,7 +804,7 @@ input:focus {
   }
 }
 
-.ns-first-image, .jobs-first-image {
+.ns-first-image, .jobs-first-image, .realty-first-image {
   position: absolute;
   bottom: 0;
 }
@@ -1134,15 +1142,16 @@ input:focus {
 
 .ns-footer-list {
   margin-bottom: 0;
-  margin-right: 2rem;
+  margin-right: 2.8rem;
 }
 
 @media (max-width: 768px) {
   .ns-footer-list-group {
     margin-top: 0.5rem;
   }
-
+  
   .ns-footer-list {
+    margin-right: 1rem;
     width: 26%;
   }
 }
@@ -1155,7 +1164,7 @@ input:focus {
 /* jobs */
 /* jobs-first */
 
-.jobs-first {
+.jobs-first-bg {
   background-color: #ffe2d2;
 }
 
@@ -1164,7 +1173,7 @@ input:focus {
   padding-top: 3rem;
 }
 
-.jobs-first-image {
+.jobs-first-image, .realty-first-image {
   left: 50%;
   right: 0;
   width: 603px;
@@ -1177,7 +1186,7 @@ input:focus {
     height: 18.5rem;
   }
 
-  .jobs-first-image {
+  .jobs-first-image, .realty-first-image {
     width: 469px;
     overflow: hidden;
     left: 50%;
@@ -1362,4 +1371,29 @@ input:focus {
 .jobs-bottom-banner-image {
   width: 54px;
   margin-right: 1.8rem;
+}
+
+/* realty */
+/* realty-first */
+.realty-bg {
+  background-color: #d2edfa;
+}
+
+.realty-first-image {
+  width: 30.3rem;
+  height: 16rem;
+  bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .realty-first-image {
+    width: 18.5rem;
+    height: auto;
+    bottom: 0;
+  }
+}
+
+.realty-banner-image {
+  width: 4.5rem;
+  margin-right: 1.5rem;
 }
