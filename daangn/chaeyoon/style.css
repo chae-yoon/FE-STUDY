@@ -971,3 +971,246 @@ footer {
 .jobs-basic {
   color: #212124;
 }
+
+/* Section 1 */
+.jobs-sec1-basic__style {
+  background-color: #ffe2d2;
+  padding: 0 1rem;
+}
+
+.jobs-sec1-md__style {
+  max-width: 768px;
+  height: 315px;
+  padding-top: 3rem;
+}
+
+.jobs-sec1-md-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.jobs-sec1-md-img {
+  width: 603px;
+}
+
+.jobs-sec1__style {
+  height: 294px;
+  padding: 1.5rem 0 0; 
+}
+
+.jobs-sec1-title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.jobs-sec1-img {
+  width: 469px;
+  margin-left: 3rem;
+}
+
+/* Section 2 */
+.jobs-sec2__style {
+  max-width: 800px;
+  padding: 0 1rem;
+  margin-bottom: 8rem;
+}
+
+.nbs-sec2-md-title {
+  font-size: 1.625rem;
+  margin: 3.75rem 0 1.25rem;
+}
+
+.nbs-sec2-title {
+  font-size: 1.25rem;
+  margin: 2.5rem 0 .75rem;
+}
+
+.popular__style {
+  padding: 1.25rem 1rem;
+}
+
+.popular-img {
+  border-radius: .5rem;
+  width: 108px;
+  height: 108px;
+}
+
+.popular-img img {
+  border-radius: .5rem;
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+}
+
+.popular-title {
+  font-size: 1.125rem;
+  line-height: 1.32;
+  margin-bottom: .25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.popular-rigion {
+  font-size: .875rem;
+  line-height: 1.4;
+  margin-bottom: .25rem;
+  color: #868b94;
+}
+
+.popular-price {
+  font-size: 1rem;
+  line-height: 1.36;
+  font-weight: 700;
+}
+
+.jobs-bn__style {
+  max-width: 832px; 
+}
+
+.popular-bn__style {
+  margin: 2.75rem auto;
+  background-color: #ff6f0f24;
+  padding: 1.5rem 1.375rem 1.5rem 2rem;
+  color: #212124;
+  border-radius: .25rem;
+}
+
+.popular-bn-bg {
+  background-color: #009ceb1a;
+}
+
+.popular-bn-icon {
+  width: 54px;
+}
+
+.popular-bn-title__style {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn-popular-bn {
+  font-size: .875rem;
+  font-weight: 700;
+  padding: .5rem 1rem;
+  background-color: #ff6f0f;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+}
+
+@media (max-width: 767px) {
+  .popular-img {
+    width: 96px;
+    height: 96px;
+  }
+  
+  .popular-img img {
+    width: 96px;
+    height: 96px;
+  }
+  
+  .popular-title {
+    font-size: 1rem;
+    line-height: 1.32;
+  }
+  
+  .popular-rigion {
+    font-size: .813rem;
+    line-height: 1.4;
+  }
+  
+  .popular-price {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+
+  .popular-bn__style {
+    margin: 2.5rem auto;
+    padding: 1.5rem;
+  }
+
+  .popular-bn-title__style {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.36;
+  }
+
+  .btn-popular-bn {
+    font-size: .688rem;
+    padding: .5rem .625rem;
+    font-weight: 400;
+    margin-top: .75rem;
+  }
+}
+
+/*  */
+/* Realty Page */
+/*  */
+
+.realty-basic {
+  color: #212124;
+}
+
+
+/* Section 1 */
+.realty-sec1-basic__style {
+  background-color: #d2edfa;
+  padding: 0 1rem;
+}
+
+.realty-sec1-md__style {
+  max-width: 768px;
+  height: 315px;
+  padding-top: 3rem;
+}
+
+.realty-sec1-md-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.realty-sec1-md-img {
+  width: 485px;
+}
+
+.realty-sec1__style {
+  height: 294px;
+  padding: 1.5rem 0 0; 
+}
+
+.realty-sec1-title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.realty-sec1-img {
+  width: 296px;
+  margin-left: 3rem;
+}
+
+/* Section 2 */
+.realty-sec2__style {
+  max-width: 800px;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+/*  */
+/* Car Page */
+/*  */
+
+.car-sec1-md-img {
+  width: 400px;
+}
+
+.car-sec1-img {
+  width: 280px;
+}
+
