@@ -46,3 +46,15 @@
 <img src="./img/realty_mobile.png">
 </div>
 </details>
+
+<details>
+<summary>중고차 직거래</summary>
+<div>
+<h3>PC</h3>
+<img src="./img/car_pc.png">
+<h3>tablet</h3>
+<img src="./img/car_tablet.png">
+<h3>mobile</h3>
+<img src="./img/car_mobile.png">
+</div>
+</details>
