@@ -1,0 +1,241 @@
+/* Public */
+.first-box{
+  width: 250px;
+  height: 300px;
+}
+
+.glanlink {color: black;}
+
+.footer-box{
+  width: 131.47px;
+  height: 51.6px;
+}
+.main-a{
+  text-decoration: none;
+  color: black;
+}
+.ft:hover{
+  text-decoration: underline;
+}
+
+
+.footer-a{
+  text-decoration: none;
+  color: black;
+}
+
+.footer-a-a{
+  text-decoration: none;
+  color: lightslategray;
+  font-size: 13px;
+  font-weight: bold;
+}
+li{
+  list-style: none;
+}
+
+
+.textover_one {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+.textover {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .textover-200 {
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .textover-second {
+    width: 342px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  } 
+  .textover-second-md-down {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  } 
+  .nav-search-search{
+    background-color: #f2f3f6;
+    color: #212124;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 9px 12px;
+  }
+  .nav-search{
+    font-size: 0.875rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+ .nav-a-style{
+  padding: 0px;
+ }
+
+  /* 다양한 동네가게를 볼 수 있어요 내용 */
+  .all_page_size{
+    width: 738px;
+  }
+
+  .ul_style {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+  }
+
+  .botn_style{
+    width: 368px;
+    height: 124.77px;
+    color: black;
+  }
+
+  .img_style{
+    width: 80px; 
+    height: 80px; 
+    padding: 0; 
+    border-radius: 50%; 
+    margin-left: 15px;
+  }
+
+  .span_story{
+    font-size: 12px; 
+    text-align: start; 
+    line-height: 25px; 
+    color: gray;
+  }
+
+  .span_sub{
+    font-size: 12px; 
+    color: #868B94;
+  }
+  .nav-bar{
+    max-width: 1200px;
+    padding: 12px 16px;
+  }
+  @media (max-width: 768px) {
+    .my-div {
+      /* remove classes */
+      justify-content: unset !important;
+      flex-wrap: unset !important;
+      width: auto !important;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+      width: 400px !important;
+      /* add classes */
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .my-h2 {
+      text-align: start !important;
+      width: 450px !important;
+    }
+    .my-container{
+      width: 100% !important;
+    }
+    .card__style {
+      padding: 24px 0;
+      max-width: 90%;
+    }
+   .md-img-style{
+    width : 64px;
+    height: 64px;
+    padding: 0;
+    margin-left: 50px;
+    border-radius: 50%;
+   }
+   .md-btn-style{
+    width: 95%; 
+    height: 124.77px; 
+    color: black;
+   }
+   .md-style{
+    margin-left: 30px
+   }
+   .md-div-style{
+    width : 98%
+   }
+  }
+
+  /* md 이하 */
+  ._page_md_size{
+    width: 80%;
+  }
+
+  /* 동네 이웃이 남긴 후기를 찾아보세요 */
+
+  .review_div_main {
+    margin-top: 64px; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .review_btn{
+    width: 376px;
+    height: 212px;
+    color: black;
+  }
+
+  .review_img{
+    width: 36px; 
+    height: 36px;
+    padding: 0; 
+    border-radius: 50%;
+  }
+
+  .review_span_custom{
+    border: 1px solid Orange; 
+    font-size: 0.625rem; 
+    width: 28px; 
+    height: 17.5px; 
+    border-radius: 100px; 
+    background-color: #ff6f0f; 
+    color : white; 
+    line-height: 15px;
+  }
+
+  .review_span_sub{
+    font-size: 12px; 
+    text-align: start; 
+    line-height: 25px; 
+    color: gray;
+  }
+
+  .fs-size-title{
+    font-size: 1rem;
+  }
+
+  .fs-size-sub{
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
