@@ -50,10 +50,19 @@ text-overflow: ellipsis;
 .bg-dark-pale-peach {
     background-color: #F7F1EB;
 }
+.bg-alba {
+    background-color: #FFE2D2
+}
+.bg-alba__userguide {
+    background-color: #EBF5FD;
+}
 .small-gray {
     font-size: small;
     color: #939BA2;
 }
 .bg-orange {
     background-color: orange;
+}
+.bg-real-estate {
+    background-color: #D2EDFA;
 }
