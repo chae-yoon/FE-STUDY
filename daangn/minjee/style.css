@@ -31,6 +31,13 @@
     width: 30px;
     height: 30%;
 }
+.text-trunc_twoline {
+    display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 /* footer 설정 */
 
 /* background-color 설정 */
@@ -43,10 +50,19 @@
 .bg-dark-pale-peach {
     background-color: #F7F1EB;
 }
+.bg-alba {
+    background-color: #FFE2D2
+}
+.bg-alba__userguide {
+    background-color: #EBF5FD;
+}
 .small-gray {
     font-size: small;
     color: #939BA2;
 }
 .bg-orange {
     background-color: orange;
+}
+.bg-real-estate {
+    background-color: #D2EDFA;
 }
