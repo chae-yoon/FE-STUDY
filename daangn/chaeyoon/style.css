@@ -1214,3 +1214,187 @@ footer {
   width: 280px;
 }
 
+/*  */
+/* Trust Page */
+/*  */
+
+/* Section 1 */
+.trust-sec1__style {
+  max-width: 760px;
+  height: 650px;
+}
+
+.trust-sec1-title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.trust-sec1-description {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.trust-sec1-img {
+  width: 760px;
+}
+
+@media (max-width: 991px) {
+  .trust-sec1__style {
+    min-width: 360px;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .trust-sec1-title {
+    font-size: 2.125rem;
+    padding-top: 3.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .trust-sec1-description {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .trust-sec1-img {
+    width: 532px;
+  }
+}
+
+/* Section 2 */
+
+.trust-sec2__style {
+  max-width: 960px;
+  padding: 6.25rem 1.5rem;
+}
+
+.trust-sec2-title {
+  font-size: 2.125rem;
+}
+
+.trust-sec2-rows {
+  margin: 5rem 0;
+  gap: 3.75rem;
+}
+
+.trust-sec2-img {
+  padding: 0 3.75rem;
+}
+
+.trust-sec2-contents-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.trust-sec2-contents-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.trust-sec2-contents-link {
+  text-decoration: none;
+  color: #FF8A3D;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  .trust-sec2__style {
+    min-width: 360px;
+    padding: 4.5rem 1.5rem 0;
+  }
+  
+  .trust-sec2-title {
+    font-size: 1.5rem;
+  }
+
+  .trust-sec2-rows {
+    margin: 4rem 0;
+    gap: 2.5rem;
+  }
+
+  .trust-sec2-row {
+    gap: 2.5rem;
+  }
+
+  .trust-sec2-img {
+    margin: 0 auto;
+    padding: 0;
+    width: 312px;
+  }
+
+  .trust-sec2-contents-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* Section 3 */
+.trust-sec3__style {
+  padding: 6.25rem 1.5rem;
+}
+
+.trust-sec3-container {
+  max-width: 960px;
+  padding: 6.25rem 1.5rem;
+}
+
+.trust-sec3-title {
+  font-size: 2.125rem;
+}
+
+.trust-sec3-img {
+  width: 250px;
+}
+
+.trust-sec3-contents {
+  margin: 5rem 0;
+  column-gap: 11.875rem;
+  row-gap: 5rem;
+}
+
+.trust-sec3-content {
+  flex-basis: 330px;
+}
+
+.trust-sec3-contents-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.trust-sec3-contents-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .trust-sec3-container {
+    min-width: 360px;
+    padding: 4.5rem 1.5rem;
+  }
+  
+  .trust-sec3-title {
+    font-size: 1.5rem;
+  }
+
+  .trust-sec3-img {
+    margin: 0 auto;
+  }
+
+  .trust-sec3-contents {
+    margin: 4rem 0;
+    row-gap: 4rem;
+  }
+
+  .trust-sec3-content {
+    flex-basis: auto;
+  }
+
+  .trust-sec3-contents-title {
+    font-size: 1.25rem;
+  }
+}
