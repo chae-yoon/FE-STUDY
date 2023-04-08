@@ -18,7 +18,7 @@
         <a class="navbar-brand pt-0" href="#">
           <img src="./img/logo.svg" alt="logo image">
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse">
           <ul class="navbar-nav d-flex flex-wrap">
             <li class="nav-item">
               <a class="nav-link fw-semibold active" aria-current="page" href="#">중고거래</a>
@@ -27,13 +27,13 @@
               <a class="nav-link fw-semibold" href="./pages/nearby-stores.html">동네가게</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">알바</a>
+              <a class="nav-link fw-semibold" href="./pages/jobs.html">알바</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">부동산 직거래</a>
+              <a class="nav-link fw-semibold" href="./pages/realty.html">부동산 직거래</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">중고차 직거래</a>
+              <a class="nav-link fw-semibold" href="./pages/car.html">중고차 직거래</a>
             </li>
           </ul>
         </div>
@@ -50,8 +50,8 @@
           <button type="button" id="close-icon" class="btn btn-icon d-none m-0 border-0" data-bs-target="#menuModal" data-bs-dismiss="offcanvas" aria-label="Close">
             <img src="./img/close-icon.svg" alt="close-icon">
           </button>
+          <a href="#" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
         </div>
-        <button type="button" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</button>
       </div>
     </nav>
 
@@ -60,11 +60,11 @@
       <div class="modal-dialog vw-100">
         <div class="modal-content w-100 border-0">
           <div class="modal-header border-0">
-            <input class="form-control border-0 navbar__search-input" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style="font-size: 14px;">
+            <input class="form-control border-0 navbar__search-input navbar__search-input-modal" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
             <button type="button" class="btn btn-cancel fs-6" data-bs-dismiss="offcanvas" aria-label="Close">취소</button>
           </div>
-          <div class="modal-body text-body-secondary" style="font-size: 14px;">
-            <h3 class="fw-semibold m-0 pb-1" style="font-size: 14px;">추천</h3>
+          <div class="modal-body text-body-secondary modal-body__style">
+            <p class="fw-semibold m-0 pb-1">추천</p>
             <div class="row row-cols-2">
               <div class="py-3 border-bottom col">죽전 치과</div>
               <div class="py-3 border-bottom col">잠실 냉장고</div>
@@ -79,61 +79,61 @@
     </div>
   
     <!-- Menu Modal -->
-    <div class="offcanvas offcanvas-top border-top" tabindex="-1" id="menuModal" aria-labelledby="offcanvasTopLabel">
-      <ul class="navbar-nav d-flex flex-wrap h-100">
+    <div class="offcanvas offcanvas-top border-top " tabindex="-1" id="menuModal" aria-labelledby="offcanvasTopLabel">
+      <ul class="navbar-nav d-flex flex-wrap h-100 menu-modal">
         <li class="nav-item p-3">
-          <a class="nav-link fw-light active" aria-current="page" href="#">중고거래</a>
+          <a class="nav-link active" aria-current="page" href="#">중고거래</a>
         </li>
         <li class="nav-item p-3">
-          <a class="nav-link fw-light" href="./pages/nearby-stores.html">동네가게</a>
+          <a class="nav-link" href="./pages/nearby-stores.html">동네가게</a>
         </li>
         <li class="nav-item p-3">
-          <a class="nav-link fw-light" href="#">알바</a>
+          <a class="nav-link" href="./pages/jobs.html">알바</a>
         </li>
         <li class="nav-item p-3">
-          <a class="nav-link fw-light" href="#">부동산 직거래</a>
+          <a class="nav-link" href="./pages/realty.html">부동산 직거래</a>
         </li>
         <li class="nav-item p-3">
-          <a class="nav-link fw-light" href="#">중고차 직거래</a>
+          <a class="nav-link" href="./pages/car.html">중고차 직거래</a>
         </li>
       </ul>
     </div>
 
-    <main style="min-width: 360px;">
+    <main>
       <!-- Section1 -->
-      <section style="background-color: #FBF7F2; color: #212529;">
+      <section class="bg-beige position-relative">
         <!-- Over 1200px -->
-        <div class="d-none d-xl-flex mx-auto position-relatvie" style="max-width: 1024px; height: 720px;">
+        <div class="d-none d-xl-flex mx-auto sec1-xl__style">
           <div class="my-auto">
-            <h1 class="fw-bold" style="margin-bottom: 32px; font-size: 48px; line-height: 1.3;">당신 근처의<br>당근마켓</h1>
+            <h1 class="fw-bold sec1-xl-title">당신 근처의<br>당근마켓</h1>
             <p>중고 거래부터 동네 정보까지, 이웃과 함께해요.<br>가깝고 따뜻한 당신의 근처를 만들어요.</p>
           </div>
           <div>
             <picture>
-              <source srcset="./img/main/01.webp" type="image/svg+xml">
-              <img src="./img/main/01.png" class="img-fluid position-absolute" alt="01 image" style="width: 804px; height: 685px; right: 32px; margin-top: 34px;">
+              <source srcset="./img/main/01.webp" type="image/webp">
+              <img src="./img/main/01.png" class="img-fluid position-absolute bottom-0 end-0 sec1-xl-img" alt="01 image">
             </picture>
           </div>
         </div>
         <!-- Under 1200px -->
-        <div class="d-xl-none text-center" style="height: 570px; padding-top: 56px;">
+        <div class="d-xl-none text-center position-relative sec1__style">
           <div class="my-auto">
-            <h1 class="fw-bold" style="margin-bottom: 16px; font-size: 34px; line-height: 1.35;">당신 근처의<br>당근마켓</h1>
+            <h1 class="fw-bold sec1-title">당신 근처의<br>당근마켓</h1>
             <p>중고 거래부터 동네 정보까지, 이웃과 함께해요.<br>가깝고 따뜻한 당신의 근처를 만들어요.</p>
           </div>
           <picture>
-            <source srcset="./img/main/01-mobile.webp" type="image/svg+xml">
-            <img src="./img/main/01-mobile.png" class="img-fluid" alt="01 image" style="width: 328px; height: 342px;">
+            <source srcset="./img/main/01-mobile.webp" type="image/webp">
+            <img src="./img/main/01-mobile.png" class="img-fluid sec1-img position-absolute bottom-0 start-50 translate-middle-x" alt="01 image">
           </picture>
         </div>
       </section>
       <!-- Section2 -->
-      <section style="color: #212529;">
+      <section>
         <!-- Over 1200px -->
-        <div class="d-none d-xl-flex flex-row-reverse justify-content-between mx-auto" style="max-width: 1024px; height: 804px;">
+        <div class="d-none d-xl-flex flex-row-reverse justify-content-between mx-auto sec2-xl__style">
           <div class="my-auto">
-            <h1 class="fw-bold" style="margin-bottom: 24px; font-size: 40px; line-height: 1.3;">우리 동네<br>중고 직거래 마켓</h1>
-            <p class="p-0" style="margin-bottom: 32px;">동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
+            <h1 class="fw-bold sec2-xl-title">우리 동네<br>중고 직거래 마켓</h1>
+            <p class="p-0 sec2-xl-content">동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
             <div>
               <button type="button" class="btn btn-sec2 fw-bold me-3">인기매물 보기</button>
               <button type="button" class="btn btn-sec2 fw-bold">믿을 수 있는 중고거래</button>
@@ -141,34 +141,34 @@
           </div>
           <div class="my-auto">
             <picture>
-              <source srcset="./img/main/02.webp" type="image/svg+xml">
-              <img src="./img/main/02.png" class="img-fluid" alt="02 image" style="width: 532px;">
+              <source srcset="./img/main/02.webp" type="image/webp">
+              <img src="./img/main/02.png" class="img-fluid sec2-xl-img" alt="02 image">
             </picture>
           </div>
         </div>
         <!-- Under 1200px -->
-        <div class="d-xl-none text-center" style="height: 854px; padding: 32px;">
-          <div class="mx-auto" style="width: 230px;">
-            <h1 class="fw-bold" style="margin-top: 72px; margin-bottom: 16px; font-size: 28px; line-height: 1.35;">우리 동네<br>중고 직거래 마켓</h1>
+        <div class="d-xl-none text-center sec2__style">
+          <div class="mx-auto">
+            <h1 class="fw-bold sec2-title">우리 동네<br>중고 직거래 마켓</h1>
             <p>동네 주민들과 가깝고 따뜻한 거래를<br>지금 경험해보세요.</p>
             <div class="d-flex flex-column">
-              <button type="button" class="btn btn-sec2 fw-bold" style="margin-bottom: 12px; padding: 10.5px 36px;">인기매물 보기</button>
-              <button type="button" class="btn btn-sec2 fw-bold" style="padding: 10.5px 36px;">믿을 수 있는 중고거래</button>
+              <button type="button" class="btn btn-sec2 fw-bold sec2-btn">인기매물 보기</button>
+              <button type="button" class="btn btn-sec2 fw-bold sec2-btn">믿을 수 있는 중고거래</button>
             </div>
           </div>
           <picture>
-            <source srcset="./img/main/02-mobile.webp" type="image/svg+xml">
-            <img src="./img/main/02-mobile.png" class="img-fluid" alt="02 image" style="width: 328px;">
+            <source srcset="./img/main/02-mobile.webp" type="image/webp">
+            <img src="./img/main/02-mobile.png" class="img-fluid sec2-img" alt="02 image">
           </picture>
         </div>
       </section>
       <!-- Section3 -->
-      <section style="background-color: #E6F3E6; color: #212529;">
+      <section class="bg-green">
         <!-- Over 1200px -->
-        <div class="d-none d-xl-flex mx-auto align-items-center justify-content-between" style="max-width: 1024px; height: 860px;">
-          <div class="my-auto" style="width: 478px;">
-            <h1 class="fw-bold" style="margin-bottom: 24px; font-size: 40px; line-height: 1.3;">이웃과 함께 하는<br>동네생활</h1>
-            <p class="p-0" style="margin-bottom: 40px;">우리 동네의 다양한 이야기를 이웃과 함께 나누어요.</p>
+        <div class="d-none d-xl-flex mx-auto align-items-center justify-content-between sec3-xl__style">
+          <div class="my-auto">
+            <h1 class="fw-bold sec3-xl-title">이웃과 함께 하는<br>동네생활</h1>
+            <p class="p-0 sec3-xl-content">우리 동네의 다양한 이야기를 이웃과 함께 나누어요.</p>
             <div class="row row-cols-3">
               <div class="col">
                 <img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-1-9226479b836cdc960291ffda91ace46c90a632f6cc868aa8983b3624e662a924.svg" alt="icon">
@@ -189,61 +189,61 @@
           </div>
           <div>
             <picture>
-              <source srcset="./img/main/03.webp" type="image/svg+xml">
-              <img src="./img/main/03.png" class="img-fluid" alt="03 image" style="width: 546px;">
+              <source srcset="./img/main/03.webp" type="image/webp">
+              <img src="./img/main/03.png" class="img-fluid sec3-xl-img" alt="03 image">
             </picture>
           </div>
         </div>
         <!-- Under 1200px -->
-        <div class="d-xl-none text-center" style="height: 724px; padding: 32px;">
-          <div class="mx-auto" style="width: 230px;">
-            <h1 class="fw-bold" style="margin-top: 72px; margin-bottom: 16px; font-size: 28px; line-height: 1.35;">이웃과 함께 하는<br>동네생활</h1>
+        <div class="d-xl-none text-center sec3__style">
+          <div class="mx-auto">
+            <h1 class="fw-bold sec3-title">이웃과 함께 하는<br>동네생활</h1>
             <p>우리 동네의 다양한 이야기를<br>이웃과 함께 나누어요.</p>
           </div>
           <picture>
-            <source srcset="./img/main/03.webp" type="image/svg+xml">
-            <img src="./img/main/03.png" class="img-fluid" alt="02 image" style="width: 328px;">
+            <source srcset="./img/main/03.webp" type="image/webp">
+            <img src="./img/main/03.png" class="img-fluid sec3-img" alt="03 image">
           </picture>
         </div>
       </section>
       <!-- Section4 -->
-      <section style="color: #212529;">
+      <section>
         <!-- Over 1200px -->
-        <div class="d-none d-xl-flex flex-row-reverse justify-content-between mx-auto" style="max-width: 1024px; height: 855px;">
+        <div class="d-none d-xl-flex flex-row-reverse justify-content-between mx-auto sec4-xl__style">
           <div class="my-auto">
-            <h1 class="fw-bold" style="margin-bottom: 24px; font-size: 40px; line-height: 1.3;">내 근처에서 찾는<br>동네가게</h1>
-            <p class="p-0" style="margin-bottom: 32px;">우리 동네 가게를 찾고 있나요?<br>동네 주민이 남긴 진짜 후기를 함께 확인해보세요!</p>
+            <h1 class="fw-bold sec4-xl-title">내 근처에서 찾는<br>동네가게</h1>
+            <p class="p-0 sec4-xl-content">우리 동네 가게를 찾고 있나요?<br>동네 주민이 남긴 진짜 후기를 함께 확인해보세요!</p>
             <div>
               <button type="button" class="btn btn-sec2 fw-bold me-3">당근마켓 동네가게 찾기</button>
             </div>
           </div>
           <div class="my-auto">
             <picture>
-              <source srcset="./img/main/04.webp" type="image/svg+xml">
-              <img src="./img/main/04.png" class="img-fluid" alt="04 image" style="width: 526px;">
+              <source srcset="./img/main/04.webp" type="image/webp">
+              <img src="./img/main/04.png" class="img-fluid sec4-xl-img" alt="04 image">
             </picture>
           </div>
         </div>
         <!-- Under 1200px -->
-        <div class="d-xl-none text-center" style="height: 830px; padding: 32px;">
-          <div class="mx-auto" style="width: 320px;">
-            <h1 class="fw-bold" style="margin-top: 72px; margin-bottom: 16px; font-size: 28px; line-height: 1.35;">내 근처에서 찾는<br>동네가게</h1>
+        <div class="d-xl-none text-center sec4__style">
+          <div class="mx-auto">
+            <h1 class="fw-bold sec4-title">내 근처에서 찾는<br>동네가게</h1>
             <p>우리 동네 가게를 찾고 있나요?<br>동네 주민이 남긴 진짜 후기를 함께 확인해보세요!</p>
             <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-sec2 fw-bold" style="padding: 10.5px 36px; width: 244px;">당근마켓 동네가게 찾기</button>
+              <button type="button" class="btn btn-sec2 fw-bold sec4-btn">당근마켓 동네가게 찾기</button>
             </div>
           </div>
           <picture>
-            <source srcset="./img/main/04.webp" type="image/svg+xml">
-            <img src="./img/main/04.png" class="img-fluid" alt="02 image" style="width: 328px;">
+            <source srcset="./img/main/04.webp" type="image/webp">
+            <img src="./img/main/04.png" class="img-fluid sec4-img" alt="02 image">
           </picture>
         </div>
       </section>
       <!-- Section5 -->
-      <section class="d-none d-xl-block" style="background-color: #F8F9FA; color: #212529; padding: 60px 0;">
+      <section class="d-none d-xl-block bg-gray">
         <!-- Over 1200px -->
-        <div class="d-none d-xl-block mx-auto" style="max-width: 1024px; height: 907px; margin: 60px auto 120px;">
-          <h1 class="fw-bold text-center" style="margin-bottom: 80px; font-size: 40px;">중고거래 인기매물</h1>
+        <div class="d-none d-xl-block mx-auto sec5-xl__style">
+          <h1 class="fw-bold text-center sec5-xl-title">중고거래 인기매물</h1>
           <div class="row row-cols-4">
             <div class="col p-0">
               <div class="card card__style">
@@ -463,12 +463,12 @@
               </div>
             </div>
           </div>
-          <a class="fw-bold d-block text-center" href="#" style="color: #212529;">인기매물 더 보기</a>
+          <a class="fw-bold d-block text-center text-basic" href="#">인기매물 더 보기</a>
         </div>
       </section>
       <!-- Section6 -->
-      <section style="color: #212529; margin: 32px 24px; min-width: 312px;">
-        <a class="fw-bold d-block text-center" href="#" style="color: #212529; margin-bottom: 24px;">중고거래 인기검색어</a>
+      <section class="sec6__style">
+        <a class="fw-bold d-block text-center text-basic" href="#">중고거래 인기검색어</a>
         <ul class="d-flex flex-wrap justify-content-center p-0">
           <li class="keyword-list__style">
             <a class="keyword-list-item__style" href="#">자전거</a>
@@ -503,14 +503,15 @@
         </ul>
       </section>
     </main>
+
     <!-- Footer -->
-    <footer style="border-top: 1px solid #eaebee; min-width: 360px;">
+    <footer>
       <!-- Over 768px -->
-      <div class="d-none d-md-block mx-auto px-3" style="width: 768px;">
+      <div class="d-none d-md-block mx-auto px-3 footer-md__style">
         <!-- Footer Section1 -->
         <section class="d-flex justify-content-between py-5">
           <div class="d-flex">
-            <ul class="d-flex flex-column p-0 m-0" style="width: 132px;">
+            <ul class="d-flex flex-column p-0 m-0 footer-nav-md__style">
               <li class="footer-nav-list__style">
                 <a class="footer-nav-list-item__style" href="#">중고거래</a>
               </li>
@@ -527,7 +528,7 @@
                 <a class="footer-nav-list-item__style" href="#">중고차 직거래</a>
               </li>
             </ul>
-            <ul class="d-flex flex-column p-0 m-0" style="width: 132px;">
+            <ul class="d-flex flex-column p-0 m-0 footer-nav-md__style">
               <li class="footer-nav-list__style">
                 <a class="footer-nav-list-item__style" href="#">당근비즈니스</a>
               </li>
@@ -535,7 +536,7 @@
                 <a class="footer-nav-list-item__style" href="#">채팅하기</a>
               </li>
             </ul>
-            <ul class="d-flex flex-column p-0 m-0" style="width: 132px;">
+            <ul class="d-flex flex-column p-0 m-0 footer-nav-md__style">
               <li class="footer-nav-list__style">
                 <a class="footer-nav-list-item__style" href="#">자주 묻는 질문</a>
               </li>
@@ -548,10 +549,10 @@
             </ul>
           </div>
           <div>
-            <p class="fw-bold" style="font-size: 14px; color: #212124; margin-bottom: 8px;">당근마켓 앱 다운로드</p>
+            <p class="fw-bold text-md-app-download">당근마켓 앱 다운로드</p>
             <div>
               <a class="d-inline-block" href="#">
-                <img src="./img/app-store-download.svg" alt="app-store-download" style="margin-right: 10px;">
+                <img src="./img/app-store-download.svg" alt="app-store-download" class="download-icon">
               </a>
               <a class="d-inline-block" href="#">
                 <img src="./img/google-store-download.svg" alt="google-store-download">
@@ -560,11 +561,11 @@
           </div>
         </section>
         <!-- Footer Section2 -->
-        <section class="mx-auto" style="padding: 24px 0 100px; border-top: 1px solid #eaebee; width: 736px;">
-          <div class="d-flex justify-content-between" style="color: #868b94; font-size: 13px;">
+        <section class="mx-auto footer-sec2-md__style">
+          <div class="d-flex justify-content-between">
             <div>
               <div class="mb-3">
-                <div class="d-flex align-items-center footer-text__style" style="gap: 4px;">
+                <div class="d-flex align-items-center footer-text__style">
                   <span><strong>대표</strong> 김용현, 황도연</span>
                   <span>
                     <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
@@ -577,7 +578,7 @@
                 <div class="footer-text__style">
                   <span><strong>주소</strong> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
                 </div>
-                <div class="d-flex align-items-center footer-text__style" style="gap: 4px;">
+                <div class="d-flex align-items-center footer-text__style">
                   <span><strong>전화</strong> 1544-9796</span>
                   <span>
                     <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
@@ -585,21 +586,21 @@
                   <span><strong>고객문의</strong> cs@daangnservice.com</span>
                 </div>
               </div>
-              <div class="d-flex align-items-center mb-3" style="gap: 16px;">
+              <div class="d-flex align-items-center mb-3 gap-basic">
                 <a class="footer-link__style" href="#">제휴 문의</a>
                 <a class="footer-link__style" href="#">광고 문의</a>
                 <a class="footer-link__style" href="#">PR 문의</a>
                 <a class="footer-link__style" href="#">IR 문의</a>
               </div>
-              <div class="d-flex align-items-center" style="gap: 16px;">
+              <div class="d-flex align-items-center gap-basic">
                 <a class="footer-link__style" href="#">이용약관</a>
-                <a class="footer-link__style" href="#" style="color: #4d5159;">개인정보처리방침</a>
+                <a class="footer-link__style text-gray" href="#">개인정보처리방침</a>
                 <a class="footer-link__style" href="#">위치기반서비스 이용약관</a>
                 <a class="footer-link__style" href="#">이용자보호 비전과 계획</a>
               </div>
             </div>
             <div class="d-flex flex-column">
-              <div class="d-flex align-items-center" style="gap: 16px;">
+              <div class="d-flex align-items-center gap-basic">
                 <a href="#">
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.7158 12.0458C22.7158 6.21012 18.0165 1.48242 12.2158 1.48242C6.41515 1.48242 1.71582 6.21012 1.71582 12.0458C1.71582 17.3181 5.55649 21.689 10.5732 22.4824V15.0974H7.90382V12.0458H10.5732V9.71716C10.5732 7.06928 12.1412 5.60918 14.5398 5.60918C15.6878 5.60918 16.8918 5.81575 16.8918 5.81575V8.412H15.5665C14.2645 8.412 13.8538 9.22421 13.8538 10.0599V12.0411H16.7658L16.2992 15.0927H13.8538V22.473C18.8752 21.6843 22.7158 17.3181 22.7158 12.0458Z" fill="#868B94"></path></svg>
                 </a>
@@ -613,8 +614,8 @@
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1492_32254)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.86619 3H21.6338C23.0736 3 24.2515 4.17222 24.25 5.60362V16.1668C24.25 17.5982 23.0736 18.7704 21.6338 18.7704H14.2351C14.2351 18.7704 12.6961 22.6376 12.1768 22.6376C11.6588 22.6376 10.2353 18.7704 10.2353 18.7704H2.86619C1.42788 18.7704 0.25 17.5982 0.25 16.1668V5.60362C0.25 4.17222 1.42788 3 2.86619 3ZM5.66291 13.3438C6.2844 13.3438 6.85411 13.1685 7.22552 12.7518C7.59842 12.335 7.78191 11.9404 7.78191 11.2512C7.78191 10.6179 7.54959 10.0451 7.23292 9.67987C6.91477 9.31318 6.38355 8.99509 5.87303 9.01276C5.2767 9.03191 4.77062 9.14236 4.38885 9.46633H4.37109V7.12779H2.96237V13.2436H4.37109V12.9462H4.38885C4.6922 13.1759 5.10209 13.3438 5.66291 13.3438ZM8.81329 13.2893H10.2501V9.55175C10.1332 7.12337 8.11929 7.00115 8.11929 7.00115V8.51649C8.11929 8.51649 8.81329 8.63135 8.81329 9.50462V13.2893ZM15.3612 12.8622C15.5935 12.6472 15.7681 12.4028 15.8894 12.1289C16.0093 11.8564 16.0685 11.5663 16.0714 11.2585C16.0714 10.9507 16.0108 10.6606 15.8909 10.3867C15.7696 10.1128 15.595 9.86836 15.3626 9.65336C15.1333 9.4413 14.8714 9.27784 14.5754 9.16444C14.278 9.05105 13.9658 8.99509 13.6358 8.99509C13.3117 8.99509 13.0039 9.05105 12.7109 9.16444C12.4179 9.27784 12.156 9.43983 11.9237 9.65336C11.6855 9.8772 11.5064 10.1246 11.3836 10.3956C11.2608 10.6665 11.2001 10.9552 11.2001 11.2585C11.2001 11.5619 11.2608 11.8505 11.3821 12.12C11.5049 12.391 11.684 12.6384 11.9222 12.8622C12.1531 13.0743 12.415 13.2378 12.7095 13.3511C13.0024 13.4645 13.3102 13.522 13.6343 13.522C13.9643 13.522 14.278 13.4645 14.5739 13.3511C14.8714 13.2378 15.1333 13.0743 15.3612 12.8622ZM20.8525 14.921C21.3349 14.4659 21.5391 13.8106 21.5391 12.7371V9.0378H20.1393V9.37503H20.1215C19.7812 9.06578 19.4334 8.93324 18.88 8.93324C18.2629 8.93324 17.7228 9.13794 17.3455 9.57678C16.9667 10.0142 16.7773 10.6076 16.7773 11.3528C16.7773 12.0184 16.946 12.5486 17.2863 12.9447C17.6252 13.3408 18.1268 13.5529 18.7054 13.5529C19.3298 13.5529 19.7989 13.3924 20.12 12.9506H20.1378V13.2348C20.1393 13.9741 19.3506 14.3496 18.7779 14.2922V15.4025C19.4645 15.4997 20.2798 15.4614 20.8525 14.921ZM12.9462 10.5489C13.1356 10.356 13.365 10.2603 13.6328 10.2603C13.9051 10.2603 14.1374 10.356 14.3313 10.5489C14.5251 10.7418 14.6213 10.976 14.6213 11.2499C14.6213 11.5238 14.5251 11.7579 14.3313 11.9508C14.1374 12.1423 13.9051 12.2395 13.6328 12.2395C13.365 12.2395 13.1356 12.1438 12.9462 11.9508C12.7568 11.7579 12.6606 11.5252 12.6606 11.2499C12.6606 10.976 12.7553 10.7418 12.9462 10.5489ZM4.64057 10.5577C4.82998 10.3662 5.05934 10.269 5.32717 10.269C5.59945 10.269 5.83177 10.3648 6.02561 10.5577C6.21946 10.7506 6.31564 10.9847 6.31564 11.2587C6.31564 11.534 6.21946 11.7667 6.02561 11.9596C5.83177 12.1525 5.59945 12.2497 5.32717 12.2497C5.05934 12.2497 4.83146 12.1525 4.64057 11.9596C4.44968 11.7667 4.35498 11.5326 4.35498 11.2587C4.35498 10.9847 4.44968 10.7506 4.64057 10.5577ZM19.1714 10.269C18.9036 10.269 18.6742 10.3662 18.4833 10.5577C18.2939 10.7506 18.1978 10.9847 18.1978 11.2587C18.1978 11.5326 18.2939 11.7667 18.4833 11.9596C18.6742 12.1525 18.9036 12.2497 19.1714 12.2497C19.4422 12.2497 19.676 12.1525 19.8699 11.9596C20.0637 11.7667 20.1599 11.534 20.1599 11.2587C20.1599 10.9847 20.0622 10.7506 19.8699 10.5577C19.676 10.3648 19.4437 10.269 19.1714 10.269Z" fill="#868B94"></path></g><defs><clipPath id="clip0_1492_32254"><rect width="24" height="24" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg>
                 </a>
                 <div class="position-relatvie">
-                  <img src="./img/global-icon.svg" alt="Icon" class="position-absolute" style="margin: 6px 8px 8px;">
-                  <select class="form-select" aria-label="Default select example" style="width: 100px;">
+                  <img src="./img/global-icon.svg" alt="Icon" class="position-absolute global-md-icon">
+                  <select class="form-select" aria-label="Default select example">
                     <option value="kr" selected>한국</option>
                     <option value="1">영국</option>
                     <option value="2">캐나다</option>
@@ -629,17 +630,17 @@
         </section>
       </div>
       <!-- Under 768px -->
-      <div class="d-md-none" style="padding: 0 16px;">
+      <div class="d-md-none footer__style">
         <!-- Footer Section1 -->
         <section class="py-5">
-          <div class="d-flex" style="margin-bottom: 20px; gap: 24px;">
-            <p class="fw-bold m-0" style="font-size: 13px; color: #212124;">당근마켓 앱 다운로드</p>
-            <div class="d-flex" style="gap: 8px;">
-              <a href="#" class="fw-bold m-0" style="font-size: 13px; color: #212124; text-decoration: none;">iOS</a>
+          <div class="d-flex footer-sec1__style">
+            <p class="fw-bold m-0 text-app-download">당근마켓 앱 다운로드</p>
+            <div class="d-flex gap-basic-half">
+              <a href="#" class="fw-bold m-0">iOS</a>
               <img src="./img/move-icon.svg" alt="Icon">
             </div>
-            <div class="d-flex" style="gap: 8px;">
-              <a href="#" class="fw-bold m-0" style="font-size: 13px; color: #212124; text-decoration: none;">Android</a>
+            <div class="d-flex gap-basic-half">
+              <a href="#" class="fw-bold m-0">Android</a>
               <img src="./img/move-icon.svg" alt="Icon">
             </div>
           </div>
@@ -661,7 +662,7 @@
                 <a class="footer-nav-list-item__style" href="#">중고차 직거래</a>
               </li>
             </ul>
-            <ul class="d-flex flex-column flex-grow-1 p-0 m-0" style="width: 132px;">
+            <ul class="d-flex flex-column flex-grow-1 p-0 m-0 footer-nav-md__style">
               <li class="footer-nav-list__style">
                 <a class="footer-nav-list-item__style" href="#">당근비즈니스</a>
               </li>
@@ -669,7 +670,7 @@
                 <a class="footer-nav-list-item__style" href="#">채팅하기</a>
               </li>
             </ul>
-            <ul class="d-flex flex-column flex-grow-1 p-0 m-0" style="width: 132px;">
+            <ul class="d-flex flex-column flex-grow-1 p-0 m-0 footer-nav-md__style">
               <li class="footer-nav-list__style">
                 <a class="footer-nav-list-item__style" href="#">자주 묻는 질문</a>
               </li>
@@ -684,9 +685,9 @@
           </div>
         </section>
         <!-- Footer Section2 -->
-        <section class="mx-auto" style="padding: 24px 0 100px; border-top: 1px solid #eaebee;">
+        <section class="mx-auto footer-sec2__style">
           <div class="mb-3">
-            <div class="d-flex align-items-center footer-text__style footer-text-small__style" style="gap: 4px;">
+            <div class="d-flex align-items-center footer-text__style footer-text-small__style gap-basic-quarter">
               <span><strong>대표</strong> 김용현, 황도연</span>
               <span>
                 <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
@@ -699,7 +700,7 @@
             <div class="footer-text__style footer-text-small__style">
               <span><strong>주소</strong> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
             </div>
-            <div class="d-flex align-items-center footer-text__style footer-text-small__style" style="gap: 4px;">
+            <div class="d-flex align-items-center footer-text__style footer-text-small__style gap-basic-quarter">
               <span><strong>전화</strong> 1544-9796</span>
               <span>
                 <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
@@ -707,7 +708,7 @@
               <span><strong>고객문의</strong> cs@daangnservice.com</span>
             </div>
           </div>
-          <div class="d-flex align-items-center mb-3" style="gap: 16px;">
+          <div class="d-flex align-items-center mb-3 gap-basic">
             <a class="footer-link__style footer-link-small__style" href="#">제휴 문의</a>
             <a class="footer-link__style footer-link-small__style" href="#">광고 문의</a>
             <a class="footer-link__style footer-link-small__style" href="#">PR 문의</a>
@@ -715,11 +716,11 @@
           </div>
           <div class="d-flex flex-wrap align-items-center mb-4">
             <a class="footer-link__style footer-link-small__style" href="#">이용약관</a>
-            <a class="footer-link__style footer-link-small__style" href="#" style="color: #4d5159;">개인정보처리방침</a>
+            <a class="footer-link__style footer-link-small__style text-gray" href="#">개인정보처리방침</a>
             <a class="footer-link__style footer-link-small__style" href="#">위치기반서비스 이용약관</a>
             <a class="footer-link__style footer-link-small__style" href="#">이용자보호 비전과 계획</a>
           </div>
-          <div class="d-flex align-items-center" style="gap: 16px;">
+          <div class="d-flex align-items-center gap-basic">
             <a href="#">
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.7158 12.0458C22.7158 6.21012 18.0165 1.48242 12.2158 1.48242C6.41515 1.48242 1.71582 6.21012 1.71582 12.0458C1.71582 17.3181 5.55649 21.689 10.5732 22.4824V15.0974H7.90382V12.0458H10.5732V9.71716C10.5732 7.06928 12.1412 5.60918 14.5398 5.60918C15.6878 5.60918 16.8918 5.81575 16.8918 5.81575V8.412H15.5665C14.2645 8.412 13.8538 9.22421 13.8538 10.0599V12.0411H16.7658L16.2992 15.0927H13.8538V22.473C18.8752 21.6843 22.7158 17.3181 22.7158 12.0458Z" fill="#868B94"></path></svg>
             </a>
@@ -733,8 +734,8 @@
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1492_32254)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.86619 3H21.6338C23.0736 3 24.2515 4.17222 24.25 5.60362V16.1668C24.25 17.5982 23.0736 18.7704 21.6338 18.7704H14.2351C14.2351 18.7704 12.6961 22.6376 12.1768 22.6376C11.6588 22.6376 10.2353 18.7704 10.2353 18.7704H2.86619C1.42788 18.7704 0.25 17.5982 0.25 16.1668V5.60362C0.25 4.17222 1.42788 3 2.86619 3ZM5.66291 13.3438C6.2844 13.3438 6.85411 13.1685 7.22552 12.7518C7.59842 12.335 7.78191 11.9404 7.78191 11.2512C7.78191 10.6179 7.54959 10.0451 7.23292 9.67987C6.91477 9.31318 6.38355 8.99509 5.87303 9.01276C5.2767 9.03191 4.77062 9.14236 4.38885 9.46633H4.37109V7.12779H2.96237V13.2436H4.37109V12.9462H4.38885C4.6922 13.1759 5.10209 13.3438 5.66291 13.3438ZM8.81329 13.2893H10.2501V9.55175C10.1332 7.12337 8.11929 7.00115 8.11929 7.00115V8.51649C8.11929 8.51649 8.81329 8.63135 8.81329 9.50462V13.2893ZM15.3612 12.8622C15.5935 12.6472 15.7681 12.4028 15.8894 12.1289C16.0093 11.8564 16.0685 11.5663 16.0714 11.2585C16.0714 10.9507 16.0108 10.6606 15.8909 10.3867C15.7696 10.1128 15.595 9.86836 15.3626 9.65336C15.1333 9.4413 14.8714 9.27784 14.5754 9.16444C14.278 9.05105 13.9658 8.99509 13.6358 8.99509C13.3117 8.99509 13.0039 9.05105 12.7109 9.16444C12.4179 9.27784 12.156 9.43983 11.9237 9.65336C11.6855 9.8772 11.5064 10.1246 11.3836 10.3956C11.2608 10.6665 11.2001 10.9552 11.2001 11.2585C11.2001 11.5619 11.2608 11.8505 11.3821 12.12C11.5049 12.391 11.684 12.6384 11.9222 12.8622C12.1531 13.0743 12.415 13.2378 12.7095 13.3511C13.0024 13.4645 13.3102 13.522 13.6343 13.522C13.9643 13.522 14.278 13.4645 14.5739 13.3511C14.8714 13.2378 15.1333 13.0743 15.3612 12.8622ZM20.8525 14.921C21.3349 14.4659 21.5391 13.8106 21.5391 12.7371V9.0378H20.1393V9.37503H20.1215C19.7812 9.06578 19.4334 8.93324 18.88 8.93324C18.2629 8.93324 17.7228 9.13794 17.3455 9.57678C16.9667 10.0142 16.7773 10.6076 16.7773 11.3528C16.7773 12.0184 16.946 12.5486 17.2863 12.9447C17.6252 13.3408 18.1268 13.5529 18.7054 13.5529C19.3298 13.5529 19.7989 13.3924 20.12 12.9506H20.1378V13.2348C20.1393 13.9741 19.3506 14.3496 18.7779 14.2922V15.4025C19.4645 15.4997 20.2798 15.4614 20.8525 14.921ZM12.9462 10.5489C13.1356 10.356 13.365 10.2603 13.6328 10.2603C13.9051 10.2603 14.1374 10.356 14.3313 10.5489C14.5251 10.7418 14.6213 10.976 14.6213 11.2499C14.6213 11.5238 14.5251 11.7579 14.3313 11.9508C14.1374 12.1423 13.9051 12.2395 13.6328 12.2395C13.365 12.2395 13.1356 12.1438 12.9462 11.9508C12.7568 11.7579 12.6606 11.5252 12.6606 11.2499C12.6606 10.976 12.7553 10.7418 12.9462 10.5489ZM4.64057 10.5577C4.82998 10.3662 5.05934 10.269 5.32717 10.269C5.59945 10.269 5.83177 10.3648 6.02561 10.5577C6.21946 10.7506 6.31564 10.9847 6.31564 11.2587C6.31564 11.534 6.21946 11.7667 6.02561 11.9596C5.83177 12.1525 5.59945 12.2497 5.32717 12.2497C5.05934 12.2497 4.83146 12.1525 4.64057 11.9596C4.44968 11.7667 4.35498 11.5326 4.35498 11.2587C4.35498 10.9847 4.44968 10.7506 4.64057 10.5577ZM19.1714 10.269C18.9036 10.269 18.6742 10.3662 18.4833 10.5577C18.2939 10.7506 18.1978 10.9847 18.1978 11.2587C18.1978 11.5326 18.2939 11.7667 18.4833 11.9596C18.6742 12.1525 18.9036 12.2497 19.1714 12.2497C19.4422 12.2497 19.676 12.1525 19.8699 11.9596C20.0637 11.7667 20.1599 11.534 20.1599 11.2587C20.1599 10.9847 20.0622 10.7506 19.8699 10.5577C19.676 10.3648 19.4437 10.269 19.1714 10.269Z" fill="#868B94"></path></g><defs><clipPath id="clip0_1492_32254"><rect width="24" height="24" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg>
             </a>
             <div class="position-relatvie">
-              <img src="./img/global-icon.svg" alt="Icon" class="position-absolute" style="margin: 6px 8px 8px;">
-              <select class="form-select" aria-label="Default select example" style="width: 100px;">
+              <img src="./img/global-icon.svg" alt="Icon" class="position-absolute global-icon">
+              <select class="form-select" aria-label="Default select example">
                 <option value="kr" selected>한국</option>
                 <option value="1">영국</option>
                 <option value="2">캐나다</option>
@@ -764,6 +765,12 @@
         closeIcon.classList.remove('d-none')
         closeIcon.classList.add('d-md-none')
       })
+
+      menuIcon.addEventListener('click', () => {
+        const navStyleDiv = document.querySelector('.nav__style')
+        navStyleDiv.setAttribute('style', '')
+      })
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
