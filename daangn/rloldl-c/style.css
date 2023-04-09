@@ -917,6 +917,7 @@ input:focus {
 
 .scroll-x {
   overflow-x: scroll;
+  display: flex;
 }
 
 .scroll-x::-webkit-scrollbar {
@@ -928,6 +929,10 @@ input:focus {
   display: flex;
   justify-content: center;
   margin: 0;
+}
+
+.ns-mid-group {
+  margin: 0 auto;
 }
 
 .ns-mid-group li {
