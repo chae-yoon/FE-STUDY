@@ -1398,3 +1398,100 @@ footer {
     font-size: 1.25rem;
   }
 }
+
+/*  */
+/* Top-Keyword Page */
+/*  */
+
+.top-keywords-title {
+  font-size: 2rem;
+  margin: 2.5rem 0 0;
+  text-align: center;
+}
+
+.top-keywords-list {
+  width: 414px;
+  padding: 2.5rem 0;
+  list-style-type: none;
+  margin: 0 auto;
+  counter-reset: section;
+}
+
+.top-keywords-link {
+  display: block;
+  padding: .625rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.top-keywords-link::before {
+  counter-increment: section;
+  content: counter(section);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 1.25rem;
+  line-height: 1;
+  display: inline-block;
+  text-align: right;
+  margin-right: 1.5rem;
+}
+
+.top-keywords-link:hover {
+  background-color: #f8f9fa;
+}
+
+.top-keywords-link-contents {
+  display: inline-block;
+  width: calc(382px - 3.75rem);
+}
+
+.top-keywords-link-contents div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-keywords-link:hover .top-keywords-link-contents div span:first-child {
+  text-decoration: underline;
+}
+
+.top-keywords-link {
+  text-decoration: none;
+  color: #212529;
+}
+
+.top-keywords-rank .up {
+  color: #e03131;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.top-keywords-rank .down {
+  color: #186ec0;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+@media (max-width: 991px) {
+  .top-keywords-title {
+    font-size: 1.5rem;
+    margin: 1.875rem 0 0;
+  }
+
+  .top-keywords-list {
+    width: 100%;
+    padding: 2.5rem 1rem;
+  }
+  .top-keywords-link::before {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 1rem;
+    line-height: 1;
+    display: inline-block;
+    text-align: right;
+    margin-right: 1rem;
+  }
+  .top-keywords-link-contents {
+    width: calc(100% - 3rem);
+  }
+}
