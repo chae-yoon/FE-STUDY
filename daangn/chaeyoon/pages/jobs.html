@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>우리 동네에서 찾는 당근알바</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.daangn.com/favicon.ico">
+    <!-- Style -->
+    <link rel="stylesheet" href="./../style.css">
+  </head>
+  <body>
+   <!-- Nav Bar -->
+   <nav class="navbar navbar-expand-md vw-100 bg-body sticky-top nav__style">
+    <div class="container-fluid navbar__style">
+      <a class="navbar-brand pt-0" href="#">
+        <img src="./../img/logo.svg" alt="logo image">
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav d-flex flex-wrap">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" aria-current="page" href="../index.html">중고거래</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="./nearby-stores.html">동네가게</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold active" href="#">알바</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="./realty.html">부동산 직거래</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="./car.html">중고차 직거래</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex">
+        <form class="navbar__search d-none d-lg-block" role="search">
+          <input class="form-control border-0 navbar__search-input" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
+        </form>
+        <button type="button" class="btn btn-icon d-lg-none border-0"  data-bs-toggle="offcanvas" data-bs-target="#searchModal" aria-controls="offcanvasTop">
+          <img src="./../img/search-icon.svg" alt="search-icon">
+        </button>
+        <button type="button" id="menu-icon" class="btn btn-icon d-md-none d-lg-none m-0 border-0"  data-bs-toggle="offcanvas" data-bs-target="#menuModal" aria-controls="offcanvasTop">
+          <img src="./../img/menu-icon.svg" alt="menu-icon">
+        </button>
+        <button type="button" id="close-icon" class="btn btn-icon d-none m-0 border-0" data-bs-target="#menuModal" data-bs-dismiss="offcanvas" aria-label="Close">
+          <img src="./../img/close-icon.svg" alt="close-icon">
+        </button>
+        <a href="#" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Modal -->
+  <div class="offcanvas offcanvas-top top-0" tabindex="-1" id="searchModal" aria-labelledby="offcanvasTopLabel1">
+    <div class="modal-dialog vw-100">
+      <div class="modal-content w-100 border-0">
+        <div class="modal-header border-0">
+          <input class="form-control border-0 navbar__search-input navbar__search-input-modal" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
+          <button type="button" class="btn btn-cancel fs-6" data-bs-dismiss="offcanvas" aria-label="Close">취소</button>
+        </div>
+        <div class="modal-body text-body-secondary modal-body__style">
+          <p class="fw-semibold m-0 pb-1">추천</p>
+          <div class="row row-cols-2">
+            <div class="py-3 border-bottom col">죽전 치과</div>
+            <div class="py-3 border-bottom col">잠실 냉장고</div>
+            <div class="py-3 border-bottom col">송파 자전거</div>
+            <div class="py-3 border-bottom col">죽전 자전거</div>
+            <div class="py-3 col">부산 책상</div>
+            <div class="py-3 col">인천 마우스</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Modal -->
+  <div class="offcanvas offcanvas-top border-top " tabindex="-1" id="menuModal" aria-labelledby="offcanvasTopLabel">
+    <ul class="navbar-nav d-flex flex-wrap h-100 menu-modal">
+      <li class="nav-item p-3">
+        <a class="nav-link" aria-current="page" href="../index.html">중고거래</a>
+      </li>
+      <li class="nav-item p-3">
+        <a class="nav-link" href="./nearby-stores.html">동네가게</a>
+      </li>
+      <li class="nav-item p-3">
+        <a class="nav-link active" href="#">알바</a>
+      </li>
+      <li class="nav-item p-3">
+        <a class="nav-link" href="./realty.html">부동산 직거래</a>
+      </li>
+      <li class="nav-item p-3">
+        <a class="nav-link" href="./car.html">중고차 직거래</a>
+      </li>
+    </ul>
+  </div>
+
+  <main class="jobs-basic">
+    <!-- Section1 -->
+    <section class="jobs-sec1-basic__style overflow-hidden">
+      <!-- Over 768px -->
+      <div class="d-none d-md-flex justify-content-between mx-auto jobs-sec1-md__style">
+        <div>
+          <h1 class="fw-bold jobs-sec1-md-title">우리 동네에서 찾는<br>당근알바</h1>
+          <p>걸어서 10분 거리의<br>동네 알바들 여기 다 있어요.</p>
+        </div>
+        <div class="position-relative flex-grow-1">
+          <picture>
+            <img src="./../img/jobs/01.png" class="img-fluid position-absolute bottom-0 end-0 jobs-sec1-md-img" alt="01 image">
+          </picture>
+        </div>
+      </div>
+      <!-- Under 768px -->
+      <div class="d-md-none position-relative jobs-sec1__style">
+        <h1 class="fw-bold m-0 jobs-sec1-title">우리 동네에서 찾는<br>당근알바</h1>
+        <div>
+          <picture>
+            <img src="./../img/jobs/01.png" class="position-absolute bottom-0 start-50 translate-middle-x jobs-sec1-img" alt="01 image">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!-- Section2 -->
+    <section>
+      <div class="mx-auto jobs-sec2__style">
+        <div>
+          <!-- Over 768px -->
+          <h2 class="d-none d-md-block fw-bold nbs-sec2-md-title">인기 당근알바</h2>
+          <!-- Under 768px -->
+          <h2 class="d-md-none fw-bold nbs-sec2-title">인기 당근알바</h2>
+        </div>
+        <!-- Content1 -->
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/35253729/1679454997608/job-post-740113507.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                4/12 부산 헤어 데모모델 구합니다(페이40)
+              </div>
+              <div class="popular-rigion">
+                부산광역시 부산진구 부전동
+              </div>
+              <div class="popular-price">
+                일급 400,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                단순포장 청소 정리
+              </div>
+              <div class="popular-rigion">
+                어연마루 ㆍ새솔왕뜸족욕카페  ・ 대구광역시 달서구 송현동
+              </div>
+              <div class="popular-price">
+                시급 11,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                신세계 백화점 센텀점에서 대신 구매해 주세요~
+              </div>
+              <div class="popular-rigion">
+                부산광역시 해운대구 우동
+              </div>
+              <div class="popular-price">
+                건당 13,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                간단한 호흡기능 테스트 아르바이트 [여성]
+              </div>
+              <div class="popular-rigion">
+                서울특별시 서초구 양재동
+              </div>
+              <div class="popular-price">
+                시급 15,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                단체급식 보조구합니다.
+              </div>
+              <div class="popular-rigion">
+                신흥정기 ・ 부산광역시 사하구 장림동
+              </div>
+              <div class="popular-price">
+                월급 900,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/21827720/1679530879735/job-post-2012948657.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                인터넷쇼핑몰 관련 업무 지원(+포장)
+              </div>
+              <div class="popular-rigion">
+                강원도 춘천시 동내면
+              </div>
+              <div class="popular-price">
+                시급 10,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                부품조립, 포장 인원모집
+              </div>
+              <div class="popular-rigion">
+                창우 ・ 광주광역시 광산구 월곡동
+              </div>
+              <div class="popular-price">
+                일급 100,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                제품 테스터 아르바이트(남자만)
+              </div>
+              <div class="popular-rigion">
+                인트인 ・ 서울특별시 서초구 방배동
+              </div>
+              <div class="popular-price">
+                시급 30,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-md-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/39336995/1679407096256/job-post-2980294782.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                [오디가] 재택근무(3시간) + 포장(3시간) 구직
+              </div>
+              <div class="popular-rigion">
+                경상남도 진주시 평안동
+              </div>
+              <div class="popular-price">
+                월급 1,500,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-md-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                박스포장 알바구함
+              </div>
+              <div class="popular-rigion">
+                이너뷰티  ・ 경기도 고양시 덕양구 행신동
+              </div>
+              <div class="popular-price">
+                시급 10,000
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner1 -->
+        <div class="mx-auto jobs-bn__style">
+          <div class="popular-bn__style popular-bn-bg">
+            <!-- Over 768px -->
+            <div class="d-none d-md-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-basic-double">
+                <img src="./../img/jobs/bn01.png" alt="banner icon" class="popular-bn-icon">
+                <div class="d-flex flex-column">
+                  <h6 class="popular-bn-title__style">당근알바 이용방법이 궁금하다면<br>지금 바로 알아보세요!</h6>
+                </div>
+              </div>
+              <a href="#" class="btn btn-popular-bn">이용방법 알아보기</a>
+            </div>
+            <!-- Under 768px -->
+            <div class="d-md-none d-flex flex-column align-items-start">
+              <h6 class="popular-bn-title__style">당근알바 이용방법이 궁금하다면<br>지금 바로 알아보세요!</h6>
+              <a href="#" class="btn btn-popular-bn">이용방법 알아보기</a>
+            </div>
+          </div>
+        </div>
+        <!-- Content2 -->
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/35433000/1655714132124/job-post-4205602377.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                부업(집게 핀, 스톤, 조립, 포장)하실 분 구해요
+              </div>
+              <div class="popular-rigion">
+                서울특별시 관악구 봉천동
+              </div>
+              <div class="popular-price">
+                월급 150,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/63338259/1679666232241/job-post-2288512548.png?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                [당일신청가능] 물류센터 단순업무 알바모집
+              </div>
+              <div class="popular-rigion">
+                충청남도 아산시 염치읍
+              </div>
+              <div class="popular-price">
+                일급 102,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/21441155/1679664441794/job-post-3856671162.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                청소 알바 구합니다^^* 이사청소 입주청소
+              </div>
+              <div class="popular-rigion">
+                빛나야청소 ・ 강원도 원주시 태장동
+              </div>
+              <div class="popular-price">
+                일급 100,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                원인재역인근 기초화장품 포장 아르바이트!
+              </div>
+              <div class="popular-rigion">
+                인천광역시 연수구 연수동
+              </div>
+              <div class="popular-price">
+                시급 9,620
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/64254103/1679811941291/job-post-1020215948.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                앨리웨이 플리마켓 요원 구해요!
+              </div>
+              <div class="popular-rigion">
+                이유의계절 앨리웨이광교점 ・ 경기도 수원시 영통구 원천동
+              </div>
+              <div class="popular-price">
+                시급 10,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                인터넷 쇼핑몰 단순 포장 및 제품 검수 알바
+              </div>
+              <div class="popular-rigion">
+                리핏 조례 ・ 전라남도 순천시 조례동
+              </div>
+              <div class="popular-price">
+                시급 10,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                네일패디무료모델구해요
+              </div>
+              <div class="popular-rigion">
+                전라북도 전주시 덕진구 송천동1가
+              </div>
+              <div class="popular-price">
+                시급 12,345
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/21491183/1648434377141/job-post-312512006.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                전단지부착, 운동 삼아, 당일지급
+              </div>
+              <div class="popular-rigion">
+                호승애드 ・ 경상남도 양산시 동면
+              </div>
+              <div class="popular-price">
+                일급 50,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-md-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                메이크업연습모델
+              </div>
+              <div class="popular-rigion">
+                서울특별시 강남구 신사동
+              </div>
+              <div class="popular-price">
+                시급 10,000
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-md-flex align-items-start gap-3 popular__style">
+            <div class="popular-img">
+              <img src="./../img/jobs/default-profile.jpeg" alt="...">
+            </div>
+            <div class="d-flex flex-column">
+              <div class="popular-title">
+                오케이114전화상담원
+              </div>
+              <div class="popular-rigion">
+                오케이114(주) ・ 충청북도 충주시 성내동
+              </div>
+              <div class="popular-price">
+                월급 1,970,000
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner2 -->
+        <div class="mx-auto jobs-bn__style">
+          <div class="popular-bn__style">
+            <!-- Over 768px -->
+            <div class="d-none d-md-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-basic-double">
+                <img src="./../img/jobs/bn02.png" alt="banner icon" class="popular-bn-icon">
+                <div class="d-flex flex-column">
+                  <h6 class="popular-bn-title__style">우리동네 알바가 궁금하다면<br>당근마켓에서 바로 찾아보세요!</h6>
+                </div>
+              </div>
+              <a href="#" class="btn btn-popular-bn">앱 다운로드 하기</a>
+            </div>
+            <!-- Under 768px -->
+            <div class="d-md-none d-flex flex-column align-items-start">
+              <h6 class="popular-bn-title__style">우리동네 알바가 궁금하다면<br>당근마켓에서 바로 찾아보세요!</h6>
+              <a href="#" class="btn btn-popular-bn">앱 다운로드 하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <!-- Over 768px -->
+    <div class="d-none d-md-block mx-auto px-3 footer-md__style">
+      <!-- Footer Section1 -->
+      <section class="d-flex justify-content-between py-5">
+        <div class="d-flex">
+          <ul class="d-flex flex-column p-0 m-0 footer-nav-md__style">
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">중고거래</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">동네가게</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">당근알바</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">부동산 직거래</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">중고차 직거래</a>
+            </li>
+          </ul>
+          <ul class="d-flex flex-column p-0 m-0 footer-nav-md__style">
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">당근비즈니스</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">채팅하기</a>
+            </li>
+          </ul>
+          <ul class="d-flex flex-column p-0 m-0 footer-nav-md__style">
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">자주 묻는 질문</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">회사 소개</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">인재 채용</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="fw-bold text-md-app-download">당근마켓 앱 다운로드</p>
+          <div>
+            <a class="d-inline-block" href="#">
+              <img src="./../img/app-store-download.svg" alt="app-store-download" class="download-icon">
+            </a>
+            <a class="d-inline-block" href="#">
+              <img src="./../img/google-store-download.svg" alt="google-store-download">
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Section2 -->
+      <section class="mx-auto footer-sec2-md__style">
+        <div class="d-flex justify-content-between">
+          <div>
+            <div class="mb-3">
+              <div class="d-flex align-items-center footer-text__style">
+                <span><strong>대표</strong> 김용현, 황도연</span>
+                <span>
+                  <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+                </span>
+                <span><strong>사업자번호</strong> 375-87-00088</span>
+              </div>
+              <div class="footer-text__style">
+                <span><strong>직업정보제공사업 신고번호</strong> 2016-서울서초-0051</span>
+              </div>
+              <div class="footer-text__style">
+                <span><strong>주소</strong> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+              </div>
+              <div class="d-flex align-items-center footer-text__style">
+                <span><strong>전화</strong> 1544-9796</span>
+                <span>
+                  <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+                </span>
+                <span><strong>고객문의</strong> cs@daangnservice.com</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3 gap-basic">
+              <a class="footer-link__style" href="#">제휴 문의</a>
+              <a class="footer-link__style" href="#">광고 문의</a>
+              <a class="footer-link__style" href="#">PR 문의</a>
+              <a class="footer-link__style" href="#">IR 문의</a>
+            </div>
+            <div class="d-flex align-items-center gap-basic">
+              <a class="footer-link__style" href="#">이용약관</a>
+              <a class="footer-link__style text-gray" href="#">개인정보처리방침</a>
+              <a class="footer-link__style" href="#">위치기반서비스 이용약관</a>
+              <a class="footer-link__style" href="#">이용자보호 비전과 계획</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="d-flex align-items-center gap-basic">
+              <a href="#">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.7158 12.0458C22.7158 6.21012 18.0165 1.48242 12.2158 1.48242C6.41515 1.48242 1.71582 6.21012 1.71582 12.0458C1.71582 17.3181 5.55649 21.689 10.5732 22.4824V15.0974H7.90382V12.0458H10.5732V9.71716C10.5732 7.06928 12.1412 5.60918 14.5398 5.60918C15.6878 5.60918 16.8918 5.81575 16.8918 5.81575V8.412H15.5665C14.2645 8.412 13.8538 9.22421 13.8538 10.0599V12.0411H16.7658L16.2992 15.0927H13.8538V22.473C18.8752 21.6843 22.7158 17.3181 22.7158 12.0458Z" fill="#868B94"></path></svg>
+              </a>
+              <a href="#">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.7928 3.67695C14.6079 3.67695 14.9413 3.68727 16.053 3.73611C17.081 3.78129 17.6392 3.94668 18.0107 4.08567C18.5028 4.26984 18.854 4.48988 19.223 4.84513C19.5919 5.20037 19.8204 5.53861 20.0116 6.01245C20.156 6.37024 20.3277 6.9078 20.3746 7.8976C20.4253 8.96817 20.4361 9.28924 20.4361 12.0001C20.4361 14.7109 20.4253 15.0319 20.3746 16.1025C20.3277 17.0923 20.156 17.6299 20.0116 17.9877C19.8204 18.4615 19.5919 18.7997 19.223 19.155C18.854 19.5102 18.5028 19.7303 18.0107 19.9144C17.6392 20.0534 17.081 20.2188 16.053 20.264C14.9415 20.3128 14.6081 20.3232 11.7928 20.3232C8.97759 20.3232 8.64417 20.3128 7.53264 20.264C6.50472 20.2188 5.94648 20.0534 5.57498 19.9144C5.08287 19.7303 4.73162 19.5102 4.36271 19.155C3.99381 18.7997 3.76531 18.4615 3.57409 17.9877C3.42971 17.6299 3.25796 17.0923 3.21105 16.1025C3.16032 15.0319 3.14961 14.7109 3.14961 12.0001C3.14961 9.28924 3.16032 8.96817 3.21105 7.89764C3.25796 6.9078 3.42971 6.37024 3.57409 6.01245C3.76531 5.53861 3.99381 5.20037 4.36271 4.84513C4.73162 4.48988 5.08287 4.26984 5.57498 4.08567C5.94648 3.94668 6.50472 3.78129 7.5326 3.73611C8.64434 3.68727 8.97776 3.67695 11.7928 3.67695ZM11.7928 1.84766C8.92955 1.84766 8.57056 1.85934 7.44605 1.90875C6.32384 1.95808 5.55749 2.12968 4.88684 2.38066C4.19356 2.64011 3.60561 2.98726 3.0195 3.55166C2.43339 4.11606 2.0729 4.68223 1.80347 5.34984C1.54282 5.99565 1.36463 6.73362 1.3134 7.81426C1.26209 8.89708 1.25 9.24282 1.25 12.0001C1.25 14.7573 1.26209 15.103 1.3134 16.1859C1.36463 17.2665 1.54282 18.0045 1.80347 18.6503C2.0729 19.3178 2.43339 19.8841 3.0195 20.4485C3.60561 21.0129 4.19356 21.36 4.88684 21.6195C5.55749 21.8704 6.32384 22.042 7.44605 22.0914C8.57056 22.1408 8.92955 22.1524 11.7928 22.1524C14.6561 22.1524 15.0152 22.1408 16.1396 22.0914C17.2618 22.042 18.0282 21.8704 18.6988 21.6195C19.3921 21.36 19.9801 21.0129 20.5662 20.4485C21.1523 19.8841 21.5128 19.3179 21.7822 18.6503C22.0428 18.0045 22.221 17.2665 22.2723 16.1859C22.3236 15.103 22.3357 14.7573 22.3357 12.0001C22.3357 9.24282 22.3236 8.89708 22.2723 7.81426C22.221 6.73362 22.0428 5.99565 21.7822 5.34984C21.5128 4.68223 21.1523 4.11606 20.5662 3.55166C19.9801 2.98726 19.3921 2.64011 18.6988 2.38066C18.0282 2.12968 17.2618 1.95808 16.1396 1.90875C15.0152 1.85934 14.6561 1.84766 11.7928 1.84766ZM11.7928 6.78666C8.80283 6.78666 6.37892 9.12079 6.37892 12.0001C6.37892 14.8793 8.80283 17.2135 11.7928 17.2135C14.7828 17.2135 17.2068 14.8793 17.2068 12.0001C17.2068 9.12079 14.7828 6.78666 11.7928 6.78666ZM11.7928 15.3842C9.85196 15.3842 8.27853 13.869 8.27853 12.0001C8.27853 10.1311 9.85196 8.61591 11.7928 8.61591C13.7337 8.61591 15.3071 10.1311 15.3071 12.0001C15.3071 13.869 13.7337 15.3842 11.7928 15.3842ZM18.6858 6.58068C18.6858 7.25353 18.1194 7.79899 17.4206 7.79899C16.7219 7.79899 16.1555 7.25353 16.1555 6.58068C16.1555 5.90784 16.7219 5.36242 17.4206 5.36242C18.1194 5.36242 18.6858 5.90784 18.6858 6.58068Z" fill="#868B94"></path></svg>
+              </a>
+              <a href="#">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1492_32246)"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.6404 3.5339C22.6684 3.82139 23.4789 4.66332 23.7557 5.73112C24.2697 7.68193 24.2499 11.7478 24.2499 11.7478C24.2499 11.7478 24.2499 15.7932 23.7557 17.744C23.4789 18.8118 22.6684 19.6537 21.6404 19.9412C19.7623 20.4545 12.2499 20.4545 12.2499 20.4545C12.2499 20.4545 4.75739 20.4545 2.85954 19.9206C1.83154 19.6332 1.021 18.7912 0.744232 17.7234C0.25 15.7932 0.25 11.7273 0.25 11.7273C0.25 11.7273 0.25 7.68193 0.744232 5.73112C1.021 4.66332 1.85131 3.80086 2.85954 3.51337C4.73763 3 12.2499 3 12.2499 3C12.2499 3 19.7623 3 21.6404 3.5339ZM9.85784 7.99009L16.1049 11.7274L9.85784 15.4647V7.99009Z" fill="#868B94"></path></g><defs><clipPath id="clip0_1492_32246"><rect width="24" height="24" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg>
+              </a>
+              <a href="#">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1492_32254)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.86619 3H21.6338C23.0736 3 24.2515 4.17222 24.25 5.60362V16.1668C24.25 17.5982 23.0736 18.7704 21.6338 18.7704H14.2351C14.2351 18.7704 12.6961 22.6376 12.1768 22.6376C11.6588 22.6376 10.2353 18.7704 10.2353 18.7704H2.86619C1.42788 18.7704 0.25 17.5982 0.25 16.1668V5.60362C0.25 4.17222 1.42788 3 2.86619 3ZM5.66291 13.3438C6.2844 13.3438 6.85411 13.1685 7.22552 12.7518C7.59842 12.335 7.78191 11.9404 7.78191 11.2512C7.78191 10.6179 7.54959 10.0451 7.23292 9.67987C6.91477 9.31318 6.38355 8.99509 5.87303 9.01276C5.2767 9.03191 4.77062 9.14236 4.38885 9.46633H4.37109V7.12779H2.96237V13.2436H4.37109V12.9462H4.38885C4.6922 13.1759 5.10209 13.3438 5.66291 13.3438ZM8.81329 13.2893H10.2501V9.55175C10.1332 7.12337 8.11929 7.00115 8.11929 7.00115V8.51649C8.11929 8.51649 8.81329 8.63135 8.81329 9.50462V13.2893ZM15.3612 12.8622C15.5935 12.6472 15.7681 12.4028 15.8894 12.1289C16.0093 11.8564 16.0685 11.5663 16.0714 11.2585C16.0714 10.9507 16.0108 10.6606 15.8909 10.3867C15.7696 10.1128 15.595 9.86836 15.3626 9.65336C15.1333 9.4413 14.8714 9.27784 14.5754 9.16444C14.278 9.05105 13.9658 8.99509 13.6358 8.99509C13.3117 8.99509 13.0039 9.05105 12.7109 9.16444C12.4179 9.27784 12.156 9.43983 11.9237 9.65336C11.6855 9.8772 11.5064 10.1246 11.3836 10.3956C11.2608 10.6665 11.2001 10.9552 11.2001 11.2585C11.2001 11.5619 11.2608 11.8505 11.3821 12.12C11.5049 12.391 11.684 12.6384 11.9222 12.8622C12.1531 13.0743 12.415 13.2378 12.7095 13.3511C13.0024 13.4645 13.3102 13.522 13.6343 13.522C13.9643 13.522 14.278 13.4645 14.5739 13.3511C14.8714 13.2378 15.1333 13.0743 15.3612 12.8622ZM20.8525 14.921C21.3349 14.4659 21.5391 13.8106 21.5391 12.7371V9.0378H20.1393V9.37503H20.1215C19.7812 9.06578 19.4334 8.93324 18.88 8.93324C18.2629 8.93324 17.7228 9.13794 17.3455 9.57678C16.9667 10.0142 16.7773 10.6076 16.7773 11.3528C16.7773 12.0184 16.946 12.5486 17.2863 12.9447C17.6252 13.3408 18.1268 13.5529 18.7054 13.5529C19.3298 13.5529 19.7989 13.3924 20.12 12.9506H20.1378V13.2348C20.1393 13.9741 19.3506 14.3496 18.7779 14.2922V15.4025C19.4645 15.4997 20.2798 15.4614 20.8525 14.921ZM12.9462 10.5489C13.1356 10.356 13.365 10.2603 13.6328 10.2603C13.9051 10.2603 14.1374 10.356 14.3313 10.5489C14.5251 10.7418 14.6213 10.976 14.6213 11.2499C14.6213 11.5238 14.5251 11.7579 14.3313 11.9508C14.1374 12.1423 13.9051 12.2395 13.6328 12.2395C13.365 12.2395 13.1356 12.1438 12.9462 11.9508C12.7568 11.7579 12.6606 11.5252 12.6606 11.2499C12.6606 10.976 12.7553 10.7418 12.9462 10.5489ZM4.64057 10.5577C4.82998 10.3662 5.05934 10.269 5.32717 10.269C5.59945 10.269 5.83177 10.3648 6.02561 10.5577C6.21946 10.7506 6.31564 10.9847 6.31564 11.2587C6.31564 11.534 6.21946 11.7667 6.02561 11.9596C5.83177 12.1525 5.59945 12.2497 5.32717 12.2497C5.05934 12.2497 4.83146 12.1525 4.64057 11.9596C4.44968 11.7667 4.35498 11.5326 4.35498 11.2587C4.35498 10.9847 4.44968 10.7506 4.64057 10.5577ZM19.1714 10.269C18.9036 10.269 18.6742 10.3662 18.4833 10.5577C18.2939 10.7506 18.1978 10.9847 18.1978 11.2587C18.1978 11.5326 18.2939 11.7667 18.4833 11.9596C18.6742 12.1525 18.9036 12.2497 19.1714 12.2497C19.4422 12.2497 19.676 12.1525 19.8699 11.9596C20.0637 11.7667 20.1599 11.534 20.1599 11.2587C20.1599 10.9847 20.0622 10.7506 19.8699 10.5577C19.676 10.3648 19.4437 10.269 19.1714 10.269Z" fill="#868B94"></path></g><defs><clipPath id="clip0_1492_32254"><rect width="24" height="24" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg>
+              </a>
+              <div class="position-relatvie">
+                <img src="./../img/global-icon.svg" alt="Icon" class="position-absolute global-md-icon">
+                <select class="form-select" aria-label="Default select example">
+                  <option value="kr" selected>한국</option>
+                  <option value="1">영국</option>
+                  <option value="2">캐나다</option>
+                  <option value="3">미국</option>
+                  <option value="3">일본</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex-grow-1"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Under 768px -->
+    <div class="d-md-none footer__style">
+      <!-- Footer Section1 -->
+      <section class="py-5">
+        <div class="d-flex footer-sec1__style">
+          <p class="fw-bold m-0 text-app-download">당근마켓 앱 다운로드</p>
+          <div class="d-flex gap-basic-half">
+            <a href="#" class="fw-bold m-0">iOS</a>
+            <img src="./../img/move-icon.svg" alt="Icon">
+          </div>
+          <div class="d-flex gap-basic-half">
+            <a href="#" class="fw-bold m-0">Android</a>
+            <img src="./../img/move-icon.svg" alt="Icon">
+          </div>
+        </div>
+        <div class="d-flex">
+          <ul class="d-flex flex-column flex-grow-1 p-0 m-0">
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">중고거래</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">동네가게</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">당근알바</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">부동산 직거래</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">중고차 직거래</a>
+            </li>
+          </ul>
+          <ul class="d-flex flex-column flex-grow-1 p-0 m-0 footer-nav-md__style">
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">당근비즈니스</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">채팅하기</a>
+            </li>
+          </ul>
+          <ul class="d-flex flex-column flex-grow-1 p-0 m-0 footer-nav-md__style">
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">자주 묻는 질문</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">회사 소개</a>
+            </li>
+            <li class="footer-nav-list__style">
+              <a class="footer-nav-list-item__style" href="#">인재 채용</a>
+            </li>
+          </ul>
+          <div class="flex-grow-1"></div>
+        </div>
+      </section>
+      <!-- Footer Section2 -->
+      <section class="mx-auto footer-sec2__style">
+        <div class="mb-3">
+          <div class="d-flex align-items-center footer-text__style footer-text-small__style gap-basic-quarter">
+            <span><strong>대표</strong> 김용현, 황도연</span>
+            <span>
+              <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+            </span>
+            <span><strong>사업자번호</strong> 375-87-00088</span>
+          </div>
+          <div class="footer-text__style footer-text-small__style">
+            <span><strong>직업정보제공사업 신고번호</strong> 2016-서울서초-0051</span>
+          </div>
+          <div class="footer-text__style footer-text-small__style">
+            <span><strong>주소</strong> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+          </div>
+          <div class="d-flex align-items-center footer-text__style footer-text-small__style gap-basic-quarter">
+            <span><strong>전화</strong> 1544-9796</span>
+            <span>
+              <svg width="2" height="10" viewBox="0 0 2 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.5" x="0.535767" width="1.03646" height="10" fill="#868B94"></rect></svg>
+            </span>
+            <span><strong>고객문의</strong> cs@daangnservice.com</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-3 gap-basic">
+          <a class="footer-link__style footer-link-small__style" href="#">제휴 문의</a>
+          <a class="footer-link__style footer-link-small__style" href="#">광고 문의</a>
+          <a class="footer-link__style footer-link-small__style" href="#">PR 문의</a>
+          <a class="footer-link__style footer-link-small__style" href="#">IR 문의</a>
+        </div>
+        <div class="d-flex flex-wrap align-items-center mb-4">
+          <a class="footer-link__style footer-link-small__style" href="#">이용약관</a>
+          <a class="footer-link__style footer-link-small__style text-gray" href="#">개인정보처리방침</a>
+          <a class="footer-link__style footer-link-small__style" href="#">위치기반서비스 이용약관</a>
+          <a class="footer-link__style footer-link-small__style" href="#">이용자보호 비전과 계획</a>
+        </div>
+        <div class="d-flex align-items-center gap-basic">
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.7158 12.0458C22.7158 6.21012 18.0165 1.48242 12.2158 1.48242C6.41515 1.48242 1.71582 6.21012 1.71582 12.0458C1.71582 17.3181 5.55649 21.689 10.5732 22.4824V15.0974H7.90382V12.0458H10.5732V9.71716C10.5732 7.06928 12.1412 5.60918 14.5398 5.60918C15.6878 5.60918 16.8918 5.81575 16.8918 5.81575V8.412H15.5665C14.2645 8.412 13.8538 9.22421 13.8538 10.0599V12.0411H16.7658L16.2992 15.0927H13.8538V22.473C18.8752 21.6843 22.7158 17.3181 22.7158 12.0458Z" fill="#868B94"></path></svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.7928 3.67695C14.6079 3.67695 14.9413 3.68727 16.053 3.73611C17.081 3.78129 17.6392 3.94668 18.0107 4.08567C18.5028 4.26984 18.854 4.48988 19.223 4.84513C19.5919 5.20037 19.8204 5.53861 20.0116 6.01245C20.156 6.37024 20.3277 6.9078 20.3746 7.8976C20.4253 8.96817 20.4361 9.28924 20.4361 12.0001C20.4361 14.7109 20.4253 15.0319 20.3746 16.1025C20.3277 17.0923 20.156 17.6299 20.0116 17.9877C19.8204 18.4615 19.5919 18.7997 19.223 19.155C18.854 19.5102 18.5028 19.7303 18.0107 19.9144C17.6392 20.0534 17.081 20.2188 16.053 20.264C14.9415 20.3128 14.6081 20.3232 11.7928 20.3232C8.97759 20.3232 8.64417 20.3128 7.53264 20.264C6.50472 20.2188 5.94648 20.0534 5.57498 19.9144C5.08287 19.7303 4.73162 19.5102 4.36271 19.155C3.99381 18.7997 3.76531 18.4615 3.57409 17.9877C3.42971 17.6299 3.25796 17.0923 3.21105 16.1025C3.16032 15.0319 3.14961 14.7109 3.14961 12.0001C3.14961 9.28924 3.16032 8.96817 3.21105 7.89764C3.25796 6.9078 3.42971 6.37024 3.57409 6.01245C3.76531 5.53861 3.99381 5.20037 4.36271 4.84513C4.73162 4.48988 5.08287 4.26984 5.57498 4.08567C5.94648 3.94668 6.50472 3.78129 7.5326 3.73611C8.64434 3.68727 8.97776 3.67695 11.7928 3.67695ZM11.7928 1.84766C8.92955 1.84766 8.57056 1.85934 7.44605 1.90875C6.32384 1.95808 5.55749 2.12968 4.88684 2.38066C4.19356 2.64011 3.60561 2.98726 3.0195 3.55166C2.43339 4.11606 2.0729 4.68223 1.80347 5.34984C1.54282 5.99565 1.36463 6.73362 1.3134 7.81426C1.26209 8.89708 1.25 9.24282 1.25 12.0001C1.25 14.7573 1.26209 15.103 1.3134 16.1859C1.36463 17.2665 1.54282 18.0045 1.80347 18.6503C2.0729 19.3178 2.43339 19.8841 3.0195 20.4485C3.60561 21.0129 4.19356 21.36 4.88684 21.6195C5.55749 21.8704 6.32384 22.042 7.44605 22.0914C8.57056 22.1408 8.92955 22.1524 11.7928 22.1524C14.6561 22.1524 15.0152 22.1408 16.1396 22.0914C17.2618 22.042 18.0282 21.8704 18.6988 21.6195C19.3921 21.36 19.9801 21.0129 20.5662 20.4485C21.1523 19.8841 21.5128 19.3179 21.7822 18.6503C22.0428 18.0045 22.221 17.2665 22.2723 16.1859C22.3236 15.103 22.3357 14.7573 22.3357 12.0001C22.3357 9.24282 22.3236 8.89708 22.2723 7.81426C22.221 6.73362 22.0428 5.99565 21.7822 5.34984C21.5128 4.68223 21.1523 4.11606 20.5662 3.55166C19.9801 2.98726 19.3921 2.64011 18.6988 2.38066C18.0282 2.12968 17.2618 1.95808 16.1396 1.90875C15.0152 1.85934 14.6561 1.84766 11.7928 1.84766ZM11.7928 6.78666C8.80283 6.78666 6.37892 9.12079 6.37892 12.0001C6.37892 14.8793 8.80283 17.2135 11.7928 17.2135C14.7828 17.2135 17.2068 14.8793 17.2068 12.0001C17.2068 9.12079 14.7828 6.78666 11.7928 6.78666ZM11.7928 15.3842C9.85196 15.3842 8.27853 13.869 8.27853 12.0001C8.27853 10.1311 9.85196 8.61591 11.7928 8.61591C13.7337 8.61591 15.3071 10.1311 15.3071 12.0001C15.3071 13.869 13.7337 15.3842 11.7928 15.3842ZM18.6858 6.58068C18.6858 7.25353 18.1194 7.79899 17.4206 7.79899C16.7219 7.79899 16.1555 7.25353 16.1555 6.58068C16.1555 5.90784 16.7219 5.36242 17.4206 5.36242C18.1194 5.36242 18.6858 5.90784 18.6858 6.58068Z" fill="#868B94"></path></svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1492_32246)"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.6404 3.5339C22.6684 3.82139 23.4789 4.66332 23.7557 5.73112C24.2697 7.68193 24.2499 11.7478 24.2499 11.7478C24.2499 11.7478 24.2499 15.7932 23.7557 17.744C23.4789 18.8118 22.6684 19.6537 21.6404 19.9412C19.7623 20.4545 12.2499 20.4545 12.2499 20.4545C12.2499 20.4545 4.75739 20.4545 2.85954 19.9206C1.83154 19.6332 1.021 18.7912 0.744232 17.7234C0.25 15.7932 0.25 11.7273 0.25 11.7273C0.25 11.7273 0.25 7.68193 0.744232 5.73112C1.021 4.66332 1.85131 3.80086 2.85954 3.51337C4.73763 3 12.2499 3 12.2499 3C12.2499 3 19.7623 3 21.6404 3.5339ZM9.85784 7.99009L16.1049 11.7274L9.85784 15.4647V7.99009Z" fill="#868B94"></path></g><defs><clipPath id="clip0_1492_32246"><rect width="24" height="24" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1492_32254)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.86619 3H21.6338C23.0736 3 24.2515 4.17222 24.25 5.60362V16.1668C24.25 17.5982 23.0736 18.7704 21.6338 18.7704H14.2351C14.2351 18.7704 12.6961 22.6376 12.1768 22.6376C11.6588 22.6376 10.2353 18.7704 10.2353 18.7704H2.86619C1.42788 18.7704 0.25 17.5982 0.25 16.1668V5.60362C0.25 4.17222 1.42788 3 2.86619 3ZM5.66291 13.3438C6.2844 13.3438 6.85411 13.1685 7.22552 12.7518C7.59842 12.335 7.78191 11.9404 7.78191 11.2512C7.78191 10.6179 7.54959 10.0451 7.23292 9.67987C6.91477 9.31318 6.38355 8.99509 5.87303 9.01276C5.2767 9.03191 4.77062 9.14236 4.38885 9.46633H4.37109V7.12779H2.96237V13.2436H4.37109V12.9462H4.38885C4.6922 13.1759 5.10209 13.3438 5.66291 13.3438ZM8.81329 13.2893H10.2501V9.55175C10.1332 7.12337 8.11929 7.00115 8.11929 7.00115V8.51649C8.11929 8.51649 8.81329 8.63135 8.81329 9.50462V13.2893ZM15.3612 12.8622C15.5935 12.6472 15.7681 12.4028 15.8894 12.1289C16.0093 11.8564 16.0685 11.5663 16.0714 11.2585C16.0714 10.9507 16.0108 10.6606 15.8909 10.3867C15.7696 10.1128 15.595 9.86836 15.3626 9.65336C15.1333 9.4413 14.8714 9.27784 14.5754 9.16444C14.278 9.05105 13.9658 8.99509 13.6358 8.99509C13.3117 8.99509 13.0039 9.05105 12.7109 9.16444C12.4179 9.27784 12.156 9.43983 11.9237 9.65336C11.6855 9.8772 11.5064 10.1246 11.3836 10.3956C11.2608 10.6665 11.2001 10.9552 11.2001 11.2585C11.2001 11.5619 11.2608 11.8505 11.3821 12.12C11.5049 12.391 11.684 12.6384 11.9222 12.8622C12.1531 13.0743 12.415 13.2378 12.7095 13.3511C13.0024 13.4645 13.3102 13.522 13.6343 13.522C13.9643 13.522 14.278 13.4645 14.5739 13.3511C14.8714 13.2378 15.1333 13.0743 15.3612 12.8622ZM20.8525 14.921C21.3349 14.4659 21.5391 13.8106 21.5391 12.7371V9.0378H20.1393V9.37503H20.1215C19.7812 9.06578 19.4334 8.93324 18.88 8.93324C18.2629 8.93324 17.7228 9.13794 17.3455 9.57678C16.9667 10.0142 16.7773 10.6076 16.7773 11.3528C16.7773 12.0184 16.946 12.5486 17.2863 12.9447C17.6252 13.3408 18.1268 13.5529 18.7054 13.5529C19.3298 13.5529 19.7989 13.3924 20.12 12.9506H20.1378V13.2348C20.1393 13.9741 19.3506 14.3496 18.7779 14.2922V15.4025C19.4645 15.4997 20.2798 15.4614 20.8525 14.921ZM12.9462 10.5489C13.1356 10.356 13.365 10.2603 13.6328 10.2603C13.9051 10.2603 14.1374 10.356 14.3313 10.5489C14.5251 10.7418 14.6213 10.976 14.6213 11.2499C14.6213 11.5238 14.5251 11.7579 14.3313 11.9508C14.1374 12.1423 13.9051 12.2395 13.6328 12.2395C13.365 12.2395 13.1356 12.1438 12.9462 11.9508C12.7568 11.7579 12.6606 11.5252 12.6606 11.2499C12.6606 10.976 12.7553 10.7418 12.9462 10.5489ZM4.64057 10.5577C4.82998 10.3662 5.05934 10.269 5.32717 10.269C5.59945 10.269 5.83177 10.3648 6.02561 10.5577C6.21946 10.7506 6.31564 10.9847 6.31564 11.2587C6.31564 11.534 6.21946 11.7667 6.02561 11.9596C5.83177 12.1525 5.59945 12.2497 5.32717 12.2497C5.05934 12.2497 4.83146 12.1525 4.64057 11.9596C4.44968 11.7667 4.35498 11.5326 4.35498 11.2587C4.35498 10.9847 4.44968 10.7506 4.64057 10.5577ZM19.1714 10.269C18.9036 10.269 18.6742 10.3662 18.4833 10.5577C18.2939 10.7506 18.1978 10.9847 18.1978 11.2587C18.1978 11.5326 18.2939 11.7667 18.4833 11.9596C18.6742 12.1525 18.9036 12.2497 19.1714 12.2497C19.4422 12.2497 19.676 12.1525 19.8699 11.9596C20.0637 11.7667 20.1599 11.534 20.1599 11.2587C20.1599 10.9847 20.0622 10.7506 19.8699 10.5577C19.676 10.3648 19.4437 10.269 19.1714 10.269Z" fill="#868B94"></path></g><defs><clipPath id="clip0_1492_32254"><rect width="24" height="24" fill="white" transform="translate(0.25)"></rect></clipPath></defs></svg>
+          </a>
+          <div class="position-relatvie">
+            <img src="./../img/global-icon.svg" alt="Icon" class="position-absolute global-icon">
+            <select class="form-select" aria-label="Default select example">
+              <option value="kr" selected>한국</option>
+              <option value="1">영국</option>
+              <option value="2">캐나다</option>
+              <option value="3">미국</option>
+              <option value="3">일본</option>
+            </select>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script>
+    const myOffcanvas = document.getElementById('menuModal')
+    const menuIcon = document.getElementById('menu-icon')
+    const closeIcon = document.getElementById('close-icon')
+
+    myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
+      closeIcon.classList.remove('d-md-none')
+      closeIcon.classList.add('d-none')
+      menuIcon.classList.remove('d-none')
+      menuIcon.classList.add('d-md-none')
+    })
+
+    myOffcanvas.addEventListener('show.bs.offcanvas', event => {
+      menuIcon.classList.remove('d-md-none')
+      menuIcon.classList.add('d-none')
+      closeIcon.classList.remove('d-none')
+      closeIcon.classList.add('d-md-none')
+    })
+
+    menuIcon.addEventListener('click', () => {
+      const navStyleDiv = document.querySelector('.nav__style')
+      navStyleDiv.setAttribute('style', '')
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

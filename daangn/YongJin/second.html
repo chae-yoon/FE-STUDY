@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>당신 근처의 당근마켓</title>
+  <script src="https://kit.fontawesome.com/7c01b20e08.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href= "https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+  <style>
+    .footer-a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .footer-a-a{
+      text-decoration: none;
+      color: lightslategray;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    li{
+      list-style: none;
+    }
+
+    .textover {
+        width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .textover-second {
+        width: 342px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      } 
+
+  </style>
+</head>
+<nav>
+  <div class="navbar navbar-expand-md bg-white sticky-top">
+    <div class="container">
+      <div>
+        <a class="navbar-brand" href="../YongJin/main.html">
+          <img src="https://dnvefa72aowie.cloudfront.net/karrot-cs/etc/202007/0cf1d10235c37b2635c02719125da37cc1bd632518198b1e1da7f5a364156540.png" alt="" width="100" height="28">
+        </a>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link"style="margin-right: 15px;" href="../YongJin/main.html"><b>중고거래</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"style="margin-right: 15px; color: coral; " href="../YongJin/second.html"><b>동네가게</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-right: 15px;" href="../YongJin/third.html"><b>알바</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"style="margin-right: 15px;" href="../YongJin/fourth.html"><b>부동산 직거래</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"style="margin-right: 15px;" href="../YongJin/Fifth.html"><b>중고차 직거래</b></a>
+            </li>
+        </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control d-none d-lg-block border-0 bg-secondary-subtle" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style="width: 288px; height: 40px; margin-right: 12px;" >
+            <button class="btn d-lg-none d-xl-none d-xxl-none" type="submit" style="width: 40px; height: 56px;" ><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <form class="d-flex">
+            <button class="btn btn-outline-light border border-dark d-none d-md-block" type="submit" style="width: 98px; height: 40px;" ><b style="color: black;">채팅하기</b></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 상단 -->
+  <main>
+    <section>
+      <div class="row w-100 m-0" style="background-color: lightgoldenrodyellow;">
+        <div class="col-12 col-lg-2 my-auto offset-2 d-none d-lg-block">
+          <h1 style="margin-bottom: 0; margin-top: 20px; width: 350px;">동네 이웃들이</h1><h1  style="width: 400px;">자주 가는 동네 가게</h1>
+          <p style="width: 160px; margin-bottom: 0;">우리 동네 사람들이</p><p style="width: 220px;"> 이용하는 가게를 찾아보세요.</p>
+        </div>
+        <div class="col-12 col-lg-6 d-block d-lg-none">
+          <h1 style="margin-bottom: 0; margin-top: 20px;">동네 이웃들이</h1><h1>자주 가는 동네 가게</h1>
+        </div>
+        <div class="col-12 text-center col-lg-6 offset-1 d-none d-lg-block p-0" style="width: 453;">
+          <img style="margin-top: 50px;" class="w-75" src="https://www.daangn.com/_next/static/media/nearby_stores_hero_image_3x.47c43e04.png" alt="">
+        </div>
+        <div class="col-12 text-center col-lg-6 p-0 d-block d-lg-none ">
+          <img style="margin-top: 50px;" class="w-75" src="https://www.daangn.com/_next/static/media/nearby_stores_hero_image_3x.47c43e04.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 다양한 동네가게... -->
+  <main>
+    <section>
+      <div class="container" style="margin-top: 64px; margin-left: auto; margin-right: auto;width: 768px;">
+          <h2 h2 class="text-center">다양한 동네가게를 볼 수 있어요</h2>
+            <div class="row justify-content-center col-12 mb-5">
+                <button class="btn btn-outline-light border border-dark col-1 p-0" type="submit" style="width: 60px; height: 36px; color: black;" id="All">전체</button>
+                <button class="btn btn-outline-light border border-dark col-1 p-0 ms-2" type="submit" style="width: 60px; height: 36px; color: black;" id="restaurant">식당</button>
+                <button class="btn btn-outline-light border border-dark col-1 p-0 ms-2" type="submit" style="width: 60px; height: 36px; color: black;" id="cafe">카페</button>
+                <button class="btn btn-outline-light border border-dark col-2 p-0 ms-2" type="submit" style="width: 93.47px; height: 36px; color: black;" id="move">용달/이사</button>
+                <button class="btn btn-outline-light border border-dark col-2 p-0 ms-2" type="submit" style="width: 93.47px; height: 36px; color: black;" id="beauty">뷰티/미용</button>
+                <button class="btn btn-outline-light border border-dark col-4 p-0 ms-2" type="submit" style="width: 154.92px; height: 36px; color: black;" id="health">헬스/필라테스/요가</button>
+            </div>
+            <!-- 좌측 -->
+            <!-- Allpage -->
+            <div class="row m-0" id="Allpage">
+              <ul class="col-6">
+                <!-- 임은하푸드 인천창고 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-7 p-0 text-start"><b>임은하푸드 인천창고</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">천곡동</span>
+                        <span class="p-0 text-start textover">임은하푸드는 전국에 수산물 창고를 둔 곳입니다 매일 아침 창고소식을 전해요. 단골맺기를 하시면 소식 알람이 간답니다. 꼭 저희에게 구매하지 않더라도, 시장가시기 전에 그 날 시세</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,716·단골 26,506·수산물</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 찐신선 정육점 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/21709505/1653454688660/ZjZmYTViYWMzMWRkMjhlNjg0NGIxOGRhM2UzOGNiMDBlNTY1ZThmOWRkYTYyMTFiZDA0MzhjMGY2NzI3N2M1NC5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-5 p-0 text-start"><b>찐신선 정육점</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">팔탄면</span>
+                        <span class="p-0 text-start textover">세계적인 육류 선두 기업들로부터 직수입하여 유통마진없이 최종소비자에게 배송해드리는 찐신선 온라인정육점 입니다. 매주 다양한 고기부위 할인소식 받으시고 "좋은고기""좋은가격"에 드세요
+                        </span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 675·단골 21,856·정육점</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 거저주는 거저몰 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50095049/1638929787569/978227fd2caa69a520f7169a35af8a740319cfa5896a8173b08f12044632c757.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-6 p-0 text-start"><b>거저주는 거저몰</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">등촌동</span>
+                        <span class="p-0 text-start textover">최저가 농·축·수산물 쇼핑몰입니다. 제조사와 소비자 사이의 유통단계를 축소시켜 건강한 식품을 합리적인 가격으로 소개합니다.※경매 소식 받는 건 공짜에요!!※ ▼1:1 카카오톡 주문/</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,362·단골 20,278·식육판매업</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 렌탈 24 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/26101884/1667193649988/Yzg0M2MyOTMxZDkwNWRjYTM1YzQ1MjMzODM3ZWU2MTVmNjhmMzc4Y2MzNTc5MzdlZDIxODM1OTA0MzI0MWM3Mi5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-3 p-0 text-start"><b>렌탈 24</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">장기동</span>
+                        <span class="p-0 text-start textover">후기만 600개 성지[렌탈24]입니다♥정수기/공청기/비데 등 렌탈 온라인 공식 접수처입니다! 혜택 설치 당일 지급/업계 최고혜택 약속드립니다! 렌탈료는 최저로, 혜택은</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 629·단골 17,462·정수기판매</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 물고기와 육고기 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/59615634/1655340335580/ODllOTRlNDZkOWZlMTJhY2ZiM2E3NzBmMGQyNGMwZjBjODgzMGNmZTY0MGFmZDRlOWY2ZGM1YmYzYjEzY2EyOS5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-6 p-0 text-start"><b>물고기와 육고기</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">소룡동</span>
+                        <span class="p-0 text-start textover">좋은데 저렴한 상품은 없습니다. 가격의 합당한. 거품 없는 합당...</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,231·단골 15,081·식자재판매</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              <!-- 우측 -->
+              <ul class="col-5 offset-1">
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/17969333/1648446564196/4eb8d7c682d7d31440333a7a5f4f1895721eee1b32e06993d625d9f669800d86.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-4 p-0 text-start"><b>갑을농수산</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">천곡동</span>
+                      <span class="p-0 text-start textover">안녕하세요! 새벽에 수산물을 받아와 도매가로 드리는 갑을농수산입니다. 전국 7개 지점에 창고를 두고 있는 이는 산지의 신선함을 그대로 배송하기 위합입니다. 새로운 고객, 아니! 새로운 가족분들을 위함</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,578·단골 22,314·식사재판매</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 식품명가 파란거북 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_3568585/1669188796548/f0640532c68de863ea734e2349ff0379a759e345ffd71b1fe68ba22108914459.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-6 p-0 text-start"><b>식품명가 파란거북</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">만촌동</span>
+                      <span class="p-0 text-start textover">[지역회사가 아닌 산지직발송 원청업체입니다.] 식품 명가 파란거북. 거북은 예로부터 신뢰와 신의를 상징한다 했습니다. 신뢰, 신의, 품질, 돈보다 중요한 가치들이 명가를 만듭니다. 좋은 상품으로 말하</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,177·단골 21,314·수산물</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 팔팔키친 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/59321401/1654655330999/ZTI4NGI3NjdmZTU5YzJiNDVlY2YxMmE2ZTdhN2Y3ZWQ1ZDU5ODMzMDgzZDdmY2Q1ZTUzOTA0NmMyZWNiY2VmNy5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-3 p-0 text-start"><b>팔팔키친</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">통진읍</span>
+                      <span class="p-0 text-start textover">주말 및 공휴일은 답변이 조금 늦어도 양해해주시고 채팅으로 남겨주세요!! 또한 매장이 아닌 창고라 말씀 안주시고 찾아오시는 건 삼가주시면 감사하겠습니다! 저희는 김포에</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,465·단골 17,758·식육판매점</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 제주농협 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_3297562/1667283386776/b926e1715c9b26523a4c17b940ad5f29d96838acfa61f6621bbccb5829514ae0.png?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-3 p-0 text-start"><b>제주농협</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">천곡동</span>
+                      <span class="p-0 text-start textover">부득이 채팅 답변이 어렵습니다. 문의사항은 서비스 센터로 부탁드립니다!☎070-4471-0231 제주도내 19개 지역농협의 농산물을 판매하는 통합마케팅 조직입니다.</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,716·단골 26,506·수산물</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 주방홀릭 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/31657420/1678103289195/NzBhN2U2NGZhN2RlOTlmYjM2YmYxODcxZjBhYjQ5ZGMzNzU3MWNhNmMzM2FlOTA0NTE3YjM0N2FjNjY1NDhiNC5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-4 p-0 text-start"><b>주방 홀릭</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">오천읍</span>
+                      <span class="p-0 text-start textover">안녕하세요 ~~^^ 저는 전국 8곳 창고를 운영중입니다. 매일 새...</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,342·단골 14,884·수산물</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 좌측 -->
+            <!-- restaurantpage -->
+            <div class="row m-0 d-none" id="restaurantpage">
+              <ul class="col-6">
+                <!-- 임은하푸드 인천창고 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-7 p-0 text-start"><b>123132123</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">천곡동</span>
+                        <span class="p-0 text-start textover">임은하푸드는 전국에 수산물 창고를 둔 곳입니다 매일 아침 창고소식을 전해요. 단골맺기를 하시면 소식 알람이 간답니다. 꼭 저희에게 구매하지 않더라도, 시장가시기 전에 그 날 시세</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,716·단골 26,506·수산물</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 찐신선 정육점 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/21709505/1653454688660/ZjZmYTViYWMzMWRkMjhlNjg0NGIxOGRhM2UzOGNiMDBlNTY1ZThmOWRkYTYyMTFiZDA0MzhjMGY2NzI3N2M1NC5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-5 p-0 text-start"><b>찐신선 정육점</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">팔탄면</span>
+                        <span class="p-0 text-start textover">세계적인 육류 선두 기업들로부터 직수입하여 유통마진없이 최종소비자에게 배송해드리는 찐신선 온라인정육점 입니다. 매주 다양한 고기부위 할인소식 받으시고 "좋은고기""좋은가격"에 드세요
+                        </span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 675·단골 21,856·정육점</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 거저주는 거저몰 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50095049/1638929787569/978227fd2caa69a520f7169a35af8a740319cfa5896a8173b08f12044632c757.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-6 p-0 text-start"><b>거저주는 거저몰</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">등촌동</span>
+                        <span class="p-0 text-start textover">최저가 농·축·수산물 쇼핑몰입니다. 제조사와 소비자 사이의 유통단계를 축소시켜 건강한 식품을 합리적인 가격으로 소개합니다.※경매 소식 받는 건 공짜에요!!※ ▼1:1 카카오톡 주문/</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,362·단골 20,278·식육판매업</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 렌탈 24 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/26101884/1667193649988/Yzg0M2MyOTMxZDkwNWRjYTM1YzQ1MjMzODM3ZWU2MTVmNjhmMzc4Y2MzNTc5MzdlZDIxODM1OTA0MzI0MWM3Mi5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-3 p-0 text-start"><b>렌탈 24</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">장기동</span>
+                        <span class="p-0 text-start textover">후기만 600개 성지[렌탈24]입니다♥정수기/공청기/비데 등 렌탈 온라인 공식 접수처입니다! 혜택 설치 당일 지급/업계 최고혜택 약속드립니다! 렌탈료는 최저로, 혜택은</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 629·단골 17,462·정수기판매</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <!-- 물고기와 육고기 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                    <div class="row">
+                      <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/59615634/1655340335580/ODllOTRlNDZkOWZlMTJhY2ZiM2E3NzBmMGQyNGMwZjBjODgzMGNmZTY0MGFmZDRlOWY2ZGM1YmYzYjEzY2EyOS5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" style="height: 23.75px;">
+                        <span class="col-6 p-0 text-start"><b>물고기와 육고기</b></span>
+                        <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">소룡동</span>
+                        <span class="p-0 text-start textover">좋은데 저렴한 상품은 없습니다. 가격의 합당한. 거품 없는 합당...</span>
+                        <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,231·단골 15,081·식자재판매</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              <!-- 우측 -->
+              <ul class="col-5 offset-1">
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/17969333/1648446564196/4eb8d7c682d7d31440333a7a5f4f1895721eee1b32e06993d625d9f669800d86.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-4 p-0 text-start"><b>갑을농수산</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">천곡동</span>
+                      <span class="p-0 text-start textover">안녕하세요! 새벽에 수산물을 받아와 도매가로 드리는 갑을농수산입니다. 전국 7개 지점에 창고를 두고 있는 이는 산지의 신선함을 그대로 배송하기 위합입니다. 새로운 고객, 아니! 새로운 가족분들을 위함</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,578·단골 22,314·식사재판매</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 식품명가 파란거북 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_3568585/1669188796548/f0640532c68de863ea734e2349ff0379a759e345ffd71b1fe68ba22108914459.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-6 p-0 text-start"><b>식품명가 파란거북</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">만촌동</span>
+                      <span class="p-0 text-start textover">[지역회사가 아닌 산지직발송 원청업체입니다.] 식품 명가 파란거북. 거북은 예로부터 신뢰와 신의를 상징한다 했습니다. 신뢰, 신의, 품질, 돈보다 중요한 가치들이 명가를 만듭니다. 좋은 상품으로 말하</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,177·단골 21,314·수산물</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 팔팔키친 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/59321401/1654655330999/ZTI4NGI3NjdmZTU5YzJiNDVlY2YxMmE2ZTdhN2Y3ZWQ1ZDU5ODMzMDgzZDdmY2Q1ZTUzOTA0NmMyZWNiY2VmNy5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-3 p-0 text-start"><b>팔팔키친</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">통진읍</span>
+                      <span class="p-0 text-start textover">주말 및 공휴일은 답변이 조금 늦어도 양해해주시고 채팅으로 남겨주세요!! 또한 매장이 아닌 창고라 말씀 안주시고 찾아오시는 건 삼가주시면 감사하겠습니다! 저희는 김포에</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,465·단골 17,758·식육판매점</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 제주농협 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_3297562/1667283386776/b926e1715c9b26523a4c17b940ad5f29d96838acfa61f6621bbccb5829514ae0.png?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-3 p-0 text-start"><b>제주농협</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">천곡동</span>
+                      <span class="p-0 text-start textover">부득이 채팅 답변이 어렵습니다. 문의사항은 서비스 센터로 부탁드립니다!☎070-4471-0231 제주도내 19개 지역농협의 농산물을 판매하는 통합마케팅 조직입니다.</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,716·단골 26,506·수산물</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+                <!-- 주방홀릭 -->
+                <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 368px; height: 124.77px; color: black; margin-right: 32px;">
+                  <div class="row">
+                    <img class="col-3" style="width: 80px; height: 80px; padding: 0; border-radius: 50%; margin-left: 15px;" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/31657420/1678103289195/NzBhN2U2NGZhN2RlOTlmYjM2YmYxODcxZjBhYjQ5ZGMzNzU3MWNhNmMzM2FlOTA0NTE3YjM0N2FjNjY1NDhiNC5qcGc=.jpeg?q=82&s=640x640&t=crop" alt="">
+                    <div class="row col-9 ms-2" style="height: 23.75px;">
+                      <span class="col-4 p-0 text-start"><b>주방 홀릭</b></span>
+                      <span class="col-2 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">오천읍</span>
+                      <span class="p-0 text-start textover">안녕하세요 ~~^^ 저는 전국 8곳 창고를 운영중입니다. 매일 새...</span>
+                      <span class="p-0 text-start" style="font-size: 12px; color: lig;"> 후기 1,342·단골 14,884·수산물</span>
+                    </div>
+                  </div>
+                  </button>
+                </li>
+              </ul>
+            </div>  
+            
+          
+      </div>
+    </section>
+  </main>
+  <main>
+    <section>
+      <div class="container" style="margin-top: 64px; margin-left: auto; margin-right: auto;width: 768px;">
+              <!-- 동네 이웃이 남긴 후기 -->
+              <div class="container" style="margin-top: 80px;">
+                <h1>동네 이웃이 남긴 후기를 찾아보세요</h1>
+              </div>
+              <div class="row m-0">
+                <ul class="col-6">
+                  <!-- 소현사랑 -->
+                  <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 376px; height: 212px; color: black;">
+                      <div class="row justify-content-center">
+                        <img class="col-3" style="width: 36px; height: 36px; padding: 0; border-radius: 50%;" src="https://dnvefa72aowie.cloudfront.net/origin/profile/202206/7b7f15cdc5834f68aeea58ab97d3a2a52166d8c6d274c537b4d331cd8888ddb7.webp?q=82&s=640x640&t=crop" alt="">
+                        <div class="row col-9 ms-2" >
+                          <span class="col-4 p-0 text-start row"><b>소현사랑</b></span>
+                          <span class="col-3 text-center p-0" style="border: 1px solid Orange; font-size: 12px; width: 32px; height: 24px; border-radius: 40%; background-color: orangered; color : white; line-height: 24px;">단골</span>
+                          <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">태화동 인증 3회</span>
+                        </div>
+                        <span class="p-0 textover-second mb-2">태화동 맛집이에요~ 어른, 아이들 입맛에 잘맞아요~ 우리딸이 또 먹으러 가자고 졸라요 ㅜㅜ 이...</span>
+
+                        <div class="card mb-3 p-0" style="max-width: 342px; height: 64px;">
+                          <div class="row g-0">
+                            <div class="col-md-2">
+                              <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/7561971/1652343504992/NTVmNTZiZWIxMTA5OGRhOTQ0ZDU1OTgwNjYxYjRlOTdmYzMwMzcyYTNjMmU5MTZhYjI1ZTU5YmJmZTZhZmYyZS5qcGc=.jpeg?q=82&s=640x640&t=crop" style="width: 62px; height: 62px;" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body text-start p-2 ps-4">
+                                <p class="card-text mb-0">새마을갈비 태화점</p>
+                                <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">후기 26·단골 433·일반음식</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  </li>
+                  <!-- 좋은선택 -->
+                  <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 376px; height: 212px; color: black;">
+                    <div class="row justify-content-center">
+                      <img class="col-3" style="width: 36px; height: 36px; padding: 0; border-radius: 50%;" src="https://dnvefa72aowie.cloudfront.net/origin/profile/202206/7b7f15cdc5834f68aeea58ab97d3a2a52166d8c6d274c537b4d331cd8888ddb7.webp?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" >
+                        <span class="col-4 p-0 text-start row"><b>소현사랑</b></span>
+                        <span class="col-3 text-center p-0" style="border: 1px solid Orange; font-size: 12px; width: 32px; height: 24px; border-radius: 40%; background-color: orangered; color : white; line-height: 24px;">단골</span>
+                        <span class="col-12 p-0" style="font-size: 12px; text-align: start; color: gray; ">태화동 인증 3회</span>
+                      </div>
+                      <span class="p-0 textover-second mb-2">태화동 맛집이에요~ 어른, 아이들 입맛에 잘맞아요~ 우리딸이 또 먹으러 가자고 졸라요 ㅜㅜ 이...</span>
+
+                      <div class="card mb-3 p-0" style="max-width: 342px; height: 64px;">
+                        <div class="row g-0">
+                          <div class="col-md-2">
+                            <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/7561971/1652343504992/NTVmNTZiZWIxMTA5OGRhOTQ0ZDU1OTgwNjYxYjRlOTdmYzMwMzcyYTNjMmU5MTZhYjI1ZTU5YmJmZTZhZmYyZS5qcGc=.jpeg?q=82&s=640x640&t=crop" style="width: 62px; height: 62px;" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body text-start p-2 ps-4">
+                              <p class="card-text mb-0">새마을갈비 태화점</p>
+                              <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">후기 26·단골 433·일반음식</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                </ul>
+                <ul class="col-5 offset-1">
+                  <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 376px; height: 212px; color: black;">
+                    <div class="row justify-content-center">
+                      <img class="col-3" style="width: 36px; height: 36px; padding: 0; border-radius: 50%;" src="https://dnvefa72aowie.cloudfront.net/origin/profile/202206/7b7f15cdc5834f68aeea58ab97d3a2a52166d8c6d274c537b4d331cd8888ddb7.webp?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" >
+                        <span class="col-4 p-0 text-start row"><b>소현사랑</b></span>
+                        <span class="col-3 text-center p-0" style="border: 1px solid Orange; font-size: 12px; width: 32px; height: 24px; border-radius: 40%; background-color: orangered; color : white; line-height: 24px;">단골</span>
+                        <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">태화동 인증 3회</span>
+                      </div>
+                      <span class="p-0 textover-second mb-2">태화동 맛집이에요~ 어른, 아이들 입맛에 잘맞아요~ 우리딸이 또 먹으러 가자고 졸라요 ㅜㅜ 이...</span>
+
+                      <div class="card mb-3 p-0" style="max-width: 342px; height: 64px;">
+                        <div class="row g-0">
+                          <div class="col-md-2">
+                            <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/7561971/1652343504992/NTVmNTZiZWIxMTA5OGRhOTQ0ZDU1OTgwNjYxYjRlOTdmYzMwMzcyYTNjMmU5MTZhYjI1ZTU5YmJmZTZhZmYyZS5qcGc=.jpeg?q=82&s=640x640&t=crop" style="width: 62px; height: 62px;" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body text-start p-2 ps-4">
+                              <p class="card-text mb-0">새마을갈비 태화점</p>
+                              <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">후기 26·단골 433·일반음식</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                  <!-- 식품명가 파란거북 -->
+                  <li><button class="btn btn-outline-light border-bottom col-4 p-0 mb-2" type="submit" style="width: 376px; height: 212px; color: black;">
+                    <div class="row justify-content-center">
+                      <img class="col-3" style="width: 36px; height: 36px; padding: 0; border-radius: 50%;" src="https://dnvefa72aowie.cloudfront.net/origin/profile/202206/7b7f15cdc5834f68aeea58ab97d3a2a52166d8c6d274c537b4d331cd8888ddb7.webp?q=82&s=640x640&t=crop" alt="">
+                      <div class="row col-9 ms-2" >
+                        <span class="col-4 p-0 text-start row"><b>소현사랑</b></span>
+                        <span class="col-3 text-center p-0" style="border: 1px solid Orange; font-size: 12px; width: 32px; height: 24px; border-radius: 40%; background-color: orangered; color : white; line-height: 24px;">단골</span>
+                        <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">태화동 인증 3회</span>
+                      </div>
+                      <span class="p-0 textover-second mb-2">태화동 맛집이에요~ 어른, 아이들 입맛에 잘맞아요~ 우리딸이 또 먹으러 가자고 졸라요 ㅜㅜ 이...</span>
+
+                      <div class="card mb-3 p-0" style="max-width: 342px; height: 64px;">
+                        <div class="row g-0">
+                          <div class="col-md-2">
+                            <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/7561971/1652343504992/NTVmNTZiZWIxMTA5OGRhOTQ0ZDU1OTgwNjYxYjRlOTdmYzMwMzcyYTNjMmU5MTZhYjI1ZTU5YmJmZTZhZmYyZS5qcGc=.jpeg?q=82&s=640x640&t=crop" style="width: 62px; height: 62px;" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body text-start p-2 ps-4">
+                              <p class="card-text mb-0">새마을갈비 태화점</p>
+                              <span class="col-12 p-0" style="font-size: 12px; text-align: start; line-height: 25px; color: gray;">후기 26·단골 433·일반음식</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                </ul>
+                <ul>
+                  <div class="row p-4 mb-5" style="background-color: rgb(255, 219, 205);" >
+                    <div class="col-1 p-0" style="color: black; line-height: 72px;"><img src="https://www.daangn.com/_next/static/media/ic_category_town_colored_m.13979d69.svg" alt=""></div>
+                    <div class="col-7 p-0 ps-5" style="color: black;"><b style="line-height: 50px;">가게를 운영하고 계신가요?</b>
+                    <p class="mb-0" style="line-height: 0;">당근마켓에 등록하고 이웃에게 알려보세요!</p></div>
+                    <div class="col-4" style="line-height: 72px;">
+                    <button class="btn btn-outline-light p-0 ms-2" type="submit" style="width: 180px; height: 40px; color: white; border: 1px solid orange; background-color: orangered;" >카페</button>
+                  </div>
+                </div>
+                </ul>
+            </div>
+          </div>    
+    </section>
+  </main>
+
+
+  
+  <!-- footer -->
+  <footer>
+    <!-- xl 이하일때 -->
+    <hr>
+    <div class="container">
+      <div class="col-9 offset-3 p-0 d-block d-xl-none">
+        <p class="m-0" style="font-size: 13px;"><b>당근마켓 앱 다운로드</b> <a style="font-size: 15px;" class="footer-a" href="#"><b>ios<img src="../YongJin/image/arrow.PNG" alt=""></b></a> <a style="font-size: 15px;" class="footer-a" href=""><b>Android <img src="../YongJin/image/arrow.PNG" alt=""></b></a></p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row container col-9 offset-3 pt-5 pb-4 ps-0 pe-0">
+        <div class="col-1" style="width: 131.47px;">
+          <div class="footer-box"><a class="footer-a ft" href="#">중고거래</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">동네가게</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">당근알바</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">부동산 거래</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">중고차 직거래</a></div>
+        </div>
+        <div class="col-1" style="width: 131.47px;">
+          <div class="footer-box"><a class="footer-a ft" href="#">당근비즈니스</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">채팅하기</a></div>
+        </div>
+        <div class="col-1" style="width: 131.47px; margin-right: 69.594px;">
+          <div class="footer-box"><a class="footer-a ft" href="#">자주 묻는 질문</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">회사 소개</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">인재 채용</a></div>
+        </div>
+        <!-- xl 이상일때만 보임 -->
+        <div class="col-12 p-0 d-none d-xl-block" style="width: 300px;">
+          <p class="m-0"><b>당근마켓 앱 다운로드</b></p>
+          <div>
+            <button class="btn btn-outline-light col-6 p-0" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/apple.PNG" alt=""></img></button>
+            <button class="btn btn-outline-light col-6 p-0 ms-3" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/google.PNG" alt=""></button>  
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row container col-9 offset-3 pt-2 ps-0 pe-0" style="padding-bottom: 100px;">
+          <hr>
+          <div class="col-6">
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>대표</b> 김용현, 황도연</span>
+          <span style="color: lightsteelblue;">|</span>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>사업자번호</b> 375-87-00088</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>직업정보제공사업 신고번호</b> 2016-서울서초-0051</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>주소</b> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>전화</b> 1544-9796</span>
+          <span style="color: lightsteelblue;">|</span>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>고객문의</b> cs@daangnservice.com</span><br>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">제휴 문의</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">광고 문의</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">PR 문의</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">IR 문의</a><br>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">이용약관</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">개인정보처리방침</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">위치기반서비스 이용약관</a>
+          <a class="footer-a-a ft" style="font-size: 12px;" href="#">이용자보호 비전과 계획</a>
+          <div class="col-12 ms-0 d-block d-xl-none">
+            <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+            <a class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">한국</button></li>
+                <li><button class="dropdown-item" type="button">영국</button></li>
+                <li><button class="dropdown-item" type="button">캐나다</button></li>
+                <li><button class="dropdown-item" type="button">미국</button></li>
+                <li><button class="dropdown-item" type="button">일본</button></li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="col-5 ms-0 d-none d-xl-block">
+          <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+          <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+          <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+          <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+          <a class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+              <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">한국</button></li>
+              <li><button class="dropdown-item" type="button">영국</button></li>
+              <li><button class="dropdown-item" type="button">캐나다</button></li>
+              <li><button class="dropdown-item" type="button">미국</button></li>
+              <li><button class="dropdown-item" type="button">일본</button></li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+<script>
+
+const Allbtn = document.querySelector('#All')
+const restaurantbtn = document.querySelector('#restaurant')
+const cafebtn = document.querySelector('#cafe')
+const movebtn = document.querySelector('#move')
+const beautybtn = document.querySelector('#beauty')
+const healthbtn = document.querySelector('#health')
+Allbtn.classList.add('bg-dark', 'text-light')
+
+Allbtn.addEventListener('click', (event) => {
+  Allbtn.classList.add('bg-dark', 'text-light')
+  reset(Allbtn)
+  Allpage.classList.remove('d-none')
+  resetpage(Allbtn)
+})
+
+restaurantbtn.addEventListener('click', (event) => {
+  restaurantbtn.classList.add('bg-dark', 'text-light')
+  reset(restaurantbtn)
+  Allpage.classList.add('d-none')
+  resetpage(restaurantbtn)
+})
+
+cafebtn.addEventListener('click', (event) => {
+  cafebtn.classList.add('bg-dark', 'text-light')
+  reset(cafebtn)
+  Allpage.classList.add('d-none')
+  resetpage(cafebtn)
+})
+
+movebtn.addEventListener('click', (event) => {
+  movebtn.classList.add('bg-dark', 'text-light')
+  reset(movebtn)
+  Allpage.classList.add('d-none')
+  resetpage(movebtn)
+})
+
+beautybtn.addEventListener('click', (event) => {
+  beautybtn.classList.add('bg-dark', 'text-light')
+  reset(beautybtn)
+  Allpage.classList.add('d-none')
+  resetpage(beautybtn)
+})
+
+healthbtn.addEventListener('click', (event) => {
+  healthbtn.classList.add('bg-dark', 'text-light')
+  reset(healthbtn)
+  Allpage.classList.add('d-none')
+  resetpage(healthbtn)
+})
+
+function reset(selectedbtn) {
+  const buttons = document.querySelectorAll('button')
+  buttons.forEach((button) => {
+    if (button !== selectedbtn) {
+      button.classList.remove('bg-dark', 'text-light')
+    }
+  })
+}
+
+function resetpage(selectedbtn) {
+  const buttons = document.querySelectorAll('button')
+  buttons.forEach((button) => {
+    const page = document.querySelector(`#${button.id}page`)
+    if (page !== null){
+      if (button !== selectedbtn) {
+        page.classList.add('d-none')
+      }
+      else{
+        page.classList.remove('d-none')
+      }
+    }
+  })
+}
+ 
+const Allpage = document.querySelector('#Allpage')
+const restaurantpage = document.querySelector('#restaurantpage')
+
+</script>
+</body>
+</html>
