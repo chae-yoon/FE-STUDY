@@ -8,37 +8,13 @@
   <script src="https://kit.fontawesome.com/7c01b20e08.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="icon" href= "https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
-  <style>
-    .first-box{
-      width: 250px;
-      height: 300px;
-    }
-
-    .glanlink {color: black;}
-
-    .footer-box{
-      width: 131.47px;
-      height: 51.6px;
-    }
-
-    .footer-a{
-      text-decoration: none;
-      color: black;
-    }
-    .ft:hover{
-      text-decoration: underline;
-    }
-    .footer-a-a{
-      text-decoration: none;
-      color: lightslategray;
-      font-size: 13px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+ <!-- style 삭제  by(민지,채윤) 코멘트 답변: main페이지는 클론코딩을 처음 시작한 페이지여서 너무 막 작성하여 수정하기 두려워(시간이 부족했음..) main페이지 수정을 안해서 남아있었습니다 ㅎㅎ.. -->
 </head>
 <body>
-  <nav>
-    <div class="navbar navbar-expand-md bg-white sticky-top">
+  <!-- 각 페이지 sticky-top 적용 by은비 원래 밑에 div에 sticky-top이 있었지만 search-1에 대한 div를 생성하면서 저용이 안되서 nav전체에 sticky-top적용했습니다.-->
+  <nav class="sticky-top">  
+    <div class="navbar navbar-expand-md bg-white">
       <div class="container">
         <div class="justify-content-between">
         <div class="row">
@@ -146,7 +122,7 @@
           <div class="d-flex">          
             <button class="btn btn-outline-light border-5 " type="submit" style="width: 260px; height: 60px; margin-right: 15px;" ><b style="color: black;">인기매물 보기</b></button>
          
-            <button class="btn btn-outline-light border-5" type="submit" style="width: 260px; height: 60px; margin-left: 15px;" ><b style="color: black;">믿을 수 있는 중고거래</b></button>            
+            <button onclick = "location.href = '../YongJin/trust_daangen.html'" class="btn btn-outline-light border-5" type="submit" style="width: 260px; height: 60px; margin-left: 15px;" ><b style="color: black;">믿을 수 있는 중고거래</b></button>            
         </div>
         </div>
         <div style="margin-top: 40px;" class="col-12 text-center d-block d-lg-none col-lg-7">
@@ -444,40 +420,64 @@
   <main>
     <section>
       <div class="w-100 m-0 row">
-        <a style="color: black;" class="text-center mt-5 mb-4" href=""><b>중고거래 인기검색어</b></a><br>
+        <a style="color: black;" class="text-center mt-5 mb-4" href="../YongJin/top_keywords.html"><b>중고거래 인기검색어</b></a><br>
         <div class="container col-12 row d-none d-lg-block text-center" style="margin-bottom: 70px;">
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">자전거</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">의자</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">아이폰</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">냉장고</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">노트북</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">패딩</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">아이패드</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">모니터</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">스타벅스</a>
-            <a style="text-decoration: none ;" class="col-1 glanlink " href="#">책상</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="search_ bicycle.html">자전거</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">의자</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">아이폰</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">냉장고</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">노트북</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">패딩</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">아이패드</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">모니터</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">스타벅스</a>
+            <a style="text-decoration: none ;" class="col-1 glanlink ft" href="#">책상</a>
         </div>
         <div class="container col-12 row d-lg-none d-bolck text-center" style="margin-bottom: 70px;">
           <div class="row col-11 offset-1">
-            <a style="text-decoration: none ;" class="col-3 glanlink " href="#">자전거</a>
-            <a style="text-decoration: none ;" class="col-3 glanlink " href="#">의자</a>
-            <a style="text-decoration: none ;" class="col-3 glanlink " href="#">아이폰</a>
-            <a style="text-decoration: none ;" class="col-3 glanlink " href="#">냉장고</a>
+            <a style="text-decoration: none ;" class="col-3 glanlink ft" href="#">자전거</a>
+            <a style="text-decoration: none ;" class="col-3 glanlink ft" href="#">의자</a>
+            <a style="text-decoration: none ;" class="col-3 glanlink ft" href="#">아이폰</a>
+            <a style="text-decoration: none ;" class="col-3 glanlink ft" href="#">냉장고</a>
           </div><br>
           <div class="row col-10 offset-2">
-            <a style="text-decoration: none ;" class="col-4 glanlink " href="#">노트북</a>
-            <a style="text-decoration: none ;" class="col-4 glanlink " href="#">패딩</a>
-            <a style="text-decoration: none ;" class="col-4 glanlink " href="#">아이패드</a>
+            <a style="text-decoration: none ;" class="col-4 glanlink ft" href="#">노트북</a>
+            <a style="text-decoration: none ;" class="col-4 glanlink ft" href="#">패딩</a>
+            <a style="text-decoration: none ;" class="col-4 glanlink ft" href="#">아이패드</a>
           </div> 
           <div class="row col-10 offset-2">
-            <a style="text-decoration: none ;" class="col-4 glanlink " href="#">모니터</a>
-            <a style="text-decoration: none ;" class="col-4 glanlink " href="#">스타벅스</a>
-            <a style="text-decoration: none ;" class="col-4 glanlink " href="#">책상</a>
+            <a style="text-decoration: none ;" class="col-4 glanlink ft" href="#">모니터</a>
+            <a style="text-decoration: none ;" class="col-4 glanlink ft" href="#">스타벅스</a>
+            <a style="text-decoration: none ;" class="col-4 glanlink ft" href="#">책상</a>
           </div> 
         </div>
       </div>
     </section>
+
   </main>
+  <!-- 하단 fixed-bottom -->
+  <section class="d-lg-none" id="fx-bottom">
+    <div class="fixed-bottom">
+      <div style=" background-color: #FF7E36;">
+        <div class="pt-4" style="position: absolute; right: 5px;">
+          <button id="bottom-btn" style="background-color: #FF7E36; border: 0;"><img src="../YongJin/image/x버튼.PNG" alt=""></button>
+        </div>
+        <div class="text-center pt-4">
+          <img style="height: 66px; border-radius: 20%;" src="https://dnvefa72aowie.cloudfront.net/origin/etc/202106/056c6ae7f8acfc3aa26660a97e6705fe19e93234afc3e3e4410bad5937fee96f.png" alt="">
+        </div>
+        <div>
+          <div>
+            <h1 class="text-center pb-3 mb-0 mt-4" style="color: white;"><b>당근마켓</b></h1>
+            <h3 class="text-center pb-3 mb-0 mt-4" style="color: white;">3000만 동네 커뮤니티</h3>
+          </div>
+          <a href="main.html" style="text-decoration: none;  color: white; font-size: 1.1rem; margin: 0 10px;"><div class="container text-center" style="border-radius: 10px; padding: 10px; background-color: #212124;">지금 당근하러 가기</div></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
   <hr>
     <footer>
       <!-- xl 이하일때 -->
@@ -582,6 +582,16 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const bottom_btn = document.querySelector('#bottom-btn')
+    const fx_bottom = document.querySelector('#fx-bottom')
+
+    bottom_btn.addEventListener('click' ,(event) =>{
+      fx_bottom.classList.add('d-none')
+    })
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자전거 중고거래 | 당신 근처의 당근마켓</title>
+  <script src="https://kit.fontawesome.com/7c01b20e08.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href= "https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 상단 nav -->
+  <nav class="sticky-top">  
+    <div class="navbar navbar-expand-md bg-white">
+      <div class="container">
+        <div class="justify-content-between">
+        <div class="row">
+        <div class="col-6">
+          <a class="navbar-brand" href="../YongJin/main.html">
+            <img src="https://dnvefa72aowie.cloudfront.net/karrot-cs/etc/202007/0cf1d10235c37b2635c02719125da37cc1bd632518198b1e1da7f5a364156540.png" alt="" width="100" height="28">
+          </a>
+        </div>
+          <div class="d-flex col-6" >
+            <button class="btn d-blcok d-md-none d-lg-none d-sm-block row" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="navbar-toggler row" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </div>
+        </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px; color: coral;" href="../YongJin/main.html"><b>중고거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/second.html"><b>동네가게</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style" style="margin-right: 15px;" href="../YongJin/third.html"><b>알바</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/fourth.html"><b>부동산 직거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/Fifth.html"><b>중고차 직거래</b></a>
+              </li>
+          </ul>
+        </div>
+            <button class="btn d-none d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="d-flex" role="search">
+              <input class="form-control d-none d-lg-block border-0 bg-secondary-subtle" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style="width: 288px; height: 40px; margin-right: 12px;" id="search-1" >
+            </form>
+            <form class="d-flex">
+              <button class="btn btn-outline-light border border-dark d-none d-md-block" type="submit" style="width: 98px; height: 40px;" ><b style="color: black;">채팅하기</b></button>
+            </form>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title w-100" id="offcanvasTopLabel"><input class="form-control border-0 bg-secondary-subtle nav-search-search" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style=" height: 100%; margin-right: 12px;" id="search-1" ></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 ms-3">
+        <p style="color: #898FB3; font-size: 0.875rem;">추천</p>
+        <div class="row">
+          <div class="col-6 nav-search">잠실 냉장고</div>
+          <div class="col-6 nav-search">강남 명품가방</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">키즈카페</div>
+          <div class="col-6 nav-search">자전거</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">홍대 쇼파</div>
+          <div class="col-6 nav-search">인천 노트북</div>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!-- 중고거래 -->
+    <section class="bicycle-container">
+      <div class="bicycle-div">
+        <div class="container " style="margin: auto;">
+          <h4 class="bicycle-h"><b>중고거래</b></h4>
+          <div class="d-flex justify-content-between bicycle-p mb-5">
+            <div>
+              <a style="text-decoration: none;" href="search_ bicycle_articles.html"><div class="card border-0">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/cd6ab3a998da00921aafee2faa375f8fd70c8b0396a48816daa1b8b6454d5a1d.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                  <div class="card-body p-0">
+                    <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">깨끗한 하이브리드자전거 초경량 고품격 자전거임 MTB 산악자전거 안전함과 로드자전거 속도감의 장점모은 명품 자전거</b></p>
+                    <p class="card-text bicycle-card-p mb-2">울산 중구 남외동</p>
+                    <p class="card-text bicycle-card-p-sub"><b>67,000원</b>
+                    <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">14</span></p>
+                  </div>       
+              </div>
+              </div></a>
+            <div>
+              <a style="text-decoration: none;" href=""><div class="card border-0">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/9efe4aaa79c4da8bc6b58a43dac0be74b93c4b5462d149b28a666d7590a5b0b4.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                  <div class="card-body p-0">
+                    <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">자전거(22인치), 어린이 자전거, 쥬니어 자전거,여자 자전거</b></p>
+                    <p class="card-text bicycle-card-p mb-2">서울 마포구 망원동</p>
+                    <p class="card-text bicycle-card-p-sub"><b>220,000원</b>
+                    <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">3</span></p>
+                  </div>       
+              </div>
+              </div></a>
+            <div>
+              <a style="text-decoration: none;" href=""><div class="card border-0">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/2d6901ff9bbebebf3ab12c70fcdc2894b3ff2c7f18380cc096748367ff60c70c.jpg?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                  <div class="card-body p-0">
+                    <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">자전거안장 자전거쿠션커버 자전거젤커버 자전거 쿠션 새제품</b></p>
+                    <p class="card-text bicycle-card-p mb-2">대전 유성구 봉명동</p>
+                    <p class="card-text bicycle-card-p-sub"><b>6,000원</b>
+                    <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">9</span></p>
+                  </div>       
+              </div>
+            </div></a>
+          </div>
+          <div class="d-flex justify-content-between bicycle-p mb-5">
+            <div>
+              <a style="text-decoration: none;" href=""><div class="card border-0">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/e016eec0ffb9284495c04ea67376f16dd8bc9f171430ef4235900d747b04d7bc.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                  <div class="card-body p-0">
+                    <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">캐논데일  s사이즈 자전거,  로드자전거, mtb자전거, 그래블자전거</b></p>
+                    <p class="card-text bicycle-card-p mb-2">대전 중구 태평1동</p>
+                    <p class="card-text bicycle-card-p-sub"><b>130만원</b>
+                    <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">2</span></p>
+                  </div>       
+              </div>
+              </div></a>
+            <div>
+              <a style="text-decoration: none;" href=""><div class="card border-0">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202302/F9DEC4E8855C9971A42A0D77D0F72D7A0C6C7D4658809FCE44B4C6914B16CEA2.jpg?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                  <div class="card-body p-0">
+                    <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">스피닝 자전거, 서서타는 자전거, 다이어트 자전거</b></p>
+                    <p class="card-text bicycle-card-p mb-2">서울 성북구 정릉동</p>
+                    <p class="card-text bicycle-card-p-sub"><b>35,000원</b>
+                    <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">10</span></p>
+                  </div>       
+              </div>
+              </div></a>
+            <div>
+              <a style="text-decoration: none;" href=""><div class="card border-0">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/5ce69176e3130f40bf115b56bb198f3920b2ca746ccf47a3e481ce8a9f9ed14f.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                  <div class="card-body p-0">
+                    <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">🚨 자전거 접이식자전거 출퇴근자전거</b></p>
+                    <p class="card-text bicycle-card-p mb-2">강원도 춘천시 근화동</p>
+                    <p class="card-text bicycle-card-p-sub"><b>249,000원</b>
+                    <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">8</span></p>
+                  </div>       
+              </div>
+            </div></a>
+          </div>
+          <!-- 더보기 누르면 -->
+          <div class="d-none" id="more">
+            <div class="d-flex justify-content-between bicycle-p mb-5">
+              <div>
+                <a style="text-decoration: none;" href=""><div class="card border-0">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/e016eec0ffb9284495c04ea67376f16dd8bc9f171430ef4235900d747b04d7bc.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                    <div class="card-body p-0">
+                      <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">캐논데일  s사이즈 자전거,  로드자전거, mtb자전거, 그래블자전거</b></p>
+                      <p class="card-text bicycle-card-p mb-2">대전 중구 태평1동</p>
+                      <p class="card-text bicycle-card-p-sub"><b>130만원</b>
+                      <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">2</span></p>
+                    </div>       
+                </div>
+                </div></a>
+              <div>
+                <a style="text-decoration: none;" href=""><div class="card border-0">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202302/F9DEC4E8855C9971A42A0D77D0F72D7A0C6C7D4658809FCE44B4C6914B16CEA2.jpg?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                    <div class="card-body p-0">
+                      <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">스피닝 자전거, 서서타는 자전거, 다이어트 자전거</b></p>
+                      <p class="card-text bicycle-card-p mb-2">서울 성북구 정릉동</p>
+                      <p class="card-text bicycle-card-p-sub"><b>35,000원</b>
+                      <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">10</span></p>
+                    </div>       
+                </div>
+                </div></a>
+              <div>
+                <a style="text-decoration: none;" href=""><div class="card border-0">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/5ce69176e3130f40bf115b56bb198f3920b2ca746ccf47a3e481ce8a9f9ed14f.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                    <div class="card-body p-0">
+                      <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">🚨 자전거 접이식자전거 출퇴근자전거</b></p>
+                      <p class="card-text bicycle-card-p mb-2">강원도 춘천시 근화동</p>
+                      <p class="card-text bicycle-card-p-sub"><b>249,000원</b>
+                      <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">8</span></p>
+                    </div>       
+                </div>
+              </div></a>
+            </div>
+            <div class="d-flex justify-content-between bicycle-p mb-5">
+              <div>
+                <a style="text-decoration: none;" href=""><div class="card border-0">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/e016eec0ffb9284495c04ea67376f16dd8bc9f171430ef4235900d747b04d7bc.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                    <div class="card-body p-0">
+                      <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">캐논데일  s사이즈 자전거,  로드자전거, mtb자전거, 그래블자전거</b></p>
+                      <p class="card-text bicycle-card-p mb-2">대전 중구 태평1동</p>
+                      <p class="card-text bicycle-card-p-sub"><b>130만원</b>
+                      <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">2</span></p>
+                    </div>       
+                </div>
+                </div></a>
+              <div>
+                <a style="text-decoration: none;" href=""><div class="card border-0">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202302/F9DEC4E8855C9971A42A0D77D0F72D7A0C6C7D4658809FCE44B4C6914B16CEA2.jpg?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                    <div class="card-body p-0">
+                      <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">스피닝 자전거, 서서타는 자전거, 다이어트 자전거</b></p>
+                      <p class="card-text bicycle-card-p mb-2">서울 성북구 정릉동</p>
+                      <p class="card-text bicycle-card-p-sub"><b>35,000원</b>
+                      <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">10</span></p>
+                    </div>       
+                </div>
+                </div></a>
+              <div>
+                <a style="text-decoration: none;" href=""><div class="card border-0">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/5ce69176e3130f40bf115b56bb198f3920b2ca746ccf47a3e481ce8a9f9ed14f.webp?q=82&s=300x300&t=crop" class="card-img-top rounded bicycle-card-img w-100" alt="...">
+                    <div class="card-body p-0">
+                      <p class="card-text mt-1 mb-0 bicycle-a-p"><b class="bicycle-textover">🚨 자전거 접이식자전거 출퇴근자전거</b></p>
+                      <p class="card-text bicycle-card-p mb-2">강원도 춘천시 근화동</p>
+                      <p class="card-text bicycle-card-p-sub"><b>249,000원</b>
+                      <span class="bicycle-img-1"><img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="">8</span></p>
+                    </div>       
+                </div>
+              </div></a>
+            </div>
+          </div>
+        </div>
+        <a href="#"><div class="text-center bicycle-more-div"><button id="more-btn" style="border: 0; background-color: white;"><div class="bicycle-more-a mt-2 mb-2" >더보기</div></button></div></a>
+      </div>
+    </section>
+
+
+
+    <!-- 동네정보 -->
+    <section class="bicycle-container pb-5">
+      <div class="bicycle-div">
+          <div class="container" style="margin: auto;">
+            <h4 class="bicycle-h mb-0"><b>동네정보</b></h4>
+            <div class="bicycle-p">
+              <div class="bicycle-bottom-div">
+                <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니... <br></span>
+                  <span class="bicycle-bottom-p">경기도 구리시 인창동</span></a>
+              </div>
+              <div class="bicycle-bottom-div">
+                <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니... <br></span>
+                  <span class="bicycle-bottom-p">경기도 구리시 인창동</span></a>
+              </div>
+              <div class="bicycle-bottom-div">
+                <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니... <br></span>
+                  <span class="bicycle-bottom-p">경기도 구리시 인창동</span></a>
+              </div>
+              <div class="bicycle-bottom-div">
+                <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니... <br></span>
+                  <span class="bicycle-bottom-p">경기도 구리시 인창동</span></a>
+              </div>
+              <div class="bicycle-bottom-div">
+                <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니... <br></span>
+                  <span class="bicycle-bottom-p">경기도 구리시 인창동</span></a>
+              </div>
+              <div class="mt-3">
+                <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니... <br></span>
+                  <span class="bicycle-bottom-p">경기도 구리시 인창동</span></a>
+              </div>
+            </div>
+            <div class="d-none" id="more-bottom">
+              <div class="bicycle-p">
+                <div class="bicycle-bottom-div">
+                  <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">남녀노소 상관없습니다 ㅠㅠ
+
+                    당근에 모임글에다가도 올려놨는데 ㅠㅜ 아무도 안오셔서 한번 글 올려봅니다 
+                    
+                    날도 이제 점차 좋아질테구요..
+                    
+                    나잇대는 상관없어요..ㅠㅠ
+                     <br></span>
+                    <span class="bicycle-bottom-p">서울 서초구 내곡동</span></a>
+                </div>
+                <div class="bicycle-bottom-div">
+                  <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">남녀노소 상관없습니다 ㅠㅠ
+
+                    당근에 모임글에다가도 올려놨는데 ㅠㅜ 아무도 안오셔서 한번 글 올려봅니다 
+                    
+                    날도 이제 점차 좋아질테구요..
+                    
+                    나잇대는 상관없어요..ㅠㅠ
+                     <br></span>
+                    <span class="bicycle-bottom-p">서울 서초구 내곡동</span></a>
+                </div>
+                <div class="bicycle-bottom-div">
+                  <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">남녀노소 상관없습니다 ㅠㅠ
+
+                    당근에 모임글에다가도 올려놨는데 ㅠㅜ 아무도 안오셔서 한번 글 올려봅니다 
+                    
+                    날도 이제 점차 좋아질테구요..
+                    
+                    나잇대는 상관없어요..ㅠㅠ
+                     <br></span>
+                    <span class="bicycle-bottom-p">서울 서초구 내곡동</span></a>
+                </div>
+                <div class="bicycle-bottom-div">
+                  <a class="bicycle-bottom-a" href=""><span style="color: #ff8a3d;">자전거</span><span style="color: black;">남녀노소 상관없습니다 ㅠㅠ
+
+                    당근에 모임글에다가도 올려놨는데 ㅠㅜ 아무도 안오셔서 한번 글 올려봅니다 
+                    
+                    날도 이제 점차 좋아질테구요..
+                    
+                    나잇대는 상관없어요..ㅠㅠ
+                     <br></span>
+                    <span class="bicycle-bottom-p">서울 서초구 내곡동</span></a>
+                </div>
+              </div>
+            </div>
+            <a href="#"><div class="text-center bicycle-more-div"><button id="more_bottom_btn" style="border: 0; background-color: white;"><div class="bicycle-more-a mt-2 mb-2" >더보기</div></button></div></a>
+          </div>
+        </div>
+    </section>
+
+
+        <!-- footer -->
+        <footer>
+        <!-- xl 이하일때 -->
+         <hr>
+         <div class="container">
+           <div class="col-9 offset-3 p-0 d-block d-xl-none">
+             <p class="m-0" style="font-size: 13px;"><b>당근마켓 앱 다운로드</b> <a style="font-size: 15px;" class="footer-a" href="#"><b>ios<img src="../YongJin/image/arrow.PNG" alt=""></b></a> <a style="font-size: 15px;" class="footer-a" href=""><b>Android <img src="../YongJin/image/arrow.PNG" alt=""></b></a></p>
+           </div>
+         </div>
+         <div class="container">
+           <div class="row container col-9 offset-3 pt-5 pb-4 ps-0 pe-0">
+             <div class="col-1" style="width: 131.47px;">
+               <div class="footer-box"><a class="footer-a ft" href="#">중고거래</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">동네가게</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">당근알바</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">부동산 거래</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">중고차 직거래</a></div>
+             </div>
+             <div class="col-1" style="width: 131.47px;">
+               <div class="footer-box"><a class="footer-a ft" href="#">당근비즈니스</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">채팅하기</a></div>
+             </div>
+             <div class="col-1" style="width: 131.47px; margin-right: 69.594px;">
+               <div class="footer-box"><a class="footer-a ft" href="#">자주 묻는 질문</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">회사 소개</a></div>
+               <div class="footer-box"><a class="footer-a ft" href="#">인재 채용</a></div>
+             </div>
+             <!-- xl 이상일때만 보임 -->
+             <div class="col-12 p-0 d-none d-xl-block" style="width: 300px;">
+               <p class="m-0"><b>당근마켓 앱 다운로드</b></p>
+               <div>
+                 <button class="btn btn-outline-light col-6 p-0" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/apple.PNG" alt=""></img></button>
+                 <button class="btn btn-outline-light col-6 p-0 ms-3" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/google.PNG" alt=""></button>  
+               </div>
+             </div>
+           </div>
+           <div class="container">
+             <div class="row container col-9 offset-3 pt-2 ps-0 pe-0" style="padding-bottom: 100px;">
+               <hr>
+               <div class="col-6">
+             <div>
+               <span class="text-secondary-emphasis" style="font-size: 13px;"><b>대표</b> 김용현, 황도연</span>
+               <span style="color: lightsteelblue;">|</span>
+               <span class="text-secondary-emphasis" style="font-size: 13px;"><b>사업자번호</b> 375-87-00088</span>
+             </div>
+             <div>
+               <span class="text-secondary-emphasis" style="font-size: 13px;"><b>직업정보제공사업 신고번호</b> 2016-서울서초-0051</span>
+             </div>
+             <div>
+               <span class="text-secondary-emphasis" style="font-size: 13px;"><b>주소</b> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+             </div>
+             <div>
+               <span class="text-secondary-emphasis" style="font-size: 13px;"><b>전화</b> 1544-9796</span>
+               <span style="color: lightsteelblue;">|</span>
+               <span class="text-secondary-emphasis" style="font-size: 13px;"><b>고객문의</b> cs@daangnservice.com</span><br>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">제휴 문의</a>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">광고 문의</a>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">PR 문의</a>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">IR 문의</a><br>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">이용약관</a>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">개인정보처리방침</a>
+               <a class="footer-a-a ft" style="font-size: 13px;" href="#">위치기반서비스 이용약관</a>
+               <a class="footer-a-a ft" style="font-size: 12px;" href="#">이용자보호 비전과 계획</a>
+               <div class="col-12 ms-0 d-block d-xl-none">
+                 <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+                 <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+                 <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+                 <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+                 <a class="dropdown">
+                   <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                     <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+                   </button>
+                   <ul class="dropdown-menu">
+                     <li><button class="dropdown-item" type="button">한국</button></li>
+                     <li><button class="dropdown-item" type="button">영국</button></li>
+                     <li><button class="dropdown-item" type="button">캐나다</button></li>
+                     <li><button class="dropdown-item" type="button">미국</button></li>
+                     <li><button class="dropdown-item" type="button">일본</button></li>
+                   </ul>
+                 </a>
+               </div>
+             </div>
+           </div>
+             <div class="col-5 ms-0 d-none d-xl-block">
+               <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+               <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+               <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+               <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+               <a class="dropdown">
+                 <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                   <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+                 </button>
+                 <ul class="dropdown-menu">
+                   <li><button class="dropdown-item" type="button">한국</button></li>
+                   <li><button class="dropdown-item" type="button">영국</button></li>
+                   <li><button class="dropdown-item" type="button">캐나다</button></li>
+                   <li><button class="dropdown-item" type="button">미국</button></li>
+                   <li><button class="dropdown-item" type="button">일본</button></li>
+                 </ul>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </footer>
+
+
+     <script>
+      const morebtn_btn = document.querySelector('#more-btn')
+      const morebtn = document.querySelector('#more')
+      const more_bottom_btn = document.querySelector('#more_bottom_btn')
+      const more_bottom = document.querySelector('#more-bottom')
+
+      morebtn_btn.addEventListener('click', (event) => {
+        morebtn.classList.remove('d-none')
+      })
+
+      more_bottom_btn.addEventListener('click', (event) =>{
+        more_bottom.classList.remove('d-none')
+      })
+     </script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   </body>
+   </html>
+   

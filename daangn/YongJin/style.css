@@ -15,7 +15,7 @@
   color: black;
 }
 .ft:hover{
-  text-decoration: underline;
+  text-decoration: underline !important; 
 }
 
 
@@ -238,4 +238,224 @@ li{
   .fs-size-sub{
     font-size: 0.875rem;
     font-weight: bold;
+  }
+/* ===================================== */
+/* trust_daangen */
+  /* 첫 번째 section */
+
+  .trust-header{
+    background-color: #F8F9FA;
+    padding-top: 9.6rem;
+    
+  }
+  .trust-header .title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.4rem !important; 
+  }
+
+  .trust-top{
+    padding-top: 100px;
+    width: 980px;
+    margin: 0 auto;
+  }
+  .trust-top-lg-down{
+    padding-top: 100px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .trust-top-second-section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .trust-top-second-section_1{
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  .trust-top-second-section_1-lg-down{
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .trust-top-left-img{
+    width: 21rem;
+    height: 17rem;
+    margin-left: 4rem;
+    margin-right: 5rem;
+  }
+  .trust-top-right-img{
+    width: 21rem;
+    height: 17rem;
+    margin-left: 5rem;
+    margin-right: 4rem;
+  }
+
+  .trust-top-div {
+    margin-top: 40px;
+  }
+
+  .trust-textover-lg-down{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+  /* 두 번째 section */
+
+  .trust-bottom{
+    padding-top: 100px;
+    background-color: #F8F9FA;
+  }
+
+  .trust-bottom-h1{
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .trust-bottom-img{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .trust-bottom-div{
+    width: 21rem;
+    min-width: 21rem;
+  }
+  .trust-bottom-div-lg-down{
+    width: 100%;
+    min-width: 21rem;
+  }
+
+/* ================================ */
+  /* top_keywords 오늘의 중고 인기 검색어 */
+  .keyword-li{
+    width: 414px; 
+    height: 44px;
+    padding: 10px;
+    border-bottom: 1px solid #E9ECEF;
+  }
+  .keyword-up{
+    color: #e03131;
+  }
+
+  .keyword-down{
+    color: #186ec0;
+  }
+
+  .keyword:hover {
+    text-decoration: underline;
+  }
+
+/* ==================================== */
+/* search_ bicycle 자전거 */
+
+  .bicycle-container {
+    background-color: #F8F9FA;
+    padding-top: 30px;
+  }
+
+  .bicycle-div{
+    background-color: #FFFFFF;
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #e9ecef;
+    display: block;
+    border-radius: 1%;
+  }
+
+  .bicycle-h{
+    margin: 20px 0;
+    padding: 0 40px;
+  }
+  .bicycle-a{
+    width: 217px;
+  }
+
+  .bicycle-a-p{
+    color: black;
+  }
+  
+  .bicycle-card-img{
+    width: 217px;
+    height: 170px;
+  }
+
+  .bicycle-textover{
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  .bicycle-card-p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 6px;
+    color: #868e96;
+  }
+
+  .bicycle-card-p-sub{
+    font-weight: 600;
+    color: #ff8a3d;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 6px;
+  }
+  
+  .bicycle-img-1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: black;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .bicycle-p{
+    padding: 0 40px;
+  }
+
+  .bicycle-more-div{
+    border-top: 1px solid #E9ECEF;
+  }
+
+  
+  .bicycle-more-a{
+    color: #868E96;
+    text-decoration: none;
+  }
+
+  .bicycle-bottom-a {
+    text-decoration: none; 
+    padding-bottom: 20px;
+  }
+
+  .bicycle-bottom-p{
+    font-size: 14px; 
+    color: #868E96; 
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .bicycle-bottom-div{
+    border-bottom: 1px solid #E9ECEF;
+    padding: 20px 0;
+  }
+  
+  /* search_ bicycle_articles */
+
+  .articles-img{
+    height: 500px;
+  }
+
+  .articles-section-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
