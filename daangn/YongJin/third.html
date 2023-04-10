@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리 동네에서 찾는 당근알바</title>
+  <script src="https://kit.fontawesome.com/7c01b20e08.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href= "https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- nav -->
+  <nav class="sticky-top">
+    <div class="navbar navbar-expand-md bg-white">
+      <div class="container">
+        <div class="justify-content-between">
+        <div class="row">
+        <div class="col-6">
+          <a class="navbar-brand" href="../YongJin/main.html">
+            <img src="https://dnvefa72aowie.cloudfront.net/karrot-cs/etc/202007/0cf1d10235c37b2635c02719125da37cc1bd632518198b1e1da7f5a364156540.png" alt="" width="100" height="28">
+          </a>
+        </div>
+          <div class="d-flex col-6" >
+            <button class="btn d-blcok d-md-none d-lg-none d-sm-block row" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="navbar-toggler row" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </div>
+        </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/main.html"><b>중고거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/second.html"><b>동네가게</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style" style="margin-right: 15px; color: coral;" href="../YongJin/third.html"><b>알바</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/fourth.html"><b>부동산 직거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/Fifth.html"><b>중고차 직거래</b></a>
+              </li>
+          </ul>
+        </div>
+            <button class="btn d-none d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="d-flex" role="search">
+              <input class="form-control d-none d-lg-block border-0 bg-secondary-subtle" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style="width: 288px; height: 40px; margin-right: 12px;" id="search-1" >
+            </form>
+            <form class="d-flex">
+              <button class="btn btn-outline-light border border-dark d-none d-md-block" type="submit" style="width: 98px; height: 40px;" ><b style="color: black;">채팅하기</b></button>
+            </form>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title w-100" id="offcanvasTopLabel"><input class="form-control border-0 bg-secondary-subtle nav-search-search" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style=" height: 100%; margin-right: 12px;" id="search-1" ></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 ms-3">
+        <p style="color: #898FB3; font-size: 0.875rem;">추천</p>
+        <div class="row">
+          <div class="col-6 nav-search">잠실 냉장고</div>
+          <div class="col-6 nav-search">강남 명품가방</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">키즈카페</div>
+          <div class="col-6 nav-search">자전거</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">홍대 쇼파</div>
+          <div class="col-6 nav-search">인천 노트북</div>
+        </div>
+      </div>
+    </div>
+    </nav>
+    
+<!-- 우리 동네에서 찾는 당근 알바 -->
+<main>
+  <section>
+    <div class="row w-100 m-0" style="background-color: #FFE2D2; height: 19.6875rem;">
+      <div class="col-12 col-lg-2 my-auto offset-2 d-none d-lg-block">
+        <h2 style="margin-bottom: 0; margin-top: 20px; width: 350px;"><b>우리 동네에서 찾는</b></h2><h2  style="width: 400px;"><b>당근알바</b></h2>
+        <p style="width: 160px; margin-bottom: 0;">걸어서 10분 거리의</p><p style="width: 220px;"> 동네 알바들 여기 다 있어요.</p>
+      </div>
+      <div class="col-12 col-lg-6 d-block d-lg-none">
+        <h2 style="margin-bottom: 0; margin-top: 20px;"><b>동네 이웃들이</b></h2><h2><b>자주 가는 동네 가게</b></h2>
+      </div>
+      <div class="col-12 text-center col-lg-6 offset-1 d-none d-lg-block p-0" style="width: 453;">
+        <img style="height: 19.6875rem;" class="w-75" src="https://www.daangn.com/_next/static/media/jobs_hero_3x.79687414.png" alt="">
+      </div>
+      <div class="col-12 text-center col-lg-6 p-0 d-block d-lg-none ">
+        <img style="height: 12rem;"  src="https://www.daangn.com/_next/static/media/jobs_hero_3x.79687414.png" alt="">
+      </div>
+    </div>
+  </section>
+</main>
+<!-- 인기 당근알바 md 이상 -->
+  <main>
+    <section>     
+      <div class="container d-none d-md-block p-0" style="margin-top: 64px; margin-left: auto; margin-right: auto;width: 800px;">
+        <h2 style="font-size: 1.625rem; margin-bottom: 40px;"><b>인기 당근알바</b></h2>
+        <!-- 강아지 -->
+          <div class="row justify-content-center" style="width: 768px;">
+            <div class="row col-6 pb-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../YongJin/image/강아지.PNG" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">새끼강아지 출국전까지 돌봐주실분 구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">서울특별시 강남구 삼성동</small></p>
+                        <p class="card-text fs-size-sub"><b>월급 200,000</b></p>                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 고척구장 -->
+            <div class="row col-6 pb-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">고척구장 줄서주실분 시간당 10000원(3월19일)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">서울특별시 구로구 고척동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 10,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 평일 오후 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">평일 오후1시~오후6시 상품포장 해주실 분 구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">경기도 평택시 청룡동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 12,500</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 청주 미스터리 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/45157401/1660266592282/job-post-2480852123.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">청주 미스터리 쇼퍼 구인합니다.</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">충청북도 청주시 흥덕구 복대동</small></p>
+                        <p class="card-text fs-size-sub"><b>건당 20,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 조경 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/27042593/1679113827927/job-post-637390875.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">조경(예초작업)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">신형대조경 · 인청광역시 부평구 일신동</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 160,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 업체세탁물 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">업체세탁물 개기(헬스복, 수건등)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">세탁업 · 울산광역시 남구 야음동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 10,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 헬스텍코리아 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/24535434/1679028297219/job-post-691870643.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">헬스텍코리아 단기 단순 포장업무 구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">부산광역시 해운대구 반여동</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 68,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 만화카페 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">만화카페 평일알바 구합니다(주2일)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">티엔북스 · 울산광역시 남구 삼산동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 9,620</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 스터디카페 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/26706/1679169061169/job-post-2346268851.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">스터디카페 관리 및 청소</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">하임스터디카페 반포점 · 서울특별시 서초구 반포동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 12,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 입주청소 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/27406474/1679320255948/job-post-2894070702.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">입주청소/이사청소 함께 하실분 모십니다~</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">베스트홈클린 · 경상남도 양산시 동면</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 130,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        <!--  당근알바 이용방법이 궁금하다면 -->
+        <!-- md 이상일때 -->
+          <ul class="ps-2">
+            <div class="row p-4 mb-5" style="background-color: #E5F5FD; margin-top: 44px; margin-bottom: 64px;" >
+              <div class="col-1 p-0" style="color: black; line-height: 72px;"><img style="width: 54px; height: 64px;" src="https://www.daangn.com/_next/static/media/jobs_banner_resume.61639a29.png" alt=""></div>
+              <div class="col-7 p-0 ps-5" style="color: black;"><h5><b style="line-height: 50px; font-size: 1.25rem;">당근알바 이용방법이 궁금하다면</b></h5>
+              <h5 class="mb-0" style="line-height: 0; font-size: 1.25rem;"><b>지금 바로 알아보세요!</b></h5></div>
+              <div class="col-4" style="line-height: 72px;">
+                <button class="btn btn-outline-light p-0 ms-2" type="submit" style="width: 135px; height: 40px; color: white; border: 1px solid orange; background-color: #ff6f0f; font-weight: bold; font-size: 0.875rem;" >이용방법 알아보기</button>
+              </div>
+            </div>
+          </ul> 
+
+          <!-- 곡물포장 -->
+          <div class="row justify-content-center" style="width: 768px;">
+            <div class="row col-6 pb-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">곡물 포장 알바</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">경상북도 경주시 강동면</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 100,000</b></p>                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 쿠키(생산) -->
+            <div class="row col-6 pb-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../YongJin/image/쿠키.PNG" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">쿠키(생산)공장에서 주중 오전 4시간 알바하실분!</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">나눔베이커리 · 강원도 춘천시 퇴계동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 9,620</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 떡방앗간 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">떡방앗간 포장 알바 구합니다!</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">덕방앗간 · 전라북도 익산시 인화동2가</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 11,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 자재좀 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/11655404/1679271359356/job-post-3559333907.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">자재좀 옮겨주실분 구합니다.</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">대진테리어 · 전라남도 순천시 석현동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 15,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 시급 12000 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/20659424/1645667922161/job-post-3822106327.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">시급 12000원 식대지원 일반도로 신호수및 보조단순작업</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">충청북도 충주시 대소원면</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 12,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 1일 알바 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../YongJin/image/지도.PNG" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">1일 알바/ 초등학교 횡단보도 안전요원</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">충청남도 아산시 배방읍</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 30,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 강아지산책 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/24535434/1679028297219/job-post-691870643.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">강아지산책해주실분~봉담 동화라에요^^</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">경기도 화성시 봉답읍</small></p>
+                        <p class="card-text fs-size-sub"><b>건당 15,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 청주 미스터리 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/45342000/1659668476850/job-post-2390862494.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">청주 미스터리 쇼퍼 알바 구인합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">충청북도 청주시 홍덕구 복대동</small></p>
+                        <p class="card-text fs-size-sub"><b>건당 30,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 파라솔 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/52051869/1666790747747/job-post-1867136106.jpeg?q=95&s=1440x1440&t=inside" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">스터디카페 관리 및 청소</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">아이지니 · 경기도 수원시 영통구 원천동</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 50,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 인력구함 -->
+            <div class="row col-6 py-2">
+              <a class="main-a p-0" href="#">
+                <div class="card mb-3" style="width: 368px; border: 0;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../YongJin/image/공사장강아지.PNG" class="rounded" style="width: 108px; height: 108px;" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h5 class="card-title fs-size-title textover-200">인력구함 토목관련 조공구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">순천시 · 전라남도 순천시 장천동</small></p>
+                        <p class="card-text fs-size-sub"><b>월급 4,000,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+        <!-- 우리동네 알바가 궁금하다면 -->
+        <!-- md 이상일때 -->
+          <ul class="ps-2">
+            <div class="row p-4 mb-5" style="background-color: #FFEBDD; margin-top: 44px; margin-bottom: 64px;" >
+              <div class="col-1 p-0" style="color: black; line-height: 72px;"><img style="width: 54px; height: 64px;" src="https://www.daangn.com/_next/static/media/jobs_banner_marker.41df6e0b.png" alt=""></div>
+              <div class="col-7 p-0 ps-5" style="color: black;"><h5><b style="line-height: 50px; font-size: 1.25rem;">우리동네 알바가 궁금하다면</b></h5>
+              <h5 class="mb-0" style="line-height: 0; font-size: 1.25rem;"><b>당근마켓에서 바로 찾아보세요!</b></h5></div>
+              <div class="col-4" style="line-height: 72px;">
+                <button class="btn btn-outline-light p-0 ms-2" type="submit" style="width: 125px; height: 40px; color: white; border: 1px solid orange; background-color: #ff6f0f; font-weight: bold; font-size: 0.875rem;" >앱 다운로드 하기</button>
+              </div>
+            </div>
+          </ul> 
+      </div>    
+    </section>
+  </main>
+
+      
+
+
+
+
+
+
+  <!-- 인기 당근알바 md 이하 -->
+  <main>
+    <section>
+      <div class="d-block d-md-none" style="margin-top: 64px; margin-left: auto; margin-right: auto;width: 100%;">
+        <h2 class="ms-3" style="font-size: 1.625rem; margin-bottom: 40px;"><b>인기 당근알바</b></h2>
+        <!-- 강아지 -->
+          <div style="width: 100%;">
+            <div class="row col-12 pb-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="../YongJin/image/강아지.PNG" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title w-100">새끼강아지 출국전까지 돌봐주실분 구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">서울특별시 강남구 삼성동</small></p>
+                        <p class="card-text fs-size-sub"><b>월급 200,000</b></p>                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 고척구장 -->
+          <div class="row col-12 pb-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">고척구장 줄서주실분 시간당 10000원(3월19일)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">서울특별시 구로구 고척동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 10,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 평일 오후 -->
+          <div class="row col-12 py-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">평일 오후1시~오후6시 상품포장 해주실 분 구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">경기도 평택시 청룡동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 12,500</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 청주 미스터리 -->
+          <div class="row col-12 py-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/45157401/1660266592282/job-post-2480852123.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">청주 미스터리 쇼퍼 구인합니다.</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">충청북도 청주시 흥덕구 복대동</small></p>
+                        <p class="card-text fs-size-sub"><b>건당 20,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 조경 -->
+          <div class="row col-12 py-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/27042593/1679113827927/job-post-637390875.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">조경(예초작업)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">신형대조경 · 인청광역시 부평구 일신동</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 160,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 업체세탁물 -->
+          <div class="row col-12 py-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">업체세탁물 개기(헬스복, 수건등)</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">세탁업 · 울산광역시 남구 야음동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 10,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 헬스텍코리아 -->
+          <div class="row col-12 py-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/24535434/1679028297219/job-post-691870643.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">헬스텍코리아 단기 단순 포장업무 구합니다</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">부산광역시 해운대구 반여동</small></p>
+                        <p class="card-text fs-size-sub"><b>일급 68,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <!-- 스터디카페 -->
+          <div class="row col-12 py-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                      <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/26706/1679169061169/job-post-2346268851.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body p-0 ms-4">
+                        <h5 class="card-title fs-size-title">스터디카페 관리 및 청소</h5>
+                        <p class="card-text mb-0"><small class="text-body-secondary">하임스터디카페 반포점 · 서울특별시 서초구 반포동</small></p>
+                        <p class="card-text fs-size-sub"><b>시급 12,000</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      <!--  당근알바 이용방법이 궁금하다면 -->
+      <!-- md 이하일때 -->
+      <div style="margin-top: 64px; margin-left: auto; margin-right: auto;width: 100%;">      
+          <ul class="d-block d-md-none ps-0">
+            <div class="pt-2 ps-4 mb-5" style="background-color: #E5F5FD; width: 100%; height: 135px;" >
+              <div class="col-1 p-0" style="color: black; line-height: 72px;"></div>
+              <div class="col-7 p-0" style="color: black;"><h5><b style="line-height: 50px; font-size: 1rem;">당근알바 이용방법이 궁금하다면</b></h5>
+              <h5 class="mb-0" style="line-height: 0; font-size: 1rem;"><b>지금 바로 알아보세요!</b></h5></div>
+              <div class="col-4" style="line-height: 72px;">
+                <button class="btn btn-outline-light p-0" type="submit" style="width: 135px; height: 40px; color: white; border: 1px solid orange; background-color: #ff6f0f; font-weight: bold; font-size: 0.875rem;" >이용방법 알아보기</button>
+              </div>
+            </div>
+          </ul>
+      </div>
+          <!-- 만화카페 -->
+          <div class="row col-12 pb-2">
+            <a class="main-a" href="#">
+              <div class="card mb-3" style=" border: 0;">
+                <div class="row g-0">
+                  <div class="col-2" style="width: 96px; height: 96px;">
+                    <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body p-0 ms-4">
+                      <h5 class="card-title fs-size-title">만화카페 평일알바 구합니다(주2일)</h5>
+                      <p class="card-text mb-0"><small class="text-body-secondary">티엔북스 · 울산광역시 남구 삼산동</small></p>
+                      <p class="card-text fs-size-sub"><b>시급 9,620</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        <!-- 입주청소 -->
+        <div class="row col-12 pb-2">
+          <a class="main-a" href="#">
+            <div class="card mb-3" style=" border: 0;">
+              <div class="row g-0">
+                <div class="col-2" style="width: 96px; height: 96px;">
+                    <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/27406474/1679320255948/job-post-2894070702.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body p-0 ms-4">
+                      <h5 class="card-title fs-size-title">입주청소/이사청소 함께 하실분 모십니다~</h5>
+                      <p class="card-text mb-0"><small class="text-body-secondary">베스트홈클린 · 경상남도 양산시 동면</small></p>
+                      <p class="card-text fs-size-sub"><b>일급 130,000</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+            <!-- 곡물포장 -->
+            <div class="row col-12 py-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                        <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body p-0 ms-4">
+                          <h5 class="card-title fs-size-title">곡물 포장 알바</h5>
+                          <p class="card-text mb-0"><small class="text-body-secondary">경상북도 경주시 강동면</small></p>
+                          <p class="card-text fs-size-sub"><b>일급 100,000</b></p>                     
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <!-- 쿠키(생산) -->
+            <div class="row col-12 py-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                        <img src="../YongJin/image/쿠키.PNG" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body p-0 ms-4">
+                          <h5 class="card-title fs-size-title">쿠키(생산)공장에서 주중 오전 4시간 알바하실분!</h5>
+                          <p class="card-text mb-0"><small class="text-body-secondary">나눔베이커리 · 강원도 춘천시 퇴계동</small></p>
+                          <p class="card-text fs-size-sub"><b>시급 9,620</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <!-- 떡방앗간 -->
+            <div class="row col-12 py-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                        <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202203/7e4e461eb8ffc97954a3d668b80fd6e0eeb4354b953690f7dd91903543d9eb98.jpg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body p-0 ms-4">
+                          <h5 class="card-title fs-size-title">떡방앗간 포장 알바 구합니다!</h5>
+                          <p class="card-text mb-0"><small class="text-body-secondary">덕방앗간 · 전라북도 익산시 인화동2가</small></p>
+                          <p class="card-text fs-size-sub"><b>시급 11,000</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <!-- 자재좀 -->
+            <div class="row col-12 py-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                        <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/11655404/1679271359356/job-post-3559333907.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body p-0 ms-4">
+                          <h5 class="card-title fs-size-title">자재좀 옮겨주실분 구합니다.</h5>
+                          <p class="card-text mb-0"><small class="text-body-secondary">대진테리어 · 전라남도 순천시 석현동</small></p>
+                          <p class="card-text fs-size-sub"><b>시급 15,000</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <!-- 시급 12000 -->
+            <div class="row col-12 py-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                        <img src="https://dnvefa72aowie.cloudfront.net/jobs/article/20659424/1645667922161/job-post-3822106327.jpeg?q=95&s=1440x1440&t=inside" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body p-0 ms-4">
+                          <h5 class="card-title fs-size-title">시급 12000원 식대지원 일반도로 신호수및 보조단순작업</h5>
+                          <p class="card-text mb-0"><small class="text-body-secondary">충청북도 충주시 대소원면</small></p>
+                          <p class="card-text fs-size-sub"><b>시급 12,000</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <!-- 1일 알바 -->
+            <div class="row col-12 py-2">
+              <a class="main-a" href="#">
+                <div class="card mb-3" style=" border: 0;">
+                  <div class="row g-0">
+                    <div class="col-2" style="width: 96px; height: 96px;">
+                        <img src="../YongJin/image/지도.PNG" class="rounded ms-3" style="width: 96px; height: 96px;" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body p-0 ms-4">
+                          <h5 class="card-title fs-size-title">1일 알바/ 초등학교 횡단보도 안전요원</h5>
+                          <p class="card-text mb-0"><small class="text-body-secondary">충청남도 아산시 배방읍</small></p>
+                          <p class="card-text fs-size-sub"><b>시급 30,000</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+
+
+        <!-- 우리동네 알바가 궁금하다면 -->
+        <!-- md 이하일때 -->
+          <div style="margin-top: 64px; margin-left: auto; margin-right: auto;width: 100%;">      
+            <ul class="d-block d-md-none ps-0">
+              <div class="pt-2 ps-4 mb-5" style="background-color: #FFEBDD; width: 100%; height: 135px;" >
+                <div class="col-1 p-0" style="color: black; line-height: 72px;"></div>
+                <div class="col-7 p-0" style="color: black;"><h5><b style="line-height: 50px; font-size: 1rem;">걸어서 10분 거리의</b></h5>
+                <h5 class="mb-0" style="line-height: 0; font-size: 1rem;"><b>동네 알바, 당근마켓에 다 있어요.</b></h5></div>
+                <div class="col-4" style="line-height: 72px;">
+                  <button class="btn btn-outline-light p-0" type="submit" style="width: 135px; height: 40px; color: white; border: 1px solid orange; background-color: #ff6f0f; font-weight: bold; font-size: 0.875rem;" >앱 다운로드 하기</button>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+    </section>
+  </main>
+
+
+
+<!-- footer -->
+  <footer>
+    <!-- xl 이하일때 -->
+    <div class="container">
+      <div class="col-9 offset-3 p-0 d-block d-xl-none">
+        <p class="m-0" style="font-size: 13px;"><b>당근마켓 앱 다운로드</b> <a style="font-size: 15px;" class="footer-a" href="#"><b>ios<img src="../YongJin/image/arrow.PNG" alt=""></b></a> <a style="font-size: 15px;" class="footer-a" href=""><b>Android <img src="../YongJin/image/arrow.PNG" alt=""></b></a></p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row container col-9 offset-3 pt-5 pb-4 ps-0 pe-0">
+        <div class="col-1" style="width: 131.47px;">
+          <div class="footer-box"><a class="footer-a ft" href="#">중고거래</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">동네가게</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">당근알바</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">부동산 거래</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">중고차 직거래</a></div>
+        </div>
+        <div class="col-1" style="width: 131.47px;">
+          <div class="footer-box"><a class="footer-a ft" href="#">당근비즈니스</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">채팅하기</a></div>
+        </div>
+        <div class="col-1" style="width: 131.47px; margin-right: 69.594px;">
+          <div class="footer-box"><a class="footer-a ft" href="#">자주 묻는 질문</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">회사 소개</a></div>
+          <div class="footer-box"><a class="footer-a ft" href="#">인재 채용</a></div>
+        </div>
+        <!-- xl 이상일때만 보임 -->
+        <div class="col-12 p-0 d-none d-xl-block" style="width: 300px;">
+          <p class="m-0"><b>당근마켓 앱 다운로드</b></p>
+          <div>
+            <button class="btn btn-outline-light col-6 p-0" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/apple.PNG" alt=""></img></button>
+            <button class="btn btn-outline-light col-6 p-0 ms-3" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/google.PNG" alt=""></button>  
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row container col-9 offset-3 pt-2 ps-0 pe-0" style="padding-bottom: 100px;">
+          <hr>
+          <div class="col-6">
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>대표</b> 김용현, 황도연</span>
+          <span style="color: lightsteelblue;">|</span>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>사업자번호</b> 375-87-00088</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>직업정보제공사업 신고번호</b> 2016-서울서초-0051</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>주소</b> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>전화</b> 1544-9796</span>
+          <span style="color: lightsteelblue;">|</span>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>고객문의</b> cs@daangnservice.com</span><br>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">제휴 문의</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">광고 문의</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">PR 문의</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">IR 문의</a><br>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">이용약관</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">개인정보처리방침</a>
+          <a class="footer-a-a ft" style="font-size: 13px;" href="#">위치기반서비스 이용약관</a>
+          <a class="footer-a-a ft" style="font-size: 12px;" href="#">이용자보호 비전과 계획</a>
+          <div class="col-12 ms-0 d-block d-xl-none">
+            <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+            <a class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">한국</button></li>
+                <li><button class="dropdown-item" type="button">영국</button></li>
+                <li><button class="dropdown-item" type="button">캐나다</button></li>
+                <li><button class="dropdown-item" type="button">미국</button></li>
+                <li><button class="dropdown-item" type="button">일본</button></li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="col-5 ms-0 d-none d-xl-block">
+          <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+          <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+          <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+          <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+          <a class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+              <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button">한국</button></li>
+              <li><button class="dropdown-item" type="button">영국</button></li>
+              <li><button class="dropdown-item" type="button">캐나다</button></li>
+              <li><button class="dropdown-item" type="button">미국</button></li>
+              <li><button class="dropdown-item" type="button">일본</button></li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
