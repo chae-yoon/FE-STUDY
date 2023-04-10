@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    height: 850px;
+    flex-direction: column;
+    align-items: center;
+}
+.topky__section {
+    width: 430px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.topky__title {
+    font-weight: bold;
+}
+.rank {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    border-bottom: 2px solid #F8F9FA;
+}
+.rank:hover {
+    background-color: #F8F9FA;
+}
+.topky__rank-num {
+    font-size: large;
+    font-weight: bold;
+}
+.topky__item {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+.topky__item-name:hover {
+    text-decoration: underline;
+}
