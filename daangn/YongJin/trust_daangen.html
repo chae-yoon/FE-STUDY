@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>믿을 수 있는 중고거래 | 당신 근처의 당근마켓</title>
+  <script src="https://kit.fontawesome.com/7c01b20e08.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href= "https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 상단 nav -->
+  <nav class="sticky-top">  
+    <div class="navbar navbar-expand-md bg-white">
+      <div class="container">
+        <div class="justify-content-between">
+        <div class="row">
+        <div class="col-6">
+          <a class="navbar-brand" href="../YongJin/main.html">
+            <img src="https://dnvefa72aowie.cloudfront.net/karrot-cs/etc/202007/0cf1d10235c37b2635c02719125da37cc1bd632518198b1e1da7f5a364156540.png" alt="" width="100" height="28">
+          </a>
+        </div>
+          <div class="d-flex col-6" >
+            <button class="btn d-blcok d-md-none d-lg-none d-sm-block row" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="navbar-toggler row" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </div>
+        </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px; color: coral;" href="../YongJin/main.html"><b>중고거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/second.html"><b>동네가게</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style" style="margin-right: 15px;" href="../YongJin/third.html"><b>알바</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/fourth.html"><b>부동산 직거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/Fifth.html"><b>중고차 직거래</b></a>
+              </li>
+          </ul>
+        </div>
+            <button class="btn d-none d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="d-flex" role="search">
+              <input class="form-control d-none d-lg-block border-0 bg-secondary-subtle" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style="width: 288px; height: 40px; margin-right: 12px;" id="search-1" >
+            </form>
+            <form class="d-flex">
+              <button class="btn btn-outline-light border border-dark d-none d-md-block" type="submit" style="width: 98px; height: 40px;" ><b style="color: black;">채팅하기</b></button>
+            </form>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title w-100" id="offcanvasTopLabel"><input class="form-control border-0 bg-secondary-subtle nav-search-search" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style=" height: 100%; margin-right: 12px;" id="search-1" ></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 ms-3">
+        <p style="color: #898FB3; font-size: 0.875rem;">추천</p>
+        <div class="row">
+          <div class="col-6 nav-search">잠실 냉장고</div>
+          <div class="col-6 nav-search">강남 명품가방</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">키즈카페</div>
+          <div class="col-6 nav-search">자전거</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">홍대 쇼파</div>
+          <div class="col-6 nav-search">인천 노트북</div>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <!-- 당신 근처의 믿을 수 있는 중고거래 -->
+    <main>
+      <section class="trust-header">
+        <div class="text-center">
+          <div class="d-none d-lg-block" style="white-space: nowrap;">
+            <h1 class="title"><b>당신 근처의 믿을 수 있는 중고거래</b></h1>
+            <p>당근마켓과 함께 가깝고 따뜻한 거래문화를 만들어요.</p>
+          </div>
+          <div class=" d-block d-lg-none text-center">
+            <h1><b>당신 근처의 <br> 믿을 수 있는 중고거래</b></h1>
+            <p>당근마켓과 함께 가깝고 따뜻한 <br> 거래문화를 만들어요.</p>
+          </div>
+          <div class="p-0 d-none d-lg-block" style="margin: auto;">
+            <img style="height:19.6875rem;" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-top-9311b8d953145ff88e5951f372dc9bb72837b476559f12f31bc4606a693c893c.png" alt="">
+          </div>
+          <div class="text-center p-0 d-block d-lg-none" style="margin: auto;">
+            <img style="height:15rem;" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-top-9311b8d953145ff88e5951f372dc9bb72837b476559f12f31bc4606a693c893c.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 당근마켓은 신뢰할 수 있어요! -->
+    <!-- lg 이상 -->
+      <section class="trust-top d-none d-lg-block">
+        <div >
+          <h2><b>당근마켓은 신뢰할 수 있어요!</b></h2>
+        </div>
+        <section class="row trust-top-second-section">
+          <div class="col-6">
+            <img class="trust-top-left-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-1-08564a68dc6a07f9f05a35b2308a288ace19158318c3412960a257b4ffa2d9f8.png" alt="">
+          </div>
+          <div class="col-6 trust-top-div">
+            <div>
+              <h4 class="mb-3"><b>동네인증한 사용자만 거래해요</b></h4>
+              <span>당근마켓에서 거래하려면 동네인증이 필요해요. 동네인증은 설정한 동네에 있어야만 할 수 있어요. GPS를 이용하여 우리 동네를 인증한 진짜 이웃들과 거래하세요. 거래하려는 상대방의 인증 횟수를 보면 얼마나 자주 이 동네에서 사용했는지 알 수 있어요.</span>
+            </div>
+          </div>
+        </section>
+        <section class="row trust-top-second-section">
+          <div class="col-6 trust-top-div">
+            <h4 class="mb-3"><b>1:1당근채팅으로 대화해요</b></h4>
+            <span>당근마켓 내의 채팅을 통해 거래하는 게 가장 안전해요. 개인정보 공유 없이도 쉽고 편하게 거래할 수 있어요. 1:1 채팅으로 약속을 잡고 만나서 거래하세요. 채팅 내의 약속 알림을 설정하면 약속 시간 전에 알림을 받을 수 있어요.
+            </span>
+          </div>
+          <div class="col-6">
+            <img class="trust-top-right-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-2-c6c12bebd3e9dfca05c66eefa0705981e3f4442256dcd9ec365e7704d549faf6.png" alt="">
+          </div>
+        </section>
+        <section class="row trust-top-second-section">
+          <div class="col-6">
+            <img class="trust-top-left-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-3-09bd31cba4a5bbf730fa26059aeaf08c24e425747343700d42cd7ffc28adf649.png" alt="">
+          </div>
+          <div class="col-6 trust-top-second-section_1 ps-4 pe-0">
+            <h4 class="mb-3"><b>당신 근처에서 만나서 거래해요</b></h4>
+            <span>중고거래 사기의 대부분은 택배거래에서 발생한다는 사실, 알고 계셨나요? 당근마켓은 택배거래보다 직거래를 권장해요. 만나서 거래할 때는 누구나 찾기 쉽고 안전한 공공장소가 좋아요. 당근마켓에서 가까운 이웃과 따뜻하게 거래하세요.</span><br><br>
+            <a style="color: #FF8A3D; text-decoration: none;" href="https://www.daangn.com/wv/faqs/875" target="_blank">코로나19 예방 수칙 ></a>
+          </div>
+        </section>
+        <section class="row trust-top-second-section">
+          <div class="col-6 trust-top-second-section_1">
+            <h4 class="mb-3"><b>매너온도로 따뜻함을 확인해요</b></h4>
+            <span>거래하기 전 상대방의 매너온도를 확인하세요. 36.5도에서 시작하는 매너온도는 당근마켓 내의 다양한 활동을 종합하여 정해져요. 따뜻한 거래를 많이 한 이웃은 매너온도도 높답니다. 매너온도가 낮은 사용자를 발견한다면, 프로필의 가입일, 인증횟수, 재거래희망률, 후기 등을 꼼꼼히 확인해보세요.</span>
+          </div>
+          <div class="col-6">
+            <img class="trust-top-right-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-4-40a7a99a51eec3025cc5a7a29b1a240564cd39bcc7c9f4d1c54ac4b36110ec2b.png" alt="">
+          </div>
+        </section>
+      </section>
+
+
+      <!-- lg 이하 -->
+      <section class="trust-top-lg-down d-block d-lg-none">
+        <div>
+          <h2><b>당근마켓은 신뢰할 수 있어요!</b></h2>
+        </div>
+        <section class="trust-top-second-section">
+          <div class="text-center">
+            <img class="trust-top-left-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-1-08564a68dc6a07f9f05a35b2308a288ace19158318c3412960a257b4ffa2d9f8.png" alt="">
+          </div>
+          <div class="trust-top-div">
+            <div>
+              <h4 class="mb-3"><b>동네인증한 사용자만 거래해요</b></h4>
+              <span class="bicycle-textover-lg-down">당근마켓에서 거래하려면 동네인증이 필요해요. 동네인증은 설정한 동네에 있어야만 할 수 있어요. GPS를 이용하여 우리 동네를 인증한 진짜 이웃들과 거래하세요. 거래하려는 상대방의 인증 횟수를 보면 얼마나 자주 이 동네에서 사용했는지 알 수 있어요.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-top-second-section">
+          <div class="text-center">
+            <img class="trust-top-right-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-2-c6c12bebd3e9dfca05c66eefa0705981e3f4442256dcd9ec365e7704d549faf6.png" alt="">
+          </div>
+          <div class="trust-top-div">
+            <h4 class="mb-3"><b>1:1당근채팅으로 대화해요</b></h4>
+            <span class="bicycle-textover-lg-down">당근마켓 내의 채팅을 통해 거래하는 게 가장 안전해요. 개인정보 공유 없이도 쉽고 편하게 거래할 수 있어요. 1:1 채팅으로 약속을 잡고 만나서 거래하세요. 채팅 내의 약속 알림을 설정하면 약속 시간 전에 알림을 받을 수 있어요.
+            </span>
+          </div>
+        </section>
+
+        <section class="trust-top-second-section">
+          <div class="text-center">
+            <img class="trust-top-left-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-3-09bd31cba4a5bbf730fa26059aeaf08c24e425747343700d42cd7ffc28adf649.png" alt="">
+          </div>
+          <div class="trust-top-second-section_1-lg-down pe-0">
+            <h4 class="mb-3"><b>당신 근처에서 만나서 거래해요</b></h4>
+            <span class="bicycle-textover-lg-down">중고거래 사기의 대부분은 택배거래에서 발생한다는 사실, 알고 계셨나요? 당근마켓은 택배거래보다 직거래를 권장해요. 만나서 거래할 때는 누구나 찾기 쉽고 안전한 공공장소가 좋아요. 당근마켓에서 가까운 이웃과 따뜻하게 거래하세요.</span><br><br>
+            <a style="color: #FF8A3D; text-decoration: none;" href="https://www.daangn.com/wv/faqs/875" target="_blank">코로나19 예방 수칙 ></a>
+          </div>
+        </section>
+
+        <section class="trust-top-second-section">
+          <div class="text-center">
+            <img class="trust-top-right-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-4-40a7a99a51eec3025cc5a7a29b1a240564cd39bcc7c9f4d1c54ac4b36110ec2b.png" alt="">
+          </div>
+          <div class="trust-top-second-section_1-lg-down">
+            <h4 class="mb-3"><b>매너온도로 따뜻함을 확인해요</b></h4>
+            <span class="bicycle-textover-lg-down">거래하기 전 상대방의 매너온도를 확인하세요. 36.5도에서 시작하는 매너온도는 당근마켓 내의 다양한 활동을 종합하여 정해져요. 따뜻한 거래를 많이 한 이웃은 매너온도도 높답니다. 매너온도가 낮은 사용자를 발견한다면, 프로필의 가입일, 인증횟수, 재거래희망률, 후기 등을 꼼꼼히 확인해보세요.</span>
+          </div>
+        </section>
+      </section>
+
+
+      <!-- lg 이상 -->
+      <section class="trust-bottom d-none d-lg-block">
+        <h2 class="trust-bottom-h1"><b>지금 이 순간에도 당신을 위해 노력하고 있어요!</b></h2>
+        <div class="container p-0" style="margin-top: 5rem; width: 61rem;">
+          <div style="display: flex;">
+            <div class="trust-bottom-div" style="margin-bottom: 5rem;">
+              <img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-5-9b0bb1401ef34ea10b1dbbf34d4b8efa56609c5d69f8916a2a9eb942513f09a3.png" alt="">
+              <h4><b>사기꾼은 실시간으로 제재해요</b></h4>
+              <span>당근마켓은 사용자 보호를 위해 다양한 사기 사례를 분석하고 있어요. 사기 등의 행위가 발견되는 즉시 해당 사용자의 서비스 이용을 제한해요. 사기를 저지른 사용자가 탈퇴하거나 재가입해도 서비스를 이용할 수 없으니 안심하세요.</span>
+            </div>
+            <div class="trust-bottom-div" style="margin-left: 12rem;">
+              <img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-6-dfda3618d665719e09e20386b6b82efc400e45b48ddaf0178b82debaa6d7be7b.png" alt="">
+              <h4><b>채팅 메시지로 미리 알려줘요</b></h4>
+              <span>당근마켓 채팅을 이용하면 다양한 안내 및 경고 메시지들을 받을 수 있어요. 상대방의 사기 이력이나 유사한 사기 사례를 주의하라고 알려주기도 하고, 사기가 진행되지 않도록 대화 도중 채팅을 막기도 해요. 지금 이 순간에도 사기 사례를 분석하여 고도화하고 있어요.</span>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div class="trust-bottom-div" style="margin-bottom: 5rem;">
+              <img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-7-e6b37bc404aeddde1810544c4cf05db9141b49b4d65aea6887493d3d31df8a5d.png" alt="">
+              <h4><b>게시글을 분석해요</b></h4>
+              <span>머신러닝 기술을 이용해 게시글을 분석해요. 판매금지품목이나 전문판매업자의 판매 게시글, 허위 게시글, 광고 게시글, 중복 게시글 등은 노출되지 않아요. 신뢰할 수 있는 우리 동네 마켓을 만들기 위해 노력하고 있어요.</span>
+            </div>
+            <div class="trust-bottom-div" style="margin-left: 12rem;">
+              <img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-8-7bb8b91a94c04b7103db580fa2fee6ecadbe0ea6284c6c917cb035bb1a0229ef.png" alt="">
+              <h4><b>수사기관과 함께 해요</b></h4>
+              <span>거래 사기 이력이 있는 사용자는 서비스를 사용할 수 없어요. 사기 등 거래 관련 문제는 빠르게 해결될 수 있도록 당근마켓 팀도 함께 노력해요. 신고를 권장하고, 수사기관의 요청에 적극 협조하고 있어요. 서울지방경찰청과 사기예방캠페인도 함께 진행했어요.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- lg 이하 -->
+      <section class="trust-bottom d-block d-lg-none">
+        <h2 class="ms-3"><b>지금 이 순간에도 당신을 위해 노력하고 있어요!</b></h2>
+        <div class="container p-0" style="margin-top: 5rem;">
+          <div>
+            <div class="trust-bottom-div-lg-down" style="margin-bottom: 5rem;">
+              <div class="text-center"><img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-5-9b0bb1401ef34ea10b1dbbf34d4b8efa56609c5d69f8916a2a9eb942513f09a3.png" alt=""></div>
+              <h4 class="trust-textover-lg-down"><b>사기꾼은 실시간으로 제재해요</b></h4>
+              <span>당근마켓은 사용자 보호를 위해 다양한 사기 사례를 분석하고 있어요. 사기 등의 행위가 발견되는 즉시 해당 사용자의 서비스 이용을 제한해요. 사기를 저지른 사용자가 탈퇴하거나 재가입해도 서비스를 이용할 수 없으니 안심하세요.</span>
+            </div>
+            <div class="trust-bottom-div-lg-down">
+              <div class="text-center"><img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-6-dfda3618d665719e09e20386b6b82efc400e45b48ddaf0178b82debaa6d7be7b.png" alt=""></div>
+              <h4><b>채팅 메시지로 미리 알려줘요</b></h4>
+              <span>당근마켓 채팅을 이용하면 다양한 안내 및 경고 메시지들을 받을 수 있어요. 상대방의 사기 이력이나 유사한 사기 사례를 주의하라고 알려주기도 하고, 사기가 진행되지 않도록 대화 도중 채팅을 막기도 해요. 지금 이 순간에도 사기 사례를 분석하여 고도화하고 있어요.</span>
+            </div>
+          </div>
+          <div>
+            <div class="trust-bottom-div-lg-down" style="margin-bottom: 5rem;">
+              <div class="text-center"><img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-7-e6b37bc404aeddde1810544c4cf05db9141b49b4d65aea6887493d3d31df8a5d.png" alt=""></div>
+              <h4><b>게시글을 분석해요</b></h4>
+              <span>머신러닝 기술을 이용해 게시글을 분석해요. 판매금지품목이나 전문판매업자의 판매 게시글, 허위 게시글, 광고 게시글, 중복 게시글 등은 노출되지 않아요. 신뢰할 수 있는 우리 동네 마켓을 만들기 위해 노력하고 있어요.</span>
+            </div>
+            <div class="trust-bottom-div-lg-down">
+              <div class="text-center"><img class="trust-bottom-img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/trust/3x/img-trust-8-7bb8b91a94c04b7103db580fa2fee6ecadbe0ea6284c6c917cb035bb1a0229ef.png" alt=""></div>
+              <h4><b>수사기관과 함께 해요</b></h4>
+              <span>거래 사기 이력이 있는 사용자는 서비스를 사용할 수 없어요. 사기 등 거래 관련 문제는 빠르게 해결될 수 있도록 당근마켓 팀도 함께 노력해요. 신고를 권장하고, 수사기관의 요청에 적극 협조하고 있어요. 서울지방경찰청과 사기예방캠페인도 함께 진행했어요.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <footer>
+      <!-- xl 이하일때 -->
+      <div class="container">
+        <div class="col-9 offset-3 p-0 d-block d-xl-none">
+          <p class="m-0" style="font-size: 13px;"><b>당근마켓 앱 다운로드</b> <a style="font-size: 15px;" class="footer-a" href="#"><b>ios<img src="../YongJin/image/arrow.PNG" alt=""></b></a> <a style="font-size: 15px;" class="footer-a" href=""><b>Android <img src="../YongJin/image/arrow.PNG" alt=""></b></a></p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row container col-9 offset-3 pt-5 pb-4 ps-0 pe-0">
+          <div class="col-1" style="width: 131.47px;">
+            <div class="footer-box"><a class="footer-a ft" href="#">중고거래</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">동네가게</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">당근알바</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">부동산 거래</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">중고차 직거래</a></div>
+          </div>
+          <div class="col-1" style="width: 131.47px;">
+            <div class="footer-box"><a class="footer-a ft" href="#">당근비즈니스</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">채팅하기</a></div>
+          </div>
+          <div class="col-1" style="width: 131.47px; margin-right: 69.594px;">
+            <div class="footer-box"><a class="footer-a ft" href="#">자주 묻는 질문</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">회사 소개</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">인재 채용</a></div>
+          </div>
+          <!-- xl 이상일때만 보임 -->
+          <div class="col-12 p-0 d-none d-xl-block" style="width: 300px;">
+            <p class="m-0"><b>당근마켓 앱 다운로드</b></p>
+            <div>
+              <button class="btn btn-outline-light col-6 p-0" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/apple.PNG" alt=""></img></button>
+              <button class="btn btn-outline-light col-6 p-0 ms-3" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/google.PNG" alt=""></button>  
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row container col-9 offset-3 pt-2 ps-0 pe-0" style="padding-bottom: 100px;">
+            <hr>
+            <div class="col-6">
+          <div>
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><b>대표</b> 김용현, 황도연</span>
+            <span style="color: lightsteelblue;">|</span>
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><b>사업자번호</b> 375-87-00088</span>
+          </div>
+          <div>
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><b>직업정보제공사업 신고번호</b> 2016-서울서초-0051</span>
+          </div>
+          <div>
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><b>주소</b> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+          </div>
+          <div>
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><b>전화</b> 1544-9796</span>
+            <span style="color: lightsteelblue;">|</span>
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><b>고객문의</b> cs@daangnservice.com</span><br>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">제휴 문의</a>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">광고 문의</a>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">PR 문의</a>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">IR 문의</a><br>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">이용약관</a>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">개인정보처리방침</a>
+            <a class="footer-a-a ft" style="font-size: 13px;" href="#">위치기반서비스 이용약관</a>
+            <a class="footer-a-a ft" style="font-size: 12px;" href="#">이용자보호 비전과 계획</a>
+            <div class="col-12 ms-0 d-block d-xl-none">
+              <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+              <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+              <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+              <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+              <a class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                  <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">한국</button></li>
+                  <li><button class="dropdown-item" type="button">영국</button></li>
+                  <li><button class="dropdown-item" type="button">캐나다</button></li>
+                  <li><button class="dropdown-item" type="button">미국</button></li>
+                  <li><button class="dropdown-item" type="button">일본</button></li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </div>
+          <div class="col-5 ms-0 d-none d-xl-block">
+            <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+            <a class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">한국</button></li>
+                <li><button class="dropdown-item" type="button">영국</button></li>
+                <li><button class="dropdown-item" type="button">캐나다</button></li>
+                <li><button class="dropdown-item" type="button">미국</button></li>
+                <li><button class="dropdown-item" type="button">일본</button></li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
