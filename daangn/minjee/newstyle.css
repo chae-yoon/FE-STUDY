@@ -1,3 +1,21 @@
+/* 믿을 수 있는 중고거래 관련 style 설정 */
+.trust__sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.trust__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.trust__desc-img {
+    align-items: center;
+}
+.text__drag::selection {
+    background-color: #FFB98B;
+}
 /* 인기 검색어 관련 style 설정 */
 .topky__main {
     display: flex;
@@ -36,4 +54,12 @@
 }
 .topky__item-name:hover {
     text-decoration: underline;
+}
+
+/* 색상 관련 style 설정 */
+.bg-lightgray {
+    background-color: #F8F9FA;
+}
+.text-orange {
+    color: orange;
 }
