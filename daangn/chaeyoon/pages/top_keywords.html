@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>딜러 없이 믿고 사는 당근 중고차</title>
+    <title>믿을 수 있는 중고거래 | 당신 근처의 당근마켓</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Favicon -->
@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav d-flex flex-wrap">
           <li class="nav-item">
-            <a class="nav-link fw-semibold" aria-current="page" href="../index.html">중고거래</a>
+            <a class="nav-link fw-semibold active" aria-current="page" href="../index.html">중고거래</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-semibold" href="./nearby-stores.html">동네가게</a>
@@ -33,7 +33,7 @@
             <a class="nav-link fw-semibold" href="./realty.html">부동산 직거래</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold active" href="#">중고차 직거래</a>
+            <a class="nav-link fw-semibold" href="#">중고차 직거래</a>
           </li>
         </ul>
       </div>
@@ -82,7 +82,7 @@
   <div class="offcanvas offcanvas-top border-top " tabindex="-1" id="menuModal" aria-labelledby="offcanvasTopLabel">
     <ul class="navbar-nav d-flex flex-wrap h-100 menu-modal">
       <li class="nav-item p-3">
-        <a class="nav-link" aria-current="page" href="../index.html">중고거래</a>
+        <a class="nav-link active" aria-current="page" href="../index.html">중고거래</a>
       </li>
       <li class="nav-item p-3">
         <a class="nav-link" href="./nearby-stores.html">동네가게</a>
@@ -94,393 +94,164 @@
         <a class="nav-link" href="./realty.html">부동산 직거래</a>
       </li>
       <li class="nav-item p-3">
-        <a class="nav-link active" href="#">중고차 직거래</a>
+        <a class="nav-link" href="#">중고차 직거래</a>
       </li>
     </ul>
   </div>
 
-  <main class="realty-basic">
-    <!-- Section1 -->
-    <section class="realty-sec1-basic__style overflow-hidden">
-      <!-- Over 768px -->
-      <div class="d-none d-md-flex justify-content-between mx-auto realty-sec1-md__style">
-        <div>
-          <h1 class="fw-bold realty-sec1-md-title">딜러 수수료 없는<br>중고차 직거래</h1>
-          <p>딜러 없이 믿고 살 수 있는 중고차,<br>당근에서 직거래해보세요.</p>
-        </div>
-        <div class="position-relative flex-grow-1">
-          <picture>
-            <img src="./../img/car/01.png" class="img-fluid position-absolute bottom-0 end-0 car-sec1-md-img" alt="01 image">
-          </picture>
-        </div>
-      </div>
-      <!-- Under 768px -->
-      <div class="d-md-none position-relative realty-sec1__style">
-        <h1 class="fw-bold m-0 realty-sec1-title">딜러 수수료 없는<br>중고차 직거래</h1>
-        <div>
-          <picture>
-            <img src="./../img/car/01.png" class="position-absolute bottom-0 start-50 translate-middle-x car-sec1-img" alt="01 image">
-          </picture>
-        </div>
-      </div>
-    </section>
-    <!-- Section2 -->
-    <section>
-      <div class="mx-auto realty-sec2__style">
-        <div>
-          <!-- Over 768px -->
-          <h2 class="d-none d-md-block fw-bold nbs-sec2-md-title">인기 중고차</h2>
-          <!-- Under 768px -->
-          <h2 class="d-md-none fw-bold nbs-sec2-title">인기 중고차</h2>
-        </div>
-        <!-- Content1 -->
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/767cc0b0d39ead67350718207b5ca87c41323c5d59480dde708cbd72fd53061b_1680354893714.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                기아 뉴 모닝 SA 1.0 LX 기본 블랙프리미엄
-              </div>
-              <div class="popular-rigion">
-                09년식 ・ 14.3만km ・ 부평6동
-              </div>
-              <div class="popular-price">
-                130만원
-              </div>
-            </div>
+  <main>
+    <h1 class="fw-semibold top-keywords-title">오늘의 중고 인기 검색어</h1>
+    <ol class="top-keywords-list">
+      <a href="./search.html" class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>자전거</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/6f9d55fd3f8c606f7d875ce3c3b7fe5dc26d2e17365e9067cfe58f50cc7587fe.webp?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                르노코리아 QM3 디젤 1.5 2WD RE 시그니처
-              </div>
-              <div class="popular-rigion">
-                16년식 ・ 9.9만km ・ 온천제1동
-              </div>
-              <div class="popular-price">
-                600만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>의자</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/20116dcb5fc2870330ecba8acd508f8f75a398a7c6e6a1273bfb8acabc2ef2db_1680318210047.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                기아 K5 TF LPi 2.0 렌트 디럭스
-              </div>
-              <div class="popular-rigion">
-                12년식 ・ 21만km ・ 명일제1동
-              </div>
-              <div class="popular-price">
-                350만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>아이폰</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/a6a7cd281f51b206e078c042e317aa08a441ef0b508bad3699604bb491945b14_1680164522005.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                포르쉐 카이엔 958 3.6(V6 tiptronic)
-              </div>
-              <div class="popular-rigion">
-                11년식 ・ 8.0만km ・ 상계1동
-              </div>
-              <div class="popular-price">
-                3,500만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>냉장고</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/8d28890847ef316eb53aede136ea95cc7086d14eaea1c4e6f845fa42d45057ab_1680289505250.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                닛산 쥬크 F15 1.6 SV
-              </div>
-              <div class="popular-rigion">
-                14년식 ・ 9.8만km ・ 오류제2동
-              </div>
-              <div class="popular-price">
-                700만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>노트북</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/3e2525a09911fbf7135818b16818f0da48786cbc257d67e94bd6b56f338676f3_1680326231144.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                벤츠 C 클래스 W205 C200 (211마력)
-              </div>
-              <div class="popular-rigion">
-                17년식 ・ 8.7만km ・ 공덕동
-              </div>
-              <div class="popular-price">
-                2,270만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>패딩</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/c93199e0996f80573476471ed749d2300c3ac0485192d63bc3c8ddcfc8c89ae7_1680357526408.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                현대 그랜저 IG LPl 3.0 택시용 모범 (VIP패키지)
-              </div>
-              <div class="popular-rigion">
-                18년식 ・ 36만km ・ 구산동
-              </div>
-              <div class="popular-price">
-                880만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>아이패드</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/74eefe5d5fa6d369f67e39bee6f9bb4808bb4e24ed1b43e392ab8cc12dc0aa00_1680301713502.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                르노코리아 뉴 SM5 신형 L43 2.0 CVTCⅡ RE
-              </div>
-              <div class="popular-rigion">
-                10년식 ・ 19만km ・ 황금2동
-              </div>
-              <div class="popular-price">
-                180만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>모니터</span>
+            <span class="top-keywords-rank">
+              <span class="up">↑</span>
+              <span>1</span>
+            </span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/acdb1986cefa0877ed1e25b2a9ba4c01b373b86f8233ea0d73f3f386c3fdfa08_1680319219153.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                현대 제네시스 BH BH330 GDi 모던 스페셜
-              </div>
-              <div class="popular-rigion">
-                13년식 ・ 15만km ・ 연산제1동
-              </div>
-              <div class="popular-price">
-                650만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>스타벅스</span>
+            <span class="top-keywords-rank">
+              <span class="up">↑</span>
+              <span>12</span>
+            </span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/41c9d48fde9b5377fc7dc22984bb40b4b3d5c9465a4350193c8f1aa8e2a79c70_1680296797767.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                기아 모닝 SA 1.0 LX 고급
-              </div>
-              <div class="popular-rigion">
-                07년식 ・ 13.1만km ・ 용현1,4동
-              </div>
-              <div class="popular-price">
-                120만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>책상</span>
+            <span>-</span>
           </div>
-        </div>
-        <!-- Banner1 -->
-        <div class="mx-auto jobs-bn__style">
-          <div class="popular-bn__style popular-bn-bg">
-            <!-- Over 768px -->
-            <div class="d-none d-md-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-basic-double">
-                <img src="./../img/car/bn01.png" alt="banner icon" class="popular-bn-icon">
-                <div class="d-flex flex-column">
-                  <h6 class="popular-bn-title__style">딜러 수수료 없는 중고차 직거래<br>당근마켓 내 근처 탭에서 바로 찾아보세요!</h6>
-                </div>
-              </div>
-              <a href="#" class="btn btn-popular-bn">앱 다운로드 하기</a>
-            </div>
-            <!-- Under 768px -->
-            <div class="d-md-none d-flex flex-column align-items-start">
-              <h6 class="popular-bn-title__style">딜러 수수료 없는 중고차 직거래<br>당근마켓 내 근처 탭에서 바로 찾아보세요!</h6>
-              <a href="#" class="btn btn-popular-bn">앱 다운로드 하기</a>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>캠핑</span>
+            <span class="top-keywords-rank">
+              <span class="down">↓</span>
+              <span>3</span>
+            </span>
           </div>
-        </div>
-        <!-- Content2 -->
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/345fbadb4984d607268775b9071e94ab25ee4d74c83016dad3fca8f6daa4468b_1680365946358.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                현대 올 뉴 아반떼 CN7 1.6 GDi 스마트
-              </div>
-              <div class="popular-rigion">
-                23년식 ・ 1.0만km ・ 민락동
-              </div>
-              <div class="popular-price">
-                1,700만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>김치냉장고</span>
+            <span class="top-keywords-rank">
+              <span class="down">↓</span>
+              <span>1</span>
+            </span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/39734354f773b134e3a08c1ce6018aa6dfbed88c82620ce556d80b251a24ac00_1680341667818.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                쉐보레(대우) 스파크 M300 1.0 DOHC
-              </div>
-              <div class="popular-rigion">
-                14년식 ・ 9만km ・ 만촌2동
-              </div>
-              <div class="popular-price">
-                250만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>쇼파</span>
+            <span>-</span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/5ace2dbfbb49b8fdb6b70c0605968c4fcef7712ecd6da3297d347e40925994c3_1680300373970.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                닛산 쥬크 F15 1.6
-              </div>
-              <div class="popular-rigion">
-                14년식 ・ 9.7만km ・ 황금1동
-              </div>
-              <div class="popular-price">
-                600만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>가방</span>
+            <span class="top-keywords-rank">
+              <span class="up">↑</span>
+              <span>1</span>
+            </span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/60e7d6778e7a8cd4baa9d1ca26774399565be16a124b92b0ee5952ddc067c1e1_1680361153046.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                BMW 5시리즈 G30 520i 럭셔리
-              </div>
-              <div class="popular-rigion">
-                18년식 ・ 4.9만km ・ 진관동
-              </div>
-              <div class="popular-price">
-                3,400만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>에어팟</span>
+            <span class="top-keywords-rank">
+              <span class="down">↓</span>
+              <span>1</span>
+            </span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/546743643de0ad26f3164fd85857224783f71e9cf61c0be38f69cc848f775f94_1680346430619.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                캐딜락 ATS 2.0L 세단 럭셔리
-              </div>
-              <div class="popular-rigion">
-                17년식 ・ 6만km ・ 산격4동
-              </div>
-              <div class="popular-price">
-                1,700만원
-              </div>
-            </div>
+        </li>
+      </a>
+      <a class="top-keywords-link">
+        <li class="top-keywords-link-contents">
+          <div>
+            <span>컴퓨터</span>
+            <span class="top-keywords-rank">
+              <span class="up">↑</span>
+              <span>1</span>
+            </span>
           </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/5783a0ffad20fe570e72f56773e5214b823cbbef14a910107c47411215d4aedb_1680298437860.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                KG 모빌리티 액티언 스포츠 Q100 5인승(디젤 AX5) 2WD 클럽
-              </div>
-              <div class="popular-rigion">
-                10년식 ・ 18만km ・ 관문동
-              </div>
-              <div class="popular-price">
-                150만원
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/2fed24e652056b08b4c1ece65b533aeef1a7d8b275f6ef732452d2af47b85654_1680316332787.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                KG 모빌리티 렉스턴 W Y200 7인승(RX7 2.0) 2WD 럭셔리
-              </div>
-              <div class="popular-rigion">
-                13년식 ・ 11.6만km ・ 범물2동
-              </div>
-              <div class="popular-price">
-                680만원
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/a5ff7a85a38bd8b8e0a13ba2a3f3967107e4287b013f3279a8327fc6729ab7a5_1680348007984.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                기아 뉴 모닝 SA 1.0(LPi) LX 기본
-              </div>
-              <div class="popular-rigion">
-                10년식 ・ 20.9만km ・ 미성동
-              </div>
-              <div class="popular-price">
-                135만원
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/41696fb914742e4c077b60d93324221cf6c70837e7570318a3332aab45489f65_1679769138918.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                폭스바겐 골프 Ⅵ 5K 1.4 TSI 
-              </div>
-              <div class="popular-rigion">
-                09년식 ・ 4.6만km ・ 신정1동
-              </div>
-              <div class="popular-price">
-                950만원
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/5bf717a052c19caf43cc5d1160bc738eaeb0f83be7dc6bfeb418ba0ecbbbb468_1680335571124.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                기아 스포티지 R SL 디젤 2.0 2WD TLX 고급
-              </div>
-              <div class="popular-rigion">
-                12년식 ・ 16.6만km ・ 산곡2동
-              </div>
-              <div class="popular-price">
-                549만원
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </li>
+      </a>
+    </ol>
   </main>
   
   <!-- Footer -->
