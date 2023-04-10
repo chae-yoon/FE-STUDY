@@ -8,7 +8,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
+    <style>
+        /* 반응형 페이지 회색 배경색 사라짐 100% */
+        @media screen and (max-width:767px) {
+            .topky__bicycle__main {
+                padding-top: 0px;
+            }
+            .topky__bicycle__inner-title {
+                border-bottom: 1px lightgray solid;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
@@ -43,246 +54,154 @@
             </div>
         </div>
     </nav>
-    <main>
-        <section class="main__dsc pt-4 bg-pale-peach">
-            <div class="row w-75 d-flex mx-auto">
-                <div class="col-12 col-lg-6 my-auto mx-auto justify-content-center align-items-center">
-                    <h2 class="fw-bold mt-3">당신 근처의<br>당근마켓</h2>
-                    <p>중고거래부터 동네 정보까지, 이웃과 함께해<br>가깝고 따뜻한 당신의 근처를 만들어요.</p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img class="d-none d-lg-block w-100" src="image/main__dsc01.png" alt="">
-                    <img class="d-block d-lg-none" src="image/only_tab/main-desc01.webp" alt="">
-                </div>
+    <main class="bg-lightgray d-flex flex-column align-items-center topky__bicycle__main">
+        <div class="topky__bicycle__inner mb-3">
+            <div class="topky__bicycle__inner-title">
+                <h5 class="fw-bold">중고거래</h5>
             </div>
-        </section>
-        <section class="main__dsc pt-4 pb-4">
-            <div class="row w-75 d-flex flex-row-reverse mx-auto">
-                <div class="col-12 col-lg-6 m-auto">
-                    <!-- mx-auto, my-auto 둘다 적용해야 한다면  m-auto로 설정. justify-content와 align-items는 flexbox 설정한 부모코드에서만 사용 가능 by 용진님-->
-                    <h2 class="fw-bold mt-3">우리 동네<br>중고 직거래 마켓</h2>
-                    <p>동네 주민들과 가깝고 따뜻한 거래를<br> 지금 경험해보세요.</p>
-                    <div class="d-flex flex-wrap d-grid gap-2">
-                        <button type="button" class="btn col-8 col-lg-4 bg-body-secondary btn-lg mb-3">
-                            <!-- 텍스트 줄바꿈 문제 해결 방법 - min-width 활용할 것 by 은비님 -->
-                            <a class="text-decoration-none text-black fw-bold" href="">인기매물 보기</a>
-                        </button>
-                        <button type="button" class="btn col-8 col-lg-5 bg-body-secondary btn-lg mb-3">
-                            <a class="text-decoration-none text-black fw-bold" href="main__trust.html">믿을 수 있는 중고거래</a>
-                        </button>
-                        
+            <div class="row border-bottom">
+                <a class="col-12 col-md-4 d-flex flex-column align-items-center p-3 text-decoration-none" href="#">
+                    <div class="w-75 mb-2"><img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/2d02e80003152801aa9dfbd371a12c95a955d36b0171e49fed5c9f5bfd25cf15.webp?q=82&s=300x300&t=crop" alt=""></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold text-trunc_oneline text-body">mongoose 몽구스자전거16인치 어린이(BMX) 어린이자전거 유아자전거 묘기용자전거 초등자전거</span>
+                        <span class="text-secondary">대구 수성구 범어3동</span>
+                        <div class="d-flex justify-content-between"><span class="text-orange fw-bold">58,000원</span><span class="text-body">♡ 7</span></div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img class="w-100" src="image/main__dsc02.png" alt="">
-                </div>
+                </a>
+                <a class="col-12 col-md-4 d-flex flex-column align-items-center p-3 text-decoration-none" href="#">
+                    <div class="w-75 mb-2"><img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/9c8798696f619754cbc1f319884f8feadca27c963b4fdc5e366b49f451b1e174.jpg?q=82&s=300x300&t=crop" alt=""></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold text-trunc_oneline text-body">레스포 스탠다드 자전거 (표준자전거,쌀집자전거,짐자전거,짐차)</span>
+                        <span class="text-secondary">충북 충주시 칠금, 금릉동</span>
+                        <div class="d-flex justify-content-between"><span class="text-orange fw-bold">150,000원</span><span class="text-body">♡ 7</span></div>
+                    </div>
+                </a>
+                <a class="col-12 col-md-4 d-flex flex-column align-items-center p-3 text-decoration-none" href="#">
+                    <div class="w-75 mb-2"><img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/8ab909b17d433e87efd71dc3647b5bf15e0f6cd076736122a9df1d7d2b959991.webp?q=82&s=300x300&t=crop" alt=""></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold text-trunc_oneline text-body">mongoose 몽구스자전거16인치 어린이(BMX) 어린이자전거 유아자전거 묘기용자전거 초등자전거</span>
+                        <span class="text-secondary">대구 수성구 범어3동</span>
+                        <div class="d-flex justify-content-between"><span class="text-orange fw-bold">58,000원</span><span class="text-body">♡ 7</span></div>
+                    </div>
+                </a>
+                <a class="col-12 col-md-4 d-flex flex-column align-items-center p-3 text-decoration-none" href="#">
+                    <div class="w-75 mb-2"><img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/2d02e80003152801aa9dfbd371a12c95a955d36b0171e49fed5c9f5bfd25cf15.webp?q=82&s=300x300&t=crop" alt=""></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold text-trunc_oneline text-body">mongoose 몽구스자전거16인치 어린이(BMX) 어린이자전거 유아자전거 묘기용자전거 초등자전거</span>
+                        <span class="text-secondary">대구 수성구 범어3동</span>
+                        <div class="d-flex justify-content-between"><span class="text-orange fw-bold">58,000원</span><span class="text-body">♡ 7</span></div>
+                    </div>
+                </a>
+                <a class="col-12 col-md-4 d-flex flex-column align-items-center p-3 text-decoration-none" href="#">
+                    <div class="w-75 mb-2"><img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/9c8798696f619754cbc1f319884f8feadca27c963b4fdc5e366b49f451b1e174.jpg?q=82&s=300x300&t=crop" alt=""></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold text-trunc_oneline text-body">레스포 스탠다드 자전거 (표준자전거,쌀집자전거,짐자전거,짐차)</span>
+                        <span class="text-secondary">충북 충주시 칠금, 금릉동</span>
+                        <div class="d-flex justify-content-between"><span class="text-orange fw-bold">150,000원</span><span class="text-body">♡ 7</span></div>
+                    </div>
+                </a>
+                <a class="col-12 col-md-4 d-flex flex-column align-items-center p-3 text-decoration-none" href="#">
+                    <div class="w-75 mb-2"><img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/8ab909b17d433e87efd71dc3647b5bf15e0f6cd076736122a9df1d7d2b959991.webp?q=82&s=300x300&t=crop" alt=""></div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold text-trunc_oneline text-body">mongoose 몽구스자전거16인치 어린이(BMX) 어린이자전거 유아자전거 묘기용자전거 초등자전거</span>
+                        <span class="text-secondary">대구 수성구 범어3동</span>
+                        <div class="d-flex justify-content-between"><span class="text-orange fw-bold">58,000원</span><span class="text-body">♡ 7</span></div>
+                    </div>
+                </a>
             </div>
-        </section>
-        <section class="main__dsc pt-4 pb-4 bg-pale-green">
-            <div class="row w-75 d-flex mx-auto">
-                <div class="col-12 col-lg-6 my-auto mx-auto justify-content-center align-items-center">
-                    <h2 class="fw-bold mt-3">이웃과 함께 하는<br>동네생활</h2>
-                    <p>우리 동네의 다양한 이야기를 <br>이웃과 함께 나누어요.</p>
-                    <div class="d-none d-lg-block">
-                        <div class="d-flex">
-                            <div class="me-3">
-                                <div class="icon-circle mb-3"><i class="bi bi-house-door"></i></div>
-                                <div class="mb-3">
-                                    <b>우리동네질문</b>
-                                </div>
-                                <p class="mb-3">궁금한 게 있을 땐<br> 이웃에게 물어보세요.</p>
-                            </div>
-                            <div class="me-3">
-                                <div class="icon-circle mb-3"><i class="bi bi-clipboard-check"></i></div>
-                                <div class="mb-3">
-                                    <b>동네분실센터</b>
-                                </div>
-                                <p class="mb-3">무언가를 잃어버렸을 때,<br>함께 찾을 수 있어요.</p>
-                            </div>
-                            <div>
-                                <div class="icon-circle mb-3"><i class="bi bi-chat-dots"></i></div>
-                                <div class="mb-3">
-                                    <b>동네모임</b>
-                                </div>
-                                <p class="mb-3">관심사가 비슷한 이웃과<br>온오프라인으로 만나요.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img class="w-100" src="image/main__dsc03.png" alt="">
-                </div>
+            <div class="text-center pt-3">
+                <a class="text-decoration-none text-body" href="#" id="load">더보기</a>
             </div>
-        </section>
-        <section class="main__dsc pt-4 pb-4">
-            <div class="row w-75 d-flex flex-row-reverse mx-auto">
-                <div class="col-12 col-lg-6 my-auto mx-auto justify-content-center align-items-center">
-                    <h2 class="fw-bold mt-3">내 근처에서 찾는<br>동네가게</h2>
-                    <p>우리 동네 가게를 찾고 있나요?<br>동네 주민이 남긴 진짜 후기를 함께 확인해보세요!
-                    </p>
-                    <div>
-                        <button type="button" class="btn bg-body-secondary btn-lg">
-                            <a class="text-decoration-none text-black fw-bold" href="">당근마켓 동네가게 찾기</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img class="w-100" src="image/main__dsc04.png" alt="">
-                </div>
+        </div>
+        <div class="topky__bicycle__inner">
+            <div class="topky__bicycle__inner-title">
+                <h5 class="fw-bold">동네정보</h5>
             </div>
-        </section>
-        <section class="main__hot-items pt-4 pb-4 bg-body-tertiary">
-            <div class="w-75 mx-auto text-center">
-                <div>
-                    <h2 class="fw-bold my-5">중고거래 인기매물</h2>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/d533be8be038162650c7d8954974976a6053370b5fb663aabfdb7319a52b5a19.webp?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5>시골집 팝니다</h5>
-                            <h5 class="fw-bold">3000만원</h5>
-                            <div class="mb-1">경북 포항시 북구 두호동</div>
-                            <div class="small-gray">
-                                <span>관심 130</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 105</span>
-                            </div>
+            <div class="">
+                <a href="" class="text-decoration-none text-body d-flex py-3 border-bottom">
+                    <div class="d-flex flex-column justify-content-center">
+                        <img class="rounded" width="120px" height="120px" src="https://dnvefa72aowie.cloudfront.net/community/community/20230409/3b1ef4fa-bcea-4bef-82ad-9a792f246115.jpeg" alt="">
+                    </div>
+                    <div class="p-2 ps-3">
+                        <p class="text-trunc_threeline">부설중 다니는 아들이 일주일전에 <span class="text-orange bg-warning-subtle">자전거</span> 잃어버렸습니다. 부설중 정문옆 <span class="text-orange bg-warning-subtle">자전거</span> 도로에서 분실했으며 알톤 라임스톤입니다. 부설중 정문옆 <span class="text-orange bg-warning-subtle">자전거</span> 도로에서 분실했으며 알톤 라임스톤입니다.
+                            등하교용이었는데 잃어버린후 주약동에서 버스타고 걸어다니고 있습니다.
+                            혹시 가져가신 분은 원래 자리로 돌려주시고 보신분은 연락주시면 사례합니다.</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">경남 진주시 천천동</span>
+                            <span class="text-secondary"></span>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/7068bb2d554397581cff23d369019676600bcf472bf862d7a6b6745ca497e726.webp?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5>노트북 내놓아요</h5>
-                            <h5 class="fw-bold">50,000원</h5>
-                            <div class="mb-1">서울 강남구 논현동</div>
-                            <div class="small-gray">
-                                <span>관심 54</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 86</span>
-                            </div>
+                </a>
+                <a href="" class="text-decoration-none text-body d-flex py-3 border-bottom">
+                    <div class="d-flex flex-column justify-content-center">
+                    </div>
+                    <div class="p-2 ps-3">
+                        <p class="text-trunc_threeline"><span class="text-orange bg-warning-subtle">자전거</span> 주부가 펑크난것 같은데 인근 할아버지가 하는 할아버지한테 가서 펑크 때웠는데 담날보니 바람이 다 빠져서 끌고 갔더니 팡꾸난곳 찾지도 못하고 이상없다고 하며 추가로 5000원 돈만 받고 집에와서 세워놨더니
+                            바람이 다 빠졌네요.</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">경기도 구리시 안창동</span>
+                            <span class="text-secondary">5</span>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/2741afe9c2a9dabb5f3536c63218ded619a5afb6a0533aba0e479dbc474b0178.webp?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5>고야드 미니앙주 정품</h5>
-                            <h5 class="fw-bold">250,000원</h5>
-                            <div class="mb-1">서울 용산구 이촌제1동</div>
-                            <div class="small-gray">
-                                <span>관심 48</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 37</span>
-                            </div>
+                </a>
+                <a href="" class="text-decoration-none text-body d-flex py-3 border-bottom">
+                    <div class="d-flex flex-column justify-content-center">
+                        <img class="rounded" width="120px" height="120px" src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/8352815d271657b2428fa68cc31e77e0a94fb8480f9c6f1de0a51c6a70d58030.jpg?q=82&s=300x300&t=crop" alt="">
+                    </div>
+                    <div class="p-2 ps-3">
+                        <p class="text-trunc_threeline">킨지구에서 리더735 픽시 <span class="text-orange bg-warning-subtle">자전거</span> 도난당했습니다
+                            열쇠로 잠궈놨는데 앞바퀴만 빼고 가져갔네요
+                            경찰에 신고는 했습니다
+                            혹시 주변에서 이렇게
+                            생긴 <span class="text-orange bg-warning-subtle">자전거</span> 보시면 연락부탁드립니다</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">경기도 고양시 일산동구 장항동</span>
+                            <span class="text-secondary"></span>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/b965b332cf23341be40600c79f34dc95bddd28ffb19301b20a55b1e610f01be4.jpg?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5 class="text-truncate">베베드피노 옷 판매합니다 모두 100사이즈</h5>
-                            <h5 class="fw-bold">15,000원</h5>
-                            <div class="mb-1">인천 연수구 송도동</div>
-                            <div class="small-gray">
-                                <span>관심 8</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 25</span>
-                            </div>
+                </a>
+                <a href="" class="text-decoration-none text-body d-flex py-3 border-bottom">
+                    <div class="d-flex flex-column justify-content-center">
+                    </div>
+                    <div class="p-2 ps-3">
+                        <p class="text-trunc_threeline"><span class="text-orange bg-warning-subtle">자전거</span> 정비 간단히 받고 싶은데 괜찮은 곳 있을까요?</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">서울 마포구 서강동</span>
+                            <span class="text-secondary"></span>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/9e71945a5d8198c5291f73cd823afd88e430808586bdcbcc95d990c0a3d5f30e.jpg?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5>새거에요 18000원이여</h5>
-                            <h5 class="fw-bold"></h5>
-                            <div class="mb-1">인천 미추홀구 관교동</div>
-                            <div class="small-gray">
-                                <span>관심 18</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 3</span>
-                            </div>
+                </a>
+                <a href="" class="text-decoration-none text-body d-flex py-3 border-bottom">
+                    <div class="d-flex flex-column justify-content-center">
+                    </div>
+                    <div class="p-2 ps-3">
+                        <p class="text-trunc_threeline">부설중 다니는 아들이 일주일전에 <span class="text-orange bg-warning-subtle">자전거</span> 잃어버렸습니다. 부설중 정문옆 <span class="text-orange bg-warning-subtle">자전거</span> 도로에서 분실했으며 알톤 라임스톤입니다. 부설중 정문옆 <span class="text-orange bg-warning-subtle">자전거</span> 도로에서 분실했으며 알톤 라임스톤입니다.
+                            등하교용이었는데 잃어버린후 주약동에서 버스타고 걸어다니고 있습니다.
+                            혹시 가져가신 분은 원래 자리로 돌려주시고 보신분은 연락주시면 사례합니다.</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">경남 진주시 천천동</span>
+                            <span class="text-secondary"></span>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/9be1756f80cf3353752b26df51d0d3a7d12a2754d7702c20393a1c231baf565f.webp?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5>보이는 물건들 다 판매합니다</h5>
-                            <h5 class="fw-bold">10,000원</h5>
-                            <div class="mb-1">광주 광산구 첨단2동</div>
-                            <div class="small-gray">
-                                <span>관심 25</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 37</span>
-                            </div>
+                </a>
+                <a href="" class="text-decoration-none text-body d-flex py-3 border-bottom">
+                    <div class="d-flex flex-column justify-content-center">
+                    </div>
+                    <div class="p-2 ps-3">
+                        <p class="text-trunc_threeline">부설중 다니는 아들이 일주일전에 <span class="text-orange bg-warning-subtle">자전거</span> 잃어버렸습니다. 부설중 정문옆 <span class="text-orange bg-warning-subtle">자전거</span> 도로에서 분실했으며 알톤 라임스톤입니다. 부설중 정문옆 <span class="text-orange bg-warning-subtle">자전거</span> 도로에서 분실했으며 알톤 라임스톤입니다.
+                            등하교용이었는데 잃어버린후 주약동에서 버스타고 걸어다니고 있습니다.
+                            혹시 가져가신 분은 원래 자리로 돌려주시고 보신분은 연락주시면 사례합니다.</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-secondary">인천 계양구 병방동</span>
+                            <span class="text-secondary"></span>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/9db0088242f46806f54cc797666ae3d535c0f45bc7a99b2d8b949bd8a2985031.webp?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5>찜솥 팔아욤 ~~</h5>
-                            <h5 class="fw-bold">5,000원</h5>
-                            <div class="mb-1">인천 부평구 부평5동</div>
-                            <div class="small-gray">
-                                <span>관심 27</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 39</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 mb-4">
-                        <div class="mb-2">
-                            <img class="rounded w-100" src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/cd6b5cf25f22725932297508ec34078df4a1189af2b492ed6e2708028e68ddd9.webp?q=82&s=300x300&t=crop" alt="">
-                        </div>
-                        <div class="text-start">
-                            <h5 class="text-truncate">다이슨 펑소기 V10 Absoulute extra 방전</h5>
-                            <h5 class="fw-bold">10,000원</h5>
-                            <div class="mb-1">경기도 화성시 영천동</div>
-                            <div class="small-gray">
-                                <span>관심 10</span>
-                                <i class="bi bi-dot"></i>
-                                <span>채팅 19</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="my-5">
-                    <span><a class="text-black fw-bold" href="https://www.daangn.com/hot_articles">인기매물 더 보기</a></span>
-                </div>
+                </a>
             </div>
-        </section>
-        <section class="main__hot-keywds pt-4 pb-4">
-            <div class="w-75 mx-auto d-flex flex-column align-items-center">
-                <div>
-                    <a class="text-black fw-bold" href="main__topky.html">중고거래 인기검색어</a>
-                </div>
-                <ul class="d-flex list-unstyled d-flex justify-content-center flex-wrap">
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EC%9E%90%EC%A0%84%EA%B1%B0">자전거</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EC%9D%98%EC%9E%90">의자</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EC%95%84%EC%9D%B4%ED%8F%B0">아이폰</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EB%83%89%EC%9E%A5%EA%B3%A0">냉장고</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EB%85%B8%ED%8A%B8%EB%B6%81">노트북</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%ED%8C%A8%EB%94%A9">패딩</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EC%95%84%EC%9D%B4%ED%8C%A8%EB%93%9C">아이패드</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EB%AA%A8%EB%8B%88%ED%84%B0">모니터</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4">스타벅스</a></li>
-                    <li class="p-3"><a class="text-decoration-none text-black" href="https://www.daangn.com/search/%EC%B1%85%EC%83%81">책상</a></li>
-                </ul>
+            <div class="text-center pt-3">
+                <a class="text-decoration-none text-body" href="#" id="load">더보기</a>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="border-top">
         <section class="my-4 w-50 mx-auto row d-flex flex-row-reverse justify-content-evenly">

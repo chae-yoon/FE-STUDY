@@ -1,0 +1,95 @@
+/* 믿을 수 있는 중고거래 관련 style 설정 */
+.trust__sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.trust__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.trust__desc-img {
+    align-items: center;
+}
+.text__drag::selection {
+    background-color: #FFB98B;
+}
+/* 인기 검색어 관련 style 설정 */
+.topky__main {
+    display: flex;
+    height: 850px;
+    flex-direction: column;
+    align-items: center;
+}
+.topky__section {
+    width: 430px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.topky__title {
+    font-weight: bold;
+}
+.rank {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    border-bottom: 2px solid #F8F9FA;
+}
+.rank:hover {
+    background-color: #F8F9FA;
+}
+.topky__rank-num {
+    font-size: large;
+    font-weight: bold;
+}
+.topky__item {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+.topky__item-name:hover {
+    text-decoration: underline;
+}
+/* 인기검색어 1순위 style 설정 */
+.topky__bicycle__main {
+    padding: 30px;
+}
+.topky__bicycle__inner {
+    width: 768px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 30px 10px 30px;
+}
+.topky__bicycle__neighbor-img {
+    width: 200px;
+    height: 200px;
+}
+/* 색상 관련 style 설정 */
+.bg-lightgray {
+    background-color: #F8F9FA;
+}
+.text-orange {
+    color: orange;
+}
+.text-lightgray {
+    color:gray;
+}
+.text-trunc_oneline {
+    display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.text-trunc_threeline {
+    display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
