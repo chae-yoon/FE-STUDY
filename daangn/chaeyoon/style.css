@@ -1464,6 +1464,10 @@ footer {
   text-decoration: none;
 }
 
+.top-keywords-link:hover .top-keywords-link-contents div .top-keywords-rank .down {
+  text-decoration: none;
+}
+
 .top-keywords-rank .up {
   color: #e03131;
   display: inline-block;
@@ -1618,6 +1622,7 @@ footer {
 
 .search-sec2-card-contents-top span {
   color: #ff8a3d;
+  background-color: #FFFAEE;
 }
 
 @media (max-width: 991px) {
