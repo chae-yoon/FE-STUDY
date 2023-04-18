@@ -80,6 +80,12 @@ body {
   white-space: nowrap;
 }
 
+.btn-chat:hover, .btn-chat:active {
+  background-color: #f2f3f6;
+  opacity: .7;
+  border: 1px solid #d1d3d8;
+}
+
 /* Modal */
 .modal-dialog {
   max-width: 100%;
@@ -1662,4 +1668,20 @@ footer {
     -webkit-box-orient: vertical;
     line-height: 1.5;
   }
+}
+
+/*  */
+/* Chat Login Page */
+/*  */
+.chat-login-container {
+  max-width: 1200px;
+}
+
+/* Nav */
+.chat-login-nav {
+  border-bottom: 1px solid #eaebee;
+}
+
+.chat-login-logo {
+  height: 32.5px;
 }
