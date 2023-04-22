@@ -1673,15 +1673,143 @@ footer {
 /*  */
 /* Chat Login Page */
 /*  */
-.chat-login-container {
-  max-width: 1200px;
-}
 
 /* Nav */
+.chat-login-nav-aria {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+}
+
 .chat-login-nav {
+  width: 1200px;
   border-bottom: 1px solid #eaebee;
 }
 
 .chat-login-logo {
   height: 32.5px;
+}
+
+.chat-login-container {
+  width: 100%;
+}
+
+.chat_login_bg {
+  background-color: #f2f3f6;
+}
+
+.chat_login_sec {
+  display: flex;
+  justify-content: space-around;
+  width: 1080px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 180px 34px 308px;
+}
+
+.chat_login_contents {
+  margin-right: 3rem;
+}
+
+.qr-title {
+  font-size: 2.125rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.qr-sub-title {
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.qr-ol-wrapper {
+  margin: 2rem 0;
+  color: #4d5159;
+}
+
+.ol-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.qr-order-list {
+  margin: 12px 0px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.qr-list-wrapper {
+  display: inline-flex;
+}
+
+.margin-left-trick {
+  margin-left: .375rem;
+}
+
+.qr-info {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #868b94;
+  white-space: nowrap;
+}
+
+.qr-info .description {
+  margin: 0 8px 0 4px;
+}
+
+.qr-faq {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+  font-weight: 700;
+  color: #868b94;
+}
+
+.qrcode-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  width: 462px;
+  height: 462px;
+  background-color: #eaebee;
+}
+
+.chat_login_footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-top: 1px solid #0017580d;
+  background-color: #fff;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 66px;
+  color: #868b94;
+  font-size: .812rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.footer-main div a {
+  text-decoration: none;
+  color: #868b94;
+}
+
+.footer-link {
+  margin-left: 12px;
+}
+
+.footer-main div a.privacy-policy {
+  color: #393a40;
 }
