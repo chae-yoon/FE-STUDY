@@ -616,6 +616,60 @@ footer {
   border-top: 1px solid #eaebee;
 }
 
+/* Index-modal */
+.index-modal-empty {
+  height: 20rem;
+}
+
+.index-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 126, 54, 1);
+  width: 100%;
+  padding: 1.3rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.index-modal-close-icon {
+  margin-right: 1rem;
+}
+
+.index-modal-img {
+  border-radius: 15%;
+  width: 4.125em;
+  height: 4.125em;
+}
+
+.index-modal-contents {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  align-items: center;
+}
+
+.index-modal-contents-title {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.index-modal-contents-description {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btn-index-modal {
+  background-color: #212529;
+  color: #fff;
+  width: 100%;
+  height: 42px;
+  box-shadow: 0 0.1em 0.8em 0 rgba(0,0,0,0.2);
+}
+
 /*  */
 /* Nearby Stores Page */
 /*  */
