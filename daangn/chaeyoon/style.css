@@ -2405,3 +2405,39 @@ footer {
     font-size: 1rem;
   }
 }
+
+/*  */
+/* Car Post Page */
+/*  */
+
+.btn-car-description-more {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: .625rem;
+  background-color: #0000000d;
+  color: #212124;
+  border: none;
+  border-radius: .25rem;
+}
+
+.btn-car-description-more:hover {
+  background-color: #dcdee3;
+}
+
+.car-description-extra-label {
+  border: 1px solid #eaebee;
+  font-size: .813rem;
+  padding: .375rem .75rem;
+  border-radius: 6.25rem;
+}
+
+.car-description-extra-label:hover {
+  background-color: #f2f3f6;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+ .btn-car-description-more {
+    font-size: .875rem;
+  }
+}
