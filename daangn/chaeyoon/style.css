@@ -2121,8 +2121,8 @@ footer {
   font-weight: 600;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  border-bottom: 1px solid #e9ecef;;
-  border-top: 1px solid #e9ecef;;
+  border-bottom: 1px solid #e9ecef;
+  border-top: 1px solid #e9ecef;
 }
 
 .article-detail-download {
@@ -2177,5 +2177,195 @@ footer {
     padding: 2rem 1rem;
   }
 
+  
+}
+
+/*  */
+/* Job Post Page */
+/*  */
+
+.job-img-sec {
+  max-width: 768px;
+  margin-top: 1.5rem;
+}
+
+.job-img-wrapper {
+  height: 468px;
+  position: relative;
+}
+
+.job-img-wrapper:hover .carousel-img-expand-btn {
+  display: block;
+}
+
+.carousel-job-indicators__style [data-bs-target] {
+  width: 8px;
+  height: 8px;
+}
+
+.carousel-img-expand-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+}
+
+.carousel-img-expand-btn:hover a img {
+  opacity: .5;
+}
+
+.carousel-img-expand-btn a {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-img-expand-btn a img {
+  width: 16px;
+  height: 16px;
+  object-fit: none;
+}
+
+.job-profile {
+  max-width: 768px;
+}
+
+.job-temperature-text {
+  color: #009ceb;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.job-temperature-bar {
+  width: auto;
+  height: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.job-temperature-bar-colored {
+  width: 36.5%;
+  height: 4px;
+  background-color: #009ceb;
+}
+
+.job-temperature-face {
+  margin-top: 4px;
+}
+
+.job-temperature-manner {
+  margin-top: 4px;
+  font-size: .75rem;
+  color: #868e96;
+  text-align: right;
+}
+
+.job-description {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.job-description-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.job-description-info {
+  font-size: 1.125rem;
+}
+
+.job-description-detail {
+  font-size: 1.125rem;
+  line-height: 1.32;
+  white-space: pre-wrap;
+}
+
+.job-banner {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.job-detail-hot-more {
+  padding: 2rem 0;
+  margin: 0 auto 5rem;
+  max-width: 768px;
+}
+
+.job-img-size {
+  width: 108px;
+  height: 108px;
+  border-radius: .75rem;
+}
+
+.article-detail-hot-more-place {
+  color: #868b94;
+}
+
+.job-detail-hot-more-contents {
+  width: 245px;
+}
+
+@media (max-width: 767px) {
+  .job-img-sec {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .job-img-wrapper {
+    height: auto;
+  }
+
+  .job-img-wrapper:hover .carousel-img-expand-btn {
+    display: none;
+  }
+
+  .carousel-img-expand-btn {
+    display: none;
+  }
+
+  .job-temperature-text {
+    font-size: 1.125rem;
+  }
+
+  .job-description {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .job-description-info {
+    font-size: 1rem;
+  }
+
+  .job-description-detail {
+    font-size: 1rem;
+  }
+
+  .job-img-size {
+    width: 96px;
+    height: 96px;
+  }
+
+  .job-detail-hot-more {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .job-detail-hot-more-contents {
+    width: calc(100% - 4.5rem);
+  }
   
 }
