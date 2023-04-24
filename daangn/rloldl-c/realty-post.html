@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>오늘의 중고 인기 검색어 | 당신 근처의 당근마켓</title>
+    <title>투룸이상 300만원/1만원 - 인천광역시 남동구 | 당근부동산</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
-    
   </head>
   <body>
     <div class="navdiv">
@@ -40,7 +36,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="main.html">중고거래</a>
+                  <a class="nav-link" aria-current="page" href="main.html">중고거래</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="nearby_store.html">동네가게</a>
@@ -49,10 +45,10 @@
                   <a class="nav-link" href="jobs.html">알바</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">부동산 직거래</a>
+                  <a class="nav-link active" href="study_test.html">부동산 직거래</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">중고차 직거래</a>
+                  <a class="nav-link" href="car.html">중고차 직거래</a>
                 </li>
               </ul>
             </div>
@@ -86,145 +82,178 @@
         </div>
       </nav>
     </div>
-    <section class="keywords-content">
-      <h1 class="keywords-title">오늘의 중고 인기 검색어</h1>
-      <ol class="keywords-list">
-        <li class="keywords-list-item">
-          <a class="d-flex" href="search.html">
-            <p class="keywords-list-number">1</p>
-            <p class="keywords-list-text">자전거</p>
+
+    <main class="jp-main">
+      <section class="jp-slide">
+        <div class="jp-slide-wrap">
+          <div id="jobPostsCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#jobPostsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#jobPostsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="jp-image">
+                  <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/64c72dedbb25e018123c23a1fe2ed0597f6a4f7fd0e086fcd58d65e12818423b_1661987156388.jpeg?q=95&s=1440x1440&t=inside" class="image" alt="...">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="jp-image">
+                  <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/64c72dedbb25e018123c23a1fe2ed0597f6a4f7fd0e086fcd58d65e12818423b_1661987156388.jpeg?q=95&s=1440x1440&t=inside" class="image" alt="...">
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="jp-user">
+        <div class="article-user-profile">
+          <div class="jp-user-image">
+            <img src="data:image/png;base64,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" alt="" class="image">
+          </div>
+          <div class="jp-user-info">
+            <p class="jp-user-name">키재기</p>
+            <p class="jp-user-place">연희동</p>
+          </div>
+        </div>
+        <div class="jp-manner">
+          <div class="jp-manner-top">
+            <div class="jp-manner-temperature">
+              <p class="jp-manner-temperature-text">71.7°C</p>
+              <div class="jp-manner-temperature-bar">
+                <div class="jp-manner-temperature-inner-bar"></div>
+              </div>
+            </div>
+            <div class="jp-manner-face">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4783_48841)"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#FADD65"></path><mask id="mask0_4783_48841" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#FAD84A"></path></mask><g mask="url(#mask0_4783_48841)"><path opacity="0.6" d="M4.35 18.6C6.75244 18.6 8.7 16.6525 8.7 14.25C8.7 11.8476 6.75244 9.90002 4.35 9.90002C1.94756 9.90002 0 11.8476 0 14.25C0 16.6525 1.94756 18.6 4.35 18.6Z" fill="url(#paint0_radial_4783_48841)"></path><path opacity="0.6" d="M19.6499 18.6C22.0524 18.6 23.9999 16.6525 23.9999 14.25C23.9999 11.8476 22.0524 9.90002 19.6499 9.90002C17.2475 9.90002 15.2999 11.8476 15.2999 14.25C15.2999 16.6525 17.2475 18.6 19.6499 18.6Z" fill="url(#paint1_radial_4783_48841)"></path></g><path fill-rule="evenodd" clip-rule="evenodd" d="M7.79999 9.71252C7.29243 9.71252 6.71249 10.1248 6.71249 10.8C6.71249 11.1107 6.46065 11.3625 6.14999 11.3625C5.83933 11.3625 5.58749 11.1107 5.58749 10.8C5.58749 9.37527 6.80756 8.58752 7.79999 8.58752C8.79243 8.58752 10.0125 9.37527 10.0125 10.8C10.0125 11.1107 9.76065 11.3625 9.44999 11.3625C9.13933 11.3625 8.88749 11.1107 8.88749 10.8C8.88749 10.1248 8.30756 9.71252 7.79999 9.71252Z" fill="#895F00"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.35 9.71252C15.8425 9.71252 15.2625 10.1248 15.2625 10.8C15.2625 11.1107 15.0107 11.3625 14.7 11.3625C14.3894 11.3625 14.1375 11.1107 14.1375 10.8C14.1375 9.37527 15.3576 8.58752 16.35 8.58752C17.3425 8.58752 18.5625 9.37527 18.5625 10.8C18.5625 11.1107 18.3107 11.3625 18 11.3625C17.6894 11.3625 17.4375 11.1107 17.4375 10.8C17.4375 10.1248 16.8576 9.71252 16.35 9.71252Z" fill="#895F00"></path><path d="M7.34993 13.5C6.77003 13.5 6.29993 13.9701 6.29993 14.55C6.29993 14.8665 6.41645 15.2888 6.57933 15.6813C6.75845 16.113 7.04306 16.6292 7.47277 17.1286C8.35555 18.1545 9.80347 19.05 11.9999 19.05C14.1964 19.05 15.6443 18.1545 16.5271 17.1286C16.9568 16.6292 17.2414 16.113 17.4205 15.6813C17.5834 15.2888 17.6999 14.8665 17.6999 14.55C17.6999 13.9701 17.2298 13.5 16.6499 13.5H7.34993Z" fill="#895F00"></path><path opacity="0.85" fill-rule="evenodd" clip-rule="evenodd" d="M5.88523 5.5681L5.88358 5.57135C5.88465 5.5694 5.88758 5.56417 5.89186 5.55715C5.90047 5.54304 5.91538 5.52008 5.93696 5.49187C5.98052 5.43489 6.0484 5.36021 6.14297 5.29266C6.32049 5.16586 6.62081 5.04175 7.10906 5.16381C7.30998 5.21404 7.51358 5.09188 7.56381 4.89096C7.61404 4.69004 7.49188 4.48644 7.29096 4.43621C6.57921 4.25827 6.05453 4.43416 5.70704 4.68236C5.53912 4.80231 5.41949 4.93388 5.34119 5.03628C5.30183 5.08775 5.2722 5.13277 5.25152 5.1667L5.2146 5.2323C5.12198 5.41755 5.19706 5.6428 5.3823 5.73542C5.56633 5.82743 5.78984 5.75393 5.88358 5.57135L5.88414 5.57024L5.88471 5.56913L5.88523 5.5681Z" fill="#D49D3A"></path><path opacity="0.85" d="M18.4677 5.73542C18.2837 5.82743 18.0602 5.75394 17.9664 5.57136C17.9654 5.56941 17.9624 5.56417 17.9582 5.55715C17.9495 5.54304 17.9346 5.52008 17.9131 5.49187C17.8695 5.43489 17.8016 5.36021 17.707 5.29266C17.5295 5.16587 17.2292 5.04175 16.741 5.16381C16.54 5.21404 16.3364 5.09188 16.2862 4.89096C16.236 4.69004 16.3581 4.48644 16.5591 4.43621C17.2708 4.25827 17.7955 4.43416 18.143 4.68236C18.3109 4.80231 18.4305 4.93388 18.5088 5.03628C18.5482 5.08775 18.5778 5.13277 18.5985 5.1667C18.7177 5.36214 18.6913 5.62362 18.4677 5.73542Z" fill="#D49D3A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.40007 14.7C8.34388 14.7 8.2924 14.7314 8.26669 14.7813C8.24098 14.8313 8.2461 14.8925 8.27876 14.9382L8.27981 14.9396L8.28277 14.9436L8.29233 14.9558C8.30035 14.9658 8.31174 14.9793 8.32682 14.9959C8.35698 15.0291 8.40189 15.0745 8.46417 15.1279C8.58883 15.2348 8.78253 15.3731 9.06611 15.51C9.63354 15.784 10.5565 16.05 12.0001 16.05C13.4432 16.05 14.3306 15.7841 14.8629 15.5081C15.129 15.3701 15.3051 15.2302 15.4166 15.1213C15.4723 15.0669 15.5116 15.0205 15.5378 14.9862C15.553 14.9664 15.5677 14.946 15.5803 14.9244C15.6068 14.8779 15.6066 14.8209 15.5798 14.7747C15.553 14.7284 15.5035 14.7 15.4501 14.7H8.40007Z" fill="white"></path></g><defs><radialGradient id="paint0_radial_4783_48841" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.3512 14.2017) scale(4.3512)"><stop stop-color="#F15A24" stop-opacity="0.5"></stop><stop offset="0.0178806" stop-color="#F15E25" stop-opacity="0.5089"></stop><stop offset="0.2407" stop-color="#F6892B" stop-opacity="0.6203"></stop><stop offset="0.4561" stop-color="#FAAC30" stop-opacity="0.7281"></stop><stop offset="0.6595" stop-color="#FDC433" stop-opacity="0.8298"></stop><stop offset="0.8461" stop-color="#FED335" stop-opacity="0.923"></stop><stop offset="1" stop-color="#FFD836"></stop></radialGradient><radialGradient id="paint1_radial_4783_48841" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.5788 14.2017) scale(4.3512)"><stop stop-color="#F15A24" stop-opacity="0.5"></stop><stop offset="0.0178806" stop-color="#F15E25" stop-opacity="0.5089"></stop><stop offset="0.2407" stop-color="#F6892B" stop-opacity="0.6203"></stop><stop offset="0.4561" stop-color="#FAAC30" stop-opacity="0.7281"></stop><stop offset="0.6595" stop-color="#FDC433" stop-opacity="0.8298"></stop><stop offset="0.8461" stop-color="#FED335" stop-opacity="0.923"></stop><stop offset="1" stop-color="#FFD836"></stop></radialGradient><clipPath id="clip0_4783_48841"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+            </div>
+          </div>
+          <p class="jp-manner-bottom">매너온도</p>
+        </div>
+      </section>
+      <section class="jp-header">
+        <div class="rp-label">
+          <p class="rp-badge">집주인</p>
+          <p class="rp-type">투룸</p>
+        </div>
+        <h1 class="rp-title">
+          <span class="rp-status">판매중</span>
+          단기 300 / 1
+        </h1>
+        <p class="jp-time"><time>8개월 전</time> 작성</p>
+      </section>
+      <section class="rp-info">
+        <h2 class="rp-title">정보</h2>
+        <ul>
+          <li class="rp-info-list">
+            <span class="rp-list-left">면적</span>
+            <span class="rp-list-right-bold">13평 · 전용 42.9㎡</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">방/욕실 수</span>
+            <span class="rp-list-right-bold">방 2개 / 욕실 1개</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">층</span>
+            <span class="rp-list-right-bold">5층 / 5층</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">대출가능여부</span>
+            <span class="rp-list-right">확인필요</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">입주 가능일</span>
+            <span class="rp-list-right">즉시 가능</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">반려동물</span>
+            <span class="rp-list-right">확인필요</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">주차</span>
+            <span class="rp-list-right">확인필요</span>
+          </li>
+          <li class="rp-info-list">
+            <span class="rp-list-left">엘리베이터</span>
+            <span class="rp-list-right">확인필요</span>
+          </li>
+        </ul>
+
+      </section>
+      <section class="rp-info">
+        <h2 class="rp-title">소개</h2>
+        <p class="jp-detail">입주시ㅡ300백만원 납부
+          월세ㅡ없음  1년간 부담없이 거주하세요
+          도배해드립니다</p>
+      </section>
+      <section class="rp-info">
+        <h2 class="rp-title">위치</h2>
+        <div>
+          <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; height:200px; color:#333; position:relative; overflow: hidden;">
+            <a href="https://map.kakao.com/?urlX=439639.0&amp;urlY=1101226.0&amp;name=%EC%9D%B8%EC%B2%9C%20%EB%82%A8%EB%8F%99%EA%B5%AC%20%EB%A7%8C%EC%88%98%EB%8F%99%20111-399&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+              <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/861a7c3e276276742007268e1cf4c18a2a11127a151603e221dc2c18076944c7" style="min-width: 100%">
           </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">2</p>
-            <p class="keywords-list-text">의자</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">3</p>
-            <p class="keywords-list-text">아이폰</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">4</p>
-            <p class="keywords-list-text">냉장고</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">5</p>
-            <p class="keywords-list-text">노트북</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">6</p>
-            <p class="keywords-list-text">패딩</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">7</p>
-            <p class="keywords-list-text">아이패드</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">8</p>
-            <p class="keywords-list-text">모니터</p>
-          </a>
-          <p>
-            <span class="up">↑</span>
-            <span class="change-num">1</span>
-          </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">9</p>
-            <p class="keywords-list-text">스타벅스</p>
-          </a>
-          <p>
-            <span class="up">↑</span>
-            <span class="change-num">12</span>
-          </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">10</p>
-            <p class="keywords-list-text">책상</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">11</p>
-            <p class="keywords-list-text">캠핑</p>
-          </a>
-          <p>
-            <span class="down">↓</span>
-            <span class="change-num">3</span>
-          </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">12</p>
-            <p class="keywords-list-text">김치냉장고</p>
-          </a>
-          <p>
-            <span class="down">↓</span>
-            <span class="change-num">1</span>
-          </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">13</p>
-            <p class="keywords-list-text">쇼파</p>
-          </a>
-          <p> - </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">14</p>
-            <p class="keywords-list-text">가방</p>
-          </a>
-          <p>
-            <span class="up">↑</span>
-            <span class="change-num">1</span>
-          </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">15</p>
-            <p class="keywords-list-text">에어팟</p>
-          </a>
-          <p>
-            <span class="down">↓</span>
-            <span class="change-num">1</span>
-          </p>
-        </li>
-        <li class="keywords-list-item">
-          <a class="d-flex" href="">
-            <p class="keywords-list-number">16</p>
-            <p class="keywords-list-text">컴퓨터</p>
-          </a>
-          <p>
-            <span class="up">↑</span>
-            <span class="change-num">1</span>
-          </p>
-        </li>
-        
-      </ol>
-    </section>
+        </div>
+        <address class="jp-address">인천광역시 남동구 만수동 111-399</address>
+      </section>
+      <section class="rp-info">
+        <h3 class="rp-title">만수동 직거래 게시글 더보기</h3>
+        <div class="jp-nearby-group">
+          <div class="jp-nearby-item">
+            <a href="" class="jp-nearby-link">
+              <div class="jp-nearby-image">
+                <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/1a9d064658430e3b9aea76d71b34c4db5e78d577ab470f6c8da30a906d0b2ad0_1681798016516.jpeg?q=95&s=1440x1440&t=inside" alt="확장 폴딩도어 올수리된 집입니다 부동산 직거래" class="image">
+              </div>
+              <div class="jp-nearby-info">
+                <p class="jp-nearby-title">아파트 3억 6,700만원 - 산성초등학교 도보2분</p>
+                <p class="jp-nearby-place">용담동</p>
+                <p class="jp-nearby-pay">매매 3억 6,700</p>
+              </div>
+            </a>
+          </div>
+          <div class="jp-nearby-item">
+            <a href="" class="jp-nearby-link">
+              <div class="jp-nearby-image">
+                <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/b9049f822326584c791bcb4ae7fe927570ed9c4c45289c66100020cfa71c4a71_1681794706162.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image">
+              </div>
+              <div class="jp-nearby-info">
+                <p class="jp-nearby-title">아파트 1억 3,500만원 - 원봉공원옆 대형마트5분거리</p>
+                <p class="jp-nearby-place">용암동</p>
+                <p class="jp-nearby-pay">매매 1억 3,500</p>
+              </div>
+            </a>
+          </div>
+          <div class="jp-nearby-item">
+            <a href="" class="jp-nearby-link">
+              <div class="jp-nearby-image">
+                <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/e8c49de9e2225dd8feb233e7dae5e29b0e330617ddf704c69b262d451932dc58_1681213075875.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image">
+              </div>
+              <div class="jp-nearby-info">
+                <p class="jp-nearby-title">아파트 1억 6,800만원 - 학교근처</p>
+                <p class="jp-nearby-place">용암동</p>
+                <p class="jp-nearby-pay">매매 1억 6,800</p>
+              </div>
+            </a>
+          </div>
+          <div class="jp-nearby-item">
+            <a href="" class="jp-nearby-link">
+              <div class="jp-nearby-image">
+                <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/f0cad919f4c7540f0f8c9a25d2ad349730f337c24791f86d76b09b55347166c6_1681703295083.jpeg?q=95&s=1440x1440&t=inside" alt="권선동 GS수퍼마켓 수원권선점 아르바이트 장소" class="image">
+              </div>
+              <div class="jp-nearby-info">
+                <p class="jp-nearby-title">아파트 1억 8,900만원 - 금천동 국제테니스장 앞</p>
+                <p class="jp-nearby-place">금천동</p>
+                <p class="jp-nearby-pay">1억 8,900</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="jp-button-wrap">
+        <button class="jp-button">당근마켓 앱에서 보기</button>
+      </div>
+    </main>
+
+
     <footer class="home-footer">
       <div class="footer-content">
         <!-- PC -->
@@ -377,6 +406,25 @@
       </div>
     </footer>
 
+    <script>
+      let cardImg = document.querySelectorAll('.jp-image')
+      let delay = 100
+      let timer = null;
+  
+      window.addEventListener('resize', (event) => {
+        let height = window.innerWidth
+        if (height < 768) {
+          console.log(height)
+          cardImg.forEach(elem => {
+            elem.style.height = height + 'px'
+          })
+        } else {
+          cardImg.forEach(elem => {
+            elem.style.height = null
+          })
+        }
+      })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
