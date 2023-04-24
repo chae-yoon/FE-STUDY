@@ -1,0 +1,112 @@
+/* phone size media query */
+@media screen and (max-width:964px) {
+    .index-thumbnail, .sub-thumbnail {
+        flex-direction: column;
+    }
+    .index-thumbnail__detail, .sub-thumbnail__detail {
+        padding-top: 10px;
+        width: 100%;
+    }
+    .index-thumbnail__image, .sub-thumbnail__image {
+        width: 100%;
+    }
+    .index-thumbnail__image img:first-child {
+        display: none;
+    }
+    .sub-thumbnail__image--nearby-store img{
+        width: 168px;
+    }
+}
+/* tablet and PC size media query */
+@media screen and (min-width: 964px) {
+    .index-thumbnail, .sub-thumbnail {
+        flex-direction: row;
+    }
+    .index-thumbnail__detail {
+        width: 35%;
+    }
+    .index-thumbnail__image {
+        width: 65%;
+    }
+    .index-thumbnail__image img:last-child {
+        display: none;
+    }
+    .index-thumbnail__image--nearby-store {
+        width: 50%;
+    }
+    .sub-thumbnail__detail {
+        width: 50%;
+        padding-bottom: 100px;
+    }
+    .sub-thumbnail__image {
+        width: 50%;
+    }
+    .sub-thumbnail__image--nearby-store img{
+        width: 453px;
+    }
+}
+
+/* index-thumbnail */
+.index-thumbnail-background {
+    width: 100vw;
+    background-color: var(--index-beige);
+    display: flex;
+    justify-content: center;
+}
+.index-thumbnail {
+    max-width: 1040px;
+    display: flex;
+}
+.index-thumbnail__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+}
+.index-thumbnail__detail h1{
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+.index-thumbnail__image {
+    display: flex;
+    align-items: flex-end;
+}
+.index-thumbnail__image img:first-child {
+    width: 100%;
+    margin-top: 110px;
+}
+.index-thumbnail__image img:last-child {
+    max-width: 328px;
+}
+
+
+/* sub thumbnail */
+.sub-thumbnail-background {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.sub-thumbnail {
+    max-width: 800px;
+    display: flex;
+    padding-top: 50px;
+}
+.sub-thumbnail-background--nearby-store {
+    background-color: var(--store-beige);
+}
+.sub-thumbnail-background--jobs {
+    background-color: var(--store-beige);
+}
+.sub-thumbnail-background--property-cars {
+    background-color: var(--realty-blue);
+}
+.sub-thumbnail__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+}
+.sub-thumbnail__image--nearby-store img{
+    max-width: 100%;
+}
