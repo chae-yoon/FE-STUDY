@@ -50,20 +50,20 @@
         <button type="button" id="close-icon" class="btn btn-icon d-none m-0 border-0" data-bs-target="#menuModal" data-bs-dismiss="offcanvas" aria-label="Close">
           <img src="./../img/close-icon.svg" alt="close-icon">
         </button>
-        <a href="#" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
+        <a href="./chat_login.html" target="_blank" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
       </div>
     </div>
   </nav>
 
   <!-- Search Modal -->
   <div class="offcanvas offcanvas-top top-0" tabindex="-1" id="searchModal" aria-labelledby="offcanvasTopLabel1">
-    <div class="modal-dialog vw-100">
-      <div class="modal-content w-100 border-0">
-        <div class="modal-header border-0">
+    <div class="modal-dialog modal-dialog__style">
+      <div class="modal-content modal-content__style border-0">
+        <div class="modal-header modal-header__style border-0">
           <input class="form-control border-0 navbar__search-input navbar__search-input-modal" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
           <button type="button" class="btn btn-cancel fs-6" data-bs-dismiss="offcanvas" aria-label="Close">취소</button>
         </div>
-        <div class="modal-body text-body-secondary modal-body__style">
+        <div class="modal-body modal-body__style text-body-secondary modal-body__style">
           <p class="fw-semibold m-0 pb-1">추천</p>
           <div class="row row-cols-2">
             <div class="py-3 border-bottom col">죽전 치과</div>
@@ -105,23 +105,26 @@
       <div class="search-sec1__style">
         <h3 class="fw-semibold m-0 search-sec1-title">중고거래</h3>
         <div class="row row-cols-1 row-cols-lg-3">
-          <div class="col search-sec1-card">
-            <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/2d6901ff9bbebebf3ab12c70fcdc2894b3ff2c7f18380cc096748367ff60c70c.jpg?q=82&s=300x300&t=crop" alt="..." class="img-fluid rounded search-sec1-card-img">
-            <div class="search-sec1-card-contents position-relative">
-              <div class="search-sec1-card-contents-top">
-                <span class="fw-semibold search-sec1-card-title">자전거안장 자전거쿠션커버 자전거젤커버 자전거 쿠션 새제품</span>
-                <span class="search-sec1-card-content">구매 후 보관만 하던 새제품입니다!</span>
-              </div>
-              <div class="text-secondary search-sec1-card-region">
-                대전 유성구 봉명동
-              </div>
-              <div class="fw-semibold search-sec1-card-price">6,000원</div>
-              <div class="search-sec1-card-heart position-absolute bottom-0 end-0">
-                <img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="icon" class="search-sec1-card-heart-icon">
-                <span>9</span>
+          <a href="./articles.html" class="text-body text-decoration-none">
+            <div class="col search-sec1-card">
+              <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/da9f9a23236abf156e0896660af889546d4e678796e10d7bfb1bddf53803f53f.webp?q=82&s=300x300&t=crop" alt="..." class="img-fluid rounded search-sec1-card-img">
+              <div class="search-sec1-card-contents position-relative">
+                <div class="search-sec1-card-contents-top">
+                  <span class="fw-semibold search-sec1-card-title">27단 자전거
+                  </span>
+                  <span class="search-sec1-card-content d-lg-none">스팅어100 디스크</span>
+                </div>
+                <div class="text-secondary search-sec1-card-region">
+                  경북 포항시 북구 흥해읍
+                </div>
+                <div class="fw-semibold search-sec1-card-price">10,000원</div>
+                <div class="search-sec1-card-heart position-absolute bottom-0 end-0">
+                  <img src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/like-8111aa74d4b1045d7d5943a901896992574dd94c090cef92c26ae53e8da58260.svg" alt="icon" class="search-sec1-card-heart-icon">
+                  <span>15</span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <hr class="col d-lg-none search-sec1-card-border">
           <div class="col search-sec1-card">
             <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/cd781af9ab66f12b95a60ef4ed875a05a55f48b7dffe20d0099dbcf60c279045.webp?q=82&s=300x300&t=crop" alt="..." class="img-fluid rounded search-sec1-card-img">
@@ -263,16 +266,18 @@
       <div class="search-sec1__style">
         <h3 class="fw-semibold m-0 search-sec1-title">동네정보</h3>
         <div class="row row-cols-1">
-          <div class="col search-sec2-card">
-            <img src="https://dnvefa72aowie.cloudfront.net/community/community/20230409/05f3d2af-35b3-4882-9de7-58717a5a3158.jpeg" alt="..." class="img-fluid rounded search-sec2-card-img">
-            <div class="search-sec2-card-contents position-relative">
-              <div class="search-sec2-card-contents-top"><span>자전거</span>를 도난당했습니다 사진과 똑같이 생겼으니 발견하시는분들은 꼭 연락 부탁드립니다
-              </div>
-              <div class="text-secondary search-sec1-card-region">
-                부산 북구 구포동
+          <a href="./story_articles.html" class="text-decoration-none text-body">
+            <div class="col search-sec2-card">
+              <!-- <img src="https://dnvefa72aowie.cloudfront.net/community/community/20230409/05f3d2af-35b3-4882-9de7-58717a5a3158.jpeg" alt="..." class="img-fluid rounded search-sec2-card-img"> -->
+              <div class="search-sec2-card-contents position-relative">
+                <div class="search-sec2-card-contents-top"><span>자전거</span>를 도난당했습니다 사진과 똑같이 생겼으니 발견하시는분들은 꼭 연락 부탁드립니다
+                </div>
+                <div class="text-secondary search-sec1-card-region">
+                  부산 북구 구포동
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <hr class="col search-sec1-card-border">
           <div class="col search-sec2-card">
             <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/7d38302f944e955a535b18e779b3c46e123be9f639acfc7796891528b200cc28.jpg?q=82&s=300x300&t=crop" alt="..." class="img-fluid rounded search-sec2-card-img">

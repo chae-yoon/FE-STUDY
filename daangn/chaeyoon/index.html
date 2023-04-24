@@ -50,20 +50,20 @@
           <button type="button" id="close-icon" class="btn btn-icon d-none m-0 border-0" data-bs-target="#menuModal" data-bs-dismiss="offcanvas" aria-label="Close">
             <img src="./img/close-icon.svg" alt="close-icon">
           </button>
-          <a href="#" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
+          <a href="./pages/chat_login.html" target="_blank" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
         </div>
       </div>
     </nav>
 
     <!-- Search Modal -->
     <div class="offcanvas offcanvas-top top-0" tabindex="-1" id="searchModal" aria-labelledby="offcanvasTopLabel1">
-      <div class="modal-dialog vw-100">
-        <div class="modal-content w-100 border-0">
-          <div class="modal-header border-0">
+      <div class="modal-dialog modal-dialog__style">
+        <div class="modal-content modal-content__style border-0">
+          <div class="modal-header modal-header__style border-0">
             <input class="form-control border-0 navbar__search-input navbar__search-input-modal" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
             <button type="button" class="btn btn-cancel fs-6" data-bs-dismiss="offcanvas" aria-label="Close">취소</button>
           </div>
-          <div class="modal-body text-body-secondary modal-body__style">
+          <div class="modal-body modal-body__style text-body-secondary modal-body__style">
             <p class="fw-semibold m-0 pb-1">추천</p>
             <div class="row row-cols-2">
               <div class="py-3 border-bottom col">죽전 치과</div>
@@ -246,17 +246,19 @@
           <h1 class="fw-bold text-center sec5-xl-title">중고거래 인기매물</h1>
           <div class="row row-cols-4">
             <div class="col p-0">
-              <div class="card card__style">
-                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/e62cf90d9872ab6bbbadfd1b9664ece3d4b8e23b71fd003f9d7024bf60dc2b76.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
-                <h5 class="card-title__style text-truncate">(이사정리) 삼성 건조기(9kg)</h5>
-                <p class="card-price__style">50,000원</p>
-                <p class="card-place__style text-truncate">제주 서귀포시 대정읍</p>
-                <div class="card-count__style">
-                  <span>관심 25</span>
-                  <span>∙</span>
-                  <span>채팅 70</span>
+              <a href="./pages/articles.html" class="text-body text-decoration-none">
+                <div class="card card__style">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/da9f9a23236abf156e0896660af889546d4e678796e10d7bfb1bddf53803f53f.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+                  <h5 class="card-title__style text-truncate">27단 자전거</h5>
+                  <p class="card-price__style">10,000원</p>
+                  <p class="card-place__style text-truncate">경북 포항시 북구 흥해읍</p>
+                  <div class="card-count__style">
+                    <span>관심 15</span>
+                    <span>∙</span>
+                    <span>채팅 45</span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col p-0">
               <div class="card card__style">
@@ -359,17 +361,19 @@
           <h1 class="fw-bold text-center" style="margin: 72px auto 48px; font-size: 28px;">중고거래 인기매물</h1>
           <div class="row row-cols-2">
             <div class="col p-0">
-              <div class="card card__style m-0 mb-4 p-4 pe-3">
-                <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202303/e62cf90d9872ab6bbbadfd1b9664ece3d4b8e23b71fd003f9d7024bf60dc2b76.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
-                <h5 class="card-title__style text-truncate">(이사정리) 삼성 건조기(9kg)</h5>
-                <p class="card-price__style">50,000원</p>
-                <p class="card-place__style text-truncate">제주 서귀포시 대정읍</p>
-                <div class="card-count__style">
-                  <span>관심 25</span>
-                  <span>∙</span>
-                  <span>채팅 70</span>
+              <a href="./pages/articles.html" class="text-body text-decoration-none">
+                <div class="card card__style m-0 mb-4 p-4 pe-3">
+                  <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/da9f9a23236abf156e0896660af889546d4e678796e10d7bfb1bddf53803f53f.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+                  <h5 class="card-title__style text-truncate">27단 자전거</h5>
+                  <p class="card-price__style">10,000원</p>
+                  <p class="card-place__style text-truncate">경북 포항시 북구 흥해읍</p>
+                  <div class="card-count__style">
+                    <span>관심 15</span>
+                    <span>∙</span>
+                    <span>채팅 45</span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col p-0">
               <div class="card card__style m-0 mb-4 p-4 ps-3">
@@ -747,6 +751,20 @@
         </section>
       </div>
     </footer>
+    <div class="index-modal-space d-md-none">
+      <div class="index-modal-empty"></div>
+      <div class="index-modal">
+        <div class="position-absolute end-0 index-modal-close-icon">
+          <svg width="2em" height="2em" viewBox="0 0 24 24" style="padding:0.2em;border-radius:50%;background-color:rgba(255, 255, 255, 0)" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="rgba(255, 255, 255, 1)"></path></svg>
+        </div>
+        <img src="https://dnvefa72aowie.cloudfront.net/origin/etc/202106/056c6ae7f8acfc3aa26660a97e6705fe19e93234afc3e3e4410bad5937fee96f.png" alt="app-img" class="index-modal-img">
+        <div class="index-modal-contents">
+          <span class="index-modal-contents-title">당근마켓</span>
+          <span class="index-modal-contents-description">3000만 동네 커뮤니티</span>
+        </div>
+        <a href="#" class="btn btn-index-modal">지금 당근하러 가기</a>
+      </div>
+    </div>
     <script>
       const myOffcanvas = document.getElementById('menuModal')
       const menuIcon = document.getElementById('menu-icon')
@@ -769,6 +787,13 @@
       menuIcon.addEventListener('click', () => {
         const navStyleDiv = document.querySelector('.nav__style')
         navStyleDiv.setAttribute('style', '')
+      })
+
+      const indexModalCloseIcon = document.querySelector('.index-modal-close-icon')
+      const indexModal = document.querySelector('.index-modal-space')
+
+      indexModalCloseIcon.addEventListener('click', () => {
+        indexModal.style.display = 'none'
       })
 
     </script>

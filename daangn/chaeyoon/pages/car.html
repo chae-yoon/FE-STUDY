@@ -50,20 +50,20 @@
         <button type="button" id="close-icon" class="btn btn-icon d-none m-0 border-0" data-bs-target="#menuModal" data-bs-dismiss="offcanvas" aria-label="Close">
           <img src="./../img/close-icon.svg" alt="close-icon">
         </button>
-        <a href="#" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
+        <a href="./chat_login.html" target="_blank" class="btn btn-chat fw-bold d-none d-md-inline-block">채팅하기</a>
       </div>
     </div>
   </nav>
 
   <!-- Search Modal -->
   <div class="offcanvas offcanvas-top top-0" tabindex="-1" id="searchModal" aria-labelledby="offcanvasTopLabel1">
-    <div class="modal-dialog vw-100">
-      <div class="modal-content w-100 border-0">
-        <div class="modal-header border-0">
+    <div class="modal-dialog modal-dialog__style">
+      <div class="modal-content modal-content__style border-0">
+        <div class="modal-header modal-header__style border-0">
           <input class="form-control border-0 navbar__search-input navbar__search-input-modal" type="search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search">
           <button type="button" class="btn btn-cancel fs-6" data-bs-dismiss="offcanvas" aria-label="Close">취소</button>
         </div>
-        <div class="modal-body text-body-secondary modal-body__style">
+        <div class="modal-body modal-body__style text-body-secondary modal-body__style">
           <p class="fw-semibold m-0 pb-1">추천</p>
           <div class="row row-cols-2">
             <div class="py-3 border-bottom col">죽전 치과</div>
@@ -97,6 +97,28 @@
         <a class="nav-link active" href="#">중고차 직거래</a>
       </li>
     </ul>
+  </div>
+
+  <!-- Qr Modal -->
+  <div class="modal fade" id="qrDownloadModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="qrDownloadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-dialog-qr">
+        <div class="modal-header border-0">
+          <h1 class="modal-title modal-title-qr fw-semibold" id="qrDownloadModalLabel">당근마켓 앱으로 열기</h1>
+          <button type="button" class="btn qr-close-btn px-0" data-bs-dismiss="modal" aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.72633 3.72633C4.0281 3.42456 4.51736 3.42456 4.81913 3.72633L12 10.9072L19.1809 3.72633C19.4826 3.42456 19.9719 3.42456 20.2737 3.72633C20.5754 4.0281 20.5754 4.51736 20.2737 4.81913L13.0928 12L20.2737 19.1809C20.5754 19.4826 20.5754 19.9719 20.2737 20.2737C19.9719 20.5754 19.4826 20.5754 19.1809 20.2737L12 13.0928L4.81913 20.2737C4.51736 20.5754 4.0281 20.5754 3.72633 20.2737C3.42456 19.9719 3.42456 19.4826 3.72633 19.1809L10.9072 12L3.72633 4.81913C3.42456 4.51736 3.42456 4.0281 3.72633 3.72633Z" fill="currentColor"></path></svg>
+          </button>
+        </div>
+        <div class="modal-body py-0">
+          <p class="qr-modal-content">모바일에서만 이용할 수 있어요.<br>휴대전화의 카메라 또는 당근마켓 앱으로 QR코드를 촬영해주세요.</p>
+        </div>
+        <div class="modal-body modal-body-qr p-0">
+          <div class="qr-img">
+            <img src="./../img/qr-img.svg" alt="qr-img">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <main class="realty-basic">
@@ -135,22 +157,24 @@
         </div>
         <!-- Content1 -->
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/car/articles/767cc0b0d39ead67350718207b5ca87c41323c5d59480dde708cbd72fd53061b_1680354893714.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+          <a href="./car_posts.html" class="text-decoration-none text-body p-0">
+            <div class="col d-flex align-items-start gap-3 popular__style">
+              <div class="popular-img">
+                <img src="https://dnvefa72aowie.cloudfront.net/car/articles/4a48b0798a1b9ce82cc77199a4d9a29c93051a1025ccb93a7992689d67bdfa2b_1681998936038.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+              </div>
+              <div class="d-flex flex-column">
+                <div class="popular-title">
+                  벤츠 E 클래스 W212 E220 블루텍 아방가르드 스포츠
+                </div>
+                <div class="popular-rigion">
+                  16년식 ・ 13만km ・ 서초동
+                </div>
+                <div class="popular-price">
+                  1,500만원
+                </div>
+              </div>
             </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                기아 뉴 모닝 SA 1.0 LX 기본 블랙프리미엄
-              </div>
-              <div class="popular-rigion">
-                09년식 ・ 14.3만km ・ 부평6동
-              </div>
-              <div class="popular-price">
-                130만원
-              </div>
-            </div>
-          </div>
+          </a>
           <div class="col d-flex align-items-start gap-3 popular__style">
             <div class="popular-img">
               <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/6f9d55fd3f8c606f7d875ce3c3b7fe5dc26d2e17365e9067cfe58f50cc7587fe.webp?q=95&s=1440x1440&t=inside" alt="...">
@@ -307,12 +331,16 @@
                   <h6 class="popular-bn-title__style">딜러 수수료 없는 중고차 직거래<br>당근마켓 내 근처 탭에서 바로 찾아보세요!</h6>
                 </div>
               </div>
-              <a href="#" class="btn btn-popular-bn">앱 다운로드 하기</a>
+              <button type="button" class="btn btn-popular-bn" data-bs-toggle="modal" data-bs-target="#qrDownloadModal">
+                앱 다운로드 하기
+              </button>
             </div>
             <!-- Under 768px -->
             <div class="d-md-none d-flex flex-column align-items-start">
               <h6 class="popular-bn-title__style">딜러 수수료 없는 중고차 직거래<br>당근마켓 내 근처 탭에서 바로 찾아보세요!</h6>
-              <a href="#" class="btn btn-popular-bn">앱 다운로드 하기</a>
+              <button type="button" class="btn btn-popular-bn" data-bs-toggle="modal" data-bs-target="#qrDownloadModal">
+                앱 다운로드 하기
+              </button>
             </div>
           </div>
         </div>

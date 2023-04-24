@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>간편하고 따뜻한 당근 부동산</title>
+    <title>포항시 북구 흥해읍 이웃과 이야기해보세요! | 당근마켓 동네생활</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Favicon -->
@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav d-flex flex-wrap">
           <li class="nav-item">
-            <a class="nav-link fw-semibold" aria-current="page" href="../index.html">중고거래</a>
+            <a class="nav-link fw-semibold active" aria-current="page" href="../index.html">중고거래</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fw-semibold" href="./nearby-stores.html">동네가게</a>
@@ -30,10 +30,10 @@
             <a class="nav-link fw-semibold" href="./jobs.html">알바</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold active" href="#">부동산 직거래</a>
+            <a class="nav-link fw-semibold" href="./realty.html">부동산 직거래</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold" href="./car.html">중고차 직거래</a>
+            <a class="nav-link fw-semibold" href="#">중고차 직거래</a>
           </li>
         </ul>
       </div>
@@ -82,7 +82,7 @@
   <div class="offcanvas offcanvas-top border-top " tabindex="-1" id="menuModal" aria-labelledby="offcanvasTopLabel">
     <ul class="navbar-nav d-flex flex-wrap h-100 menu-modal">
       <li class="nav-item p-3">
-        <a class="nav-link" aria-current="page" href="../index.html">중고거래</a>
+        <a class="nav-link active" aria-current="page" href="../index.html">중고거래</a>
       </li>
       <li class="nav-item p-3">
         <a class="nav-link" href="./nearby-stores.html">동네가게</a>
@@ -91,424 +91,120 @@
         <a class="nav-link" href="./jobs.html">알바</a>
       </li>
       <li class="nav-item p-3">
-        <a class="nav-link active" href="#">부동산 직거래</a>
+        <a class="nav-link" href="./realty.html">부동산 직거래</a>
       </li>
       <li class="nav-item p-3">
-        <a class="nav-link" href="./car.html">중고차 직거래</a>
+        <a class="nav-link" href="#">중고차 직거래</a>
       </li>
     </ul>
   </div>
 
-  <!-- Qr Modal -->
-  <div class="modal fade" id="qrDownloadModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="qrDownloadModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content modal-dialog-qr">
-        <div class="modal-header border-0">
-          <h1 class="modal-title modal-title-qr fw-semibold" id="qrDownloadModalLabel">당근마켓 앱으로 열기</h1>
-          <button type="button" class="btn qr-close-btn px-0" data-bs-dismiss="modal" aria-label="Close">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.72633 3.72633C4.0281 3.42456 4.51736 3.42456 4.81913 3.72633L12 10.9072L19.1809 3.72633C19.4826 3.42456 19.9719 3.42456 20.2737 3.72633C20.5754 4.0281 20.5754 4.51736 20.2737 4.81913L13.0928 12L20.2737 19.1809C20.5754 19.4826 20.5754 19.9719 20.2737 20.2737C19.9719 20.5754 19.4826 20.5754 19.1809 20.2737L12 13.0928L4.81913 20.2737C4.51736 20.5754 4.0281 20.5754 3.72633 20.2737C3.42456 19.9719 3.42456 19.4826 3.72633 19.1809L10.9072 12L3.72633 4.81913C3.42456 4.51736 3.42456 4.0281 3.72633 3.72633Z" fill="currentColor"></path></svg>
-          </button>
+  <main>
+    <div class="article-profile">
+      <div class="d-flex gap-2">
+        <img src="https://d1unjqcospf8gs.cloudfront.net/assets/users/default_profile_80-c649f052a34ebc4eee35048815d8e4f73061bf74552558bb70e07133f25524f9.png" alt="profile-img" class="article-profile-img">
+        <div>
+          <div class="article-profile-nickname">목장하늘</div>
+          <div class="article-profile-region">포항시 북구 흥해읍</div>
         </div>
-        <div class="modal-body py-0">
-          <p class="qr-modal-content">모바일에서만 이용할 수 있어요.<br>휴대전화의 카메라 또는 당근마켓 앱으로 QR코드를 촬영해주세요.</p>
+      </div>
+      <div class="article-profile-right gap-2">
+        <div class="article-profile-right-temperature">
+          <div class="temperature-text">
+            37.2°C
+          </div>
+          <div class="temperature-bar">
+            <div class="temperature-bar-colored"></div>
+          </div>
         </div>
-        <div class="modal-body modal-body-qr p-0">
-          <div class="qr-img">
-            <img src="./../img/qr-img.svg" alt="qr-img">
+        <div class="temperature-face"></div>
+        <div class="temperature-manner">매너온도</div>
+      </div>
+    </div>
+    <div class="article-description">
+      <p class="article-description-detail mb-3">자전거를 도난당했습니다 사진과 똑같이 생겼으니 발견하시는분들은 꼭 연락 부탁드립니다</p>
+      <p class="article-counts">
+        3시간 전 ∙ 조회 14
+      </p>
+      <div class="article-comments-title">댓글 0</div>
+      <p class="article-detail-download m-0">
+        지금 당근마켓 앱을 다운로드하고<br>따뜻한 동네생활을 경험해보세요!
+      </p>
+    </div>
+    <div class="article-detail-hot-more">
+      <div class="article-detail-hot-more-sec">
+        <h3 class="article-detail-hot-more-title m-0">당근마켓 인기중고</h3>
+        <a href="#" class="article-detail-hot-more-link">더 구경하기</a>
+      </div>
+      <div class="row row-cols-2 row-cols-md-3 row-gap-5 m-0">
+        <div class="col article-detail-hot-more-card">
+          <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/9beb411282cde0582bdc16f584901a3839f2d4a40ec42dc48ca9ca07cffdebf8.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+          <h5 class="card-title__style text-truncate">업소용냉장고 무료로 가져가세요.</h5>
+          <p class="card-price__style"></p>
+          <p class="card-place__style text-truncate">경기도 용인시 기흥구 중동</p>
+          <div class="card-count__style">
+            <span>관심 6</span>
+            <span>∙</span>
+            <span>채팅 16</span>
+          </div>
+        </div>
+        <div class="col article-detail-hot-more-card">
+          <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/3c867a402e916a3c385ca3407bd09dd9eecb5174e41aa34faa75fc5d07243531.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+          <h5 class="card-title__style text-truncate">에어콤프레셔</h5>
+          <p class="card-price__style">50,000원</p>
+          <p class="card-place__style text-truncate">경기도 구리시 인창동</p>
+          <div class="card-count__style">
+            <span>관심 11</span>
+            <span>∙</span>
+            <span>채팅 4</span>
+          </div>
+        </div>
+        <div class="col article-detail-hot-more-card">
+          <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/d693a7ea08906f42a494c259677db0ee771843182265c7ea797bdfec0eb03b11.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+          <h5 class="card-title__style text-truncate">캠핑릴선</h5>
+          <p class="card-price__style">10,000원</p>
+          <p class="card-place__style text-truncate">경기도 수원시 권선구 권선동</p>
+          <div class="card-count__style">
+            <span>관심 5</span>
+            <span>∙</span>
+            <span>채팅 19</span>
+          </div>
+        </div>
+        <div class="col article-detail-hot-more-card">
+          <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/8812f4a53351264bb1441db8640d73a4985da5063d63a7c396adc891bb1f7a5e.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+          <h5 class="card-title__style text-truncate">꽃박람회 티켓 판매합니다.</h5>
+          <p class="card-price__style">8,000원</p>
+          <p class="card-place__style text-truncate">경기도 고양시 일산동구 장항동</p>
+          <div class="card-count__style">
+            <span>관심 9</span>
+            <span>∙</span>
+            <span>채팅 20</span>
+          </div>
+        </div>
+        <div class="d-none d-md-flex col article-detail-hot-more-card">
+          <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/bf189406f21e23f608504e7d0476fd19aedf8f56d0cd35d10f599aaf99705f20.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+          <h5 class="card-title__style text-truncate">카페 테이블세트</h5>
+          <p class="card-price__style">30,000원</p>
+          <p class="card-place__style text-truncate">강원도 춘천시 소양로1가</p>
+          <div class="card-count__style">
+            <span>관심 11</span>
+            <span>∙</span>
+            <span>채팅 7</span>
+          </div>
+        </div>
+        <div class="d-none d-md-flex col article-detail-hot-more-card">
+          <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202304/c7a07278cb9a3e06bcee5a696c30cd2117152fdf0ef3df7d07d54f7ea6f713ae.webp?q=82&s=300x300&t=crop" class="card-img-top card-img__style" alt="...">
+          <h5 class="card-title__style text-truncate">14k팔찌(로즈골드)</h5>
+          <p class="card-price__style">85,000원</p>
+          <p class="card-place__style text-truncate">서울 구로구 구로제3동</p>
+          <div class="card-count__style">
+            <span>관심 15</span>
+            <span>∙</span>
+            <span>채팅 5</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <main class="realty-basic">
-    <!-- Section1 -->
-    <section class="realty-sec1-basic__style overflow-hidden">
-      <!-- Over 768px -->
-      <div class="d-none d-md-flex justify-content-between mx-auto realty-sec1-md__style">
-        <div>
-          <h1 class="fw-bold realty-sec1-md-title">복비없이 투명한<br>부동산 직거래</h1>
-          <p>이웃이 살던 집, 당근마켓에서<br>편하게 직거래해보세요.</p>
-        </div>
-        <div class="position-relative flex-grow-1">
-          <picture>
-            <img src="./../img/realty/01.png" class="img-fluid position-absolute bottom-0 end-0 realty-sec1-md-img" alt="01 image">
-          </picture>
-        </div>
-      </div>
-      <!-- Under 768px -->
-      <div class="d-md-none position-relative realty-sec1__style">
-        <h1 class="fw-bold m-0 realty-sec1-title">복비없이 투명한<br>부동산 직거래</h1>
-        <div>
-          <picture>
-            <img src="./../img/realty/01.png" class="position-absolute bottom-0 start-50 translate-middle-x realty-sec1-img" alt="01 image">
-          </picture>
-        </div>
-      </div>
-    </section>
-    <!-- Section2 -->
-    <section>
-      <div class="mx-auto realty-sec2__style">
-        <div>
-          <!-- Over 768px -->
-          <h2 class="d-none d-md-block fw-bold nbs-sec2-md-title">인기 부동산 직거래 게시글</h2>
-          <!-- Under 768px -->
-          <h2 class="d-md-none fw-bold nbs-sec2-title">인기 부동산 직거래 게시글</h2>
-        </div>
-        <!-- Content1 -->
-        <div class="row row-cols-1 row-cols-md-2">
-          <a href="./realty_posts.html" class="text-decoration-none text-body p-0">
-            <div class="col d-flex align-items-start gap-3 popular__style">
-              <div class="popular-img">
-                <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/64c72dedbb25e018123c23a1fe2ed0597f6a4f7fd0e086fcd58d65e12818423b_1661987156388.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-              </div>
-              <div class="d-flex flex-column">
-                <div class="popular-title">
-                  투룸이상 300만원/1만원 - 인천광역시 남동구
-                </div>
-                <div class="popular-rigion">
-                  만수동
-                </div>
-                <div class="popular-price">
-                  단기 300 / 1
-                </div>
-              </div>
-            </div>
-          </a>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/acfb317c1b8a692b60920aae5776d3fd92c7a2dec564051e003ff5f0b6f64209_1662040154700.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 1억 9,100만원 - 전라남도 목포시
-              </div>
-              <div class="popular-rigion">
-                석현동
-              </div>
-              <div class="popular-price">
-                매매 1억 9,100
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/e5d6dff6b8404b57dc7991b5aacb5a97a86083760da225ae16bdeb8dd954bede_1661946322611.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                상가 500만원/60만원 - 해바라기 옷가게
-              </div>
-              <div class="popular-rigion">
-                부평동
-              </div>
-              <div class="popular-price">
-                월세 500 / 60
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/9648fbc1d6522427432705519c983a96a5c0ed83e0057c3025cfbd777d34922e_1667207641191.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 5,000만원 - 가동  5층  계단식
-              </div>
-              <div class="popular-rigion">
-                영운동
-              </div>
-              <div class="popular-price">
-                매매 5,000
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/e24ee27903a160e399fcbf336011925afc30055ceab57cebeab5b0d526330dd2_1661994522080.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 6억 - 경기도 용인시 수지구
-              </div>
-              <div class="popular-rigion">
-                성복동
-              </div>
-              <div class="popular-price">
-                전세 6억원
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/94dd9fc22042178f220f68a8a5600fbf5627f67233eb0b60fb61ad3183ee9c9b_1661943112946.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                분리형 원룸 100만원/35만원 - 제주특별자치도 서귀포시
-              </div>
-              <div class="popular-rigion">
-                성산읍
-              </div>
-              <div class="popular-price">
-                월세 100 / 35
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/7fcf5735187920fa92dd57a79766b68c06f03e62e977b95783784fb91dfd1051_1661959812219.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                오픈형 원룸 200만원/33만원 - 은하수빌 307호
-              </div>
-              <div class="popular-rigion">
-                대잠동
-              </div>
-              <div class="popular-price">
-                월세 200 / 33
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/b223f4d631174b97fc680b365f4979dd2b99b57a999c63f10414b701c03639f3_1662006469391.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 1,000만원/2,000만원 - 제주특별자치도 제주시
-              </div>
-              <div class="popular-rigion">
-                연동
-              </div>
-              <div class="popular-price">
-                연세 1,000 / 2,000
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/5159c7b485b73a6cdbf6cffade6d5c320364bf564dcfa9bbc638eab160609c37_1661954677258.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 3억 7,500만원 - 3단지 
-              </div>
-              <div class="popular-rigion">
-                진접읍
-              </div>
-              <div class="popular-price">
-                매매 3억 7,500
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/dcb1809a8ccbaab05e1ef78dccd0bab50a7ac103b74cc3ca4810b08261f2618f_1662005415501.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 500만원/0만원 - 제주특별자치도 제주시
-              </div>
-              <div class="popular-rigion">
-                노형동
-              </div>
-              <div class="popular-price">
-                연세 500 / 0
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Banner1 -->
-        <div class="mx-auto jobs-bn__style">
-          <div class="popular-bn__style popular-bn-bg">
-            <!-- Over 768px -->
-            <div class="d-none d-md-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-basic-double">
-                <img src="./../img/realty/bn01.png" alt="banner icon" class="popular-bn-icon">
-                <div class="d-flex flex-column">
-                  <h6 class="popular-bn-title__style">복비 없이 투명한 부동산 직거래<br>당근마켓 내 근처 탭에서 바로 찾아보세요!</h6>
-                </div>
-              </div>
-              <button type="button" class="btn btn-popular-bn" data-bs-toggle="modal" data-bs-target="#qrDownloadModal">
-                앱 다운로드 하기
-              </button>
-            </div>
-            <!-- Under 768px -->
-            <div class="d-md-none d-flex flex-column align-items-start">
-              <h6 class="popular-bn-title__style">복비 없이 투명한 부동산 직거래<br>당근마켓 내 근처 탭에서 바로 찾아보세요!</h6>
-              <button type="button" class="btn btn-popular-bn" data-bs-toggle="modal" data-bs-target="#qrDownloadModal">
-                앱 다운로드 하기
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Content2 -->
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/aaa707a74afc0d025837ea424b3e2f4b3f7ab52fa7921d8593728815d11f23c1_1662004953152.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 2억 4,000만원 - 부산광역시 사하구
-              </div>
-              <div class="popular-rigion">
-                하단동
-              </div>
-              <div class="popular-price">
-                매매 2억 4,000
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/f1e4ba1c3cd95eeca9bbf26d91a2386c20e6efa6ae3e8f0885839557b9e29fdb_1661939406189.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                분리형 원룸 200만원/35만원 - 이마트 앞
-              </div>
-              <div class="popular-rigion">
-                상동
-              </div>
-              <div class="popular-price">
-                월세 200 / 35
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/5fb2b75761aaceb524f7e1a0e88d50be581b8198de5b4e936db2976d991c5986_1662013290732.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                투룸이상 500만원/800만원 - 하귀
-              </div>
-              <div class="popular-rigion">
-                애월읍
-              </div>
-              <div class="popular-price">
-                월세 500 / 800
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/83f300910fbca2e3bdc00440d798c4a935137673529bd4e0acbd7824fcc8de98_1661941405369.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 3억 4,000만원 - 울산시청 정문에서 1분
-              </div>
-              <div class="popular-rigion">
-                신정동
-              </div>
-              <div class="popular-price">
-                매매 3억 4,000
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/ca3eb8d8627366566fa083a9fe463dc822a9c9d78aa1366619284085d4774e01_1661993643389.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                투룸이상 500만원/50만원 - 광주광역시 서구
-              </div>
-              <div class="popular-rigion">
-                쌍촌동
-              </div>
-              <div class="popular-price">
-                월세 500 / 50
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/a6e995e821d15c317441f1a185f00e4b86ebd7abea5ba9f216e83a80819a0862_1664150372070.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                아파트 4억 - 2호선 대구은행역 바로코앞 초역세권.동일초.트인뷰
-              </div>
-              <div class="popular-rigion">
-                수성동4가
-              </div>
-              <div class="popular-price">
-                매매 4억원
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/794a9a86adcfcd73445c27ba93be0b5d4c27bc98b8c5d0ff9c87d5b5821b0e82_1661947977509.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                투룸이상 500만원/40만원 - 2층
-              </div>
-              <div class="popular-rigion">
-                갈마동
-              </div>
-              <div class="popular-price">
-                월세 500 / 40
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/1e31c52ca70e25f95837b2d1ec8d481cbc2f5880dd72bd821279c0e249f1f4b0_1661948245691.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                분리형 원룸 500만원/50만원 - 4층
-              </div>
-              <div class="popular-rigion">
-                염리동
-              </div>
-              <div class="popular-price">
-                월세 500 / 50
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/origin/article/202209/98233abcdd8bb5bd613aafaaee6513ad6c47d48f062ab768b983376d71fd13a7.webp?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                오픈형 원룸 0만원/15만원 - 아주자동차대학교 쪽문 도보1분 
-              </div>
-              <div class="popular-rigion">
-                주포면
-              </div>
-              <div class="popular-price">
-                월세 0 / 15
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start gap-3 popular__style">
-            <div class="popular-img">
-              <img src="https://dnvefa72aowie.cloudfront.net/realty/realty/articles/37f04265ca4ec9ba7bd2822a2ce90c2a6cad9270ae6b832c9a7d18285787ffdb_1661991448496.jpeg?q=95&s=1440x1440&t=inside" alt="...">
-            </div>
-            <div class="d-flex flex-column">
-              <div class="popular-title">
-                오픈형 원룸 200만원/25만원 - 수유역 도보 10분이내
-              </div>
-              <div class="popular-rigion">
-                번동
-              </div>
-              <div class="popular-price">
-                월세 200 / 25
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   
   <!-- Footer -->
