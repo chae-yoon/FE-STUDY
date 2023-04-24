@@ -1,0 +1,49 @@
+@import "reset.css";
+@import "variables.css";
+/* components style */
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/index__install-modal.css";
+@import "components/screen-thumbnails.css";
+@import "components/article--column.css";
+@import "components/article--row.css";
+@import "components/banner.css";
+/* screens--main style */
+@import "screens/index.css";
+@import "screens/nearby-store.css";
+@import "screens/jobs.css";
+@import "screens/realty.css";
+@import "screens/cars.css";
+/* screens--sub style */
+@import "screens/index__top-keyword.css";
+@import "screens/index__trust.css";
+@import "screens/index__hot-articles.css";
+@import "screens/articles__item.css";
+@import "screens/chat.css";
+@import "screens/login.css";
+
+*::selection {
+    background-color: inherit;
+}
+h1::selection, span::selection, b::selection, div::selection {
+    background-color: var(--drag-carrot);
+    color: black;
+}
+.hidden {
+    display: none;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0;
+    border-bottom: 0.5px solid var(--btn-gray);
+}
+.text-trunc_twoline {
+    display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
