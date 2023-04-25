@@ -15,13 +15,13 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-md vw-100 bg-body sticky-top nav__style">
       <div class="container-fluid navbar__style">
-        <a class="navbar-brand pt-0" href="#">
+        <a class="navbar-brand pt-0" href="./index.html">
           <img src="./img/logo.svg" alt="logo image">
         </a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav d-flex flex-wrap">
             <li class="nav-item">
-              <a class="nav-link fw-semibold active" aria-current="page" href="#">중고거래</a>
+              <a class="nav-link fw-semibold active" aria-current="page" href="./index.html">중고거래</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-semibold" href="./pages/nearby-stores.html">동네가게</a>
@@ -82,7 +82,7 @@
     <div class="offcanvas offcanvas-top border-top " tabindex="-1" id="menuModal" aria-labelledby="offcanvasTopLabel">
       <ul class="navbar-nav d-flex flex-wrap h-100 menu-modal">
         <li class="nav-item p-3">
-          <a class="nav-link active" aria-current="page" href="#">중고거래</a>
+          <a class="nav-link active" aria-current="page" href="./index.html">중고거래</a>
         </li>
         <li class="nav-item p-3">
           <a class="nav-link" href="./pages/nearby-stores.html">동네가게</a>
@@ -786,7 +786,7 @@
 
       menuIcon.addEventListener('click', () => {
         const navStyleDiv = document.querySelector('.nav__style')
-        navStyleDiv.setAttribute('style', '')
+        navStyleDiv.removeAttribute('style')
       })
 
       const indexModalCloseIcon = document.querySelector('.index-modal-close-icon')
