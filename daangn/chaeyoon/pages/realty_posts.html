@@ -15,7 +15,7 @@
    <!-- Nav Bar -->
    <nav class="navbar navbar-expand-md vw-100 bg-body sticky-top nav__style">
     <div class="container-fluid navbar__style">
-      <a class="navbar-brand pt-0" href="#">
+      <a class="navbar-brand pt-0" href="./../index.html">
         <img src="./../img/logo.svg" alt="logo image">
       </a>
       <div class="collapse navbar-collapse">
@@ -33,7 +33,7 @@
             <a class="nav-link fw-semibold active" href="./realty.html">부동산 직거래</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-semibold" href="#">중고차 직거래</a>
+            <a class="nav-link fw-semibold" href="./car.html">중고차 직거래</a>
           </li>
         </ul>
       </div>
@@ -94,9 +94,31 @@
         <a class="nav-link active" href="./realty.html">부동산 직거래</a>
       </li>
       <li class="nav-item p-3">
-        <a class="nav-link" href="#">중고차 직거래</a>
+        <a class="nav-link" href="./car.html">중고차 직거래</a>
       </li>
     </ul>
+  </div>
+
+  <!-- Qr Modal -->
+  <div class="modal fade" id="qrDownloadModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="qrDownloadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-dialog-qr">
+        <div class="modal-header border-0">
+          <h1 class="modal-title modal-title-qr fw-semibold" id="qrDownloadModalLabel">당근마켓 앱으로 열기</h1>
+          <button type="button" class="btn qr-close-btn px-0" data-bs-dismiss="modal" aria-label="Close">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.72633 3.72633C4.0281 3.42456 4.51736 3.42456 4.81913 3.72633L12 10.9072L19.1809 3.72633C19.4826 3.42456 19.9719 3.42456 20.2737 3.72633C20.5754 4.0281 20.5754 4.51736 20.2737 4.81913L13.0928 12L20.2737 19.1809C20.5754 19.4826 20.5754 19.9719 20.2737 20.2737C19.9719 20.5754 19.4826 20.5754 19.1809 20.2737L12 13.0928L4.81913 20.2737C4.51736 20.5754 4.0281 20.5754 3.72633 20.2737C3.42456 19.9719 3.42456 19.4826 3.72633 19.1809L10.9072 12L3.72633 4.81913C3.42456 4.51736 3.42456 4.0281 3.72633 3.72633Z" fill="currentColor"></path></svg>
+          </button>
+        </div>
+        <div class="modal-body py-0">
+          <p class="qr-modal-content">모바일에서만 이용할 수 있어요.<br>휴대전화의 카메라 또는 당근마켓 앱으로 QR코드를 촬영해주세요.</p>
+        </div>
+        <div class="modal-body modal-body-qr p-0">
+          <div class="qr-img">
+            <img src="./../img/qr-img.svg" alt="qr-img">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <main>
@@ -213,6 +235,12 @@
       </div>
     </div>
   </main>
+
+  <div class="d-md-none fixed-bottom bg-body p-3 pt-2">
+    <button type="button" class="btn btn-support" data-bs-toggle="modal" data-bs-target="#qrDownloadModal">
+      당근마켓 앱에서 지원하기
+    </button>
+  </div>
   
   <!-- Footer -->
   <footer>
