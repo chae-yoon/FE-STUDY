@@ -1780,13 +1780,13 @@ footer {
 .chat-login-nav-aria {
   width: 100%;
   background-color: #fff;
+  border-bottom: 1px solid #eaebee;
   position: fixed;
   top: 0;
 }
 
 .chat-login-nav {
   width: 1200px;
-  border-bottom: 1px solid #eaebee;
 }
 
 .chat-login-logo {
@@ -1881,9 +1881,12 @@ footer {
   background-color: #eaebee;
 }
 
-.chat_login_footer {
+.fixed_bottom {
   position: fixed;
   bottom: 0;
+}
+
+.chat_login_footer {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -2477,4 +2480,371 @@ footer {
  .btn-car-description-more {
     font-size: .875rem;
   }
+}
+
+/*  */
+/* Business Profile Page */
+/*  */
+
+.business-profile {
+  justify-content: flex-start;
+  gap: .5rem;
+  border-bottom: none;
+}
+
+.business-profile-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.business-profile-region {
+  color: #868b94;
+}
+
+.btn-business-description-more {
+  font-size: .875rem;
+  font-weight: 600;
+  padding: .3rem .6rem;
+  background-color: #ff6f0f;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quick-menu-group {
+  max-width: 768px;
+  display: flex;
+  justify-content: space-between;
+  font-size: .875rem;
+  margin: 0 auto 1.5rem;
+  padding: 0 1rem;
+}
+
+.quick-menu-group div {
+  border-right: 1px solid #eaebee;
+}
+
+.quick-menu-group div:last-child {
+  border-right: none;
+}
+
+.business-tab {
+  max-width: 768px;
+  margin: 0 auto;
+  --bs-nav-pills-border-radius: 0;
+  border-bottom: 1px solid #00000033;
+}
+
+.business-tab .nav-link.active, .business-tab .show>.nav-link {
+  border: none;
+  border-bottom: 1px solid #212124;
+  background-color: #fff;
+  color: #212124;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.business-tab .nav-link {
+  color: #868b94;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.business-tab-content {
+  max-width: 768px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.business-tab-content>.active {
+  display: block;
+}
+
+.tab-home-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.tab-home-description {
+  font-size: 1.125rem;
+  line-height: 1.32;
+  color: #212124;
+}
+
+.tab-home-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.tab-home-info-inner {
+  display: flex; 
+  gap: 1rem;
+}
+
+.tab-home-info-inner svg {
+  margin-top: .25rem;
+}
+
+.tab-home-info-inner-description {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.description-main {
+  font-size: 1.125rem;
+}
+
+.description-sub {
+  font-size: .875rem;
+  color: #868b94;
+}
+
+.tab-home-review-sample {
+  max-width: 768px;
+  padding: 0 1rem;
+  margin: 5rem auto;
+}
+
+.business-sample-profile {
+  padding: 0;
+  border-bottom: none;
+}
+
+.article-profile-badge {
+  background-color: #ff6f0f;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: .125rem .25rem;
+  border-radius: 100px;
+}
+
+.review-sample-content {
+  margin: .75rem 0 0;
+}
+
+.review-sample-img-wrapper {
+  height: 400px;
+}
+
+.review-sample-tag {
+  display: flex;
+  gap: .5rem;
+  margin-top: .75rem;
+}
+
+.review-sample-tag-word {
+  padding: .125rem .25rem;
+  border-radius: .125rem;
+  background-color: #f2f3f6;
+  color: #4d5159;
+  font-size: .75rem;
+}
+
+.review-sample-tag-help {
+  margin-top: .75rem;
+  font-size: .875rem;
+  color: #868b94;
+}
+
+.btn-more-review {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: .25rem;
+  padding: .5rem .875rem;
+  color: #ff6f0f;
+  background-color: #ff6f0f24;
+}
+
+.review-sample-card-list {
+  display: flex;
+  padding: 0 1rem;
+  margin: 0 -1rem;
+  align-items: stretch;
+  overflow-x: auto;
+}
+
+.review-sample-card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.review-sample-card {
+  border: .0625rem solid #eaebee;
+  border-radius: .625rem;
+  padding: 1.25rem;
+  min-width: 85vw;
+  flex: 1 1;
+}
+
+.review-sample-card:last-child {
+  margin-left: .75rem;
+}
+
+
+.review-sample-card-content {
+  display: flex;
+  margin: .625rem 0 0; 
+}
+
+.review-sample-card-description {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.36;
+  font-size: 1rem;
+  word-break: break-word;
+  white-space: pre-line;
+  overflow: hidden;
+  flex: 1 1;
+}
+
+.review-sample-card-img-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .375rem;
+  margin-left: .5rem;
+}
+
+.news-sample-card {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #eaebee;
+  padding: 0 0 1.25rem;
+  max-width: 340px;
+}
+
+.news-sample-card:nth-child(3){
+  border-bottom: none;
+}
+
+.news-sample-card:last-child {
+  border-bottom: none;
+}
+
+.news-sample-img-wrapper {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: .375rem;
+}
+
+.news-sample-card-title {
+  font-size: 1rem;
+  max-width: 270px;
+}
+
+.news-sample-card-comment {
+  font-size: .813rem;
+  color: #868b94;
+  margin: .5rem 0 0;
+}
+
+.edit-date {
+  background-color: #f7f8fa;
+  border-radius: .5rem;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 1rem;
+}
+
+.edit-date-datetime{
+  font-size: .875rem;
+}
+
+.edit-date-detail{
+  line-height: 1.4;
+  font-size: .875rem;
+  color: #868b94;
+  margin: .375rem 0 0;
+}
+
+@media (max-width: 767px) {
+  .business-profile {
+    align-items: flex-start;
+  }
+
+  .business-profile-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+
+  .btn-business-description-more {
+    font-size: .68rem;
+  }
+
+  .quick-menu-group {
+    max-width: 100%;
+  }
+
+  .business-tab {
+    max-width: 100%;
+  }
+
+  .business-tab .nav-link.active, .business-tab .show>.nav-link {
+    font-size: .875rem;
+  }
+
+  .business-tab .nav-link {
+    font-size: .875rem;
+  }
+
+  .business-tab-content {
+    max-width: 100%;
+  }
+  
+  .tab-home-title {
+    font-size: 1rem;
+  }
+  
+  .tab-home-description {
+    font-size: 1rem;
+  }
+
+  .tab-home-review-sample {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .btn-more-review {
+    font-size: .875rem;
+  }
+
+  .news-sample-card {
+    max-width: 100%;
+  }
+  
+  .news-sample-card-title {
+    max-width: 100%;
+    font-size: .875rem;
+    flex-grow: 1;
+  }
+  
+  .news-sample-card-comment {
+    font-size: .75rem;
+  }
+
+  .edit-date {
+    margin: 2.5rem 0;
+  }
+ }
+
+ @media (max-width: 460px) {
+   .news-sample-card-title {
+    max-width: 270px;
+   }
 }
