@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>임은하푸드 인천창고 | 동네가게</title>
+  <script src="https://kit.fontawesome.com/7c01b20e08.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href= "https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="sticky-top">  
+    <div class="navbar navbar-expand-md nav-container">
+      <div class="container bg-white">
+        <div class="justify-content-between nav-lg-down-div">
+        <div class="row">
+        <div class="col-6 ">
+          <a class="navbar-brand" href="../YongJin/main.html">
+            <img src="https://dnvefa72aowie.cloudfront.net/karrot-cs/etc/202007/0cf1d10235c37b2635c02719125da37cc1bd632518198b1e1da7f5a364156540.png" alt="" width="100" height="28">
+          </a>
+        </div>
+          <div class="d-flex col-6 nav-lg-down-col" >
+            <button class="btn d-blcok d-md-none d-lg-none d-sm-block row" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="navbar-toggler row" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </div>
+        </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/main.html"><b>중고거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px; color: coral;" href="../YongJin/second.html"><b>동네가게</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style" style="margin-right: 15px; " href="../YongJin/third.html"><b>알바</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/fourth.html"><b>부동산 직거래</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a-style"style="margin-right: 15px;" href="../YongJin/Fifth.html"><b>중고차 직거래</b></a>
+              </li>
+          </ul>
+        </div>
+            <button class="btn d-none d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form class="d-flex" role="search">
+              <input class="form-control d-none d-lg-block border-0 bg-secondary-subtle" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style="width: 288px; height: 40px; margin-right: 12px;" id="search-1" >
+            </form>
+            <form class="d-flex">
+              <button onclick ="window.open('chat_login.html')" class="btn btn-outline-light border border-dark d-none d-md-block" type="submit" style="width: 98px; height: 40px;" ><b style="color: black;">채팅하기</b></button>
+            </form>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title w-100" id="offcanvasTopLabel"><input class="form-control border-0 bg-secondary-subtle nav-search-search" type="Search" placeholder="물품이나 동네를 검색해보세요" aria-label="Search" style=" height: 100%; margin-right: 12px;" id="search-1" ></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 ms-3">
+        <p style="color: #898FB3; font-size: 0.875rem;">추천</p>
+        <div class="row">
+          <div class="col-6 nav-search">잠실 냉장고</div>
+          <div class="col-6 nav-search">강남 명품가방</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">키즈카페</div>
+          <div class="col-6 nav-search">자전거</div>
+        </div>
+        <hr style="margin-top: 3px; margin-bottom: 3px;">
+        <div class="row">
+          <div class="col-6 nav-search">홍대 쇼파</div>
+          <div class="col-6 nav-search">인천 노트북</div>
+        </div>
+      </div>
+    </div>
+    </nav>
+    <!-- main md이상 -->
+    <main class="d-none d-md-block">
+      <section>
+        <div class="row d-flex justify-content-center">
+          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="100000000" data-bs-wrap="false" style="width: 768px; height: 468px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active articles-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="articles-btn" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="articles-btn" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="width: 100%;">
+                <div class="carousel-img-expand-btn job-img-wrapper d-flex justify-content-end article-img-shadow" style=" width: 100%;">
+                  <a style="background-color: black; margin-right: 10px; margin-top: 10px;" href="https://dnvefa72aowie.cloudfront.net/jobs/article/24106148/1681339275882/job-post-2028047741.jpeg?q=95&s=1440x1440&t=inside" target="_blank"><img src="../YongJin/image/img-icon.svg" alt="icon"></a>
+                </div>
+                <img style="height: 468px; border-radius: 20px;" src="https://dnvefa72aowie.cloudfront.net/capri/bizPlatform/profile/50472096/1652859562598/NTU3MkUyNUEtNjMyMy00RjlBLTk2RkQtNTM5NUJEOTJFNzcwLmpwZWc=.jpeg?q=95&s=1440x1440&t=inside" class="d-block w-100 text-center" alt="...">
+                <!-- <div class="article-img-shadow"></div> -->
+              </div>
+              <div class="carousel-item" style="width: 100%;">
+                <img style="height: 468px; border-radius: 20px;" src="https://dnvefa72aowie.cloudfront.net/capri/bizPlatform/profile/36698633/1662018736985/NDBhYmNkNzg0ZTQyNDZhNzdhODc4NjY3ZTlhODdmZmRhNGQ5YjcyN2Q1MzZmM2Y5NjU1ODQ1Y2Q2ZGFkZWQyMS5qcGc=.jpeg?q=95&s=1440x1440&t=inside" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" style="width: 100%;">
+                <img style="height: 468px; border-radius: 20px;" src="https://dnvefa72aowie.cloudfront.net/capri/bizPlatform/profile/36698633/1662018736967/Yjc5ZTIwYzlhNjA4ZWMyZGVhNDBmYWIzMTE5MzlhYWNmOWUxZmY0OWZkNGE5MjMzOWU2MWVmMzU2MzZkNzdkMi5qcGc=.jpeg?q=95&s=1440x1440&t=inside" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          
+            <div class="d-flex justify-content-center" style="padding: 24px 0;">     
+              <div class="d-flex justify-content-between" style="width: 768px;">
+                <div class="d-flex">
+                  <div>
+                    <img style="width: 48px; height: 48px;" class="articles-section-img" src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&s=640x640&t=crop" alt="">
+                  </div>
+                  <div class="ms-2" >
+                    <span ><b>임은하푸드 인천창고</b></span>
+                    <div style="font-size: 0.875rem; color: #868B94;">천곡동 ∙ 수산물 ∙ 단골 26,301</div>
+                  </div>
+                </div> 
+                <div style="line-height: 40px;">
+                  <button class="btn btn-outline-light p-0 ms-2" type="submit" style="width: 91.88px; height: 34px; color: white; border: 1px solid orange; background-color: #ff6f0f; font-weight: bold; font-size: 0.875rem;" >+ 단골 맺기</button>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center gap-5 p-0">
+              <div class="row text-center" style="width: 256px;">
+                <svg fill-rule="evenodd" clip-rule="evenodd"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24" >
+                  <path d= 'M3.57701 3.12551C3.55681 3.13844 3.54775 3.1519 3.54305 3.1644C3.10571 4.32685 3.09991 5.72996 3.09991 6.57133C3.09991 14.4848 9.51502 20.8999 17.4285 20.8999C18.2698 20.8999 19.673 20.8941 20.8354 20.4568C20.8479 20.4521 20.8614 20.443 20.8743 20.4228C20.8883 20.4009 20.8999 20.3676 20.8999 20.3269V15.3142H16.3199L14.4599 17.1742C14.2992 17.3349 14.0615 17.391 13.8459 17.3191C13.1568 17.0894 11.1908 16.4312 9.57728 14.8177C7.59575 12.8362 6.91898 10.8688 6.6807 10.1539C6.60821 9.93646 6.66596 9.69669 6.82952 9.53608L8.72298 7.67674V3.0999H3.6729C3.63218 3.0999 3.5989 3.11151 3.57701 3.12551ZM2.41991 2.74185C2.62665 2.19232 3.15609 1.8999 3.6729 1.8999H9.12298C9.56481 1.8999 9.92298 2.25808 9.92298 2.6999V7.7187C9.92298 8.0139 9.80432 8.29672 9.59369 8.50356L7.9411 10.1264C8.23588 10.935 8.89904 12.4424 10.4258 13.9692C11.6258 15.1691 13.0673 15.7725 13.8761 16.0609L15.5006 14.4364C15.7069 14.2301 15.9867 14.1142 16.2784 14.1142H21.2999C21.7417 14.1142 22.0999 14.4724 22.0999 14.9142V20.3269C22.0999 20.8437 21.8075 21.3732 21.258 21.5799C19.8753 22.1001 18.2753 22.1 17.4548 22.0999H17.4285C8.85228 22.0999 1.89991 15.1475 1.89991 6.57133L1.8999 6.54502C1.89984 5.72452 1.89972 4.1245 2.41991 2.74185Z' fill="currentColor"></path>
+                </svg>
+                <div>
+                  전화 문의
+                </div>
+              </div>
+              <button class="btn border-0 row text-center" style="width: 256px;" data-bs-target="#exampleModalToggle-md-down" data-bs-toggle="modal">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24" >
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3999 9.5C1.3999 5.55166 5.39908 2.5 9.9999 2.5C12.6744 2.5 15.1456 3.53121 16.7461 5.17031C20.0224 6.06355 22.6 8.60174 22.6 11.8C22.6 14.2753 21.077 16.603 18.7925 17.8711C19.2289 18.7604 19.6177 19.3912 19.9062 19.8091C20.0772 20.0568 20.2132 20.2299 20.3031 20.3378C20.3481 20.3917 20.3815 20.4294 20.4022 20.452C20.4125 20.4633 20.4196 20.4708 20.4233 20.4747L20.426 20.4775C20.5985 20.6517 20.6481 20.9137 20.5504 21.1388C20.4524 21.3648 20.2262 21.5079 19.98 21.4997L19.9288 21.4971C19.9004 21.4953 19.8608 21.4925 19.8108 21.4879C19.7107 21.4788 19.5689 21.4628 19.3912 21.4349C19.036 21.3791 18.5365 21.2755 17.941 21.0836C16.7925 20.7135 15.2855 20.0146 13.7701 18.6977C12.0068 18.6619 10.3982 18.2145 9.02613 17.4189C7.93259 18.1518 6.89336 18.5834 6.04731 18.8372C5.44981 19.0164 4.94863 19.1071 4.59204 19.1529C4.41367 19.1758 4.2712 19.1876 4.1706 19.1936L3.9999 19.2C3.75079 19.2 3.5276 19.0461 3.43907 18.8132C3.35113 18.5819 3.41425 18.3205 3.5976 18.1549L3.59862 18.1539L3.70961 18.0369C3.79588 17.94 3.92887 17.7795 4.09755 17.541C4.38449 17.1353 4.77514 16.5035 5.21485 15.5752C2.92616 14.3081 1.3999 11.978 1.3999 9.5ZM8.71586 16.1714C8.67018 16.1959 8.62735 16.2265 8.5887 16.2629C7.52076 17.02 6.50586 17.4467 5.70245 17.6878C5.59142 17.7211 5.48444 17.7508 5.38192 17.7774C5.71998 17.2426 6.12149 16.5133 6.54904 15.5416C6.68106 15.2416 6.54784 14.8911 6.24985 14.7545C4.03261 13.7383 2.59985 11.6335 2.59985 9.49995C2.59985 6.44829 5.80068 3.69995 9.99985 3.69995C12.4503 3.69995 14.5607 4.63583 15.8935 6.02173C15.9326 6.0833 15.9829 6.13783 16.0424 6.18199C16.9024 7.14096 17.3999 8.29689 17.3999 9.49995C17.3999 12.5516 14.199 15.3 9.99985 15.3C9.85163 15.3 9.70865 15.3548 9.59848 15.454C9.30294 15.72 9.00766 15.9581 8.71586 16.1714ZM10.0816 16.6242C11.2215 17.1886 12.5423 17.5 14 17.5C14.1482 17.5 14.2912 17.5549 14.4014 17.654C15.8287 18.9386 17.2508 19.6004 18.309 19.9414C18.4162 19.976 18.5197 20.0072 18.6191 20.0355C18.2833 19.5012 17.8824 18.7835 17.4545 17.85C17.3165 17.5488 17.4487 17.1926 17.75 17.0546C19.9672 16.0383 21.4 13.9336 21.4 11.8C21.4 9.78512 20.0647 7.96761 17.9975 6.92562C18.385 7.71767 18.5999 8.58474 18.5999 9.5C18.5999 13.3824 14.7332 16.3978 10.2299 16.4975C10.1805 16.5404 10.131 16.5826 10.0816 16.6242Z" fill="currentColor"></path>
+                </svg>
+                <div>
+                  채팅 문의
+                </div>
+              </button>
+              <button class="btn row border-0 text-center" style="width: 256px;" data-bs-target="#exampleModalToggle-md-down" data-bs-toggle="modal">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24" >
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5756 2.57564C15.81 2.34132 16.1899 2.34132 16.4242 2.57564L21.4242 7.57564C21.6585 7.80995 21.6585 8.18985 21.4242 8.42417L17.4242 12.4242L8.42417 21.4242C8.31164 21.5367 8.15903 21.5999 7.9999 21.5999H2.9999C2.66853 21.5999 2.3999 21.3313 2.3999 20.9999V15.9999C2.3999 15.8408 2.46312 15.6882 2.57564 15.5756L15.5756 2.57564ZM14.4242 8.57564L16.9999 11.1514L20.1514 7.9999L15.9999 3.84843L3.5999 16.2484V20.3999H7.75137L16.1514 11.9999L13.5756 9.42417C13.3413 9.18985 13.3413 8.80995 13.5756 8.57564C13.81 8.34132 14.1899 8.34132 14.4242 8.57564ZM13.9999 20.3999C13.6685 20.3999 13.3999 20.6685 13.3999 20.9999C13.3999 21.3313 13.6685 21.5999 13.9999 21.5999H20.9999C21.3313 21.5999 21.5999 21.3313 21.5999 20.9999C21.5999 20.6685 21.3313 20.3999 20.9999 20.3999H13.9999Z" fill="currentColor"></path>
+                </svg>
+                <div>
+                  후기 작성
+                </div>
+              </button>
+            </div>
+          </section>
+          <div class="modal fade" id="exampleModalToggle-md-down" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="width: 360px; margin: auto; font-size: 1.15rem;">
+                <div class="modal-header row" style="border-bottom: 0;">
+                  <div class="modal-title fs-5 d-flex justify-content-between" id="exampleModalToggleLabel" style="font-size: 1.15rem;">
+                    <div><b>당근마켓 앱으로 열기</b></div>
+                    <button type="btn btn-secondary "  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <br><br>
+                  </div>
+                  <p style="font-size: 1.05rem;">모바일에서만 이용할 수 있어요<br>
+                    휴대전화의 카메라 또는 당근마켓 앱으로<br> QR코드를 촬영해주세요.</p>
+                </div>
+                <div class="modal-body d-flex justify-content-center" style="background-color: #F7F8FA;">
+                  <img src="../YongJin/image/qr.PNG" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-3 business-main-div">
+            <div class="d-flex justify-content-center gap-5 p-0">
+              <button class="btn border-0 row text-center business-btn" style="width: 256px;">
+                <div>
+                  홈
+                </div>
+              </button>
+              <button class="btn border-0 row text-center business-btn" style="width: 256px;">
+                <div>
+                  소식
+                </div>
+              </button>
+              <button class="btn row border-0 text-center business-btn" style="width: 256px;">
+                <div>
+                  후기
+                </div>
+              </button>
+            </div>
+            <div class="pt-3">
+              <h3 style="font-size:1.25rem; margin-bottom: 20px;"><b>정보</b></h3>
+              <div class="business-information-div">
+                임은하푸드는 전국에 수산물 창고를 둔 곳입니다. 매일 아침 창고 소식을 전해요. 단골맺기를 하시면 소식 알람이 간답니다. 꼭 저희에게 구매하지 않더라도, 시장가시기 전에 그 날 시세 보시면 좋을 거에요. 간혹, 물건 위탁으로 보내는 유통회사 아니냐 하시는데. 절대 아니고요. 동해, 부산, 인천, 군산, 포항 등. 바다가가 있는 곳에 왠만하면 창고가 있는 큰 회사 입니다. 매일 새벽 어판장에서 위판을 받고, 배떼기를 한답니다. 당연 매일 가격이 다르고요. 사람이 하는 일이라 클레임이 나올 수 있어요. 포장하는 누가 실수 할 수도 있고, 선별하는 누가 실수 할 수도 있고, 발주받는 누가 실수 할 수도 있고, 택배기사님이 실수 할 수도 있고, 누군가의 자식, 누군가의 동생, 누군가의 아버지들입니다. 좋게 이야기 해 주시면 대부분 해결이 돼요. 물건에 문제가 있을 경우 연락 주세요. 문제가 생길 수 있다는 점을 인지하고 더 노력 하겠습니다. 문제가 생기지 않게 더 노력 하겠습니다. 오늘도 힘찬 뱃고동 소리와 함께 시작 하겠습니다. 감사합니다. - 임은하푸드 일동 <br><br>
+                <div class="d-flex">
+                  <div style="width:35px;">
+                    <svg style="width: 18px; height: 18px; " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.48852C10.0031 6.48852 8.38442 8.10725 8.38442 10.1041C8.38442 12.1009 10.0031 13.7196 12 13.7196C13.9968 13.7196 15.6155 12.1009 15.6155 10.1041C15.6155 8.10725 13.9968 6.48852 12 6.48852ZM9.90675 10.1041C9.90675 8.94801 10.8439 8.01085 12 8.01085C13.156 8.01085 14.0932 8.94801 14.0932 10.1041C14.0932 11.2601 13.156 12.1973 12 12.1973C10.8439 12.1973 9.90675 11.2601 9.90675 10.1041Z" fill="currentColor">    </path>
+                      <path fill-rule="evenodd" clip-rule d="M12 0.779785C6.58756 0.779785 2.19995 5.16739 2.19995 10.5798C2.19995 13.9799 4.40138 17.1391 6.57819 19.3764C7.68247 20.5113 8.81823 21.4481 9.74627 22.1055C10.2096 22.4337 10.6305 22.6988 10.9774 22.8857C11.1501 22.9788 11.3156 23.0584 11.466 23.1169C11.594 23.1666 11.7918 23.2342 12 23.2342C12.2081 23.2342 12.4059 23.1666 12.5339 23.1169C12.6843 23.0584 12.8498 22.9788 13.0225 22.8857C13.3694 22.6988 13.7903 22.4337 14.2536 22.1055C15.1817 21.4481 16.3174 20.5113 17.4217 19.3764C19.5985 17.1391 21.8 13.9799 21.8 10.5798C21.8 5.16739 17.4123 0.779785 12 0.779785ZM3.72228 10.5798C3.72228 6.00815 7.42832 2.30212 12 2.30212C16.5716 2.30212 20.2776 6.00815 20.2776 10.5798C20.2776 13.3642 18.4353 16.1516 16.3306 18.3148C15.2941 19.3801 14.2296 20.2569 13.3737 20.8632C12.945 21.1669 12.578 21.396 12.3005 21.5455C12.1718 21.6149 12.0717 21.662 12 21.691C11.9282 21.662 11.8281 21.6149 11.6994 21.5455C11.4219 21.396 11.0549 21.1669 10.6262 20.8632C9.77026 20.2569 8.70578 19.3801 7.66928 18.3148C5.56456 16.1516 3.72228 13.3642 3.72228 10.5798Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <div class="row">
+                    <div>
+                      강원도 동해시 감추4길 16 임은하푸드
+                    </div>
+                    <div class="business-information-div-sub mt-2 mb-1">
+                      강원도 동해시 천곡동 976-26 임은하푸드
+                    </div>
+                  </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6484576008115!2d129.11460038906432!3d37.51620865496107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561c78766ebbfd7%3A0x6745613c9cc3d98b!2z6rCV7JuQ64-EIOuPme2VtOyLnCDqsJDstpQ06ri4IDE2!5e0!3m2!1sko!2skr!4v1682915688947!5m2!1sko!2skr" width="100%" height="200" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+                  <div class="d-flex">
+                    <div style="width:35px;">
+                      <svg style="width: 18px; height: 18px; " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.6123C12.4959 6.6123 12.898 7.01433 12.898 7.51026V11.5195L15.8655 13.4978C16.2781 13.7729 16.3896 14.3304 16.1145 14.7431C15.8394 15.1557 15.2819 15.2672 14.8693 14.9921L11.5019 12.7472C11.2521 12.5807 11.1021 12.3003 11.1021 12.0001V7.51026C11.1021 7.01433 11.5041 6.6123 12 6.6123Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 3.63265C7.37884 3.63265 3.63265 7.37884 3.63265 12C3.63265 16.6212 7.37884 20.3673 12 20.3673C16.6212 20.3673 20.3673 16.6212 20.3673 12C20.3673 7.37884 16.6212 3.63265 12 3.63265Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      매일	09:00 - 23:30
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div style="width:35px;">
+                      <svg style="width: 18px; height: 18px; " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.8002C6.91893 2.8002 2.79995 6.91918 2.79995 12.0002C2.79995 17.0812 6.91893 21.2002 12 21.2002C17.081 21.2002 21.2 17.0812 21.2 12.0002C21.2 6.91918 17.081 2.8002 12 2.8002ZM1.19995 12.0002C1.19995 6.03552 6.03528 1.2002 12 1.2002C17.9646 1.2002 22.8 6.03552 22.8 12.0002C22.8 17.9649 17.9646 22.8002 12 22.8002C6.03528 22.8002 1.19995 17.9649 1.19995 12.0002Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule d="M11.4618 22.5921C5.2144 16.9126 5.2144 7.08767 11.4618 1.4082L12.5381 2.59211C6.98897 7.63676 6.98897 16.3636 12.5381 21.4082L11.4618 22.5921Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule d="M12.5381 22.5921C18.7855 16.9126 18.7855 7.08767 12.5381 1.4082L11.4618 2.59211C17.0109 7.63676 17.0109 16.3636 11.4618 21.4082L12.5381 22.5921Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule d="M1.69995 9.0002C1.69995 8.55837 2.05812 8.2002 2.49995 8.2002H21.5C21.9418 8.2002 22.2999 8.55837 22.2999 9.0002C22.2999 9.44202 21.9418 9.8002 21.5 9.8002H2.49995C2.05812 9.8002 1.69995 9.44202 1.69995 9.0002Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule d="M1.69995 15.0002C1.69995 14.5584 2.05812 14.2002 2.49995 14.2002H21.5C21.9418 14.2002 22.2999 14.5584 22.2999 15.0002C22.2999 15.442 21.9418 15.8002 21.5 15.8002H2.49995C2.05812 15.8002 1.69995 15.442 1.69995 15.0002Z" fill="currentColor"></path>
+                      </svg>
+                    </div>
+                    <a class="business-information-div-sub-a" href="https://limeunha.com/">https://limeunha.com/</a>
+                  </div><br>
+                  <div class="rounded" style="background-color: #F2F2F2;">
+                    <button class="btn car-button-hv border-0" style="width: 100%; color: black;" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                      <div class="d-flex justify-content-center">
+                        <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.434 2.43427C11.7464 2.12185 12.253 2.12185 12.5654 2.43427L16.5654 6.43427C16.8778 6.74669 16.8778 7.25322 16.5654 7.56564C16.253 7.87806 15.7464 7.87806 15.434 7.56564L12.7997 4.93132V14C12.7997 14.4418 12.4415 14.8 11.9997 14.8C11.5579 14.8 11.1997 14.4418 11.1997 14V4.93132L8.56539 7.56564C8.25297 7.87806 7.74644 7.87806 7.43402 7.56564C7.1216 7.25322 7.1216 6.74669 7.43402 6.43427L11.434 2.43427Z" fill="currentColor"></path>
+                          <path fill-rule="evenodd" clip-rule d="M4.99971 10.8C4.89153 10.8 4.79971 10.8918 4.79971 11V20C4.79971 20.1081 4.89153 20.2 4.99971 20.2H18.9997C19.1079 20.2 19.1997 20.1081 19.1997 20V11C19.1997 10.8918 19.1079 10.8 18.9997 10.8H15.9997C15.5579 10.8 15.1997 10.4418 15.1997 9.99995C15.1997 9.55812 15.5579 9.19995 15.9997 9.19995H18.9997C19.9915 9.19995 20.7997 10.0081 20.7997 11V20C20.7997 20.9918 19.9915 21.7999 18.9997 21.7999H4.99971C4.00788 21.7999 3.19971 20.9918 3.19971 20V11C3.19971 10.0081 4.00788 9.19995 4.99971 9.19995H7.99971C8.44153 9.19995 8.79971 9.55812 8.79971 9.99995C8.79971 10.4418 8.44153 10.8 7.99971 10.8H4.99971Z" fill="currentColor"></path>
+                        </svg>
+                        <b>공유하기</b>
+                      </div>
+                    </button>
+                  </div>
+
+                  <div>
+                    <h3 style="font-size:1.25rem; margin-top: 80px; margin-bottom: 20px;"><b>후기</b></h3>
+                    <div class="d-flex">
+                      <div style="width:36px;">
+                          <img style="width:36px; height: 36px; border-radius: 50%;" src="data:image/png;base64,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" alt="">
+                        </svg>
+                      </div>
+                      <div class="row ps-2">
+                        <div class="d-flex" style="line-height: 15px;">
+                          <b>오리맘</b>
+                          <div class="text-center business-span-custom">단골</div>
+                        </div>
+                        <div class="business-information-div-sub">
+                          양주2동 인증 16회 ∙ 10일
+                        </div><br>
+                      </div>
+                    </div>
+                    <div class="mb-2">
+                      내용물이 싱싱하세요 물을얼마나 잡아야할지몰라서 찾아봤지만요~ 저는 미나리 쑥갓 양파 마늘 고추 더넣어 끓였어요~ 물을 많이잡아서 코인육수도 3알넣고요~ 맛있네요~ 색이좀 흐려서 고춧가루넣었는데도 많이흐리네요ㅋ
+                    </div>
+                      <img class="business-img-custom mb-2" src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/6166948/1682050546266/NDdhMzEzZTQ0MDlmZTA2NWIzZTM0Y2MyMzc0ZWM0ZTNiZTRjNDU5OTc4MzdhOTdmNjA2NzAwNDVlYzRjMjE3Ni5qcGc=.jpeg?q=95&s=1440x1440&t=inside" alt="">
+                    <div class="d-flex gap-1 mb-2">
+                      <div class="business-do">친절해요</div>
+                      <div class="business-do">가격이 싸요</div>
+                      <div class="business-do">만족스러워요</div>
+                    </div>
+                    <div style="color: #868B94; font-size: .875rem;">
+                      도움돼요 0
+                    </div>
+                    <div class="rounded" style="background-color: #FFEBDD;">
+                      <button class="btn business-button-hv border-0" style="width: 100%; color: #FF6F0F;" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        <div class="d-flex justify-content-center">
+                          <b>후기 더보기</b>
+                        </div>
+                      </button>
+                    </div>
+                    <div>
+                      <h3 style="font-size:1.25rem; margin-top: 80px; margin-bottom: 20px;"><b>소식</b></h3>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="business-main-a mb-4"  href="#"><div class="d-flex" style="width: 368px;">
+                        <div>
+                          <img style="width: 72px; height: 72px; border-radius: 10px;" src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_606661/1682842057000/da877ea96a7e8f7c9bced14ac791f424af4b0b4eab101ef636545c20e9eed116.jpeg?q=95&s=1440x1440&t=inside" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <p class="business-a m-0">상상 그 이상의 쥐포 보여드릴게요!</p>
+                          <p class="business-a-sub">댓글 5</p>
+                        </div>
+                      </div> <hr></a>
+                      <a class="business-main-a" href="#"><div class="d-flex" style="width: 368px;">
+                        <div>
+                          <img style="width: 72px; height: 72px; border-radius: 10px;" src="https://www.daangn.com/_next/static/media/daangn-thumbnail.5e77874d.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <p class="business-a m-0">진짜 귀한 꼴뚜기!! 금호래기 한정수량으로 50팩 선착순 드려요.</p>
+                          <p class="business-a-sub">댓글 5</p>
+                        </div>
+                      </div><hr></a>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a class="business-main-a mb-4" href="#"><div class="d-flex" style="width: 368px;">
+                        <div>
+                          <img style="width: 72px; height: 72px; border-radius: 10px;" src="https://www.daangn.com/_next/static/media/daangn-thumbnail.5e77874d.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <p class="business-a m-0">바다의 산삼, 제가 제일 신선한 놈들로 가져왔어요!</p>
+                          <p class="business-a-sub">댓글 5</p>
+                        </div>
+                      </div></a>
+                      <a class="business-main-a" href="#"><div class="d-flex" style="width: 368px;">
+                        <div>
+                          <img style="width: 72px; height: 72px; border-radius: 10px;" src="https://www.daangn.com/_next/static/media/daangn-thumbnail.5e77874d.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <p class="business-a m-0">제주도 딱새우 왔어요~! 단돈 에 가져가세요.</p>
+                          <p class="business-a-sub">댓글 5</p>
+                        </div>
+                      </div></a>
+                    </div>
+                    <div class="rounded" style="background-color: #F2F2F2;">
+                      <button class="btn car-button-hv border-0" style="width: 100%; color: black;" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        <div class="d-flex justify-content-center">
+                          <b>소식더보기</b>
+                        </div>
+                      </button>
+                  </div>
+                </div>
+                <div class="business-last">
+                  <div class="business-last-font">
+                    마지막 수정일 20203년 04월 21일
+                  </div>
+                  <div class="business-last-font-sub">
+                    당근마켓에 등록된 가게의 정보는 가게 관리자가 직접 등록한 것으로 (주)당근마켓은 등록된 내용에 대하여 일체의 책임을 지지 않습니다.
+                  </div>
+                </div>
+              </div>
+              <div class="d-none">
+
+              </div>
+              <div class="d-none">
+
+              </div>
+            </div>
+          </div>
+        </main>
+    
+
+<!-- footer -->
+<hr>
+<footer>
+  <!-- xl 이하일때 -->
+  <div class="container">
+    <div class="p-0 d-block d-xl-none">
+      <p class="m-0" style="font-size: 13px;"><b>당근마켓 앱 다운로드</b> <a style="font-size: 15px;" class="footer-a" href="#"><b>ios<img src="../YongJin/image/arrow.PNG" alt=""></b></a> <a style="font-size: 15px;" class="footer-a" href=""><b>Android <img src="../YongJin/image/arrow.PNG" alt=""></b></a></p>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row container pt-5 pb-4 ps-0 pe-0 justify-content-center">
+          <div class="col-1" style="width: 131.47px;">
+            <div class="footer-box"><a class="footer-a ft" href="#">중고거래</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">동네가게</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">당근알바</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">부동산 거래</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">중고차 직거래</a></div>
+          </div>
+          <div class="col-1" style="width: 131.47px;">
+            <div class="footer-box"><a class="footer-a ft" href="#">당근비즈니스</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">채팅하기</a></div>
+          </div>
+          <div class="col-1" style="width: 131.47px; margin-right: 69.594px;">
+            <div class="footer-box"><a class="footer-a ft" href="#">자주 묻는 질문</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">회사 소개</a></div>
+            <div class="footer-box"><a class="footer-a ft" href="#">인재 채용</a></div>
+          </div>
+          <!-- xl 이상일때만 보임 -->
+          <div class="col-12 p-0 d-none d-xl-block" style="width: 300px;">
+            <p class="m-0"><b>당근마켓 앱 다운로드</b></p>
+            <div>
+              <button class="btn btn-outline-light col-6 p-0" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/apple.PNG" alt=""></img></button>
+              <button class="btn btn-outline-light col-6 p-0 ms-3" type="submit" style="width: 129px; height: 44px;" ><img src="../YongJin/image/google.PNG" alt=""></button>  
+            </div>
+          </div>
+      </div>
+    <div class="container">
+      <div class="row container pt-2 ps-0 pe-0 justify-content-center" style="padding-bottom: 100px;">
+        <hr>
+      <div class="col-4">
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>대표</b> 김용현, 황도연</span>
+          <span style="color: lightsteelblue;">|</span>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>사업자번호</b> 375-87-00088</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>직업정보제공사업 신고번호</b> 2016-서울서초-0051</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>주소</b> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+        </div>
+        <div>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>전화</b> 1544-9796</span>
+          <span style="color: lightsteelblue;">|</span>
+          <span class="text-secondary-emphasis" style="font-size: 13px;"><b>고객문의</b> cs@daangnservice.com</span><br>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">제휴 문의</a>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">광고 문의</a>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">PR 문의</a>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">IR 문의</a><br>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">이용약관</a>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">개인정보처리방침</a>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">위치기반서비스 이용약관</a>
+          <a class="footer-a-a ft" style="font-size: 11px;" href="#">이용자보호 비전과 계획</a>
+          <div class="col-12 ms-0 d-block d-xl-none">
+            <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+            <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+            <a class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+                <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" type="button">한국</button></li>
+                <li><button class="dropdown-item" type="button">영국</button></li>
+                <li><button class="dropdown-item" type="button">캐나다</button></li>
+                <li><button class="dropdown-item" type="button">미국</button></li>
+                <li><button class="dropdown-item" type="button">일본</button></li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 ms-0 d-none d-xl-block">
+        <a href="#"><img class = "col" src="../YongJin/image/facebook.PNG" alt=""></a>
+        <a href="#"><img class = "col" src="../YongJin/image/instagram.PNG" alt=""></a>
+        <a href="#"><img class = "col" src="../YongJin/image/youtube.PNG" alt=""></a>
+        <a href="#"><img class = "col" src="../YongJin/image/blog.PNG" alt=""></a>
+        <a class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 92px; height: 33px;" >
+            <span class="text-secondary-emphasis" style="font-size: 13px;"><img src="../YongJin/image/web.PNG" alt="">한국</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">한국</button></li>
+            <li><button class="dropdown-item" type="button">영국</button></li>
+            <li><button class="dropdown-item" type="button">캐나다</button></li>
+            <li><button class="dropdown-item" type="button">미국</button></li>
+            <li><button class="dropdown-item" type="button">일본</button></li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

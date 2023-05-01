@@ -666,8 +666,150 @@ li{
     color: #a05025;
   }
 
+  .box {
+    position: relative;
+  }
+  .box::after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+  }
+
+  
+  .carousel-img-expand-btn a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .article-img-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000b1, 5%, #00000000, #00000000);
+    opacity: 1;
+    border-radius: 20px;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .article-img-shadow:hover a{
+    opacity: .5;
+  }
   /* car-posts */
   .car-button-hv:hover {
     background-color: #DCDEE3;
     color: black;
+  }
+
+
+  /* business-profiles */
+  .business-main-div{
+    margin: auto;
+    width: 768px;
+  }
+
+  .business-btn{
+    line-height: 1.32;
+    font-size: 1.125rem;
+    letter-spacing: -2%;
+    min-height: 2.75rem;
+    font-weight: bold;
+    color: #868B94;
+  }
+
+  .business-btn:hover {
+    color: #868B94;
+  }
+
+
+  .business-information-div{
+    line-height: 1.32;
+    font-size: 1.125rem;
+  }
+
+  .business-information-div-sub{
+    line-height: 1.4;
+    font-size: .875rem;
+    color: #868B94;
+  }
+
+  .business-information-div-sub-a{
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .business-span-custom{
+    border: 1px solid Orange; 
+    font-size: 0.625rem; 
+    font-weight: bold;
+    width: 32px; 
+    height: 20px; 
+    border-radius: 100px; 
+    background-color: #ff6f0f; 
+    color : white;
+    line-height: 15px;
+  }
+
+  .business-img-custom {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .business-do{
+    font-size: .75rem; 
+    background-color: #F2F3F6;
+    padding: 2px;
+    color: var(--seed-scale-color-gray-700);
+  }
+
+  .business-button-hv:hover {
+    background-color: #ffe2cd;
+    color: black;
+  }
+
+  .business-main-a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .business-a{
+    line-height: 1.36;
+    font-size: 1rem;
+  }
+  .business-a-sub{
+    line-height: 1.3;
+    font-size: .75rem;
+    color: #868B94;
+    margin: 0.5rem 0 0;
+  }
+
+  .business-last{
+    margin-top: 80px;
+    margin-bottom: 174px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #F7F8FA;
+  }
+  
+  .business-last-font{
+    line-height: 1.4;
+    font-size: .875rem;
+  }
+  .business-last-font-sub{
+    margin: 0.375rem 0 0;
+    word-break: break-word;
+    line-height: 1.4;
+    font-size: .875rem;
+    color: #868B94;
   }
