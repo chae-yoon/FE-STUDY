@@ -244,14 +244,17 @@
         <div class="tab-home-info">
           <div class="tab-home-info-inner">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.48852C10.0031 6.48852 8.38442 8.10725 8.38442 10.1041C8.38442 12.1009 10.0031 13.7196 12 13.7196C13.9968 13.7196 15.6155 12.1009 15.6155 10.1041C15.6155 8.10725 13.9968 6.48852 12 6.48852ZM9.90675 10.1041C9.90675 8.94801 10.8439 8.01085 12 8.01085C13.156 8.01085 14.0932 8.94801 14.0932 10.1041C14.0932 11.2601 13.156 12.1973 12 12.1973C10.8439 12.1973 9.90675 11.2601 9.90675 10.1041Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.779785C6.58756 0.779785 2.19995 5.16739 2.19995 10.5798C2.19995 13.9799 4.40138 17.1391 6.57819 19.3764C7.68247 20.5113 8.81823 21.4481 9.74627 22.1055C10.2096 22.4337 10.6305 22.6988 10.9774 22.8857C11.1501 22.9788 11.3156 23.0584 11.466 23.1169C11.594 23.1666 11.7918 23.2342 12 23.2342C12.2081 23.2342 12.4059 23.1666 12.5339 23.1169C12.6843 23.0584 12.8498 22.9788 13.0225 22.8857C13.3694 22.6988 13.7903 22.4337 14.2536 22.1055C15.1817 21.4481 16.3174 20.5113 17.4217 19.3764C19.5985 17.1391 21.8 13.9799 21.8 10.5798C21.8 5.16739 17.4123 0.779785 12 0.779785ZM3.72228 10.5798C3.72228 6.00815 7.42832 2.30212 12 2.30212C16.5716 2.30212 20.2776 6.00815 20.2776 10.5798C20.2776 13.3642 18.4353 16.1516 16.3306 18.3148C15.2941 19.3801 14.2296 20.2569 13.3737 20.8632C12.945 21.1669 12.578 21.396 12.3005 21.5455C12.1718 21.6149 12.0717 21.662 12 21.691C11.9282 21.662 11.8281 21.6149 11.6994 21.5455C11.4219 21.396 11.0549 21.1669 10.6262 20.8632C9.77026 20.2569 8.70578 19.3801 7.66928 18.3148C5.56456 16.1516 3.72228 13.3642 3.72228 10.5798Z" fill="currentColor"></path></svg>
-            <div class="tab-home-info-inner-description">
-              <div class="description-main">
+            <div class="tab-home-info-inner-description flex-grow-1">
+              <div id="address" class="description-main">
                 강원도 동해시 감추4길 16 임은하푸드
               </div>
               <div class="description-sub">
                 강원도 동해시 천곡동 976-26 임은하푸드
               </div>
             </div>
+          </div>
+          <div class="map-wrapper">
+            <div id="map"></div>
           </div>
           <div class="tab-home-info-inner">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.6123C12.4959 6.6123 12.898 7.01433 12.898 7.51026V11.5195L15.8655 13.4978C16.2781 13.7729 16.3896 14.3304 16.1145 14.7431C15.8394 15.1557 15.2819 15.2672 14.8693 14.9921L11.5019 12.7472C11.2521 12.5807 11.1021 12.3003 11.1021 12.0001V7.51026C11.1021 7.01433 11.5041 6.6123 12 6.6123Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM12 3.63265C7.37884 3.63265 3.63265 7.37884 3.63265 12C3.63265 16.6212 7.37884 20.3673 12 20.3673C16.6212 20.3673 20.3673 16.6212 20.3673 12C20.3673 7.37884 16.6212 3.63265 12 3.63265Z" fill="currentColor"></path></svg>
@@ -666,7 +669,63 @@
       </section>
     </div>
   </footer>
+  <script src="./../apikey.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dcca5d3df0675ce6e56c29565f388552&libraries=services"></script>
   <script>
+    const REST_API_KEY = config.restApikey
+    const container = document.getElementById('map')
+    const placeAddress = document.querySelector('#address').innerText
+    const headers = new Headers({'Authorization': `KakaoAK ${REST_API_KEY}`})
+
+    fetch(`https://dapi.kakao.com/v2/local/search/address.json?query=${placeAddress}`, {
+      headers
+  }).then(res => res.json())
+  .then(data => {
+      var lat = data.documents[0].road_address.y
+      var lng = data.documents[0].road_address.x
+
+      const options = {
+        center: new kakao.maps.LatLng(lat, lng),
+        level: 3
+      };
+
+      let map = new kakao.maps.Map(container, options)
+      let markerPosition  = new kakao.maps.LatLng(lat, lng)
+
+      // 마커를 생성합니다
+      let marker = new kakao.maps.Marker({
+          position: markerPosition
+      });
+
+      map.setZoomable(false);  
+
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
+      map.setDraggable(false);    
+
+      var zoomControl = new kakao.maps.ZoomControl();
+      map.addControl(zoomControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+      window.addEventListener("resize", function() {
+        // window resize시 처리
+        map = new kakao.maps.Map(container, options);
+        markerPosition  = new kakao.maps.LatLng(lat, lng); 
+
+        // 마커를 생성합니다
+        marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        map.setZoomable(false);  
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+        map.setDraggable(false);    
+
+      })
+    }).catch((err) =>{
+      console.dir(err)
+    })
     const myOffcanvas = document.getElementById('menuModal')
     const menuIcon = document.getElementById('menu-icon')
     const closeIcon = document.getElementById('close-icon')
