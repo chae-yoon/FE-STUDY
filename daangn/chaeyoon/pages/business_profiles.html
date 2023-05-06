@@ -209,7 +209,7 @@
       </li>
     </ul>
     <div class="tab-content business-tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+      <div class="tab-pane fade show active px-3" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
         <h6 class="tab-home-title">정보</h6>
         <p class="tab-home-description">
           임은하푸드는 전국에 수산물 창고를 둔 곳입니다.
@@ -253,7 +253,7 @@
               </div>
             </div>
           </div>
-          <div class="map-wrapper">
+          <div class="map-wrapper z-n1">
             <div id="map"></div>
           </div>
           <div class="tab-home-info-inner">
@@ -272,7 +272,7 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-car-description-more">
+          <button type="button" class="btn btn-car-description-more" id="liveToastBtn">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="16" height="16"><path d="M11.434 2.43427C11.7464 2.12185 12.253 2.12185 12.5654 2.43427L16.5654 6.43427C16.8778 6.74669 16.8778 7.25322 16.5654 7.56564C16.253 7.87806 15.7464 7.87806 15.434 7.56564L12.7997 4.93132V14C12.7997 14.4418 12.4415 14.8 11.9997 14.8C11.5579 14.8 11.1997 14.4418 11.1997 14V4.93132L8.56539 7.56564C8.25297 7.87806 7.74644 7.87806 7.43402 7.56564C7.1216 7.25322 7.1216 6.74669 7.43402 6.43427L11.434 2.43427Z" fill="currentColor"></path><path d="M4.99971 10.8C4.89153 10.8 4.79971 10.8918 4.79971 11V20C4.79971 20.1081 4.89153 20.2 4.99971 20.2H18.9997C19.1079 20.2 19.1997 20.1081 19.1997 20V11C19.1997 10.8918 19.1079 10.8 18.9997 10.8H15.9997C15.5579 10.8 15.1997 10.4418 15.1997 9.99995C15.1997 9.55812 15.5579 9.19995 15.9997 9.19995H18.9997C19.9915 9.19995 20.7997 10.0081 20.7997 11V20C20.7997 20.9918 19.9915 21.7999 18.9997 21.7999H4.99971C4.00788 21.7999 3.19971 20.9918 3.19971 20V11C3.19971 10.0081 4.00788 9.19995 4.99971 9.19995H7.99971C8.44153 9.19995 8.79971 9.55812 8.79971 9.99995C8.79971 10.4418 8.44153 10.8 7.99971 10.8H4.99971Z" fill="currentColor"></path></svg>
             <span>공유하기</span>
           </button>
@@ -360,7 +360,7 @@
               </div>
             </div>
           </div>
-          <button class="btn btn-more-review">후기 더보기</button>
+          <button class="btn btn-more-review" id="btn-review-more">후기 더보기</button>
         </div>
         <div class="tab-home-review-sample">
           <h6 class="tab-home-title">소식</h6>
@@ -402,7 +402,7 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-car-description-more w-100">
+          <button type="button" class="btn btn-car-description-more w-100" id="btn-news-more">
             소식 더보기
           </button>
         </div>
@@ -415,8 +415,266 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab" tabindex="0">...</div>
-      <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab" tabindex="0">
+        <div class="news-cards">
+          <div class="news-card">
+            <div class="d-flex gap-2">
+              <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&s=640x640&t=crop" alt="profile-img" class="article-profile-img">
+              <div class="business-profile-right">
+                <div>
+                  <div class="article-profile-nickname">임은하푸드 인천창고</div>
+                  <div class="article-profile-region business-profile-region">천곡동 ∙ 9일</div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-title">
+              저도 주말엔 홍게 먹습니다!! 다들 이번 주말 홍게파티 어때요??
+            </div>
+            <p class="news-card-content">오늘 당일생물/ 특가이벤트 마감!
+
+            * 임은하푸드는 묵은 상품을 판매 하지 않아 당일 생물, 특가 상품의 경우 마감 이후 해당 내용을 삭제 합니다.
+            - 그날 팔고 남은 당일 생물은 급랭하거나 도매로 시장에 넘깁니다.
+            
+            * 매일 다른 이벤트, 당일생물에 올라오니 놓치지 마세요! 매일 오전 8시 ~ 10시 올라온답니다.
+            - 단골맺기 해 주시면 글 작성 되면 알림 가요!
+            
+            저희 인천 창고 상시 상품은 마감 이후에도 구매 가능.
+            구경하러 가세요. 대한민국 1등 푸드 업체 임은하푸드.
+            
+            
+            임은하푸드 인천창고 바로가기 ▶ https://limeunha.com/product/list.html?cate_no=44
+            </p>
+            <div class="d-flex gap-4 news-card-more">
+              <div class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79726 4.80739C5.11177 2.39754 8.90702 2.39754 11.2215 4.80739L11.2224 4.80827L11.9872 5.60702L12.7529 4.80739C15.0674 2.39754 18.8626 2.39754 21.1772 4.80739L21.179 4.80935C23.5242 7.26774 23.1318 10.953 21.2363 13.4384L21.2351 13.44C19.3267 15.9292 17.1219 17.9359 15.4019 19.3169C14.5402 20.0088 13.796 20.547 13.2653 20.9135C12.9998 21.0968 12.7875 21.2373 12.6402 21.3328C12.5666 21.3805 12.5092 21.417 12.4695 21.442L12.4235 21.4708L12.4109 21.4786L12.4072 21.4809L12.406 21.4816C12.406 21.4816 12.4053 21.4821 11.9872 20.8C11.5813 21.4894 11.5809 21.4892 11.5809 21.4892L11.5792 21.4882L11.5754 21.4859L11.5621 21.478L11.5142 21.4491C11.4729 21.424 11.4132 21.3875 11.3368 21.3396C11.184 21.244 10.964 21.1033 10.6902 20.9197C10.1426 20.5527 9.37805 20.0137 8.50199 19.3205C6.75443 17.9378 4.54128 15.9246 2.72667 13.423L2.72566 13.4216C0.930009 10.935 0.438148 7.26368 2.79726 4.80739ZM11.9872 20.8L11.5809 21.4892C11.8358 21.6393 12.1538 21.6362 12.406 21.4816L11.9872 20.8ZM11.9794 19.8524C12.0866 19.7811 12.2129 19.6958 12.3562 19.5968C12.8601 19.2489 13.5728 18.7336 14.4002 18.0693C16.058 16.7382 18.1594 14.8219 19.9646 12.4675C21.5249 10.421 21.6753 7.64872 20.0223 5.91478C18.3375 4.16154 15.5917 4.16174 13.9071 5.91539L12.565 7.31704C12.4141 7.47464 12.2054 7.56376 11.9872 7.56376C11.769 7.56376 11.5603 7.47464 11.4094 7.31704L10.0676 5.91571C8.38268 4.16167 5.63602 4.16151 3.95122 5.91571C2.31111 7.62338 2.50465 10.382 4.02235 12.4843C5.72139 14.8264 7.81446 16.7363 9.49477 18.0658C10.3327 18.7288 11.0626 19.2432 11.5809 19.5906C11.7329 19.6925 11.8666 19.7799 11.9794 19.8524Z" fill="currentColor"></path></svg>
+                <span>관심</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path d="M9.8 10.4002C9.8 11.1734 9.1732 11.8002 8.4 11.8002C7.6268 11.8002 7 11.1734 7 10.4002C7 9.62698 7.6268 9.00018 8.4 9.00018C9.1732 9.00018 9.8 9.62698 9.8 10.4002Z" fill="currentColor"></path><path d="M15.6002 11.8002C16.3734 11.8002 17.0002 11.1734 17.0002 10.4002C17.0002 9.62698 16.3734 9.00018 15.6002 9.00018C14.827 9.00018 14.2002 9.62698 14.2002 10.4002C14.2002 11.1734 14.827 11.8002 15.6002 11.8002Z" fill="currentColor"></path><path d="M8.74211 13.7016C8.57721 13.2917 8.11124 13.0931 7.70134 13.258C7.29144 13.4229 7.09282 13.8888 7.25773 14.2987C7.69347 15.3819 8.52005 16.1326 9.38875 16.6053C10.2518 17.075 11.2078 17.3002 11.9999 17.3002C13.6952 17.3002 15.8824 16.4233 16.7415 14.3002C16.9072 13.8907 16.7096 13.4243 16.3 13.2586C15.8904 13.0928 15.424 13.2905 15.2583 13.7001C14.7174 15.037 13.2647 15.7002 11.9999 15.7002C11.482 15.7002 10.7881 15.5453 10.1536 15.2C9.52479 14.8578 9.00636 14.3584 8.74211 13.7016Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 2.2002C6.5878 2.2002 2.2002 6.5878 2.2002 12.0002C2.2002 17.4126 6.5878 21.8002 12.0002 21.8002C17.4126 21.8002 21.8002 17.4126 21.8002 12.0002C21.8002 6.5878 17.4126 2.2002 12.0002 2.2002ZM3.8002 12.0002C3.8002 7.47146 7.47146 3.8002 12.0002 3.8002C16.5289 3.8002 20.2002 7.47146 20.2002 12.0002C20.2002 16.5289 16.5289 20.2002 12.0002 20.2002C7.47146 20.2002 3.8002 16.5289 3.8002 12.0002Z" fill="currentColor"></path></svg>
+                <span>댓글 6</span>
+              </div>
+            </div>
+          </div>
+          <div class="news-card-space"></div>
+          <div class="news-card">
+            <div class="d-flex gap-2">
+              <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&s=640x640&t=crop" alt="profile-img" class="article-profile-img">
+              <div class="business-profile-right">
+                <div>
+                  <div class="article-profile-nickname">임은하푸드 인천창고</div>
+                  <div class="article-profile-region business-profile-region">천곡동 ∙ 10일</div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-title">
+              진짜 귀한 꼴뚜기!! 금호래기 한정수량으로 50팩 선착순 드려요.
+            </div>
+            <p class="news-card-content">오늘 당일생물/ 특가이벤트 마감!
+
+              * 임은하푸드는 묵은 상품을 판매 하지 않아 당일 생물, 특가 상품의 경우 마감 이후 해당 내용을 삭제 합니다.
+              - 그날 팔고 남은 당일 생물은 급랭하거나 도매로 시장에 넘깁니다.
+              
+              * 매일 다른 이벤트, 당일생물에 올라오니 놓치지 마세요! 매일 오전 8시 ~ 10시 올라온답니다.
+              - 단골맺기 해 주시면 글 작성 되면 알림 가요!
+              
+              저희 인천 창고 상시 상품은 마감 이후에도 구매 가능.
+              구경하러 가세요. 대한민국 1등 푸드 업체 임은하푸드.
+              
+              
+              임은하푸드 인천창고 바로가기 ▶ https://limeunha.com/product/list.html?cate_no=44
+            </p>
+            <div class="d-flex gap-4 news-card-more">
+              <div class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79726 4.80739C5.11177 2.39754 8.90702 2.39754 11.2215 4.80739L11.2224 4.80827L11.9872 5.60702L12.7529 4.80739C15.0674 2.39754 18.8626 2.39754 21.1772 4.80739L21.179 4.80935C23.5242 7.26774 23.1318 10.953 21.2363 13.4384L21.2351 13.44C19.3267 15.9292 17.1219 17.9359 15.4019 19.3169C14.5402 20.0088 13.796 20.547 13.2653 20.9135C12.9998 21.0968 12.7875 21.2373 12.6402 21.3328C12.5666 21.3805 12.5092 21.417 12.4695 21.442L12.4235 21.4708L12.4109 21.4786L12.4072 21.4809L12.406 21.4816C12.406 21.4816 12.4053 21.4821 11.9872 20.8C11.5813 21.4894 11.5809 21.4892 11.5809 21.4892L11.5792 21.4882L11.5754 21.4859L11.5621 21.478L11.5142 21.4491C11.4729 21.424 11.4132 21.3875 11.3368 21.3396C11.184 21.244 10.964 21.1033 10.6902 20.9197C10.1426 20.5527 9.37805 20.0137 8.50199 19.3205C6.75443 17.9378 4.54128 15.9246 2.72667 13.423L2.72566 13.4216C0.930009 10.935 0.438148 7.26368 2.79726 4.80739ZM11.9872 20.8L11.5809 21.4892C11.8358 21.6393 12.1538 21.6362 12.406 21.4816L11.9872 20.8ZM11.9794 19.8524C12.0866 19.7811 12.2129 19.6958 12.3562 19.5968C12.8601 19.2489 13.5728 18.7336 14.4002 18.0693C16.058 16.7382 18.1594 14.8219 19.9646 12.4675C21.5249 10.421 21.6753 7.64872 20.0223 5.91478C18.3375 4.16154 15.5917 4.16174 13.9071 5.91539L12.565 7.31704C12.4141 7.47464 12.2054 7.56376 11.9872 7.56376C11.769 7.56376 11.5603 7.47464 11.4094 7.31704L10.0676 5.91571C8.38268 4.16167 5.63602 4.16151 3.95122 5.91571C2.31111 7.62338 2.50465 10.382 4.02235 12.4843C5.72139 14.8264 7.81446 16.7363 9.49477 18.0658C10.3327 18.7288 11.0626 19.2432 11.5809 19.5906C11.7329 19.6925 11.8666 19.7799 11.9794 19.8524Z" fill="currentColor"></path></svg>
+                <span>관심</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path d="M9.8 10.4002C9.8 11.1734 9.1732 11.8002 8.4 11.8002C7.6268 11.8002 7 11.1734 7 10.4002C7 9.62698 7.6268 9.00018 8.4 9.00018C9.1732 9.00018 9.8 9.62698 9.8 10.4002Z" fill="currentColor"></path><path d="M15.6002 11.8002C16.3734 11.8002 17.0002 11.1734 17.0002 10.4002C17.0002 9.62698 16.3734 9.00018 15.6002 9.00018C14.827 9.00018 14.2002 9.62698 14.2002 10.4002C14.2002 11.1734 14.827 11.8002 15.6002 11.8002Z" fill="currentColor"></path><path d="M8.74211 13.7016C8.57721 13.2917 8.11124 13.0931 7.70134 13.258C7.29144 13.4229 7.09282 13.8888 7.25773 14.2987C7.69347 15.3819 8.52005 16.1326 9.38875 16.6053C10.2518 17.075 11.2078 17.3002 11.9999 17.3002C13.6952 17.3002 15.8824 16.4233 16.7415 14.3002C16.9072 13.8907 16.7096 13.4243 16.3 13.2586C15.8904 13.0928 15.424 13.2905 15.2583 13.7001C14.7174 15.037 13.2647 15.7002 11.9999 15.7002C11.482 15.7002 10.7881 15.5453 10.1536 15.2C9.52479 14.8578 9.00636 14.3584 8.74211 13.7016Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 2.2002C6.5878 2.2002 2.2002 6.5878 2.2002 12.0002C2.2002 17.4126 6.5878 21.8002 12.0002 21.8002C17.4126 21.8002 21.8002 17.4126 21.8002 12.0002C21.8002 6.5878 17.4126 2.2002 12.0002 2.2002ZM3.8002 12.0002C3.8002 7.47146 7.47146 3.8002 12.0002 3.8002C16.5289 3.8002 20.2002 7.47146 20.2002 12.0002C20.2002 16.5289 16.5289 20.2002 12.0002 20.2002C7.47146 20.2002 3.8002 16.5289 3.8002 12.0002Z" fill="currentColor"></path></svg>
+                <span>댓글 5</span>
+              </div>
+            </div>
+          </div>
+          <div class="news-card-space"></div>
+          <div class="news-card">
+            <div class="d-flex gap-2">
+              <img src="https://dnvefa72aowie.cloudfront.net/business/bizPlatform/profile/50472096/1639685484756/16c5996beb2c0bc90ebdde18b6095516ad067e0f57a06197b2b4228a9cfc7ac9.jpeg?q=82&s=640x640&t=crop" alt="profile-img" class="article-profile-img">
+              <div class="business-profile-right">
+                <div>
+                  <div class="article-profile-nickname">임은하푸드 인천창고</div>
+                  <div class="article-profile-region business-profile-region">천곡동 ∙ 12일</div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card-title">
+              바다의 산삼, 제가 제일 신선한 놈들로 가져왔어요!
+            </div>
+            <p class="news-card-content">오늘 당일생물/ 특가이벤트 마감!
+
+              * 임은하푸드는 묵은 상품을 판매 하지 않아 당일 생물, 특가 상품의 경우 마감 이후 해당 내용을 삭제 합니다.
+              - 그날 팔고 남은 당일 생물은 급랭하거나 도매로 시장에 넘깁니다.
+              
+              * 매일 다른 이벤트, 당일생물에 올라오니 놓치지 마세요! 매일 오전 8시 ~ 10시 올라온답니다.
+              - 단골맺기 해 주시면 글 작성 되면 알림 가요!
+              
+              저희 인천 창고 상시 상품은 마감 이후에도 구매 가능.
+              구경하러 가세요. 대한민국 1등 푸드 업체 임은하푸드.
+              
+              
+              임은하푸드 인천창고 바로가기 ▶ https://limeunha.com/product/list.html?cate_no=44
+            </p>
+            <div class="d-flex gap-4 news-card-more">
+              <div class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.79726 4.80739C5.11177 2.39754 8.90702 2.39754 11.2215 4.80739L11.2224 4.80827L11.9872 5.60702L12.7529 4.80739C15.0674 2.39754 18.8626 2.39754 21.1772 4.80739L21.179 4.80935C23.5242 7.26774 23.1318 10.953 21.2363 13.4384L21.2351 13.44C19.3267 15.9292 17.1219 17.9359 15.4019 19.3169C14.5402 20.0088 13.796 20.547 13.2653 20.9135C12.9998 21.0968 12.7875 21.2373 12.6402 21.3328C12.5666 21.3805 12.5092 21.417 12.4695 21.442L12.4235 21.4708L12.4109 21.4786L12.4072 21.4809L12.406 21.4816C12.406 21.4816 12.4053 21.4821 11.9872 20.8C11.5813 21.4894 11.5809 21.4892 11.5809 21.4892L11.5792 21.4882L11.5754 21.4859L11.5621 21.478L11.5142 21.4491C11.4729 21.424 11.4132 21.3875 11.3368 21.3396C11.184 21.244 10.964 21.1033 10.6902 20.9197C10.1426 20.5527 9.37805 20.0137 8.50199 19.3205C6.75443 17.9378 4.54128 15.9246 2.72667 13.423L2.72566 13.4216C0.930009 10.935 0.438148 7.26368 2.79726 4.80739ZM11.9872 20.8L11.5809 21.4892C11.8358 21.6393 12.1538 21.6362 12.406 21.4816L11.9872 20.8ZM11.9794 19.8524C12.0866 19.7811 12.2129 19.6958 12.3562 19.5968C12.8601 19.2489 13.5728 18.7336 14.4002 18.0693C16.058 16.7382 18.1594 14.8219 19.9646 12.4675C21.5249 10.421 21.6753 7.64872 20.0223 5.91478C18.3375 4.16154 15.5917 4.16174 13.9071 5.91539L12.565 7.31704C12.4141 7.47464 12.2054 7.56376 11.9872 7.56376C11.769 7.56376 11.5603 7.47464 11.4094 7.31704L10.0676 5.91571C8.38268 4.16167 5.63602 4.16151 3.95122 5.91571C2.31111 7.62338 2.50465 10.382 4.02235 12.4843C5.72139 14.8264 7.81446 16.7363 9.49477 18.0658C10.3327 18.7288 11.0626 19.2432 11.5809 19.5906C11.7329 19.6925 11.8666 19.7799 11.9794 19.8524Z" fill="currentColor"></path></svg>
+                <span>관심</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="18" height="18"><path d="M9.8 10.4002C9.8 11.1734 9.1732 11.8002 8.4 11.8002C7.6268 11.8002 7 11.1734 7 10.4002C7 9.62698 7.6268 9.00018 8.4 9.00018C9.1732 9.00018 9.8 9.62698 9.8 10.4002Z" fill="currentColor"></path><path d="M15.6002 11.8002C16.3734 11.8002 17.0002 11.1734 17.0002 10.4002C17.0002 9.62698 16.3734 9.00018 15.6002 9.00018C14.827 9.00018 14.2002 9.62698 14.2002 10.4002C14.2002 11.1734 14.827 11.8002 15.6002 11.8002Z" fill="currentColor"></path><path d="M8.74211 13.7016C8.57721 13.2917 8.11124 13.0931 7.70134 13.258C7.29144 13.4229 7.09282 13.8888 7.25773 14.2987C7.69347 15.3819 8.52005 16.1326 9.38875 16.6053C10.2518 17.075 11.2078 17.3002 11.9999 17.3002C13.6952 17.3002 15.8824 16.4233 16.7415 14.3002C16.9072 13.8907 16.7096 13.4243 16.3 13.2586C15.8904 13.0928 15.424 13.2905 15.2583 13.7001C14.7174 15.037 13.2647 15.7002 11.9999 15.7002C11.482 15.7002 10.7881 15.5453 10.1536 15.2C9.52479 14.8578 9.00636 14.3584 8.74211 13.7016Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 2.2002C6.5878 2.2002 2.2002 6.5878 2.2002 12.0002C2.2002 17.4126 6.5878 21.8002 12.0002 21.8002C17.4126 21.8002 21.8002 17.4126 21.8002 12.0002C21.8002 6.5878 17.4126 2.2002 12.0002 2.2002ZM3.8002 12.0002C3.8002 7.47146 7.47146 3.8002 12.0002 3.8002C16.5289 3.8002 20.2002 7.47146 20.2002 12.0002C20.2002 16.5289 16.5289 20.2002 12.0002 20.2002C7.47146 20.2002 3.8002 16.5289 3.8002 12.0002Z" fill="currentColor"></path></svg>
+                <span>댓글 5</span>
+              </div>
+            </div>
+          </div>
+          <div class="news-card-btn-area">
+            <button type="button" class="btn btn-car-description-more w-100">
+              소식 더보기
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab" tabindex="0">
+        <div class="news-cards">
+          <div class="news-card">
+            <div class="article-profile job-profile business-sample-profile">
+              <div class="d-flex gap-2">
+                <img src="./../img/nearby-stores/default-profile.svg" alt="" class="article-profile-img">
+                <div class="business-profile-right">
+                  <div>
+                    <div class="d-flex gap-1">
+                      <div class="article-profile-nickname">오리맘</div>
+                      <div class="article-profile-badge">단골</div>
+                    </div>
+                    <div class="article-profile-region business-profile-region">양주2동 인증 16회 ∙ 9일</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-sample-content">
+              <p class="tab-home-description">내용물이 싱싱하세요 물을얼마나 잡아야할지몰라서 찾아봤지만요~  저는 미나리 쑥갓 양파 마늘 고추 더넣어 끓였어요~ 물을 많이잡아서 코인육수도 3알넣고요~ 맛있네요~ 색이좀 흐려서 고춧가루넣었는데도 많이흐리네요ㅋ</p>
+              <div class="article-img-wrapper review-sample-img-wrapper review-img-wrapper">
+                <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/6166948/1682050546266/NDdhMzEzZTQ0MDlmZTA2NWIzZTM0Y2MyMzc0ZWM0ZTNiZTRjNDU5OTc4MzdhOTdmNjA2NzAwNDVlYzRjMjE3Ni5qcGc=.jpeg?q=95&s=1440x1440&t=inside" class="w-100" alt="...">
+              </div>
+              <div class="review-sample-tag d-flex">
+                <span class="review-sample-tag-word">
+                  친절해요
+                </span>
+                <span class="review-sample-tag-word">
+                  가격이 싸요
+                </span>
+                <span class="review-sample-tag-word">
+                  만족스러워요
+                </span>
+              </div>
+              <div class="review-sample-tag-help d-flex">
+                도움돼요 0
+              </div>
+            </div>
+          </div>
+          <div class="news-card-space"></div>
+          <div class="news-card">
+            <div class="article-profile job-profile business-sample-profile">
+              <div class="d-flex gap-2">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/profile/202102/EE665AFF8AD4669492361505AF0C4F997149BE69A1821491F71A9ECBFE5F20EA.jpg?q=82&s=640x640&t=crop" alt="" class="article-profile-img">
+                <div class="business-profile-right">
+                  <div>
+                    <div class="d-flex gap-1">
+                      <div class="article-profile-nickname">엄마몰래당근중</div>
+                      <div class="article-profile-badge">단골</div>
+                    </div>
+                    <div class="article-profile-region business-profile-region">모현읍 인증 12회 ∙ 약 1개월</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-sample-content">
+              <p class="tab-home-description">당근 특가로 처음 사봤는데, 완전 대만족이예여!!! 처음 받았을때 들어간 냉동용 아이스팩이 터져서 물이 다 흘러서 좀 그랬는데, 아차피 홍가리비는 비닐에 따로 포장 되어 있고, 흘러넘친 물은 닦으면 되니까요~~ 
+                가족들이랑 홍가리비파티 했는데, 냄새도 안나고 세척도 깨끗하게 알 큰애들 많이 들어 있었어요! 쩌먹고 치즈랑 마늘 다진것, 버터 넣어 구워먹고 알 좀 작은거 몇개(근데 이거도 절대 작은건 아닌거 같아요. 같이 온 알들에 비해서요!)는 짬뽕 끓이는데 넣어 먹었어요! 부모님도 너무 만족하셨어요~!
+              </p>
+              <div class="d-flex review-img-multy">
+                <div class="review-img-multy-big-wrapper">
+                  <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/3325315/1680063682230/OTJBRUQ3NDMtNDRDOS00NjAyLTg3RUEtMzMxMjU4QzA5NjEwLmpwZWc=.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+                </div>
+                <div class="d-flex flex-column gap-1 flex-grow-1">
+                  <div class="review-img-multy-small-wrapper">
+                    <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/3325315/1680063682818/MTdFMUUzQTQtNjhDQi00RDhELUFGQ0QtQzNCNUJCRUMyNDAwLmpwZWc=.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+                  </div>
+                  <div class="review-img-multy-small-wrapper">
+                    <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/3325315/1680063683363/MkZFMTcwRTUtMjQxMy00OTc2LTgwNzYtRTgwMjIzNTI2RUEyLmpwZWc=.jpeg?q=95&s=1440x1440&t=inside" alt="...">
+                    <div class="review-img-multy-small-shadow">
+                      <span>+2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-sample-tag d-flex">
+                <span class="review-sample-tag-word">
+                  친절해요
+                </span>
+                <span class="review-sample-tag-word">
+                  가격이 싸요
+                </span>
+                <span class="review-sample-tag-word">
+                  만족스러워요
+                </span>
+              </div>
+              <div class="review-sample-tag-help d-flex">
+                도움돼요 0
+              </div>
+            </div>
+          </div>
+          <div class="news-card-space"></div>
+          <div class="news-card">
+            <div class="article-profile job-profile business-sample-profile">
+              <div class="d-flex gap-2">
+                <img src="https://dnvefa72aowie.cloudfront.net/origin/profile/202205/F53A85A825F63CEDFC483E0B0D708047CEC09D4ED357927223AC4CBFF9666F4B.jpg?q=82&s=640x640&t=crop" alt="" class="article-profile-img">
+                <div class="business-profile-right">
+                  <div>
+                    <div class="d-flex gap-1">
+                      <div class="article-profile-nickname">쪼막이</div>
+                      <div class="article-profile-badge">단골</div>
+                    </div>
+                    <div class="article-profile-region business-profile-region">신호동 인증 4회 ∙ 21일</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-sample-content">
+              <p class="tab-home-description">꽃게 2키로 주문해서 오늘 찜쩌먹었어요
+                알은 가득 찼으나 살이 좀 많이 아쉽네요 ㅠㅠ
+                진짜60퍼? 정도 있으려나 ㅠㅠ
+                근데 진짜 너무 달거 맛있었어요
+                수율만 좋았으면 짱짱👍👍
+                성인2명이서 2키로 모지랍니다 ㅋㅋㅋㅋ
+                살이 없어서 그런듯 해요
+              </p>
+              <div class="review-sample-tag d-flex">
+                <span class="review-sample-tag-word">
+                  친절해요
+                </span>
+                <span class="review-sample-tag-word">
+                  만족스러워요
+                </span>
+              </div>
+              <div class="review-sample-tag-help d-flex">
+                도움돼요 0
+              </div>
+            </div>
+          </div>
+          <div class="news-card-btn-area">
+            <button type="button" class="btn btn-car-description-more w-100">
+              후기 더보기
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -425,6 +683,21 @@
       당근마켓 앱에서 보기
     </button>
   </div>
+
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3 mb-5">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="1000">
+      <div class="toast-body bg-black text-white rounded">
+        링크가 복사되었습니다
+      </div>
+    </div>
+  </div>
+  <!-- <div class="toast-container position-fixed bottom-0 end-0 p-3 bg-black text-white">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        링크가 복사되었습니다
+      </div>
+    </div>
+  </div> -->
   
   <!-- Footer -->
   <footer>
@@ -748,7 +1021,44 @@
       const navStyleDiv = document.querySelector('.nav__style')
       navStyleDiv.setAttribute('style', '')
     })
+
+    
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+      toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+      })
+    }
+
+    const btnNewsMore = document.getElementById('btn-news-more')
+    btnNewsMore.addEventListener('click', (e) => {
+      const triggerEl = document.querySelector('#pills-tab button[data-bs-target="#pills-news"]')
+      const newsTab = new bootstrap.Tab(triggerEl)
+      newsTab.show()
+      window.scrollTo({ top: 650, behavior: "smooth" });
+    })
+
+    const btnReviewMore = document.getElementById('btn-review-more')
+    btnReviewMore.addEventListener('click', (e) => {
+      const triggerEl = document.querySelector('#pills-tab button[data-bs-target="#pills-review"]')
+      const reviewTab = new bootstrap.Tab(triggerEl)
+      reviewTab.show()
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    })
+
+    if  (location.hash === '#pills-review') {
+      const triggerEl = document.querySelector('#pills-tab button[data-bs-target="#pills-review"]')
+      const reviewTab = new bootstrap.Tab(triggerEl)
+      reviewTab.show()
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+  </script>
   </body>
 </html>
