@@ -221,8 +221,11 @@
 
 시급 : 9620원
       </p>
-      <div class="job-description-title">주소</div>
-      <p class="job-description-info">인천광역시 남동구 구월동
+      <div class="job-description-title pb-3">주소</div>
+      <div class="map-wrapper">
+        <div id="map"></div>
+      </div>
+      <p id="address" class="job-description-info pt-3">인천광역시 남동구 구월동
       </p>
     </div>
     <div class="job-banner">
@@ -539,7 +542,104 @@
       </section>
     </div>
   </footer>
+  <script src="./../apikey.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dcca5d3df0675ce6e56c29565f388552&libraries=services"></script>
   <script>
+    const REST_API_KEY = config.restApikey
+    const container = document.getElementById('map')
+    const placeAddress = document.querySelector('#address').innerText
+    const headers = new Headers({'Authorization': `KakaoAK ${REST_API_KEY}`})
+
+    fetch(`https://dapi.kakao.com/v2/local/search/address.json?query=${placeAddress}`, {
+      headers
+  }).then(res => res.json())
+  .then(data => {
+      var lat = data.documents[0].road_address.y
+      var lng = data.documents[0].road_address.x
+
+      const options = {
+        center: new kakao.maps.LatLng(lat, lng),
+        level: 3
+      };
+
+      let map = new kakao.maps.Map(container, options)
+      let markerPosition  = new kakao.maps.LatLng(lat, lng)
+
+      // 마커를 생성합니다
+      let marker = new kakao.maps.Marker({
+          position: markerPosition
+      });
+
+      map.setZoomable(false);  
+
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
+      map.setDraggable(false);    
+
+      var zoomControl = new kakao.maps.ZoomControl();
+      map.addControl(zoomControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+      window.addEventListener("resize", function() {
+        // window resize시 처리
+        map = new kakao.maps.Map(container, options);
+        markerPosition  = new kakao.maps.LatLng(lat, lng); 
+
+        // 마커를 생성합니다
+        marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        map.setZoomable(false);  
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+        map.setDraggable(false);    
+
+      })
+    }).catch((err) =>{
+      var lat = 37.451087
+      var lng = 126.702061
+
+      const options = {
+        center: new kakao.maps.LatLng(lat, lng),
+        level: 3
+      };
+
+      let map = new kakao.maps.Map(container, options)
+      let markerPosition  = new kakao.maps.LatLng(lat, lng)
+
+      // 마커를 생성합니다
+      let marker = new kakao.maps.Marker({
+          position: markerPosition
+      });
+
+      map.setZoomable(false);  
+
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
+      map.setDraggable(false);    
+
+      var zoomControl = new kakao.maps.ZoomControl();
+      map.addControl(zoomControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+      window.addEventListener("resize", function() {
+        // window resize시 처리
+        map = new kakao.maps.Map(container, options);
+        markerPosition  = new kakao.maps.LatLng(lat, lng); 
+
+        // 마커를 생성합니다
+        marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        map.setZoomable(false);  
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+        map.setDraggable(false);    
+
+      })
+    })
     const myOffcanvas = document.getElementById('menuModal')
     const menuIcon = document.getElementById('menu-icon')
     const closeIcon = document.getElementById('close-icon')
