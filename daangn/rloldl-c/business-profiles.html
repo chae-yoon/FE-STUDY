@@ -148,12 +148,38 @@
           </div>
         </div>
         <div>
-          <button class="ns-badge">
+          <button class="ns-badge" data-bs-toggle="modal" data-bs-target="#carPostModal">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="12" height="12"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9999 2C12.3631 2 12.6575 2.29439 12.6575 2.65755V11.3425H21.3425C21.7056 11.3425 22 11.6369 22 12.0001C22 12.3632 21.7056 12.6576 21.3425 12.6576H12.6575V21.3425C12.6575 21.7056 12.3631 22 11.9999 22C11.6368 22 11.3424 21.7056 11.3424 21.3425V12.6576H2.65754C2.29439 12.6576 2 12.3632 2 12.0001C2 11.6369 2.29439 11.3425 2.65754 11.3425H11.3424V2.65755C11.3424 2.29439 11.6368 2 11.9999 2Z" fill="currentColor"></path></svg>
             단골 맺기
           </button>
         </div>
       </div>
+
+      <!-- 당근마켓 앱으로 열기 -->
+      <div class="modal fade" id="carPostModal" tabindex="-1" aria-labelledby="carPostModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-header-top">
+                <h2 class="modal-title" id="carPostModalLabel">당근마켓 앱으로 열기</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-header-text">
+                <p>모바일에서만 이용할 수 있어요.
+                  <br>
+                  휴대전화의 카메라 또는 당근마켓 앱으로 QR코드를 촬영해주세요.
+                </p>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="modal-image">
+                <img src="./img/src/chat-qr.svg" alt="" class="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="bp-user-menu">
         <div class="bp-user-menu-item">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-karrot-ui-icon="true" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.57701 3.12551C3.55681 3.13844 3.54775 3.1519 3.54305 3.1644C3.10571 4.32685 3.09991 5.72996 3.09991 6.57133C3.09991 14.4848 9.51502 20.8999 17.4285 20.8999C18.2698 20.8999 19.673 20.8941 20.8354 20.4568C20.8479 20.4521 20.8614 20.443 20.8743 20.4228C20.8883 20.4009 20.8999 20.3676 20.8999 20.3269V15.3142H16.3199L14.4599 17.1742C14.2992 17.3349 14.0615 17.391 13.8459 17.3191C13.1568 17.0894 11.1908 16.4312 9.57728 14.8177C7.59575 12.8362 6.91898 10.8688 6.6807 10.1539C6.60821 9.93646 6.66596 9.69669 6.82952 9.53608L8.72298 7.67674V3.0999H3.6729C3.63218 3.0999 3.5989 3.11151 3.57701 3.12551ZM2.41991 2.74185C2.62665 2.19232 3.15609 1.8999 3.6729 1.8999H9.12298C9.56481 1.8999 9.92298 2.25808 9.92298 2.6999V7.7187C9.92298 8.0139 9.80432 8.29672 9.59369 8.50356L7.9411 10.1264C8.23588 10.935 8.89904 12.4424 10.4258 13.9692C11.6258 15.1691 13.0673 15.7725 13.8761 16.0609L15.5006 14.4364C15.7069 14.2301 15.9867 14.1142 16.2784 14.1142H21.2999C21.7417 14.1142 22.0999 14.4724 22.0999 14.9142V20.3269C22.0999 20.8437 21.8075 21.3732 21.258 21.5799C19.8753 22.1001 18.2753 22.1 17.4548 22.0999H17.4285C8.85228 22.0999 1.89991 15.1475 1.89991 6.57133L1.8999 6.54502C1.89984 5.72452 1.89972 4.1245 2.41991 2.74185Z" fill="currentColor"></path></svg>
@@ -189,7 +215,7 @@
             <h5 class="bp-tab-title">정보</h5>
             <p class="bp-store-detail">임은하푸드는 전국에 수산물 창고를 둔 곳입니다.
               매일 아침 창고 소식을 전해요.
-              단골맺기를 하시면 소식 알람이 간답니다.
+                를 하시면 소식 알람이 간답니다.
               
               꼭 저희에게 구매하지 않더라도,
               시장가시기 전에 그 날 시세 보시면 좋을 거에요.
@@ -228,9 +254,8 @@
                 </div>
               </div>
               <div>
-                <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:768px; height:200px; color:#333; position:relative">
-                  <a href="https://map.kakao.com/?urlX=968457.0&amp;urlY=1121046.0&amp;name=%EA%B0%95%EC%9B%90%20%EB%8F%99%ED%95%B4%EC%8B%9C%20%EA%B0%90%EC%B6%944%EA%B8%B8%2016&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
-                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/85a6f87e99a1731ef2908fd0c25f45834c6f5cf921bc049173293bba300b9af7" width="766px" height="198px">
+                <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; height:200px; color:#333; position:relative; overflow:hidden;">
+                  <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/85a6f87e99a1731ef2908fd0c25f45834c6f5cf921bc049173293bba300b9af7">
                   </a>
                   </div>
               </div>
@@ -266,50 +291,145 @@
               <div></div>
             </div>
           </section> -->
-          <section class="bp-tab-content">
+          <section class="bp-tab-content review">
             <h5 class="bp-tab-title">후기</h5>
-            <div class="bp-review">
-              <div class="ns-user-wrapper">
-                <div class="ns-review-thumbnail">
-                  <img class="ns-image" src="./img/src/user.svg">
-                </div>
-                <div class="ns-user">
-                  <div class="d-flex align-items-center">
-                    <span class="ns-user-id">오리맘</span>
-                    <span class="ns-badge">단골</span>
+            <div class="d-flex overflow-md-auto">
+              <div class="bp-review">
+                <div class="ns-user-wrapper">
+                  <div class="ns-review-thumbnail">
+                    <img class="ns-image" src="./img/src/user.svg">
                   </div>
-                  <span class="ns-store-review">양주2동 인증 16회 ∙ 8일</span>
+                  <div class="ns-user">
+                    <div class="d-flex align-items-center">
+                      <span class="ns-user-id">오리맘</span>
+                      <span class="ns-badge">단골</span>
+                    </div>
+                    <span class="ns-store-review">양주2동 인증 16회 ∙ 8일</span>
+                  </div>
                 </div>
+                <div class="d-flex flex-row flex-md-column">
+                  <p class="bp-review-detail">내용물이 싱싱하세요 물을얼마나 잡아야할지몰라서 찾아봤지만요~  저는 미나리 쑥갓 양파 마늘 고추 더넣어 끓였어요~ 물을 많이잡아서 코인육수도 3알넣고요~ 맛있네요~ 색이좀 흐려서 고춧가루넣었는데도 많이흐리네요ㅋ</p>
+                  <div class="bp-review-image-group bp-thumbnail flex-shrink-0">
+                    <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/6166948/1682050546266/NDdhMzEzZTQ0MDlmZTA2NWIzZTM0Y2MyMzc0ZWM0ZTNiZTRjNDU5OTc4MzdhOTdmNjA2NzAwNDVlYzRjMjE3Ni5qcGc=.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image bp-thumbnail-img">
+                  </div>
+                </div>
+                <div class="bp-review-badge-group d-none d-md-block">
+                  <span class="bp-review-badge">친절해요</span>
+                  <span class="bp-review-badge">가격이 싸요</span>
+                  <span class="bp-review-badge">만족스러워요</span>
+                </div>
+                <p class="bp-review-reaction d-none d-md-block">도움돼요 0</p>
               </div>
-              <p class="bp-review-detail">내용물이 싱싱하세요 물을얼마나 잡아야할지몰라서 찾아봤지만요~  저는 미나리 쑥갓 양파 마늘 고추 더넣어 끓였어요~ 물을 많이잡아서 코인육수도 3알넣고요~ 맛있네요~ 색이좀 흐려서 고춧가루넣었는데도 많이흐리네요ㅋ</p>
-              <div class="bp-review-image-group bp-thumbnail">
-                <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/6166948/1682050546266/NDdhMzEzZTQ0MDlmZTA2NWIzZTM0Y2MyMzc0ZWM0ZTNiZTRjNDU5OTc4MzdhOTdmNjA2NzAwNDVlYzRjMjE3Ni5qcGc=.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image bp-thumbnail-img">
+              <div class="bp-review d-md-none">
+                <div class="ns-user-wrapper">
+                  <div class="ns-review-thumbnail">
+                    <img class="ns-image" src="./img/src/user.svg">
+                  </div>
+                  <div class="ns-user">
+                    <div class="d-flex align-items-center">
+                      <span class="ns-user-id">오리맘</span>
+                      <span class="ns-badge">단골</span>
+                    </div>
+                    <span class="ns-store-review">양주2동 인증 16회 ∙ 8일</span>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <p class="bp-review-detail">내용물이 싱싱하세요 물을얼마나 잡아야할지몰라서 찾아봤지만요~  저는 미나리 쑥갓 양파 마늘 고추 더넣어 끓였어요~ 물을 많이잡아서 코인육수도 3알넣고요~ 맛있네요~ 색이좀 흐려서 고춧가루넣었는데도 많이흐리네요ㅋ</p>
+                  <div class="bp-review-image-group bp-thumbnail flex-shrink-0">
+                    <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/6166948/1682050546266/NDdhMzEzZTQ0MDlmZTA2NWIzZTM0Y2MyMzc0ZWM0ZTNiZTRjNDU5OTc4MzdhOTdmNjA2NzAwNDVlYzRjMjE3Ni5qcGc=.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image bp-thumbnail-img">
+                  </div>
+                </div>
+                <div class="bp-review-badge-group d-none d-md-block">
+                  <span class="bp-review-badge">친절해요</span>
+                  <span class="bp-review-badge">가격이 싸요</span>
+                  <span class="bp-review-badge">만족스러워요</span>
+                </div>
+                <p class="bp-review-reaction d-none d-md-block">도움돼요 0</p>
               </div>
-              <div class="bp-review-badge-group">
-                <span class="bp-review-badge">친절해요</span>
-                <span class="bp-review-badge">가격이 싸요</span>
-                <span class="bp-review-badge">만족스러워요</span>
+              <div class="bp-review d-md-none">
+                <div class="ns-user-wrapper">
+                  <div class="ns-review-thumbnail">
+                    <img class="ns-image" src="./img/src/user.svg">
+                  </div>
+                  <div class="ns-user">
+                    <div class="d-flex align-items-center">
+                      <span class="ns-user-id">오리맘</span>
+                      <span class="ns-badge">단골</span>
+                    </div>
+                    <span class="ns-store-review">양주2동 인증 16회 ∙ 8일</span>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <p class="bp-review-detail">내용물이 싱싱하세요 물을얼마나 잡아야할지몰라서 찾아봤지만요~  저는 미나리 쑥갓 양파 마늘 고추 더넣어 끓였어요~ 물을 많이잡아서 코인육수도 3알넣고요~ 맛있네요~ 색이좀 흐려서 고춧가루넣었는데도 많이흐리네요ㅋ</p>
+                  <div class="bp-review-image-group bp-thumbnail flex-shrink-0">
+                    <img src="https://dnvefa72aowie.cloudfront.net/business-profile/bizPlatform/profile/6166948/1682050546266/NDdhMzEzZTQ0MDlmZTA2NWIzZTM0Y2MyMzc0ZWM0ZTNiZTRjNDU5OTc4MzdhOTdmNjA2NzAwNDVlYzRjMjE3Ni5qcGc=.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image bp-thumbnail-img">
+                  </div>
+                </div>
+                <div class="bp-review-badge-group d-none d-md-block">
+                  <span class="bp-review-badge">친절해요</span>
+                  <span class="bp-review-badge">가격이 싸요</span>
+                  <span class="bp-review-badge">만족스러워요</span>
+                </div>
+                <p class="bp-review-reaction d-none d-md-block">도움돼요 0</p>
               </div>
-              <p class="bp-review-reaction">도움돼요 0</p>
+
             </div>
             <button class="cp-button" id="review-more-btn">후기 더보기</button>
           </section>
           <section class="bp-tab-content">
             <h5 class="bp-tab-title">소식</h5>
-            <div class="d-flex flex-wrap">
-              <div class="w-50">
+            <div class="d-flex flex-wrap flex-column flex-md-row">
+              <div class="bp-mini-post">
                 <a href="" class="d-flex overflow-hidden">
                   <div class="bp-mini-post-image bp-thumbnail">
                     <img src="https://dnvefa72aowie.cloudfront.net/businessPlatform/bizPlatform/profile/center_biz_6071155/1682642820056/aadfff52352a841ea07389b118f77329e1b3029ccff5f4baf80cdcfd5e1b57ca.jpeg?q=95&s=1440x1440&t=inside" alt="" class="image bp-thumbnail-img">
                   </div>
-                  <div class="d-flex flex-column ms-3 flex-grow-1 flex-shrink-1">
+                  <div class="bp-mini-post-content">
                     <p>저도 주말엔 홍게 먹습니다!! 다들 이번 주말 홍게파티 어때요??</p>
-                    <p>댓글 5</p>
+                    <p class="bp-user-place">댓글 5</p>
                   </div>
                 </a>
               </div>
+              <div class="bp-mini-post">
+                <a href="" class="d-flex overflow-hidden">
+                  <div class="bp-mini-post-image bp-thumbnail">
+                    <img src="https://www.daangn.com/_next/static/media/daangn-thumbnail.5e77874d.png" alt="" class="image bp-thumbnail-img">
+                  </div>
+                  <div class="bp-mini-post-content">
+                    <p>진짜 귀한 꼴뚜기!! 금호래기 한정수량으로 50팩 선착순 드려요.</p>
+                    <p class="bp-user-place">댓글 5</p>
+                  </div>
+                </a>
+              </div>
+              <div class="bp-mini-post">
+                <a href="" class="d-flex overflow-hidden">
+                  <div class="bp-mini-post-image bp-thumbnail">
+                    <img src="https://www.daangn.com/_next/static/media/daangn-thumbnail.5e77874d.png" alt="" class="image bp-thumbnail-img">
+                  </div>
+                  <div class="bp-mini-post-content">
+                    <p>바다의 산삼, 제가 제일 신선한 놈들로 가져왔어요!</p>
+                    <p class="bp-user-place">댓글 5</p>
+                  </div>
+                </a>
+              </div>
+              <div class="bp-mini-post d-none d-md-block">
+                <a href="" class="d-flex overflow-hidden">
+                  <div class="bp-mini-post-image bp-thumbnail">
+                    <img src="https://www.daangn.com/_next/static/media/daangn-thumbnail.5e77874d.png" alt="" class="image bp-thumbnail-img">
+                  </div>
+                  <div class="bp-mini-post-content">
+                    <p>제주도 딱새우 왔어요~! 단돈 에 가져가세요.</p>
+                    <p class="bp-user-place">댓글 5</p>
+                  </div>
+                </a>
+              </div>
+              <button class="cp-button mt-4">소식 더보기</button>
             </div>
           </section>
+          <div class="update-banner">
+            <p>마지막 수정일 2023년 05월 04일</p>
+            <p>당근마켓에 등록된 가게의 정보는 가게 관리자가 직접 등록한 것으로 (주)당근마켓은 등록된 내용에 대하여 일체의 책임을 지지 않습니다.</p>
+          </div>
         </div>
 
         <div class="tab-pane fade" id="button-post" role="tabpanel" aria-labelledby="button-post-tab" tabindex="0">
@@ -574,7 +694,9 @@
               </div>
             </li>
           </ul>
-          <button class="cp-button">소식 더보기</button>
+          <div class="bp-button-wrap">
+            <button class="cp-button">소식 더보기</button>
+          </div>
         </div>
 
         <div class="tab-pane fade" id="button-review" role="tabpanel" aria-labelledby="button-review-tab" tabindex="0">
@@ -741,11 +863,16 @@
               </div>
             </li>
           </ul>
-          <button class="cp-button">후기 더보기</button>
+          <div class="bp-button-wrap">
+            <button class="cp-button">후기 더보기</button>
+          </div>
         </div>
       </div>
       
     </section>
+    <div class="jp-button-wrap">
+      <button class="jp-button">당근마켓 앱에서 지원하기</button>
+    </div>
   </main>
 
   <footer class="home-footer">
@@ -899,7 +1026,52 @@
 
     </div>
   </footer>
+<script>
+  let cardImg = document.querySelectorAll('.jp-image')
 
+  window.addEventListener('load', (event) => {
+    let height = window.innerWidth
+    if (height < 768) {
+      cardImg.forEach(elem => {
+        elem.style.height = height + 'px'
+      })
+    }
+  })
+
+  window.addEventListener('resize', (event) => {
+    let height = window.innerWidth
+    if (height < 768) {
+      cardImg.forEach(elem => {
+        elem.style.height = height + 'px'
+      })
+    } else {
+      cardImg.forEach(elem => {
+        elem.style.height = null
+      })
+    }
+  })
+
+  const mapImg = document.querySelector('.map')
+
+  window.addEventListener('resize', (event) => {
+    let width = window.innerWidth
+    console.log(width)
+    if (width < 768) {
+      mapImg.style.width = (width - 32) + 'px'
+    } else {
+      mapImg.style.width = null
+    }
+  })
+
+  window.addEventListener('load', (event) => {
+    let width = window.innerWidth
+    if (width < 768) {
+      mapImg.style.width = (width - 32) + 'px'
+    } else {
+      mapImg.style.width = null
+    }
+  })
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
