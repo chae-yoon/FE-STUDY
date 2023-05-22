@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>당근채팅</title>
+    <link rel="icon" type="image/x-icon" href="https://d1unjqcospf8gs.cloudfront.net/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="chat navdiv">
+      <nav class="navbar navbar-expand-md">
+        <div class="nav-con">
+          <a class="brand" href="main.html">
+            <img src="C:\Users\system1\Desktop\KDT\Study\FE-STUDY\daangn\rloldl-c\img\src\logo_daangn.svg" alt="당근마켓 로고">
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="onboard-top">
+        <p class="subtitle">동네 이웃도, 동네 가게 사장님도</p>
+        <h1 class="title">웹에서 당근채팅을 사용해보세요</h1>
+        <div class="onboard-image">
+          <img src="https://chat.daangn.com/image/onboarding.png" alt="" class="image">
+        </div>
+      </section>
+
+      <button class="onboard-top-button">
+        <span>더 알아보기</span>
+        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </button>
+
+      <section class="onboard-mid">
+        <div class="onboard-mid-content">
+          <div class="onboard-mid-text">
+            <h3 class="title">모바일 앱에서 나눈 대화를 이어서 할 수 있어요.</h3>
+            <p class="subtitle">별도의 프로그램 설치 없이 간단한 인증만으로 편하게 대화할 수 있어요.</p>
+          </div>
+          <div class="onboard-image">
+            <img src="https://chat.daangn.com/image/onboard_2.png" alt="" class="image">
+          </div>
+        </div>
+      </section>
+
+      <section class="onboard-mid">
+        <div class="onboard-mid-content second">
+          <div class="onboard-image">
+            <img src="https://chat.daangn.com/image/onboard_3.png" alt="" class="image">
+          </div>
+          <div class="onboard-mid-text">
+            <h3 class="title">자주 쓰는 문구를 저장해두고 사용해보세요.</h3>
+            <p class="subtitle">장소나 시간, 감사의 표현 등 필요한 문구는 무엇이든 저장할 수 있어요.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="onboard-mid">
+        <div class="onboard-mid-content">
+          <div class="onboard-mid-text">
+            <h3 class="title">스티커로 다양한 감정을 표현해보세요.</h3>
+            <p class="subtitle">글로는 미처 표현하지 못한 따뜻한 마음을 스티커로 전해보세요.</p>
+          </div>
+          <div class="onboard-image">
+            <img src="https://chat.daangn.com/image/onboard_4_new.png" alt="" class="image">
+          </div>
+        </div>
+      </section>
+
+      <section class="onboard-bottom">
+        <h3 class="title">그럼 이제 당근채팅을 만나볼까요?</h3>
+        <div class="onboard-button-wrap">
+          <a href="chat.html" class="onboard-button" target="_blank">당근채팅 시작하기</a>
+        </div>
+        <a href="https://www.daangn.com/wv/faqs?kind=karrotchat" class="chat-link">혹시 당근채팅이 더 궁금하세요?</a>
+      </section>
+    </main>
+
+    <footer class="chat-footer position-relative">
+      <div class="chat-footer-content">
+        <div class="chat-footer-left">
+          <a href="" class="footer-bottom-link">이용약관</a>
+          <a href="" class="footer-bottom-link personal">개인정보처리방침</a>
+          <a href="" class="footer-bottom-link">위치기반서비스 이용약관</a>
+        </div>
+        <p>© Daangn Market Inc.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      const scrollBtn = document.getElementsByClassName('onboard-top-button')[0]
+      const scrollLocation = document.getElementsByClassName('onboard-mid')[0].offsetTop
+
+      window.addEventListener('scroll', () => {
+        if ( window.scrollY >= 195 ) {
+          scrollBtn.classList.add('down')
+        } else {
+          scrollBtn.classList.remove('down')
+        }
+      })
+
+      scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+          left: 0,
+          top: 960,
+          behavior: 'smooth'
+        })
+      })
+    </script>
+  </body>
+</html>
